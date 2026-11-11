@@ -1,0 +1,25 @@
+root = "."
+tmp_dir = "tmp"
+
+[build]
+  # Air rebuilds the Go program, then runs it. The program regenerates the
+  # HTML beside each .md file in src/ and starts the static server on :8080.
+  cmd = "go build -o ./tmp/main ."
+  bin = "./tmp/main"
+  # Markdown and Go trigger a rebuild; so do edits to the CSS and JS in src/.
+  # (.html is deliberately absent: the program writes those, and watching
+  # them would make every rebuild trigger another.)
+  include_ext = ["go", "md", "css", "js"]
+  exclude_dir = ["tmp"]
+  send_interrupt = true
+  delay = 200
+
+# Open http://localhost:8090 instead of :8080. The proxy injects a small
+# live-reload script, so the browser refreshes itself after each rebuild.
+[proxy]
+  enabled = true
+  proxy_port = 8090
+  app_port = 8080
+
+[misc]
+  clean_on_exit = true
