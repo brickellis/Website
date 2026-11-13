@@ -3,14 +3,15 @@ tmp_dir = "tmp"
 
 [build]
   # Air rebuilds the Go program, then runs it. The program regenerates the
-  # HTML beside each .md file in src/ and starts the static server on :8080.
+  # index.html in each .md file's folder and starts the static server on :8080.
   cmd = "go build -o ./tmp/main ."
   bin = "./tmp/main"
   # Markdown and Go trigger a rebuild; so do edits to the CSS and JS in src/.
-  # (.html is deliberately absent: the program writes those, and watching
-  # them would make every rebuild trigger another.)
+  # (.html is deliberately absent: the program writes index.html on every
+  # run, so watching it would make every rebuild trigger another. If you
+  # edit a hand-written .html file, refresh the browser yourself.)
   include_ext = ["go", "md", "css", "js"]
-  exclude_dir = ["tmp"]
+  exclude_dir = ["tmp", "build"]
   send_interrupt = true
   delay = 200
 

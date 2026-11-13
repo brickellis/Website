@@ -1,6 +1,6 @@
 ---
 title: The Case for Small Tools
-subtitle: An essay that uses every feature of the converter.
+subtitle: An essay that uses every feature of the converter
 date: November 10, 2026
 ---
 
@@ -13,6 +13,7 @@ date: November 10, 2026
 - [Showing things](#showing-things)
   - [A figure](#a-figure)
   - [A canvas](#a-canvas)
+- [Math](#math)
 - [Links and notes](#links-and-notes)
 - [Writing each piece](#writing-each-piece)
   :::
@@ -36,7 +37,7 @@ Build what the season needs. When it passes, build something else.
 
 ## How it works
 
-The converter reads every Markdown file in `src/` and writes an HTML page for each one into `build/`. The stylesheet, scripts and images are written straight into `build/` by hand, so nothing is copied. Each run deletes the old HTML first, which keeps `build/` an exact mirror of `src/`. It is two Go files and nothing but the standard library.
+The converter looks through `src/` for Markdown files. Each one becomes an `index.html` in its own folder, whatever the Markdown file is called, so `essay/essay.md` gives `essay/index.html` and the page lives at `/essay/`. The stylesheet sits at the root of `src/`, and a page's own scripts and images sit beside it. Nothing is copied, and nothing is ever deleted: the program only overwrites each `index.html`, so HTML you wrote by hand is left alone. It is three Go files, and the only dependency is goja, a JavaScript interpreter that runs KaTeX while the pages are built.
 
 ### Reading the source
 
@@ -53,15 +54,15 @@ Only external links are affected by the `-newtab` flag. Links to your own sectio
 
 ### Running it
 
-From the project folder, one command builds the pages and starts a static server:
+From the project folder, one command writes the pages and starts a static server:
 
 ```terminal
 $ go run . -newtab
-src/essay.md -> build/essay.html
-serving build on http://localhost:8080
+src/essay/essay.md -> src/essay/index.html
+serving src on http://localhost:8080
 ```
 
-Open that address in a browser. For hot reload while writing, run `air` instead and open port 8090.
+Open that address with `/essay/` on the end. For hot reload while writing, run `air` instead and open port 8090.
 
 ## Showing things
 
@@ -69,11 +70,11 @@ Open that address in a browser. For hot reload while writing, run `air` instead 
 
 An image on a line of its own becomes a figure. The text in quotation marks after the path becomes the caption.
 
-![A diagram: Markdown in src goes through the converter and comes out as HTML in build](images/diagram.svg "Figure 1. The whole pipeline.")
+![A diagram: a Markdown file goes through the converter and comes out as index.html in the same folder](diagram.svg "Figure 1. The whole pipeline.")
 
 ### A canvas
 
-A canvas block names an element and a script. The script lives in `build/` beside the page and is loaded right after the canvas, so it can find the element by its id.
+A canvas block names an element and a script. The script lives in `src/` beside the page and is loaded right after the canvas, so it can find the element by its id.
 
 ::: canvas
 id=wave width=520 height=220
@@ -82,7 +83,28 @@ label="A moving sine wave"
 caption="Figure 2. A canvas, driven by canvas-demo.js."
 :::
 
-The script is plain JavaScript in `build/canvas-demo.js`. The converter never reads it.
+The script is plain JavaScript in `src/canvas-demo.js`. The converter never reads it.
+
+## Math
+
+Math is written in TeX and drawn by KaTeX when the pages are built, so the finished page carries no JavaScript. Inline math sits between single dollar signs: the area of a circle is $A = \pi r^2$, and Euler's identity is $e^{i\pi} + 1 = 0$. A closing dollar sign followed by a digit is not math, so prices like $5 or $10 stay as text, and `\$` writes a literal dollar sign.
+
+Display math goes between double dollar signs, on lines of its own:
+
+$$
+\int_{-\infty}^{\infty} e^{-x^2}\,dx = \sqrt{\pi}
+$$
+
+It can run over several lines and use environments such as `align*`:
+
+$$
+\begin{align*}
+(a + b)^2 &= a^2 + 2ab + b^2 \\
+(a - b)^2 &= a^2 - 2ab + b^2
+\end{align*}
+$$
+
+A page that contains math links to `katex/katex.min.css` at the root of `src/`, and the fonts sit beside it in `katex/fonts/`.
 
 ## Links and notes
 
@@ -120,13 +142,19 @@ script=canvas-demo.js
 
 2^10^ is a superscript.[^1]
 
+Inline math is $e^{i\pi} + 1 = 0$.
+
+$$
+\int_0^1 x^2\,dx = \tfrac{1}{3}
+$$
+
 [A link](https://example.com){new}
 [Stay here](https://example.com){same}
 
 [^1]: The text of the note.
 ```
 
-Code goes in an ordinary fence with a language after the opening backticks. Terminal output goes in a fence labelled `terminal`, where any line beginning with `$ ` is drawn as a typed command.
+Code goes in an ordinary fence with a language after the opening backticks. Terminal output goes in a fence labelled `terminal`, where any line beginning with `$ ` is drawn as a typed command. Math goes between dollar signs, as shown above.
 
 [^1]: This essay is the test file for the converter. Every feature it supports appears somewhere on this page.
 

@@ -1,0 +1,265 @@
+/* Minimal. White page, black text, one thin column. */
+
+:root {
+  --measure: 31rem; /* width of the text column, padding included */
+  --rule: #000;
+  --soft: #f3f3f3;
+  --muted: #444;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 18px;
+  -webkit-text-size-adjust: 100%;
+}
+
+body {
+  margin: 0;
+  background: #fff;
+  color: #000;
+  font-family: "Times New Roman", serif;
+  line-height: 1.65;
+}
+
+main {
+  max-width: var(--measure);
+  margin: 0 auto;
+  padding: 4rem 1.25rem 6rem;
+}
+
+/* ---------- title block ---------- */
+
+header {
+  margin-bottom: 3rem;
+}
+header h1 {
+  margin: 0 0 0.5rem;
+  font-size: 2rem;
+  line-height: 1.2;
+}
+.subtitle {
+  margin: 0;
+  font-style: italic;
+}
+.meta {
+  margin: 0.75rem 0 0;
+  font-size: 0.75rem;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+}
+
+/* ---------- headings ---------- */
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-weight: 700;
+  line-height: 1.3;
+}
+h2 {
+  margin: 3rem 0 1rem;
+  font-size: 1.35rem;
+}
+h3,
+h4,
+h5,
+h6 {
+  margin: 2.25rem 0 0.75rem;
+  font-size: 1rem;
+}
+
+/* ---------- text ---------- */
+
+p {
+  margin: 0 0 1.25rem;
+}
+
+a {
+  color: inherit;
+  text-decoration: underline;
+  text-decoration-thickness: 1px;
+  text-underline-offset: 0.15em;
+}
+a:hover {
+  text-decoration-thickness: 2px;
+}
+
+sup {
+  font-size: 0.7em;
+  line-height: 0;
+}
+
+hr {
+  margin: 3rem 0;
+  border: 0;
+  border-top: 1px solid var(--rule);
+}
+
+ul,
+ol {
+  margin: 0 0 1.25rem;
+  padding-left: 1.25rem;
+}
+li {
+  margin: 0.25rem 0;
+}
+li > ul,
+li > ol {
+  margin: 0.25rem 0 0;
+}
+
+/* ---------- quotes ---------- */
+
+blockquote {
+  margin: 2rem 0;
+  padding-left: 1.25rem;
+  border-left: 1px solid var(--rule);
+  font-style: italic;
+}
+blockquote p {
+  margin: 0 0 0.75rem;
+}
+blockquote footer {
+  font-size: 0.85rem;
+  font-style: normal;
+}
+
+/* scripture: same idea, a heavier rule, upright type */
+blockquote.scripture {
+  border-left: 4px double var(--rule);
+  font-style: normal;
+}
+blockquote.scripture sup {
+  margin-right: 0.2em;
+  font-weight: 700;
+}
+blockquote.scripture cite {
+  font-style: normal;
+  font-variant: small-caps;
+  letter-spacing: 0.05em;
+}
+
+/* ---------- figures and canvases ---------- */
+
+figure {
+  margin: 2.5rem 0;
+}
+figure img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+figcaption {
+  margin-top: 0.6rem;
+  font-size: 0.8rem;
+  color: var(--muted);
+}
+
+canvas {
+  display: block;
+  max-width: 100%;
+  height: auto;
+  border: 1px solid var(--rule);
+}
+
+/* ---------- code and terminal ---------- */
+
+code,
+pre {
+  font-family: ui-monospace, SFMono-Regular, Menlo, Consolas, monospace;
+}
+code {
+  padding: 0.1em 0.3em;
+  background: var(--soft);
+  font-size: 0.85em;
+}
+
+pre {
+  margin: 1.75rem 0;
+  padding: 1rem;
+  overflow-x: auto;
+  background: var(--soft);
+  font-size: 0.8rem;
+  line-height: 1.5;
+  tab-size: 4;
+}
+pre code {
+  padding: 0;
+  background: none;
+  font-size: inherit;
+}
+
+pre.terminal {
+  background: #000;
+  color: #fff;
+}
+.terminal .prompt {
+  color: #999;
+  user-select: none;
+}
+.terminal .cmd {
+  font-weight: 700;
+}
+
+/* ---------- footnotes ---------- */
+
+sup.fn a {
+  padding: 0 0.1em;
+  text-decoration: none;
+}
+
+.footnotes {
+  margin-top: 4rem;
+  padding-top: 1rem;
+  border-top: 1px solid var(--rule);
+  font-size: 0.85rem;
+}
+.footnotes ol {
+  margin: 0;
+  padding-left: 1.25rem;
+}
+.footnotes li {
+  margin-bottom: 0.5rem;
+}
+.footnotes .back {
+  text-decoration: none;
+}
+
+/* ---------- table of contents (a <details> toggle) ---------- */
+
+details.toc {
+  margin: 0 0 3rem;
+  font-size: 0.9rem;
+}
+details.toc summary {
+  cursor: pointer;
+  font-weight: 700;
+}
+details.toc nav {
+  margin-top: 0.75rem;
+}
+details.toc ul {
+  margin: 0;
+  padding-left: 0;
+  list-style: none;
+}
+details.toc ul ul {
+  padding-left: 1.1rem;
+}
+
+/* ---------- small screens ---------- */
+
+@media (max-width: 480px) {
+  html {
+    font-size: 17px;
+  }
+  main {
+    padding-top: 2.5rem;
+  }
+}

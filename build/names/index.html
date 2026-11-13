@@ -1,0 +1,470 @@
+<!doctype html>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Name Stats</title>
+<style>
+    :root {
+        --bg: #fafaf7;
+        --fg: #111;
+        --mut: #8a8a85;
+        --ac: #e4572e;
+        --ln: #ddddd6
+    }
+
+    @media(prefers-color-scheme:dark) {
+        :root {
+            --bg: #111;
+            --fg: #eee;
+            --mut: #777;
+            --ac: #ff7a50;
+            --ln: #2a2a2a
+        }
+    }
+
+    * {
+        box-sizing: border-box
+    }
+
+    body {
+        margin: 0 auto;
+        max-width: 1000px;
+        padding: 7vh 6vw 10vh;
+        background: var(--bg);
+        color: var(--fg);
+        font: 14px/1.5 ui-monospace, Menlo, Consolas, monospace
+    }
+
+    #q {
+        width: 100%;
+        border: 0;
+        border-bottom: 1px solid var(--ln);
+        background: none;
+        color: var(--fg);
+        font: inherit;
+        font-size: clamp(28px, 6vw, 56px);
+        padding: 0 0 8px;
+        outline: 0
+    }
+
+    #q:focus {
+        border-color: var(--ac)
+    }
+
+    #top {
+        display: flex;
+        align-items: flex-end;
+        gap: 18px;
+        margin-bottom: 28px
+    }
+
+    #q {
+        flex: 1;
+        min-width: 0;
+        width: auto
+    }
+
+    #glink {
+        text-decoration: none;
+        white-space: nowrap;
+        flex: none
+    }
+
+    #glink.on {
+        border-color: var(--ac);
+        color: var(--ac)
+    }
+
+    #game {
+        display: none
+    }
+
+    body.game #game {
+        display: block
+    }
+
+    body.game #out,
+    body.game #q {
+        display: none
+    }
+
+    .sx a {
+        margin-right: 14px;
+        cursor: pointer;
+        color: var(--mut)
+    }
+
+    .sx a:hover,
+    .sx a.on {
+        color: var(--ac)
+    }
+
+    .sx a.off,
+    .sx a.off:hover {
+        color: var(--mut);
+        opacity: .35;
+        cursor: default;
+        pointer-events: none
+    }
+
+    .mut {
+        color: var(--mut)
+    }
+
+    h1 {
+        font-size: clamp(28px, 5vw, 48px);
+        font-weight: 300;
+        margin: 0
+    }
+
+    .hd {
+        display: flex;
+        align-items: baseline;
+        gap: 18px;
+        flex-wrap: wrap;
+        margin-bottom: 6px
+    }
+
+    svg {
+        display: block;
+        width: 100%;
+        overflow: visible
+    }
+
+    .row {
+        margin: 36px 0 0
+    }
+
+    .cols {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 6vw
+    }
+
+    @media(max-width:640px) {
+        .cols {
+            grid-template-columns: 1fr
+        }
+    }
+
+    .n {
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+        gap: 32px;
+        padding: 8px 0;
+        font-size: 20px;
+        border-bottom: 1px solid var(--ln);
+        cursor: pointer
+    }
+
+    .n span {
+        width: 14ch;
+        flex: none;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        white-space: nowrap
+    }
+
+    .n:hover {
+        color: var(--ac)
+    }
+
+    h2 {
+        font-size: 14px;
+        font-weight: 400;
+        color: var(--mut);
+        margin: 0 0 10px;
+        letter-spacing: .1em
+    }
+
+    #tip {
+        height: 20px
+    }
+
+    .cols .n {
+        gap: 14px
+    }
+
+    .n .rk {
+        width: 2ch;
+        color: var(--mut);
+        font-size: 13px
+    }
+
+    .cat h1 {
+        font-size: clamp(22px, 4vw, 34px)
+    }
+
+    .btn,
+    #gs,
+    #gy {
+        font: inherit;
+        color: var(--fg);
+        background: none;
+        border: 1px solid var(--ln);
+        padding: 6px 12px;
+        cursor: pointer
+    }
+
+    .btn:hover {
+        border-color: var(--ac);
+        color: var(--ac)
+    }
+
+    #gi {
+        width: 100%;
+        border: 0;
+        border-bottom: 1px solid var(--ln);
+        background: none;
+        color: var(--fg);
+        font: inherit;
+        font-size: 20px;
+        padding: 6px 0;
+        margin: 8px 0;
+        outline: 0
+    }
+
+    #gi:focus {
+        border-color: var(--ac)
+    }
+
+    .gg {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 4vw;
+        margin-top: 8px
+    }
+
+    .g2 {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 2vw
+    }
+
+    .n.g {
+        cursor: default;
+        gap: 6px;
+        padding: 3px 0;
+        font-size: 13px
+    }
+
+    .n.g:hover {
+        color: inherit
+    }
+
+    .n.g span {
+        width: auto;
+        flex: 1;
+        min-width: 0
+    }
+
+    .n.g .rk {
+        width: 2ch;
+        flex: none
+    }
+
+    .st {
+        min-height: 20px;
+        font-size: 13px;
+        text-transform: capitalize;
+        margin-bottom: 6px
+    }
+</style>
+<div id="top"><input id="q" placeholder="Enter a Name" autocomplete="off" autofocus spellcheck="false"><a class="btn"
+        id="glink" href="#~game">The Name Game</a></div>
+<div id="out"></div>
+<div id="game" class="cat"></div>
+<script>
+    const POS = "AK0,0 ME10,0 VT9,1 NH10,1 WA0,2 ID1,2 MT2,2 ND3,2 MN4,2 IL5,2 WI6,2 MI7,2 NY8,2 RI9,2 MA10,2 OR0,3 NV1,3 WY2,3 SD3,3 IA4,3 IN5,3 OH6,3 PA7,3 NJ8,3 CT9,3 CA0,4 UT1,4 CO2,4 NE3,4 MO4,4 KY5,4 WV6,4 VA7,4 MD8,4 DE9,4 AZ1,5 NM2,5 KS3,5 AR4,5 TN5,5 NC6,5 SC7,5 DC8,5 OK3,6 LA4,6 MS5,6 AL6,6 GA7,6 HI0,7 TX3,7 FL8,7"
+        .split(" ").reduce((o, s) => (o[s.slice(0, 2)] = s.slice(2).split(",").map(Number), o), {});
+    const $ = id => document.getElementById(id), q = $("q"), fmt = n => n.toLocaleString();
+    let N, Y, Y0, K, S, NL, yt, names, low, male, cnt, st, codes, tot, base, find;
+
+    async function init() {
+        let buf = await (await fetch("./names.bin.gz")).arrayBuffer();
+        if (new Uint8Array(buf, 0, 2).join() === "31,139")  // gzip magic 1f 8b
+            buf = await new Response(new Blob([buf]).stream().pipeThrough(new DecompressionStream("gzip"))).arrayBuffer();
+        let nb;[, , N, Y, Y0, K, nb, S, NL] = new Uint32Array(buf, 0, 9);
+        if (new Uint32Array(buf, 0, 2)[1] !== 5) throw "regenerate names.bin with create_binary.py";
+        const p4 = n => n + (-n & 3); let o = 40;
+        names = new TextDecoder().decode(new Uint8Array(buf, o, nb)).split("\n"); o += p4(nb);
+        male = new Uint8Array(buf, o, N); o += p4(N);
+        cnt = new Uint32Array(buf, o, N * Y); o += N * Y * 4;
+        yt = new Uint32Array(buf, o, 2 * Y); o += 2 * Y * 4;  // all births per year: F row, then M row
+        o += 2 * N * K * 4;  // similar-name tables (unused)
+        st = new Uint32Array(buf, o, N * S); o += N * S * 4;
+        codes = new TextDecoder().decode(new Uint8Array(buf, o, S * 2)).match(/../g); o += p4(S * 2);
+        low = names.map(n => n.toLowerCase());
+        tot = new Float64Array(N); base = [new Float64Array(S), new Float64Array(S)]; find = new Map();
+        for (let i = 0; i < N; i++) {
+            let t = 0; for (let k = i * Y; k < (i + 1) * Y; k++)t += cnt[k]; tot[i] = t;
+            const b = base[male[i]]; for (let s = 0; s < S; s++)b[s] += st[i * S + s];
+            const e = find.get(low[i]) || [-1, -1]; e[male[i]] = i; find.set(low[i], e);
+        }
+        showGame();
+        route();
+    }
+
+    // raw births per year
+    const raw = i => cnt.subarray(i * Y, (i + 1) * Y);
+    // share of same-sex births each year (what the graphs plot)
+    const series = i => { const r = raw(i), o = male[i] * Y; return Float64Array.from(r, (v, k) => v / (yt[o + k] || 1)); };
+    // rate label: "per 10k" normally, "per 100k" when the rate is below 1 per 10k
+    const rate = p => {
+        const f = v => v <= 0 ? "0" : v < .01 ? "<0.01" : v >= 10 ? v.toFixed(0) : v >= 1 ? v.toFixed(1) : v.toFixed(2);
+        const v = p * 1e4;
+        return v > 0 && v < 1 ? f(v * 10) + " per 100k" : f(v) + " per 10k";
+    };
+    // percentage label: at least 2 decimals; under 1%, extend to the first non-zero digit (10.12%, 9.05%, 0.004%)
+    const pct = p => {
+        const v = p * 100; if (!(v > 0)) return "0.00%";
+        const d = v >= 1 ? 2 : Math.max(2, -parseInt(v.toExponential().split("e")[1]));
+        return v.toFixed(d) + "%";
+    };
+    const poly = (a, w, h, m) => { m = m || Math.max(...a) || 1; return Array.from(a, (v, k) => (k / (Y - 1) * w).toFixed(1) + "," + (h - v / m * h).toFixed(1)).join(" ") };
+    const label = i => names[i] + "-" + (male[i] ? "M" : "F");
+    const go = i => location.hash = "#" + label(i);
+    function route() {
+        const h = decodeURIComponent(location.hash.slice(1)), k = h.lastIndexOf("-");
+        const isGame = h == "~game", wasGame = document.body.classList.contains("game");
+        document.body.classList.toggle("game", isGame);
+        const g = $("glink");
+        g.textContent = isGame ? "Search" : "The Name Game";
+        g.href = isGame ? "#" : "#~game";
+        if (isGame) { q.value = ""; document.title = "The Name Game"; return; }
+        if (wasGame) q.focus();
+        const e = find.get(h.slice(0, k).toLowerCase()), i = e && e[h[k + 1] == "M" ? 1 : 0];
+        if (!(i >= 0)) return blank();
+        if (q.value.trim().toLowerCase() != low[i]) q.value = names[i];
+        draw(i);
+    }
+    const blank = () => { $("out").innerHTML = ""; document.title = "Name Stats" };
+
+    function draw(i) {
+        const a = series(i), r = raw(i), m = Math.max(...a), pk = a.indexOf(m), fi = a.findIndex(v => v > 0); let la = Y - 1; while (!a[la]) la--;
+        const e = find.get(low[i]), W = 800, H = 180;
+        const tg = (k, l) => `<a class="${male[i] == k ? "on" : ""}${e[k] < 0 ? " off" : ""}"${e[k] >= 0 ? ` onclick="go(${e[k]})"` : ""}>${l}</a>`;
+        const sx = `<span class="sx">${tg(0, "F")}${tg(1, "M")}</span>`;
+        // map
+        const b = base[male[i]], sh = Array.from(codes, (c, s) => st[i * S + s] / (b[s] || 1)), mx = Math.max(...sh) || 1; let ts = 0; for (let s = 0; s < S; s++)ts += st[i * S + s]; const ok = ts >= 100;
+        const tiles = codes.map((c, s) => {
+            const [x, y] = POS[c], t = Math.pow(sh[s] / mx, .6);
+            return `<g data-s="${s}" transform="translate(${x * 40},${y * 40})"><rect width="36" height="36" rx="4" fill="${ok ? "var(--ac)" : "var(--ln)"}" fill-opacity="${ok ? (.06 + .94 * t).toFixed(2) : 1}"/><text x="18" y="22" font-size="11" text-anchor="middle" fill="${t > .6 ? "#fff" : "var(--mut)"}">${c}</text></g>`
+        }).join("");
+        const top = sh.indexOf(mx);
+        $("out").className = "";
+        $("out").innerHTML = `
+  <div class="hd">${sx}<span class="mut">${fmt(tot[i])} births from ${Y0 + fi}–${Y0 + la}</span></div>
+  <div class="mut" id="rd">&nbsp;</div>
+  <svg id="ch" viewBox="0 0 ${W} ${H + 16}">
+    <polygon points="0,${H} ${poly(a, W, H, m)} ${W},${H}" fill="var(--ac)" fill-opacity=".12"/>
+    <polyline points="${poly(a, W, H, m)}" fill="none" stroke="var(--ac)" stroke-width="2"/>
+    <line id="sc" y1="0" y2="${H}" stroke="var(--mut)" opacity="0"/>
+    <circle cx="${pk / (Y - 1) * W}" cy="0" r="4" fill="var(--ac)"/>
+    <text y="${H + 14}" font-size="11" fill="var(--mut)">${Y0}</text>
+    <text x="${W}" y="${H + 14}" font-size="11" fill="var(--mut)" text-anchor="end">${Y0 + Y - 1}</text>
+  </svg>
+  <div class="row cols"><div><svg id="mp" viewBox="0 0 436 316">${tiles}${ok ? "" : '<text x="218" y="162" font-size="16" text-anchor="middle" fill="var(--fg)" stroke="var(--bg)" stroke-width="6" style="paint-order:stroke">Insufficient Data</text>'}</svg><div id="tip" class="mut"></div></div>
+  <div></div></div>`;
+        const ch = $("ch"), rd = $("rd"), sc = $("sc");
+        ch.onmousemove = ev => {
+            const rc = ch.getBoundingClientRect(), k = Math.max(0, Math.min(Y - 1, Math.round((ev.clientX - rc.left) / rc.width * (Y - 1))));
+            sc.setAttribute("x1", k / (Y - 1) * W); sc.setAttribute("x2", k / (Y - 1) * W); sc.setAttribute("opacity", 1);
+            rd.textContent = (Y0 + k) + " · " + pct(a[k]) + " (" + fmt(r[k]) + " / " + fmt(yt[male[i] * Y + k]) + " " + (male[i] ? "boys" : "girls") + ")"
+        };
+        ch.onmouseleave = () => { sc.setAttribute("opacity", 0); rd.innerHTML = "&nbsp;" };
+        $("mp").onmouseover = ev => { const g = ev.target.closest("g"); if (ok && g) $("tip").textContent = codes[g.dataset.s] + " · " + rate(sh[g.dataset.s]) + " " + (male[i] ? "boys" : "girls") };
+        $("mp").onmouseleave = () => $("tip").textContent = "";
+        document.title = names[i];
+    }
+
+    // ---------------------------------------------------------------- the name game
+    let G;
+    const esc = t => t.replace(/[&<>"]/g, c => "&#" + c.charCodeAt(0) + ";");
+    // a side (0 = girls, 1 = boys) is finished after 3 strikes or once all 20 names are found
+    const done = k => G.bad[k].length >= 3 || G.got[k].size >= 20;
+    // Top 20 for a place + year. s = -1 means national, y = 0 means all time.
+    // National / all time and state / all time are exact. State + a single year is approximate:
+    // national births that year, scaled by how over- or under-represented the name is in that
+    // state (the data has no state x year counts).
+    function top20(s, y, sex) {
+        const stTot = s < 0 ? 0 : base[sex].reduce((a, b) => a + b), sc = [];
+        for (let i = 0; i < N; i++) {
+            if (male[i] != sex) continue;
+            let v;
+            if (y == 0) v = s < 0 ? tot[i] : st[i * S + s];
+            else {
+                const c = cnt[i * Y + y - Y0]; if (!c) continue;
+                if (s < 0) v = c;
+                else {
+                    let all = 0; for (let k = 0; k < S; k++) all += st[i * S + k];
+                    v = c * (st[i * S + s] / (all || 1)) / (base[sex][s] / stTot);
+                }
+            }
+            if (v > 0) sc.push([v, i]);
+        }
+        return sc.sort((a, b) => b[0] - a[0]).slice(0, 20).map(x => x[1]);
+    }
+    function showGame() {
+        const years = Array.from({ length: Y }, (_, k) => Y0 + Y - 1 - k).map(y => `<option>${y}</option>`).join("");
+        $("game").innerHTML = `<div class="hd"><h1>The Name Game</h1></div>
+  <div style="margin:14px 0"><select id="gs"><option value="-1">National</option>${codes.map((c, k) => `<option value="${k}">${c}</option>`).join("")}</select>
+  <select id="gy"><option value="0">All Time</option>${years}</select> <button class="btn" id="gb">Start</button></div><div id="gm"></div>`;
+        $("gb").onclick = startGame;
+    }
+    function startGame() {
+        const s = +$("gs").value, y = +$("gy").value;
+        G = { lists: [top20(s, y, 0), top20(s, y, 1)], got: [new Set(), new Set()], bad: [[], []], pts: 0 };
+        $("gm").innerHTML = `<div class="mut" id="gst"></div><input id="gi" placeholder="Guess a name" autocomplete="off" spellcheck="false">
+  <div class="gg" id="gl"></div>`;
+        const gi = $("gi"); gi.focus();
+        gi.onkeydown = ev => {
+            if (ev.key !== "Enter") return;
+            const g = gi.value.trim().toLowerCase(); gi.value = "";
+            if (!g || G.bad[0].includes(g) || G.bad[1].includes(g)) return;   // repeat strikes don't count
+            let hit = false;
+            // check both lists, so a name in the top 20 of both sexes is marked on both
+            G.lists.forEach((l, k) => {
+                if (done(k)) return;
+                l.forEach((j, r) => {
+                    if (low[j] !== g) return;
+                    hit = true;
+                    if (!G.got[k].has(j)) { G.got[k].add(j); G.pts++; }
+                });
+            });
+            if (!hit) {   // strike goes to the sex that uses the name more (unknown names: the side with fewer strikes)
+                const f = find.get(g) || [-1, -1], a = f[0] < 0 ? 0 : tot[f[0]], b = f[1] < 0 ? 0 : tot[f[1]];
+                const k = a != b ? (a > b ? 0 : 1) : G.bad[0].length <= G.bad[1].length ? 0 : 1;
+                if (!done(k)) G.bad[k].push(g);
+            }
+            renderGame();
+        };
+        renderGame();
+    }
+    function renderGame() {
+        const side = (t, k) => {
+            const item = (j, r) => {
+                const got = G.got[k].has(j), show = got || done(k);
+                const hint = names[j][0] + " _".repeat(names[j].length - 1);
+                return `<div class="n g"><span class="rk">${r + 1}</span><span style="${show && !got ? "color:var(--mut)" : ""}">${show ? names[j] : hint}</span></div>`;
+            }, ids = G.lists[k];
+            return `<div><h2>${t}</h2><div class="mut st">Strikes (${G.bad[k].length}/3): ${esc(G.bad[k].join(", "))}</div><div class="g2">` +
+                `<div>${ids.slice(0, 10).map((j, r) => item(j, r)).join("")}</div><div>${ids.slice(10).map((j, r) => item(j, r + 10)).join("")}</div></div></div>`;
+        };
+        $("gst").textContent = "Score " + G.pts + "/40";
+        $("gl").innerHTML = side("GIRLS", 0) + side("BOYS", 1);
+        if (!done(0) || !done(1)) return;
+        $("gi").style.display = "none";
+    }
+
+    q.oninput = () => {
+        document.body.classList.remove("game");
+        const e = find.get(q.value.trim().toLowerCase());
+        if (!e) return blank();
+        const i = e[0] < 0 ? e[1] : e[1] < 0 ? e[0] : tot[e[0]] >= tot[e[1]] ? e[0] : e[1];
+        history.replaceState(null, "", "#" + label(i));
+        draw(i);
+    };
+    addEventListener("hashchange", route);
+    init().catch(e => $("out").textContent = e);
+</script>
