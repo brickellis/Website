@@ -25,6 +25,14 @@ package main
 //
 // asset-src/ is optional: if it doesn't exist, only src/ is used.
 //
+// Every page gets a "BrickAcademy" link back to the home page. To leave it off
+// a page, put "nav: false" in that page's front matter:
+//
+//	---
+//	title: Home
+//	nav: false
+//	---
+//
 // Pages expect style.css at the root of the merged site. Pages with math also
 // need katex/katex.css and katex/fonts/ (copied from KaTeX's dist/ folder).
 
@@ -67,8 +75,7 @@ const pageTmpl = `<!DOCTYPE html>
 <link rel="stylesheet" href="%s">
 %s</head>
 <body>
-<nav class="home"><a href="%s">BrickAcademy</a></nav>
-<main>
+%s<main>
 %s%s</main>
 </body>
 </html>
@@ -312,7 +319,14 @@ func renderPage(doc *Doc, root string) string {
 	if doc.Math {
 		extraHead = `<link rel="stylesheet" href="` + root + "katex/katex.css\">\n"
 	}
-	return fmt.Sprintf(pageTmpl, html.EscapeString(title), root+"style.css", extraHead, root+"index.html", header, doc.Body)
+	// The home link is on by default; "nav: false" in the front matter drops it.
+	nav := `<nav class="home"><a href="` + root + "index.html\">BrickAcademy</a></nav>\n"
+	switch strings.ToLower(doc.Meta["nav"]) {
+	case "false", "no", "off", "none":
+		nav = ""
+	}
+
+	return fmt.Sprintf(pageTmpl, html.EscapeString(title), root+"style.css", extraHead, nav, header, doc.Body)
 }
 
 type Doc struct {

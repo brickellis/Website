@@ -1,5 +1,6 @@
 ---
 title: BrickAcademy
+nav: false
 ---
 
 [Names](/names) [?](/names/explanation)  
