@@ -30,6 +30,24 @@ main {
   padding: 4rem 1.25rem 6rem;
 }
 
+/* ---------- home link (top left of the page) ---------- */
+
+nav.home {
+  position: absolute;
+  top: 1rem;
+  left: 1.25rem;
+  font-size: 0.85rem;
+  font-weight: 700;
+  letter-spacing: 0.04em;
+}
+nav.home a {
+  text-decoration: none;
+}
+nav.home a:hover {
+  text-decoration: underline;
+  text-decoration-thickness: 1px;
+}
+
 /* ---------- title block ---------- */
 
 header {
@@ -260,6 +278,9 @@ details.toc ul ul {
     font-size: 17px;
   }
   main {
-    padding-top: 2.5rem;
+    padding-top: 3.5rem;
+  }
+  nav.home {
+    top: 0.75rem;
   }
 }

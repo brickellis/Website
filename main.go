@@ -67,6 +67,7 @@ const pageTmpl = `<!DOCTYPE html>
 <link rel="stylesheet" href="%s">
 %s</head>
 <body>
+<nav class="home"><a href="%s">BrickAcademy</a></nav>
 <main>
 %s%s</main>
 </body>
@@ -311,7 +312,7 @@ func renderPage(doc *Doc, root string) string {
 	if doc.Math {
 		extraHead = `<link rel="stylesheet" href="` + root + "katex/katex.css\">\n"
 	}
-	return fmt.Sprintf(pageTmpl, html.EscapeString(title), root+"style.css", extraHead, header, doc.Body)
+	return fmt.Sprintf(pageTmpl, html.EscapeString(title), root+"style.css", extraHead, root+"index.html", header, doc.Body)
 }
 
 type Doc struct {
