@@ -1,0 +1,135 @@
+<!doctype html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8" />
+		<link rel="icon" href="../../favicon.png" />
+		<meta name="viewport" content="width=device-width, initial-scale=1" />
+		
+		<link href="../../_app/immutable/assets/app.BDtVw_ds.css" rel="stylesheet">
+		<link href="../../_app/immutable/assets/Section._en2CAKW.css" rel="stylesheet">
+		<link rel="modulepreload" href="../../_app/immutable/entry/start.DFcj8LNn.js">
+		<link rel="modulepreload" href="../../_app/immutable/chunks/BPHTS8RV.js">
+		<link rel="modulepreload" href="../../_app/immutable/chunks/CVhLxNSM.js">
+		<link rel="modulepreload" href="../../_app/immutable/chunks/DLyp5A0Q.js">
+		<link rel="modulepreload" href="../../_app/immutable/chunks/CwFVwKkT.js">
+		<link rel="modulepreload" href="../../_app/immutable/entry/app.34Qzq_vi.js">
+		<link rel="modulepreload" href="../../_app/immutable/chunks/C1FmrZbK.js">
+		<link rel="modulepreload" href="../../_app/immutable/chunks/DvSB8R1X.js">
+		<link rel="modulepreload" href="../../_app/immutable/nodes/0.B7xpY3_-.js">
+		<link rel="modulepreload" href="../../_app/immutable/nodes/2.BGaKxamB.js">
+		<link rel="modulepreload" href="../../_app/immutable/nodes/30.CxvrvOeq.js">
+		<link rel="modulepreload" href="../../_app/immutable/chunks/ByTZAYyp.js">
+		<link rel="modulepreload" href="../../_app/immutable/chunks/xLaKUPuM.js">
+		<link rel="modulepreload" href="../../_app/immutable/chunks/CkoZ7XGi.js">
+		<link rel="modulepreload" href="../../_app/immutable/chunks/D5fqzSVu.js">
+		<link rel="modulepreload" href="../../_app/immutable/chunks/Bw3t_506.js">
+		<link rel="modulepreload" href="../../_app/immutable/chunks/S6_-2PRy.js">
+		<link rel="modulepreload" href="../../_app/immutable/chunks/D3W7TYDU.js">
+	</head>
+	<body data-sveltekit-preload-data="hover">
+		<div style="display: contents">    <div class="fixed top-0 left-0 w-full h-full z-[-2] bg-background dark:bg-dark_background"></div> <body class="h-full bg-background dark:bg-dark_background"><button class="fixed top-4 left-4 z-10 p-2 text-text dark:text-dark_text hover:text-primary" data-svelte-h="svelte-au3lwb">←</button> <button class="fixed top-4 right-4 z-10 p-2 text-text dark:text-dark_text hover:text-primary flex items-center justify-center" aria-label="Toggle Dark Mode"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide-icon lucide lucide-sun w-5 h-5"><circle cx="12" cy="12" r="4"></circle><path d="M12 2v2"></path><path d="M12 20v2"></path><path d="m4.93 4.93 1.41 1.41"></path><path d="m17.66 17.66 1.41 1.41"></path><path d="M2 12h2"></path><path d="M20 12h2"></path><path d="m6.34 17.66-1.41 1.41"></path><path d="m19.07 4.93-1.41 1.41"></path></svg></button>  <div class="p-8 font-sans leading-relaxed w-full"><div class="max-w-3xl mx-auto p-8 leading-relaxed ">  <h1 class="text-3xl font-bold text-text mb-6 dark:text-dark_text"><title>Implicit Differentiation</title> <meta property="og:title" content="Implicit Differentiation"> Implicit Differentiation</h1> <div class="mb-8"><h2 class="text-2xl font-semibold text-text dark:text-dark_text mb-4">Introduction</h2> <p class="text-text dark:text-dark_text">We will now find derivatives for equations. These are not necessarily functions, as we are not assigning outputs. We are setting two combinations of variables equal to each other, and we are graphing the points which satisfy that equality.
+		<br><br>An example is the unit circle,<div style="display: none;"> y^2 + x^2 = 1</div> <span class="math"><!-- HTML_TAG_START --><!-- HTML_TAG_END --></span>. Note that for each <div style="display: none;">x</div> <span class="math"><!-- HTML_TAG_START --><!-- HTML_TAG_END --></span>, there are (almost always) two <div style="display: none;">y</div> <span class="math"><!-- HTML_TAG_START --><!-- HTML_TAG_END --></span> values. It is not a function.
+		<br><br>Despite that, the unit circle could have a tangent line, and thus it should have a derivative.
+		  <div class="flex justify-center"><div class="w-full mb-8 bg-background dark:bg-dark_background aspect-square max-h-[66vh] max-w-[66vh]"><div class="flex w-full h-full aspect-[1/1]"></div></div></div></p></div> <div class="mb-8"><h2 class="text-2xl font-semibold text-text dark:text-dark_text mb-4">Implicit Differentiation of the Unit Circle</h2> <p class="text-text dark:text-dark_text">To find the derivative of the unit circle, we will differentiate both sides of the equation <div style="display: none;">y^2 + x^2 = 1</div> <span class="math"><!-- HTML_TAG_START --><!-- HTML_TAG_END --></span> with respect to <div style="display: none;">x</div> <span class="math"><!-- HTML_TAG_START --><!-- HTML_TAG_END --></span>.
+
+		<div style="display: none;">
+		\begin{align*}
+		\frac{d}{dx}y^2 + \frac{d}{dx}x^2 &amp;= \frac{d}{dx}1 \\\\
+		2y \cdot \frac{dy}{dx} + 2x &amp;= 0 \\\\
+		2y \cdot y' + 2x &amp;= 0 \\\\
+		2y \cdot y' &amp;= -2x \\\\
+		y' &amp;= \frac{-2x}{2y} \\\\
+		y' &amp;= \frac{-x}{y}
+		\end{align*}
+		</div> <span class="math"><!-- HTML_TAG_START --><!-- HTML_TAG_END --></span>
+
+		Note that <div style="display: none;">y</div> <span class="math"><!-- HTML_TAG_START --><!-- HTML_TAG_END --></span> is present in the derivative. This should be intuitive. In a function, if we knew the input value, we always knew exactly what point on the graph we were referencing. Now that we are using functions, we need both the <div style="display: none;">x</div> <span class="math"><!-- HTML_TAG_START --><!-- HTML_TAG_END --></span> and the <div style="display: none;">y</div> <span class="math"><!-- HTML_TAG_START --><!-- HTML_TAG_END --></span> value to know where we are on the graph.
+		<br><br>Using this derivative, we can find the slope of the tangent line at any point on the unit circle. 
+		<br> <span class="inline-block ml-8">At <div style="display: none;">(0, 1)</div> <span class="math"><!-- HTML_TAG_START --><!-- HTML_TAG_END --></span>, the slope is <div style="display: none;">0</div> <span class="math"><!-- HTML_TAG_START --><!-- HTML_TAG_END --></span>. 
+		<br>At <div style="display: none;">(\sqrt{2}, \sqrt{2})</div> <span class="math"><!-- HTML_TAG_START --><!-- HTML_TAG_END --></span>, the slope is <div style="display: none;">-1</div> <span class="math"><!-- HTML_TAG_START --><!-- HTML_TAG_END --></span>. 
+		<br>At <div style="display: none;">(1, 0)</div> <span class="math"><!-- HTML_TAG_START --><!-- HTML_TAG_END --></span>, the slope is <div style="display: none;">-\frac{1}{0}</div> <span class="math"><!-- HTML_TAG_START --><!-- HTML_TAG_END --></span>, which does not exist. (Vertical Asymptote)</span> <br>At this point, the unit circle cannot define its change with respect to <div style="display: none;">x</div> <span class="math"><!-- HTML_TAG_START --><!-- HTML_TAG_END --></span>, as <div style="display: none;">x</div> <span class="math"><!-- HTML_TAG_START --><!-- HTML_TAG_END --></span> is not changing.</p></div> <div class="mb-8"><h2 class="text-2xl font-semibold text-text dark:text-dark_text mb-4">Basic Problems</h2> <p class="text-text dark:text-dark_text"><div style="display: none;">xy=1</div> <span class="math"><!-- HTML_TAG_START --><!-- HTML_TAG_END --></span>. Find <div style="display: none;">y'</div> <span class="math"><!-- HTML_TAG_START --><!-- HTML_TAG_END --></span>.
+		<div style="display: none;">
+		\begin{align*}
+		xy&amp;=1 \\\\
+		\frac{d}{dx}xy&amp;=\frac{d}{dx}1 \\\\
+		y + xy'&amp;=0 \\\\
+		xy'&amp;=-y \\\\
+		y'&amp;=-\frac{-y}{x}
+		\end{align*}
+		</div> <span class="math"><!-- HTML_TAG_START --><!-- HTML_TAG_END --></span> <br><br> <div style="display: none;">e^{x+y}=x-y</div> <span class="math"><!-- HTML_TAG_START --><!-- HTML_TAG_END --></span>. Find <div style="display: none;">y'</div> <span class="math"><!-- HTML_TAG_START --><!-- HTML_TAG_END --></span>.
+		<div style="display: none;">
+		\begin{align*}
+		e^{x+y}&amp;=x-y \\\\
+		\frac{d}{dx}e^{x+y}&amp;=\frac{d}{dx}x-y \\\\
+		e^{x+y}\frac{d}{dx}[x+y]&amp;=1-y' \\\\
+		e^{x+y}[1+y']&amp;=1-y' \\\\
+		e^{x+y}[1+y']+y'&amp;=1 \\\\
+		e^{x+y}+ e^{x+y} \cdot y'+y'&amp;=1 \\\\
+		y' \cdot [e^{x+y} + 1]&amp;=1-e^{x+y} \\\\
+		y'&amp;=\frac{1-e^{x+y}}{e^{x+y} + 1}
+		\end{align*}
+		</div> <span class="math"><!-- HTML_TAG_START --><!-- HTML_TAG_END --></span></p></div> <div class="mb-8"><h2 class="text-2xl font-semibold text-text dark:text-dark_text mb-4">Intermediate Problems</h2> <p class="text-text dark:text-dark_text"><div style="display: none;">\sin(xy) + y^2 = \cos(x)</div> <span class="math"><!-- HTML_TAG_START --><!-- HTML_TAG_END --></span>. Find <div style="display: none;">y'</div> <span class="math"><!-- HTML_TAG_START --><!-- HTML_TAG_END --></span>.
+		<div style="display: none;">
+		\begin{align*}
+		\frac{d}{dx}[\sin(xy) + y^2] &amp;= \frac{d}{dx}\cos(x) \\\\
+		\cos(xy)\frac{d}{dx}[xy] + 2yy' &amp;= -\sin(x) \\\\
+		\cos(xy)[y + xy'] + 2yy' &amp;= -\sin(x) \\\\
+		\cos(xy)y + \cos(xy)xy' + 2yy' &amp;= -\sin(x) \\\\
+		\cos(xy)xy' + 2yy' &amp;= -\sin(x) - \cos(xy)y \\\\
+		[\cos(xy)x + 2y] \cdot y' &amp;= -\sin(x) - \cos(xy)y \\\\
+		y' &amp;= \frac{-\sin(x) - \cos(xy)y}{\cos(xy)x + 2y}
+		\end{align*}
+		</div> <span class="math"><!-- HTML_TAG_START --><!-- HTML_TAG_END --></span> <br><br> <div style="display: none;">x^3 + y^3 - 2xy = 0</div> <span class="math"><!-- HTML_TAG_START --><!-- HTML_TAG_END --></span>. Find the slope of the tangent line at point <div style="display: none;">(1,1)</div> <span class="math"><!-- HTML_TAG_START --><!-- HTML_TAG_END --></span>.
+		<div style="display: none;">
+		\begin{align*}
+		\frac{d}{dx}[x^3 + y^3 - 2xy] &amp;= \frac{d}{dx}0 \\\\
+		3x^2 + 3y^2y' - 2[y + xy'] &amp;= 0 \\\\
+		3x^2 + 3y^2y' - 2y - 2xy' &amp;= 0 \\\\
+		3y^2y' - 2xy' &amp;= -3x^2 + 2y \\\\
+		[3y^2 - 2x] \cdot y' &amp;= -3x^2 + 2y \\\\
+		y' &amp;= \frac{-3x^2 + 2y}{3y^2 - 2x} \\\\
+		\text{At }(1,1),\text{ } y' &amp;= \frac{-3[1]^2 + 2[1]}{3[1]^2 - 2[1]} \\\\
+		\text{At }(1,1),\text{ } y' &amp;= \frac{-3 + 2}{3 - 2} \\\\
+		\text{At }(1,1),\text{ } y' &amp;= -1
+		\end{align*}
+		</div> <span class="math"><!-- HTML_TAG_START --><!-- HTML_TAG_END --></span> <br><br> <div style="display: none;">\ln[x+y] = x^2 + y^2</div> <span class="math"><!-- HTML_TAG_START --><!-- HTML_TAG_END --></span>. Find <div style="display: none;">y'</div> <span class="math"><!-- HTML_TAG_START --><!-- HTML_TAG_END --></span>.
+		<div style="display: none;">
+		\begin{align*}
+		\frac{d}{dx}\ln[x+y] &amp;= \frac{d}{dx}[x^2 + y^2] \\\\
+		\frac{1}{x+y}\frac{d}{dx}[x+y] &amp;= 2x + 2yy' \\\\
+		\frac{1}{x+y}[1+y'] &amp;= 2x + 2yy' \\\\
+		\frac{1}{x+y} + \frac{y'}{x+y} &amp;= 2x + 2yy' \\\\
+		\frac{y'}{x+y} - 2yy' &amp;= 2x - \frac{1}{x+y} \\\\
+		y' \cdot [\frac{1}{x+y} - 2y] &amp;= 2x - \frac{1}{x+y} \\\\
+		y' &amp;= \frac{2x - \frac{1}{x+y}}{\frac{1}{x+y} - 2y} \\\\
+		y' &amp;= \frac{\frac{2x^2 + 2xy}{x+y} - \frac{1}{x+y}}{\frac{1}{x+y} - \frac{2yx+2y^2}{x+y}} \\\\
+		y' &amp;= \frac{\frac{2x^2 + 2xy-1}{x+y}}{\frac{1-2yx+2y^2}{x+y}} \\\\
+		y' &amp;= \frac{2x^2 + 2xy-1}{1-2yx+2y^2}
+		\end{align*}
+		</div> <span class="math"><!-- HTML_TAG_START --><!-- HTML_TAG_END --></span></p></div></div></div></body> 
+			
+			<script>
+				{
+					__sveltekit_1hm8yy8 = {
+						base: new URL("../..", location).pathname.slice(0, -1),
+						assets: "/BrickAcademy"
+					};
+
+					const element = document.currentScript.parentElement;
+
+					Promise.all([
+						import("../../_app/immutable/entry/start.DFcj8LNn.js"),
+						import("../../_app/immutable/entry/app.34Qzq_vi.js")
+					]).then(([kit, app]) => {
+						kit.start(app, element, {
+							node_ids: [0, 2, 30],
+							data: [null,null,null],
+							form: null,
+							error: null
+						});
+					});
+				}
+			</script>
+		</div>
+	</body>
+</html>

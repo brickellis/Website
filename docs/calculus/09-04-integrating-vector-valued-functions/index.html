@@ -1,0 +1,92 @@
+<!doctype html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8" />
+		<link rel="icon" href="../../favicon.png" />
+		<meta name="viewport" content="width=device-width, initial-scale=1" />
+		
+		<link href="../../_app/immutable/assets/app.BDtVw_ds.css" rel="stylesheet">
+		<link href="../../_app/immutable/assets/Section._en2CAKW.css" rel="stylesheet">
+		<link rel="modulepreload" href="../../_app/immutable/entry/start.DFcj8LNn.js">
+		<link rel="modulepreload" href="../../_app/immutable/chunks/BPHTS8RV.js">
+		<link rel="modulepreload" href="../../_app/immutable/chunks/CVhLxNSM.js">
+		<link rel="modulepreload" href="../../_app/immutable/chunks/DLyp5A0Q.js">
+		<link rel="modulepreload" href="../../_app/immutable/chunks/CwFVwKkT.js">
+		<link rel="modulepreload" href="../../_app/immutable/entry/app.34Qzq_vi.js">
+		<link rel="modulepreload" href="../../_app/immutable/chunks/C1FmrZbK.js">
+		<link rel="modulepreload" href="../../_app/immutable/chunks/DvSB8R1X.js">
+		<link rel="modulepreload" href="../../_app/immutable/nodes/0.B7xpY3_-.js">
+		<link rel="modulepreload" href="../../_app/immutable/nodes/2.BGaKxamB.js">
+		<link rel="modulepreload" href="../../_app/immutable/nodes/76.BEikfJFj.js">
+		<link rel="modulepreload" href="../../_app/immutable/chunks/ByTZAYyp.js">
+		<link rel="modulepreload" href="../../_app/immutable/chunks/xLaKUPuM.js">
+	</head>
+	<body data-sveltekit-preload-data="hover">
+		<div style="display: contents">  <div class="fixed top-0 left-0 w-full h-full z-[-2] bg-background dark:bg-dark_background"></div> <body class="h-full bg-background dark:bg-dark_background"><button class="fixed top-4 left-4 z-10 p-2 text-text dark:text-dark_text hover:text-primary" data-svelte-h="svelte-au3lwb">←</button> <button class="fixed top-4 right-4 z-10 p-2 text-text dark:text-dark_text hover:text-primary flex items-center justify-center" aria-label="Toggle Dark Mode"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide-icon lucide lucide-sun w-5 h-5"><circle cx="12" cy="12" r="4"></circle><path d="M12 2v2"></path><path d="M12 20v2"></path><path d="m4.93 4.93 1.41 1.41"></path><path d="m17.66 17.66 1.41 1.41"></path><path d="M2 12h2"></path><path d="M20 12h2"></path><path d="m6.34 17.66-1.41 1.41"></path><path d="m19.07 4.93-1.41 1.41"></path></svg></button>  <div class="p-8 font-sans leading-relaxed w-full"><div class="max-w-3xl mx-auto p-8 leading-relaxed ">  <h1 class="text-3xl font-bold text-text mb-6 dark:text-dark_text"><title>Integrating Vector-Valued Functions</title> <meta property="og:title" content="Integrating Vector-Valued Functions"> Integrating Vector-Valued Functions</h1> <div class="mb-8"><h2 class="text-2xl font-semibold text-text dark:text-dark_text mb-4">Introduction</h2> <p class="text-text dark:text-dark_text">Just as we can differentiate vector-valued functions by differentiating each component independently, we can also integrate them the same way:
+        <div style="display: none;">
+            \int \mathbf{r}(t)\,dt = \left\langle \int f(t)\,dt,\, \int g(t)\,dt,\, \int h(t)\,dt \right\rangle + \mathbf{C}
+        </div> <span class="math"><!-- HTML_TAG_START --><!-- HTML_TAG_END --></span>
+        Where <div style="display: none;">\mathbf{C}=\langle C_1, C_2, C_3 \rangle</div> <span class="math"><!-- HTML_TAG_START --><!-- HTML_TAG_END --></span>.
+        <br><br>
+        This process allows us to find position from velocity, or velocity from acceleration.</p></div> <div class="mb-8"><h2 class="text-2xl font-semibold text-text dark:text-dark_text mb-4">Definite Integration</h2> <p class="text-text dark:text-dark_text">The definite integral of a vector-valued velocity function gives the change in position over an interval:
+        <div style="display: none;">
+            \int_a^b \mathbf{r}'(t)\,dt = \mathbf{r}(b) - \mathbf{r}(a)
+        </div> <span class="math"><!-- HTML_TAG_START --><!-- HTML_TAG_END --></span></p></div> <div class="mb-8"><h2 class="text-2xl font-semibold text-text dark:text-dark_text mb-4">Examples</h2> <p class="text-text dark:text-dark_text"><strong data-svelte-h="svelte-14gmool">Example 1: Basic Integration</strong><br>
+        Find <div style="display: none;">\int \langle 2t,\, 3,\, \cos(t) \rangle\,dt</div> <span class="math"><!-- HTML_TAG_START --><!-- HTML_TAG_END --></span> <div style="display: none;">
+            \begin{align*}
+            \int \langle 2t,\, 3,\, \cos(t) \rangle\,dt &amp;= \left\langle \int 2t\,dt,\, \int 3\,dt,\, \int \cos(t)\,dt \right\rangle + \mathbf{C} \\
+            &amp;= \langle t^2,\, 3t,\, \sin(t) \rangle + \langle C_1, C_2, C_3 \rangle
+            \end{align*}
+        </div> <span class="math"><!-- HTML_TAG_START --><!-- HTML_TAG_END --></span> <br><strong data-svelte-h="svelte-pgp8v5">Example 2: Finding Position from Velocity</strong><br>
+        A particle has velocity <div style="display: none;">\mathbf{v}(t) = \langle 3t^2,\, 2t,\, -4 \rangle</div> <span class="math"><!-- HTML_TAG_START --><!-- HTML_TAG_END --></span> and initial position <div style="display: none;">\mathbf{r}(0) = \langle 1,\, 0,\, 2 \rangle</div> <span class="math"><!-- HTML_TAG_START --><!-- HTML_TAG_END --></span>. Find its position function.
+        <div style="display: none;">
+            \begin{align*}
+            \mathbf{r}(t) &amp;= \int \mathbf{v}(t)\,dt + \mathbf{C} \\
+            &amp;= \left\langle \int 3t^2\,dt,\, \int 2t\,dt,\, \int -4\,dt \right\rangle + \mathbf{C} \\
+            &amp;= \langle t^3,\, t^2,\, -4t \rangle + \langle C_1, C_2, C_3 \rangle
+            \end{align*}
+        </div> <span class="math"><!-- HTML_TAG_START --><!-- HTML_TAG_END --></span>
+        Using the initial position:
+        <div style="display: none;">
+            \begin{align*}
+            \mathbf{r}(0) &amp;= \langle 0,\, 0,\, 0 \rangle + \langle C_1, C_2, C_3 \rangle = \langle 1,\, 0,\, 2 \rangle \\
+            \mathbf{C} &amp;= \langle 1,\, 0,\, 2 \rangle \\
+            \mathbf{r}(t) &amp;= \langle t^3 + 1,\, t^2,\, -4t + 2 \rangle
+            \end{align*}
+        </div> <span class="math"><!-- HTML_TAG_START --><!-- HTML_TAG_END --></span> <br><strong data-svelte-h="svelte-ybpuo0">Example 3: Work and Position</strong><br>
+        Calculate the change in position of a particle moving with velocity <div style="display: none;">\mathbf{v}(t) = \langle \cos(t),\, \sin(t),\, 1 \rangle</div> <span class="math"><!-- HTML_TAG_START --><!-- HTML_TAG_END --></span> from t = 0 to t = 2π.
+        <div style="display: none;">
+            \begin{align*}
+            \text{Position} &amp;= \int_0^{2\pi} \mathbf{v}(t)\,dt \\
+            &amp;= \left\langle \int_0^{2\pi} \cos(t)\,dt,\, \int_0^{2\pi} \sin(t)\,dt,\, \int_0^{2\pi} 1\,dt \right\rangle \\
+            &amp;= \langle [\sin(t)]\Big|_0^{2\pi},\, [-\cos(t)]\Big|_0^{2\pi},\, [t]\Big|_0^{2\pi} \rangle \\
+            &amp;= \langle 0,\, 0,\, 2\pi \rangle
+            \end{align*}
+        </div> <span class="math"><!-- HTML_TAG_START --><!-- HTML_TAG_END --></span>
+        The particle completed one revolution, rising by 2π units.</p></div></div></div></body> 
+			
+			<script>
+				{
+					__sveltekit_1hm8yy8 = {
+						base: new URL("../..", location).pathname.slice(0, -1),
+						assets: "/BrickAcademy"
+					};
+
+					const element = document.currentScript.parentElement;
+
+					Promise.all([
+						import("../../_app/immutable/entry/start.DFcj8LNn.js"),
+						import("../../_app/immutable/entry/app.34Qzq_vi.js")
+					]).then(([kit, app]) => {
+						kit.start(app, element, {
+							node_ids: [0, 2, 76],
+							data: [null,null,null],
+							form: null,
+							error: null
+						});
+					});
+				}
+			</script>
+		</div>
+	</body>
+</html>

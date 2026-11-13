@@ -1,0 +1,97 @@
+<!doctype html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8" />
+		<link rel="icon" href="../../favicon.png" />
+		<meta name="viewport" content="width=device-width, initial-scale=1" />
+		
+		<link href="../../_app/immutable/assets/app.BDtVw_ds.css" rel="stylesheet">
+		<link href="../../_app/immutable/assets/Section._en2CAKW.css" rel="stylesheet">
+		<link rel="modulepreload" href="../../_app/immutable/entry/start.DFcj8LNn.js">
+		<link rel="modulepreload" href="../../_app/immutable/chunks/BPHTS8RV.js">
+		<link rel="modulepreload" href="../../_app/immutable/chunks/CVhLxNSM.js">
+		<link rel="modulepreload" href="../../_app/immutable/chunks/DLyp5A0Q.js">
+		<link rel="modulepreload" href="../../_app/immutable/chunks/CwFVwKkT.js">
+		<link rel="modulepreload" href="../../_app/immutable/entry/app.34Qzq_vi.js">
+		<link rel="modulepreload" href="../../_app/immutable/chunks/C1FmrZbK.js">
+		<link rel="modulepreload" href="../../_app/immutable/chunks/DvSB8R1X.js">
+		<link rel="modulepreload" href="../../_app/immutable/nodes/0.B7xpY3_-.js">
+		<link rel="modulepreload" href="../../_app/immutable/nodes/2.BGaKxamB.js">
+		<link rel="modulepreload" href="../../_app/immutable/nodes/62.Ctuva9i6.js">
+		<link rel="modulepreload" href="../../_app/immutable/chunks/ByTZAYyp.js">
+		<link rel="modulepreload" href="../../_app/immutable/chunks/xLaKUPuM.js">
+		<link rel="modulepreload" href="../../_app/immutable/chunks/D3W7TYDU.js">
+	</head>
+	<body data-sveltekit-preload-data="hover">
+		<div style="display: contents">    <div class="fixed top-0 left-0 w-full h-full z-[-2] bg-background dark:bg-dark_background"></div> <body class="h-full bg-background dark:bg-dark_background"><button class="fixed top-4 left-4 z-10 p-2 text-text dark:text-dark_text hover:text-primary" data-svelte-h="svelte-au3lwb">←</button> <button class="fixed top-4 right-4 z-10 p-2 text-text dark:text-dark_text hover:text-primary flex items-center justify-center" aria-label="Toggle Dark Mode"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide-icon lucide lucide-sun w-5 h-5"><circle cx="12" cy="12" r="4"></circle><path d="M12 2v2"></path><path d="M12 20v2"></path><path d="m4.93 4.93 1.41 1.41"></path><path d="m17.66 17.66 1.41 1.41"></path><path d="M2 12h2"></path><path d="M20 12h2"></path><path d="m6.34 17.66-1.41 1.41"></path><path d="m19.07 4.93-1.41 1.41"></path></svg></button>  <div class="p-8 font-sans leading-relaxed w-full"><div class="max-w-3xl mx-auto p-8 leading-relaxed ">  <h1 class="text-3xl font-bold text-text mb-6 dark:text-dark_text"><title>Exponential Models</title> <meta property="og:title" content="Exponential Models"> Exponential Models</h1> <div class="mb-8"><h2 class="text-2xl font-semibold text-text dark:text-dark_text mb-4">Introduction</h2> <p class="text-text dark:text-dark_text">Exponential growth is modelled by differential equations of the form:
+		<div style="display: none;">
+			\frac{dy}{dt} = ky
+		</div> <span class="math"><!-- HTML_TAG_START --><!-- HTML_TAG_END --></span>
+		Where <div style="display: none;">k</div> <span class="math"><!-- HTML_TAG_START --><!-- HTML_TAG_END --></span> is a constant. 
+		<br><br>In other words:
+		<br> <span class="inline-block ml-8">The rate of change of a quantity is proportional to the size of the quantity.</span> <br><br>We can solve this differential equation to find the function <div style="display: none;">y(t)</div> <span class="math"><!-- HTML_TAG_START --><!-- HTML_TAG_END --></span> that models exponential growth.
+		<div style="display: none;">
+			\begin{align*}
+			\frac{dy}{dt} &amp;= ky \\ \text{} \\
+			\frac{dy}{ky} &amp;= dt \\ \text{} \\
+			\int \frac{dy}{y} &amp;= \int k \, dt \\ \text{} \\
+			\ln|y| &amp;= kt + C_1 \\ \text{} \\
+			y &amp;= e^{kt + C_1} \\ \text{} \\
+			y &amp;= e^{kt}e^{C_1} \\ \text{} \\
+			y &amp;= C_2e^{kt}
+			\end{align*}
+		</div> <span class="math"><!-- HTML_TAG_START --><!-- HTML_TAG_END --></span> <div style="display: none;">e^{C_1}</div> <span class="math"><!-- HTML_TAG_START --><!-- HTML_TAG_END --></span> is just some real number. Instead of writing that constant out, we replace it with <div style="display: none;">C_2</div> <span class="math"><!-- HTML_TAG_START --><!-- HTML_TAG_END --></span>.
+		<br><br><div style="display: none;">y(0)</div> <span class="math"><!-- HTML_TAG_START --><!-- HTML_TAG_END --></span> is the size of the quantity at the beginning, when <div style="display: none;">t=0</div> <span class="math"><!-- HTML_TAG_START --><!-- HTML_TAG_END --></span>. Since <div style="display: none;">y(0)=C_2e^{k(0)}=C_2</div> <span class="math"><!-- HTML_TAG_START --><!-- HTML_TAG_END --></span>, the constant <div style="display: none;">C_2</div> <span class="math"><!-- HTML_TAG_START --><!-- HTML_TAG_END --></span> is the initial size of the quantity.</p></div> <div class="mb-8"><h2 class="text-2xl font-semibold text-text dark:text-dark_text mb-4">Example</h2> <p class="text-text dark:text-dark_text">In the first lesson of this module, we used the following differential equation to model a population increasing at a rate of 2% per year:
+		<div style="display: none;">
+			\frac{dP}{dt} = 0.02P
+		</div> <span class="math"><!-- HTML_TAG_START --><!-- HTML_TAG_END --></span>
+		The equation which represents a population undergoing this growth is:
+		<div style="display: none;">
+			P = C_2e^{0.02t}
+		</div> <span class="math"><!-- HTML_TAG_START --><!-- HTML_TAG_END --></span>
+		If the population starts with <div style="display: none;">42,000</div> <span class="math"><!-- HTML_TAG_START --><!-- HTML_TAG_END --></span> people, the equation becomes:
+		<div style="display: none;">
+			P = 42000e^{0.02t}
+		</div> <span class="math"><!-- HTML_TAG_START --><!-- HTML_TAG_END --></span>
+		After <div style="display: none;">10</div> <span class="math"><!-- HTML_TAG_START --><!-- HTML_TAG_END --></span> years, the population would be:
+		<div style="display: none;">
+			P = 42000e^{0.02(10)} = 42000e^{0.2} = 51299
+		</div> <span class="math"><!-- HTML_TAG_START --><!-- HTML_TAG_END --></span></p></div> <div class="mb-8"><h2 class="text-2xl font-semibold text-text dark:text-dark_text mb-4">Exponential Decay</h2> <p class="text-text dark:text-dark_text">Exponential decay is the same as exponential growth but with a negative rate of change.
+		<br><br>For example, here is a model for a car&#39;s value decreasing by <div style="display: none;">0.5\%</div> <span class="math"><!-- HTML_TAG_START --><!-- HTML_TAG_END --></span> per <div style="display: none;">1000</div> <span class="math"><!-- HTML_TAG_START --><!-- HTML_TAG_END --></span> miles driven:
+		<div style="display: none;">
+			V = C_2e^{-0.005m}
+		</div> <span class="math"><!-- HTML_TAG_START --><!-- HTML_TAG_END --></span>
+		If the car&#39;s starting price was <div style="display: none;">\$20,000</div> <span class="math"><!-- HTML_TAG_START --><!-- HTML_TAG_END --></span>, the equation becomes:
+		<div style="display: none;">
+			V = 20000e^{-0.005m}
+		</div> <span class="math"><!-- HTML_TAG_START --><!-- HTML_TAG_END --></span>
+		After being driven <div style="display: none;">100,000</div> <span class="math"><!-- HTML_TAG_START --><!-- HTML_TAG_END --></span> miles, the car&#39;s value would be:
+		<div style="display: none;">
+			V = 20000e^{-0.005(100)} = 20000e^{-0.5} = \$12,130.61
+		</div> <span class="math"><!-- HTML_TAG_START --><!-- HTML_TAG_END --></span></p></div></div></div></body> 
+			
+			<script>
+				{
+					__sveltekit_1hm8yy8 = {
+						base: new URL("../..", location).pathname.slice(0, -1),
+						assets: "/BrickAcademy"
+					};
+
+					const element = document.currentScript.parentElement;
+
+					Promise.all([
+						import("../../_app/immutable/entry/start.DFcj8LNn.js"),
+						import("../../_app/immutable/entry/app.34Qzq_vi.js")
+					]).then(([kit, app]) => {
+						kit.start(app, element, {
+							node_ids: [0, 2, 62],
+							data: [null,null,null],
+							form: null,
+							error: null
+						});
+					});
+				}
+			</script>
+		</div>
+	</body>
+</html>

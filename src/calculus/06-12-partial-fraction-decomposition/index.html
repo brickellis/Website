@@ -1,0 +1,101 @@
+<!doctype html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8" />
+		<link rel="icon" href="../../favicon.png" />
+		<meta name="viewport" content="width=device-width, initial-scale=1" />
+		
+		<link href="../../_app/immutable/assets/app.BDtVw_ds.css" rel="stylesheet">
+		<link href="../../_app/immutable/assets/Section._en2CAKW.css" rel="stylesheet">
+		<link rel="modulepreload" href="../../_app/immutable/entry/start.DFcj8LNn.js">
+		<link rel="modulepreload" href="../../_app/immutable/chunks/BPHTS8RV.js">
+		<link rel="modulepreload" href="../../_app/immutable/chunks/CVhLxNSM.js">
+		<link rel="modulepreload" href="../../_app/immutable/chunks/DLyp5A0Q.js">
+		<link rel="modulepreload" href="../../_app/immutable/chunks/CwFVwKkT.js">
+		<link rel="modulepreload" href="../../_app/immutable/entry/app.34Qzq_vi.js">
+		<link rel="modulepreload" href="../../_app/immutable/chunks/C1FmrZbK.js">
+		<link rel="modulepreload" href="../../_app/immutable/chunks/DvSB8R1X.js">
+		<link rel="modulepreload" href="../../_app/immutable/nodes/0.B7xpY3_-.js">
+		<link rel="modulepreload" href="../../_app/immutable/nodes/2.BGaKxamB.js">
+		<link rel="modulepreload" href="../../_app/immutable/nodes/56.x5bKKgL-.js">
+		<link rel="modulepreload" href="../../_app/immutable/chunks/ByTZAYyp.js">
+		<link rel="modulepreload" href="../../_app/immutable/chunks/xLaKUPuM.js">
+	</head>
+	<body data-sveltekit-preload-data="hover">
+		<div style="display: contents">    <div class="fixed top-0 left-0 w-full h-full z-[-2] bg-background dark:bg-dark_background"></div> <body class="h-full bg-background dark:bg-dark_background"><button class="fixed top-4 left-4 z-10 p-2 text-text dark:text-dark_text hover:text-primary" data-svelte-h="svelte-au3lwb">←</button> <button class="fixed top-4 right-4 z-10 p-2 text-text dark:text-dark_text hover:text-primary flex items-center justify-center" aria-label="Toggle Dark Mode"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide-icon lucide lucide-sun w-5 h-5"><circle cx="12" cy="12" r="4"></circle><path d="M12 2v2"></path><path d="M12 20v2"></path><path d="m4.93 4.93 1.41 1.41"></path><path d="m17.66 17.66 1.41 1.41"></path><path d="M2 12h2"></path><path d="M20 12h2"></path><path d="m6.34 17.66-1.41 1.41"></path><path d="m19.07 4.93-1.41 1.41"></path></svg></button>  <div class="p-8 font-sans leading-relaxed w-full"><div class="max-w-3xl mx-auto p-8 leading-relaxed ">  <h1 class="text-3xl font-bold text-text mb-6 dark:text-dark_text"><title>Partial Fraction Decomposition</title> <meta property="og:title" content="Partial Fraction Decomposition"> Partial Fraction Decomposition</h1> <div class="mb-8"><h2 class="text-2xl font-semibold text-text dark:text-dark_text mb-4">Introduction</h2> <p class="text-text dark:text-dark_text">With <div style="display: none;">a,b,c,d \in \mathbb{R}</div> <span class="math"><!-- HTML_TAG_START --><!-- HTML_TAG_END --></span> <div style="display: none;">\frac{a}{c} + \frac{b}{d} = \frac{ad}{cd} + \frac{bc}{cd} = \frac{ad + bc}{cd}</div> <span class="math"><!-- HTML_TAG_START --><!-- HTML_TAG_END --></span>
+		Partial Fraction Decomposition decomposes fractions with separable denominators into separate fractions.
+		<br><br>Multiple fractions with simpler denominators are easier to integrate than one fraction with a complex demoninator.</p></div> <div class="mb-8"><h2 class="text-2xl font-semibold text-text dark:text-dark_text mb-4">Example</h2> <p class="text-text dark:text-dark_text">We are solving for <div style="display: none;">A</div> <span class="math"><!-- HTML_TAG_START --><!-- HTML_TAG_END --></span> and <div style="display: none;">B</div> <span class="math"><!-- HTML_TAG_START --><!-- HTML_TAG_END --></span>.
+		<div style="display: none;">
+			\begin{align*}
+			\int{\frac{7x+9}{(x+1)(x+2)} \, dx} &amp;= \int{\frac{A(x+2) + B(x+1)}{(x+1)(x+2)}}\, dx \\\\
+			&amp;= \int{\frac{A(x+2)}{(x+1)(x+2)} + \frac{B(x+1)}{(x+1)(x+2)} \, dx} \\\\
+			&amp;= \int{\frac{A}{x+1} + \frac{B}{x+2} \, dx} 
+			\end{align*}
+		</div> <span class="math"><!-- HTML_TAG_START --><!-- HTML_TAG_END --></span>
+		We can use <div style="display: none;">x=-1</div> <span class="math"><!-- HTML_TAG_START --><!-- HTML_TAG_END --></span> and <div style="display: none;">x=-2</div> <span class="math"><!-- HTML_TAG_START --><!-- HTML_TAG_END --></span> to find <div style="display: none;">A</div> <span class="math"><!-- HTML_TAG_START --><!-- HTML_TAG_END --></span> and <div style="display: none;">B</div> <span class="math"><!-- HTML_TAG_START --><!-- HTML_TAG_END --></span>.
+		<div style="display: none;">
+			\begin{align*}
+			\text{When } x&amp;=-1 \\\\
+			A(x+2) + B(x+1) &amp;= 7x+9 \\\\
+			A(1) + B(0) &amp;= 7(-1) + 9 \\\\
+			A &amp;= 2 \\\\
+			\text{When } x&amp;=-2 \\\\
+			A(x+2) + B(x+1) &amp;= 7x+9 \\\\
+			A(0) + B(-1) &amp;= 7(-2) + 9 \\\\
+			B &amp;= 5 \\\\
+			2(x+2) + 5(x+1) &amp;= 7x + 9
+			\end{align*}
+		</div> <span class="math"><!-- HTML_TAG_START --><!-- HTML_TAG_END --></span> <br><br>Plugging that into the original equation, we get
+		<div style="display: none;">
+			\begin{align*}
+			\int{\frac{7x+9}{(x+1)(x+2)} \, dx} &amp;= \int{\frac{2(x+2) + 5(x+1)}{(x+1)(x+2)} \, dx} \\\\
+			&amp;= \int{\frac{2}{x+1} + \frac{5}{x+2} \, dx} \\\\
+			&amp;= 2\ln|x+1| + 5\ln|x+2| + C
+			\end{align*}
+		</div> <span class="math"><!-- HTML_TAG_START --><!-- HTML_TAG_END --></span></p></div> <div class="mb-8"><h2 class="text-2xl font-semibold text-text dark:text-dark_text mb-4">Example #2</h2> <p class="text-text dark:text-dark_text">Partial fraction decomposition is linear when the results have linear denominators. 
+		<br><br>For this course, if you find yourself decomposing into non-linear denominators, such as <div style="display: none;">(x+1)^2</div> <span class="math"><!-- HTML_TAG_START --><!-- HTML_TAG_END --></span> or <div style="display: none;">\sqrt[3]{x}</div> <span class="math"><!-- HTML_TAG_START --><!-- HTML_TAG_END --></span>, you are probably doing it wrong.
+		<br><br>Our second integral is
+		<div style="display: none;">
+			\int{\frac{4x^2 + 7x + 1}{(x+3)(x-2)(x+2)} \, dx} = \int{\frac{A}{x+3} + \frac{B}{x-2} + \frac{C}{x+2} \, dx} \\ \text{} \\
+			A(x-2)(x+2) + B(x+3)(x+2) + C(x+3)(x-2) = 4x^2 + 7x + 1 \\ \text{} \\
+			\text{When } x=-3 \\ \text{} \\
+			A(-5)(-1) + B(0) + C(0) = 36 - 21 + 1 \\ \text{} \\
+			A = \frac{16}{5} \\ \text{} \\
+			\text{When } x=2 \\ \text{} \\
+			A(0) + B(5)(4) + C(0) = 16 + 14 + 1 \\ \text{} \\
+			B = \frac{31}{20} \\ \text{} \\
+			\text{When } x=-2 \\ \text{} \\
+			A(0) + B(0) + C(1)(-4) = 16 - 14 + 1 \\ \text{} \\
+			C = \frac{-3}{4} \\ \text{} \\
+		</div> <span class="math"><!-- HTML_TAG_START --><!-- HTML_TAG_END --></span> <div style="display: none;">
+			\begin{align*}
+			\int{\frac{4x^2 + 7x + 1}{(x+3)(x-2)(x+2)} \, dx} &amp;= \int{\frac{\frac{16}{5}}{x+3} + \frac{\frac{31}{20}}{x-2} + \frac{\frac{-3}{4}}{x+2} \, dx} \\ \text{} \\
+			&amp;= \frac{16}{5}\ln|x+3| + \frac{31}{20}\ln|x-2| - \frac{3}{4}\ln|x+2| + C
+			\end{align*}
+		</div> <span class="math"><!-- HTML_TAG_START --><!-- HTML_TAG_END --></span></p></div></div></div></body> 
+			
+			<script>
+				{
+					__sveltekit_1hm8yy8 = {
+						base: new URL("../..", location).pathname.slice(0, -1),
+						assets: "/BrickAcademy"
+					};
+
+					const element = document.currentScript.parentElement;
+
+					Promise.all([
+						import("../../_app/immutable/entry/start.DFcj8LNn.js"),
+						import("../../_app/immutable/entry/app.34Qzq_vi.js")
+					]).then(([kit, app]) => {
+						kit.start(app, element, {
+							node_ids: [0, 2, 56],
+							data: [null,null,null],
+							form: null,
+							error: null
+						});
+					});
+				}
+			</script>
+		</div>
+	</body>
+</html>

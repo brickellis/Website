@@ -1,0 +1,110 @@
+<!doctype html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8" />
+		<link rel="icon" href="../../favicon.png" />
+		<meta name="viewport" content="width=device-width, initial-scale=1" />
+		
+		<link href="../../_app/immutable/assets/app.BDtVw_ds.css" rel="stylesheet">
+		<link href="../../_app/immutable/assets/Section._en2CAKW.css" rel="stylesheet">
+		<link rel="modulepreload" href="../../_app/immutable/entry/start.DFcj8LNn.js">
+		<link rel="modulepreload" href="../../_app/immutable/chunks/BPHTS8RV.js">
+		<link rel="modulepreload" href="../../_app/immutable/chunks/CVhLxNSM.js">
+		<link rel="modulepreload" href="../../_app/immutable/chunks/DLyp5A0Q.js">
+		<link rel="modulepreload" href="../../_app/immutable/chunks/CwFVwKkT.js">
+		<link rel="modulepreload" href="../../_app/immutable/entry/app.34Qzq_vi.js">
+		<link rel="modulepreload" href="../../_app/immutable/chunks/C1FmrZbK.js">
+		<link rel="modulepreload" href="../../_app/immutable/chunks/DvSB8R1X.js">
+		<link rel="modulepreload" href="../../_app/immutable/nodes/0.B7xpY3_-.js">
+		<link rel="modulepreload" href="../../_app/immutable/nodes/2.BGaKxamB.js">
+		<link rel="modulepreload" href="../../_app/immutable/nodes/86.3k6-JnNa.js">
+		<link rel="modulepreload" href="../../_app/immutable/chunks/ByTZAYyp.js">
+		<link rel="modulepreload" href="../../_app/immutable/chunks/xLaKUPuM.js">
+		<link rel="modulepreload" href="../../_app/immutable/chunks/D3W7TYDU.js">
+	</head>
+	<body data-sveltekit-preload-data="hover">
+		<div style="display: contents">  <div class="fixed top-0 left-0 w-full h-full z-[-2] bg-background dark:bg-dark_background"></div> <body class="h-full bg-background dark:bg-dark_background"><button class="fixed top-4 left-4 z-10 p-2 text-text dark:text-dark_text hover:text-primary" data-svelte-h="svelte-au3lwb">←</button> <button class="fixed top-4 right-4 z-10 p-2 text-text dark:text-dark_text hover:text-primary flex items-center justify-center" aria-label="Toggle Dark Mode"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide-icon lucide lucide-sun w-5 h-5"><circle cx="12" cy="12" r="4"></circle><path d="M12 2v2"></path><path d="M12 20v2"></path><path d="m4.93 4.93 1.41 1.41"></path><path d="m17.66 17.66 1.41 1.41"></path><path d="M2 12h2"></path><path d="M20 12h2"></path><path d="m6.34 17.66-1.41 1.41"></path><path d="m19.07 4.93-1.41 1.41"></path></svg></button>  <div class="p-8 font-sans leading-relaxed w-full"><div class="max-w-3xl mx-auto p-8 leading-relaxed ">  <h1 class="text-3xl font-bold text-text mb-6 dark:text-dark_text"><title>Ratio Test</title> <meta property="og:title" content="Ratio Test"> Ratio Test</h1> <div class="mb-8"><h2 class="text-2xl font-semibold text-text dark:text-dark_text mb-4">Introduction</h2> <p class="text-text dark:text-dark_text">The Ratio Test should usually be the first test we apply when determining the convergence of a series. For a series, <div style="display: none;">\sum a_n</div> <span class="math"><!-- HTML_TAG_START --><!-- HTML_TAG_END --></span>:
+        <div style="display: none;">L = \lim_{n \to \infty} \left| \frac{a_{n+1}}{a_n} \right|</div> <span class="math"><!-- HTML_TAG_START --><!-- HTML_TAG_END --></span> <br> <span class="inline-block ml-8"><strong data-svelte-h="svelte-1vdhxfr">If</strong> <div style="display: none;">L &lt; 1</div> <span class="math"><!-- HTML_TAG_START --><!-- HTML_TAG_END --></span>, the series converges.
+            <br><strong data-svelte-h="svelte-1vdhxfr">If</strong> <div style="display: none;">L > 1</div> <span class="math"><!-- HTML_TAG_START --><!-- HTML_TAG_END --></span>, the series diverges.
+            <br><strong data-svelte-h="svelte-1vdhxfr">If</strong> <div style="display: none;">L = 1</div> <span class="math"><!-- HTML_TAG_START --><!-- HTML_TAG_END --></span>, the test is inconclusive.</span></p></div> <div class="mb-8"><h2 class="text-2xl font-semibold text-text dark:text-dark_text mb-4">Examples</h2> <p class="text-text dark:text-dark_text"><strong data-svelte-h="svelte-u4xhh">Example 1:</strong><br>  <span class="inline-block ml-8"><div style="display: none;">\sum_{n=1}^{\infty} \frac{1}{2^n}</div> <span class="math"><!-- HTML_TAG_START --><!-- HTML_TAG_END --></span></span> <div style="display: none;">
+                \begin{align*}
+                a_n &amp;= \frac{1}{2^n} \\
+                a_{n+1} &amp;= \frac{1}{2^{n+1}} \\
+                L &amp;= \lim_{n \to \infty} \left| \frac{a_{n+1}}{a_n} \right| = \lim_{n \to \infty} \left| \frac{\frac{1}{2^{n+1}}}{\frac{1}{2^n}} \right| \\
+                &amp;= \lim_{n \to \infty} \left| \frac{2^n}{2^{n+1}} \right| = \lim_{n \to \infty} \left| \frac{1}{2} \right| \\
+                &amp;= \frac{1}{2}
+                \end{align*}
+            </div> <span class="math"><!-- HTML_TAG_START --><!-- HTML_TAG_END --></span>
+        Since <div style="display: none;">L = \frac{1}{2} &lt; 1</div> <span class="math"><!-- HTML_TAG_START --><!-- HTML_TAG_END --></span>, the series <div style="display: none;">\sum_{n=1}^{\infty} \frac{1}{2^n}</div> <span class="math"><!-- HTML_TAG_START --><!-- HTML_TAG_END --></span> converges by the Ratio Test.
+
+        <br><br><strong data-svelte-h="svelte-1k1h9vi">Example 2:</strong><br>  <span class="inline-block ml-8"><div style="display: none;">\sum_{n=1}^{\infty} 2^n</div> <span class="math"><!-- HTML_TAG_START --><!-- HTML_TAG_END --></span></span> <div style="display: none;">
+                \begin{align*}
+                a_n &amp;= 2^n \\
+                a_{n+1} &amp;= 2^{n+1} \\
+                L &amp;= \lim_{n \to \infty} \left| \frac{a_{n+1}}{a_n} \right| = \lim_{n \to \infty} \left| \frac{2^{n+1}}{2^n} \right| \\
+                &amp;= \lim_{n \to \infty} \left| 2 \right| \\
+                &amp;= 2
+                \end{align*}
+            </div> <span class="math"><!-- HTML_TAG_START --><!-- HTML_TAG_END --></span>
+        Since <div style="display: none;">L = 2 > 1</div> <span class="math"><!-- HTML_TAG_START --><!-- HTML_TAG_END --></span>, the series <div style="display: none;">\sum_{n=1}^{\infty} 2^n</div> <span class="math"><!-- HTML_TAG_START --><!-- HTML_TAG_END --></span> diverges by the Ratio Test.
+
+        <br><br><strong data-svelte-h="svelte-25calz">Example 3:</strong><br>  <span class="inline-block ml-8"><div style="display: none;">\sum_{n=1}^{\infty} \frac{1}{n!}</div> <span class="math"><!-- HTML_TAG_START --><!-- HTML_TAG_END --></span></span> <div style="display: none;">
+                \begin{align*}
+                a_n &amp;= \frac{1}{n!} \\
+                a_{n+1} &amp;= \frac{1}{(n+1)!} \\
+                L &amp;= \lim_{n \to \infty} \left| \frac{a_{n+1}}{a_n} \right| = \lim_{n \to \infty} \left| \frac{\frac{1}{(n+1)!}}{\frac{1}{n!}} \right| \\
+                &amp;= \lim_{n \to \infty} \left| \frac{n!}{(n+1)!} \right| = \lim_{n \to \infty} \left| \frac{1}{n+1} \right| \\
+                &amp;= 0
+                \end{align*}
+            </div> <span class="math"><!-- HTML_TAG_START --><!-- HTML_TAG_END --></span>
+        Since <div style="display: none;">L = 0 &lt; 1</div> <span class="math"><!-- HTML_TAG_START --><!-- HTML_TAG_END --></span>, the series <div style="display: none;">\sum_{n=1}^{\infty} \frac{1}{n!}</div> <span class="math"><!-- HTML_TAG_START --><!-- HTML_TAG_END --></span> converges by the Ratio Test.
+
+        <br><br><strong data-svelte-h="svelte-gvuc85">Example 4: Series with n<sup>n</sup> and Factorial - Divergent</strong><br>  <span class="inline-block ml-8"><div style="display: none;">\sum_{n=1}^{\infty} \frac{n^n}{n!}</div> <span class="math"><!-- HTML_TAG_START --><!-- HTML_TAG_END --></span></span> <div style="display: none;">
+                \begin{align*}
+                a_n &amp;= \frac{n^n}{n!} \\
+                a_{n+1} &amp;= \frac{(n+1)^{n+1}}{(n+1)!} \\
+                L &amp;= \lim_{n \to \infty} \left| \frac{a_{n+1}}{a_n} \right| = \lim_{n \to \infty} \left| \frac{\frac{(n+1)^{n+1}}{(n+1)!}}{\frac{n^n}{n!}} \right| \\
+                &amp;= \lim_{n \to \infty} \left| \frac{(n+1)^{n+1} \cdot n!}{(n+1)! \cdot n^n} \right| = \lim_{n \to \infty} \left| \frac{(n+1)^n \cdot (n+1) \cdot n!}{(n+1) \cdot n! \cdot n^n} \right| \\
+                &amp;= \lim_{n \to \infty} \left| \frac{(n+1)^n}{n^n} \right| = \lim_{n \to \infty} \left| \left(\frac{n+1}{n}\right)^n \right| \\
+                &amp;= \lim_{n \to \infty} \left| \left(1 + \frac{1}{n}\right)^n \right| = e
+                \end{align*}
+            </div> <span class="math"><!-- HTML_TAG_START --><!-- HTML_TAG_END --></span>
+        Since <div style="display: none;">L = e > 1</div> <span class="math"><!-- HTML_TAG_START --><!-- HTML_TAG_END --></span>, the series <div style="display: none;">\sum_{n=1}^{\infty} \frac{n^n}{n!}</div> <span class="math"><!-- HTML_TAG_START --><!-- HTML_TAG_END --></span> diverges by the Ratio Test.
+
+        <br><br><strong data-svelte-h="svelte-129a5kp">Example 5:</strong><br>  <span class="inline-block ml-8"><div style="display: none;">\sum_{n=1}^{\infty} \frac{1}{n^2}</div> <span class="math"><!-- HTML_TAG_START --><!-- HTML_TAG_END --></span></span> <div style="display: none;">
+                \begin{align*}
+                a_n &amp;= \frac{1}{n^2} \\
+                a_{n+1} &amp;= \frac{1}{(n+1)^2} \\
+                L &amp;= \lim_{n \to \infty} \left| \frac{a_{n+1}}{a_n} \right| = \lim_{n \to \infty} \left| \frac{\frac{1}{(n+1)^2}}{\frac{1}{n^2}} \right| \\
+                &amp;= \lim_{n \to \infty} \left| \frac{n^2}{(n+1)^2} \right| = \lim_{n \to \infty} \left| \left(\frac{n}{n+1}\right)^2 \right| \\
+                &amp;= \lim_{n \to \infty} \left| \left(\frac{1}{1 + \frac{1}{n}}\right)^2 \right| = \left(\frac{1}{1 + 0}\right)^2 = 1
+                \end{align*}
+            </div> <span class="math"><!-- HTML_TAG_START --><!-- HTML_TAG_END --></span>
+        Since <div style="display: none;">L = 1</div> <span class="math"><!-- HTML_TAG_START --><!-- HTML_TAG_END --></span>, the Ratio Test is inconclusive for the series <div style="display: none;">\sum_{n=1}^{\infty} \frac{1}{n^2}</div> <span class="math"><!-- HTML_TAG_START --><!-- HTML_TAG_END --></span>.
+        <br><br>We know from the p-series test that this series converges.</p></div></div></div></body> 
+			
+			<script>
+				{
+					__sveltekit_1hm8yy8 = {
+						base: new URL("../..", location).pathname.slice(0, -1),
+						assets: "/BrickAcademy"
+					};
+
+					const element = document.currentScript.parentElement;
+
+					Promise.all([
+						import("../../_app/immutable/entry/start.DFcj8LNn.js"),
+						import("../../_app/immutable/entry/app.34Qzq_vi.js")
+					]).then(([kit, app]) => {
+						kit.start(app, element, {
+							node_ids: [0, 2, 86],
+							data: [null,null,null],
+							form: null,
+							error: null
+						});
+					});
+				}
+			</script>
+		</div>
+	</body>
+</html>

@@ -1,0 +1,19 @@
+import{s as T,n as M}from"../chunks/CVhLxNSM.js";import{S as W,i as k,c as l,b as c,m,t as i,a as u,d as g,s as P,e as b,f as p,g as x,h,k as _}from"../chunks/DvSB8R1X.js";import{L as q,S as C,M as v}from"../chunks/ByTZAYyp.js";import{L as I}from"../chunks/xLaKUPuM.js";function R(o){let n;return{c(){n=h("d/dx")},l(f){n=_(f,"d/dx")},m(f,t){p(f,n,t)},d(f){f&&x(n)}}}function j(o){let n=L`
+				\frac{d}{dx}f(x)=f'(x)
+			`+"",f;return{c(){f=h(n)},l(t){f=_(t,n)},m(t,s){p(t,f,s)},p:M,d(t){t&&x(f)}}}function z(o){let n=L`\frac{d}{dx} \left[f(x)g(x) \right] =f(x)g'(x)+f'(x)g(x)`+"",f;return{c(){f=h(n)},l(t){f=_(t,n)},m(t,s){p(t,f,s)},p:M,d(t){t&&x(f)}}}function A(o){let n,f,t,s,r,a;return n=new v({props:{$$slots:{default:[R]},$$scope:{ctx:o}}}),t=new v({props:{displayMode:!0,$$slots:{default:[j]},$$scope:{ctx:o}}}),r=new v({props:{displayMode:!0,$$slots:{default:[z]},$$scope:{ctx:o}}}),{c(){l(n.$$.fragment),f=h(` is another notation for the derivative.
+			`),l(t.$$.fragment),s=h(`
+			We will prove the following:
+			`),l(r.$$.fragment)},l(e){c(n.$$.fragment,e),f=_(e,` is another notation for the derivative.
+			`),c(t.$$.fragment,e),s=_(e,`
+			We will prove the following:
+			`),c(r.$$.fragment,e)},m(e,$){m(n,e,$),p(e,f,$),m(t,e,$),p(e,s,$),m(r,e,$),a=!0},p(e,$){const d={};$&1&&(d.$$scope={dirty:$,ctx:e}),n.$set(d);const w={};$&1&&(w.$$scope={dirty:$,ctx:e}),t.$set(w);const S={};$&1&&(S.$$scope={dirty:$,ctx:e}),r.$set(S)},i(e){a||(i(n.$$.fragment,e),i(t.$$.fragment,e),i(r.$$.fragment,e),a=!0)},o(e){u(n.$$.fragment,e),u(t.$$.fragment,e),u(r.$$.fragment,e),a=!1},d(e){e&&(x(f),x(s)),g(n,e),g(t,e),g(r,e)}}}function B(o){let n=L`
+				\begin{align*}
+				\frac{d}{dx}f(x)g(x)&=\lim_{h \to 0}\frac{f(x+h)g(x+h) - f(x)g(x)}{h} \\\\
+				&=\lim_{h \to 0}\frac{f(x+h)g(x+h) \c1{+ f(x+h)g(x) - f(x+h)g(x)} - f(x)g(x)}{h} \\\\
+				&=\lim_{h \to 0}\frac{\c1{f(x+h)[g(x+h) - g(x)]} + \c1{g(x)[f(x+h) - f(x)]}}{h} \\\\
+				&=\c1{\lim_{h \to 0}}\frac{f(x+h)[g(x+h) - g(x)]}{h} + \c1{\lim_{h \to 0}}\frac{g(x)[f(x+h) - f(x)]}{h} \\\\
+				&=\lim_{h \to 0}\c1{f(x+h)}\frac{g(x+h) - g(x)}{h} + \lim_{h \to 0}\c1{g(x)}\frac{f(x+h) - f(x)}{h} \\\\
+				&=\c1{\lim_{h \to 0}}f(x+h) \cdot \c1{\lim_{h \to 0}}\frac{g(x+h) - g(x)}{h} + \c1{\lim_{h \to 0}}g(x) \cdot \c1{\lim_{h \to 0}}\frac{f(x+h) - f(x)}{h} \\\\
+				&=f(x) g'(x) + g(x) f'(x)
+				\end{align*}
+			`+"",f;return{c(){f=h(n)},l(t){f=_(t,n)},m(t,s){p(t,f,s)},p:M,d(t){t&&x(f)}}}function D(o){let n,f;return n=new v({props:{displayMode:!0,$$slots:{default:[B]},$$scope:{ctx:o}}}),{c(){l(n.$$.fragment)},l(t){c(n.$$.fragment,t)},m(t,s){m(n,t,s),f=!0},p(t,s){const r={};s&1&&(r.$$scope={dirty:s,ctx:t}),n.$set(r)},i(t){f||(i(n.$$.fragment,t),f=!0)},o(t){u(n.$$.fragment,t),f=!1},d(t){g(n,t)}}}function E(o){let n,f,t,s,r,a;return n=new I({props:{heading:"The Product Rule"}}),t=new C({props:{heading:"Introduction",$$slots:{default:[A]},$$scope:{ctx:o}}}),r=new C({props:{heading:"Proof",$$slots:{default:[D]},$$scope:{ctx:o}}}),{c(){l(n.$$.fragment),f=P(),l(t.$$.fragment),s=P(),l(r.$$.fragment)},l(e){c(n.$$.fragment,e),f=b(e),c(t.$$.fragment,e),s=b(e),c(r.$$.fragment,e)},m(e,$){m(n,e,$),p(e,f,$),m(t,e,$),p(e,s,$),m(r,e,$),a=!0},p(e,$){const d={};$&1&&(d.$$scope={dirty:$,ctx:e}),t.$set(d);const w={};$&1&&(w.$$scope={dirty:$,ctx:e}),r.$set(w)},i(e){a||(i(n.$$.fragment,e),i(t.$$.fragment,e),i(r.$$.fragment,e),a=!0)},o(e){u(n.$$.fragment,e),u(t.$$.fragment,e),u(r.$$.fragment,e),a=!1},d(e){e&&(x(f),x(s)),g(n,e),g(t,e),g(r,e)}}}function F(o){let n,f;return n=new q({props:{$$slots:{default:[E]},$$scope:{ctx:o}}}),{c(){l(n.$$.fragment)},l(t){c(n.$$.fragment,t)},m(t,s){m(n,t,s),f=!0},p(t,[s]){const r={};s&1&&(r.$$scope={dirty:s,ctx:t}),n.$set(r)},i(t){f||(i(n.$$.fragment,t),f=!0)},o(t){u(n.$$.fragment,t),f=!1},d(t){g(n,t)}}}function L(o){return o.raw[0]}class N extends W{constructor(n){super(),k(this,n,null,F,T,{})}}export{N as component};

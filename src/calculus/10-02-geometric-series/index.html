@@ -1,0 +1,125 @@
+<!doctype html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8" />
+		<link rel="icon" href="../../favicon.png" />
+		<meta name="viewport" content="width=device-width, initial-scale=1" />
+		
+		<link href="../../_app/immutable/assets/app.BDtVw_ds.css" rel="stylesheet">
+		<link href="../../_app/immutable/assets/Section._en2CAKW.css" rel="stylesheet">
+		<link rel="modulepreload" href="../../_app/immutable/entry/start.DFcj8LNn.js">
+		<link rel="modulepreload" href="../../_app/immutable/chunks/BPHTS8RV.js">
+		<link rel="modulepreload" href="../../_app/immutable/chunks/CVhLxNSM.js">
+		<link rel="modulepreload" href="../../_app/immutable/chunks/DLyp5A0Q.js">
+		<link rel="modulepreload" href="../../_app/immutable/chunks/CwFVwKkT.js">
+		<link rel="modulepreload" href="../../_app/immutable/entry/app.34Qzq_vi.js">
+		<link rel="modulepreload" href="../../_app/immutable/chunks/C1FmrZbK.js">
+		<link rel="modulepreload" href="../../_app/immutable/chunks/DvSB8R1X.js">
+		<link rel="modulepreload" href="../../_app/immutable/nodes/0.B7xpY3_-.js">
+		<link rel="modulepreload" href="../../_app/immutable/nodes/2.BGaKxamB.js">
+		<link rel="modulepreload" href="../../_app/immutable/nodes/81.DDzyjhCK.js">
+		<link rel="modulepreload" href="../../_app/immutable/chunks/ByTZAYyp.js">
+		<link rel="modulepreload" href="../../_app/immutable/chunks/xLaKUPuM.js">
+	</head>
+	<body data-sveltekit-preload-data="hover">
+		<div style="display: contents">  <div class="fixed top-0 left-0 w-full h-full z-[-2] bg-background dark:bg-dark_background"></div> <body class="h-full bg-background dark:bg-dark_background"><button class="fixed top-4 left-4 z-10 p-2 text-text dark:text-dark_text hover:text-primary" data-svelte-h="svelte-au3lwb">←</button> <button class="fixed top-4 right-4 z-10 p-2 text-text dark:text-dark_text hover:text-primary flex items-center justify-center" aria-label="Toggle Dark Mode"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide-icon lucide lucide-sun w-5 h-5"><circle cx="12" cy="12" r="4"></circle><path d="M12 2v2"></path><path d="M12 20v2"></path><path d="m4.93 4.93 1.41 1.41"></path><path d="m17.66 17.66 1.41 1.41"></path><path d="M2 12h2"></path><path d="M20 12h2"></path><path d="m6.34 17.66-1.41 1.41"></path><path d="m19.07 4.93-1.41 1.41"></path></svg></button>  <div class="p-8 font-sans leading-relaxed w-full"><div class="max-w-3xl mx-auto p-8 leading-relaxed ">  <h1 class="text-3xl font-bold text-text mb-6 dark:text-dark_text"><title>Geometric Series</title> <meta property="og:title" content="Geometric Series"> Geometric Series</h1> <div class="mb-8"><h2 class="text-2xl font-semibold text-text dark:text-dark_text mb-4">Introduction</h2> <p class="text-text dark:text-dark_text">A geometric series is of the form:
+    <div style="display: none;">
+    \sum_{n=0}^{\infty} ar^n = a + ar + ar^2 + ar^3 + \ldots
+    </div> <span class="math"><!-- HTML_TAG_START --><!-- HTML_TAG_END --></span>
+    where <div style="display: none;">a</div> <span class="math"><!-- HTML_TAG_START --><!-- HTML_TAG_END --></span> and <div style="display: none;">r</div> <span class="math"><!-- HTML_TAG_START --><!-- HTML_TAG_END --></span> are real numbers.
+    <br><br>The following are geometric series:
+    <div style="display: none;">
+    \begin{align*}
+      &amp;\sum_{n=0}^{\infty} 2(0.5)^n &amp;=&amp;\, 2 + 1 + 0.5 + 0.25 + \ldots \\
+      &amp;\sum_{n=0}^{\infty} 3(2)^n &amp;=&amp;\, 3 + 6 + 12 + 24 + \ldots \\
+      &amp;\sum_{n=0}^{\infty} 4(-3)^n &amp;=&amp;\, 4 - 12 + 36 - 108 + \ldots
+    \end{align*}
+    </div> <span class="math"><!-- HTML_TAG_START --><!-- HTML_TAG_END --></span></p></div> <div class="mb-8"><h2 class="text-2xl font-semibold text-text dark:text-dark_text mb-4">Convergence and Divergence</h2> <p class="text-text dark:text-dark_text">The series converges if:
+    <div style="display: none;">|r| &lt; 1</div> <span class="math"><!-- HTML_TAG_START --><!-- HTML_TAG_END --></span>
+    And diverges if:
+    <div style="display: none;">|r| \geq 1</div> <span class="math"><!-- HTML_TAG_START --><!-- HTML_TAG_END --></span></p></div> <div class="mb-8"><h2 class="text-2xl font-semibold text-text dark:text-dark_text mb-4">Sum of a Convergent Geometric Series</h2> <p class="text-text dark:text-dark_text">The sum of a convergent geometric series is:
+    <div style="display: none;">\sum_{n=0}^{\infty} ar^n = \frac{a}{1 - r}</div> <span class="math"><!-- HTML_TAG_START --><!-- HTML_TAG_END --></span> <strong data-svelte-h="svelte-1qimrtw">Proof:</strong> <div style="display: none;">
+    \begin{align*}
+      S &amp;= \sum_{n=0}^{N} ar^n \\
+      &amp;= a + ar + ar^2 + ar^3 + \ldots + ar^N \\
+      rS &amp;= ar + ar^2 + ar^3 + ar^4 + \ldots + ar^{N+1} \\
+      S - rS &amp;= a + \left( ar^2 + ar^3 + \ldots + ar^N \right) - \left( ar^2 + ar^3 + \ldots + ar^{N+1} \right) \\
+      &amp;= a - ar^{N+1} \\
+      S(1 - r) &amp;= a(1-r^{N+1}) \\
+      S &amp;= \frac{a(1-r^{N+1})}{1 - r}
+    \end{align*}
+    </div> <span class="math"><!-- HTML_TAG_START --><!-- HTML_TAG_END --></span> <div style="display: none;">
+    \begin{align*}
+    \text{Note that if }\, |r| &amp;&lt; 1 \\ \text{} \\
+    \lim_{N \to \infty} r^{N+1} &amp;= 0 \\ \text{} \\
+    S &amp;= \frac{a}{1 - r}
+    \end{align*}
+    </div> <span class="math"><!-- HTML_TAG_START --><!-- HTML_TAG_END --></span></p></div> <div class="mb-8"><h2 class="text-2xl font-semibold text-text dark:text-dark_text mb-4">Examples</h2> <p class="text-text dark:text-dark_text"><br><br><strong data-svelte-h="svelte-1cadkub">Example 1: Basic Convergent Series</strong><br>
+    Find the sum of the geometric series <div style="display: none;">\sum_{n=0}^{\infty} 3 \left(\frac{1}{2}\right)^n</div> <span class="math"><!-- HTML_TAG_START --><!-- HTML_TAG_END --></span>.
+    <div style="display: none;">
+        \begin{align*}
+        a &amp;= 3 \\
+        r &amp;= \frac{1}{2} \\
+        S &amp;= \frac{a}{1 - r} \\
+        &amp;= \frac{3}{1 - \frac{1}{2}} \\
+        &amp;= \frac{3}{\frac{1}{2}} = 6
+        \end{align*}
+        </div> <span class="math"><!-- HTML_TAG_START --><!-- HTML_TAG_END --></span>
+    The sum of the geometric series is 6.
+
+    <br><br><strong data-svelte-h="svelte-18p56h0">Example 2: Divergent Geometric Series</strong><br>
+    Does the geometric series <div style="display: none;">\sum_{n=0}^{\infty} 2(3)^n</div> <span class="math"><!-- HTML_TAG_START --><!-- HTML_TAG_END --></span> converge or diverge?
+    <div style="display: none;">
+        \begin{align*}
+        a &amp;= 2 \\
+        r &amp;= 3 \\
+        |r| &amp;= 3 \geq 1
+        \end{align*}
+        </div> <span class="math"><!-- HTML_TAG_START --><!-- HTML_TAG_END --></span>
+    Since <div style="display: none;">|r| \geq 1</div> <span class="math"><!-- HTML_TAG_START --><!-- HTML_TAG_END --></span>, the geometric series diverges.  Therefore, it does not have a finite sum.
+
+    <br><br><strong data-svelte-h="svelte-wm7sp9">Example 3:  Repeating Decimal as Geometric Series</strong><br>
+    Express the repeating decimal <div style="display: none;">0.\overline{37}</div> <span class="math"><!-- HTML_TAG_START --><!-- HTML_TAG_END --></span> as a fraction using a geometric series.
+    <div style="display: none;">
+        \begin{align*}
+        0.\overline{37} &amp;= 0.373737\ldots = \frac{37}{99} \\\\
+        &amp;= \frac{37}{100} + \frac{37}{10000} + \frac{37}{1000000} + \ldots \\\\
+        &amp;= \frac{37}{100} + \frac{37}{100}\left(\frac{1}{100}\right) + \frac{37}{100}\left(\frac{1}{100}\right)^2 + \ldots \\\\
+        &amp;= \sum_{n=0}^{\infty} \frac{37}{100}\left(\frac{1}{100}\right)^n
+        \end{align*}
+        </div> <span class="math"><!-- HTML_TAG_START --><!-- HTML_TAG_END --></span>
+    Therefore,
+    <div style="display: none;">
+        \begin{align*}
+        S &amp;= \frac{a}{1 - r} \\\\
+        &amp;= \frac{\frac{37}{100}}{1 - \frac{1}{100}} \\\\
+        &amp;= \frac{\frac{37}{100}}{\frac{99}{100}} \\\\
+        &amp;= \frac{37}{99}
+        \end{align*}
+        </div> <span class="math"><!-- HTML_TAG_START --><!-- HTML_TAG_END --></span></p></div></div></div></body> 
+			
+			<script>
+				{
+					__sveltekit_1hm8yy8 = {
+						base: new URL("../..", location).pathname.slice(0, -1),
+						assets: "/BrickAcademy"
+					};
+
+					const element = document.currentScript.parentElement;
+
+					Promise.all([
+						import("../../_app/immutable/entry/start.DFcj8LNn.js"),
+						import("../../_app/immutable/entry/app.34Qzq_vi.js")
+					]).then(([kit, app]) => {
+						kit.start(app, element, {
+							node_ids: [0, 2, 81],
+							data: [null,null,null],
+							form: null,
+							error: null
+						});
+					});
+				}
+			</script>
+		</div>
+	</body>
+</html>

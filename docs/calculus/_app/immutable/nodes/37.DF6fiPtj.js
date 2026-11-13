@@ -1,0 +1,52 @@
+import{s as W,n as O}from"../chunks/CVhLxNSM.js";import{S as X,i as Y,c as p,b as _,m as x,t as g,a as w,d,s as N,e as H,f as r,g as m,h as v,j as F,k as h,l as G,n as U}from"../chunks/DvSB8R1X.js";import{L as y,S as A,M as I}from"../chunks/ByTZAYyp.js";import{L as tt}from"../chunks/xLaKUPuM.js";import{C as V}from"../chunks/wEz_aUcl.js";import{I as et}from"../chunks/D3W7TYDU.js";function ft(s){let e=j`f(x) \text{ and } g(x)`+"",f;return{c(){f=v(e)},l(t){f=h(t,e)},m(t,l){r(t,f,l)},p:O,d(t){t&&m(f)}}}function $t(s){let e;return{c(){e=v("a")},l(f){e=h(f,"a")},m(f,t){r(f,e,t)},d(f){f&&m(e)}}}function nt(s){let e=j`\left[\lim_{x \to a}f(x)=0 \quad \lim_{x \to a}g(x)=0\right]`+"",f;return{c(){f=v(e)},l(t){f=h(t,e)},m(t,l){r(t,f,l)},p:O,d(t){t&&m(f)}}}function at(s){let e;return{c(){e=v("or")},l(f){e=h(f,"or")},m(f,t){r(f,e,t)},d(f){f&&m(e)}}}function lt(s){let e=j`\left[\lim_{x \to a}f(x)=\pm\infty \quad \lim_{x \to a}g(x)=\pm\infty\right]`+"",f;return{c(){f=v(e)},l(t){f=h(t,e)},m(t,l){r(t,f,l)},p:O,d(t){t&&m(f)}}}function st(s){let e;return{c(){e=v("Then")},l(f){e=h(f,"Then")},m(f,t){r(f,e,t)},d(f){f&&m(e)}}}function rt(s){let e=j`\lim_{x \to a}\frac{f(x)}{g(x)} = \lim_{x \to a}\frac{f'(x)}{g'(x)}`+"",f;return{c(){f=v(e)},l(t){f=h(t,e)},m(t,l){r(t,f,l)},p:O,d(t){t&&m(f)}}}function mt(s){let e,f,t,l,o,M,c,B,b,E,a,u,L,T,R,C,S,q,P,n;return o=new I({props:{$$slots:{default:[ft]},$$scope:{ctx:s}}}),c=new I({props:{$$slots:{default:[$t]},$$scope:{ctx:s}}}),a=new I({props:{displayMode:!0,$$slots:{default:[nt]},$$scope:{ctx:s}}}),L=new V({props:{$$slots:{default:[at]},$$scope:{ctx:s}}}),R=new I({props:{displayMode:!0,$$slots:{default:[lt]},$$scope:{ctx:s}}}),S=new V({props:{$$slots:{default:[st]},$$scope:{ctx:s}}}),P=new I({props:{displayMode:!0,$$slots:{default:[rt]},$$scope:{ctx:s}}}),{c(){e=v(`Now that we have experience with derivatives, we will learn how to use the L'Hôpital's Rule to solve a specific type of limit which we otherwise could not solve.
+			`),f=F("br"),t=F("br"),l=v("For two functions, "),p(o.$$.fragment),M=v(" and an input "),p(c.$$.fragment),B=v(`, where 
+			`),b=F("br"),E=F("br"),p(a.$$.fragment),u=N(),p(L.$$.fragment),T=N(),p(R.$$.fragment),C=N(),p(S.$$.fragment),q=N(),p(P.$$.fragment)},l($){e=h($,`Now that we have experience with derivatives, we will learn how to use the L'Hôpital's Rule to solve a specific type of limit which we otherwise could not solve.
+			`),f=G($,"BR",{}),t=G($,"BR",{}),l=h($,"For two functions, "),_(o.$$.fragment,$),M=h($," and an input "),_(c.$$.fragment,$),B=h($,`, where 
+			`),b=G($,"BR",{}),E=G($,"BR",{}),_(a.$$.fragment,$),u=H($),_(L.$$.fragment,$),T=H($),_(R.$$.fragment,$),C=H($),_(S.$$.fragment,$),q=H($),_(P.$$.fragment,$)},m($,i){r($,e,i),r($,f,i),r($,t,i),r($,l,i),x(o,$,i),r($,M,i),x(c,$,i),r($,B,i),r($,b,i),r($,E,i),x(a,$,i),r($,u,i),x(L,$,i),r($,T,i),x(R,$,i),r($,C,i),x(S,$,i),r($,q,i),x(P,$,i),n=!0},p($,i){const k={};i&1&&(k.$$scope={dirty:i,ctx:$}),o.$set(k);const z={};i&1&&(z.$$scope={dirty:i,ctx:$}),c.$set(z);const Z={};i&1&&(Z.$$scope={dirty:i,ctx:$}),a.$set(Z);const D={};i&1&&(D.$$scope={dirty:i,ctx:$}),L.$set(D);const J={};i&1&&(J.$$scope={dirty:i,ctx:$}),R.$set(J);const K={};i&1&&(K.$$scope={dirty:i,ctx:$}),S.$set(K);const Q={};i&1&&(Q.$$scope={dirty:i,ctx:$}),P.$set(Q)},i($){n||(g(o.$$.fragment,$),g(c.$$.fragment,$),g(a.$$.fragment,$),g(L.$$.fragment,$),g(R.$$.fragment,$),g(S.$$.fragment,$),g(P.$$.fragment,$),n=!0)},o($){w(o.$$.fragment,$),w(c.$$.fragment,$),w(a.$$.fragment,$),w(L.$$.fragment,$),w(R.$$.fragment,$),w(S.$$.fragment,$),w(P.$$.fragment,$),n=!1},d($){$&&(m(e),m(f),m(t),m(l),m(M),m(B),m(b),m(E),m(u),m(T),m(C),m(q)),d(o,$),d(c,$),d(a,$),d(L,$),d(R,$),d(S,$),d(P,$)}}}function ot(s){let e=j`
+			\begin{align*}
+			f(a)&=0 \quad g(a)=0 \\\\
+			\lim_{x \to a}\frac{f(x)}{g(x)} &= \lim_{x \to a}\frac{f(x) - f(a)}{g(x) - g(a)} \\\\
+			&= \lim_{x \to a}\frac{f(x) - f(a)}{g(x) - g(a)} * \frac{x-a}{x-a} \\\\
+			&= \lim_{x \to a}\frac{\frac{f(x) - f(a)}{x-a}}{\frac{g(x) - g(a)}{x-a}} \\\\
+			&= \frac{f'(a)}{g'(a)}
+			\end{align*}
+		`+"",f;return{c(){f=v(e)},l(t){f=h(t,e)},m(t,l){r(t,f,l)},p:O,d(t){t&&m(f)}}}function it(s){let e,f;return e=new I({props:{displayMode:!0,$$slots:{default:[ot]},$$scope:{ctx:s}}}),{c(){p(e.$$.fragment)},l(t){_(e.$$.fragment,t)},m(t,l){x(e,t,l),f=!0},p(t,l){const o={};l&1&&(o.$$scope={dirty:l,ctx:t}),e.$set(o)},i(t){f||(g(e.$$.fragment,t),f=!0)},o(t){w(e.$$.fragment,t),f=!1},d(t){d(e,t)}}}function ut(s){let e=j`
+		\begin{align*}
+		\lim_{x \to a} f(x) &= \pm\infty \quad \lim_{x \to a} g(x) = \pm\infty \\\\
+		\lim_{x \to a} \frac{f(x)}{g(x)} &= \lim_{x \to a} \frac{\frac{1}{g(x)}}{\frac{1}{f(x)}} \\\\
+		&= \frac{0}{0} \\\\
+		&= \lim_{x \to a} \frac{\frac{d}{dx}\frac{1}{g(x)}}{\frac{d}{dx}\frac{1}{f(x)}} \\\\
+		&= \lim_{x \to a} \frac{-\frac{g'(x)}{g(x)^2}}{-\frac{f'(x)}{f(x)^2}} \\\\
+		&= \lim_{x \to a} \frac{g'(x)}{f'(x)} \cdot \left(\frac{f(x)}{g(x)}\right)^2 \\\\
+		\lim_{x \to a} \frac{f(x)}{g(x)} &= \lim_{x \to a} \frac{g'(x)}{f'(x)} \cdot \left(\lim_{x \to a} \frac{f(x)}{g(x)}\right)^2 \\\\
+		\left(\lim_{x \to a} \frac{f(x)}{g(x)}\right)^{-1} &= \lim_{x \to a} \frac{g'(x)}{f'(x)} \\\\
+		\lim_{x \to a} \frac{f(x)}{g(x)} &= \left(\lim_{x \to a} \frac{g'(x)}{f'(x)}\right)^{-1} \\\\
+		&= \lim_{x \to a} \frac{f'(x)}{g'(x)}
+		\end{align*}
+		`+"",f;return{c(){f=v(e)},l(t){f=h(t,e)},m(t,l){r(t,f,l)},p:O,d(t){t&&m(f)}}}function ct(s){let e,f;return e=new I({props:{displayMode:!0,$$slots:{default:[ut]},$$scope:{ctx:s}}}),{c(){p(e.$$.fragment)},l(t){_(e.$$.fragment,t)},m(t,l){x(e,t,l),f=!0},p(t,l){const o={};l&1&&(o.$$scope={dirty:l,ctx:t}),e.$set(o)},i(t){f||(g(e.$$.fragment,t),f=!0)},o(t){w(e.$$.fragment,t),f=!1},d(t){d(e,t)}}}function pt(s){let e=j`\lim_{x \to 0} \frac{\sin x}{x}`+"",f;return{c(){f=v(e)},l(t){f=h(t,e)},m(t,l){r(t,f,l)},p:O,d(t){t&&m(f)}}}function _t(s){let e=j`
+		  \begin{align*}
+		  \lim_{x \to 0} \frac{\sin x}{x} &= \frac{0}{0} \\\\
+		  &= \lim_{x \to 0} \frac{\frac{d}{dx}\sin x}{\frac{d}{dx}x} \\\\
+		  &= \lim_{x \to 0} \frac{\cos x}{1} \\\\
+		  &= \cos(0) \\\\
+		  &= 1
+		  \end{align*}
+		  `+"",f;return{c(){f=v(e)},l(t){f=h(t,e)},m(t,l){r(t,f,l)},p:O,d(t){t&&m(f)}}}function xt(s){let e=j`\lim_{x \to \infty} \frac{e^x}{x^2}`+"",f;return{c(){f=v(e)},l(t){f=h(t,e)},m(t,l){r(t,f,l)},p:O,d(t){t&&m(f)}}}function gt(s){let e,f;return e=new I({props:{displayMode:!0,$$slots:{default:[xt]},$$scope:{ctx:s}}}),{c(){p(e.$$.fragment)},l(t){_(e.$$.fragment,t)},m(t,l){x(e,t,l),f=!0},p(t,l){const o={};l&1&&(o.$$scope={dirty:l,ctx:t}),e.$set(o)},i(t){f||(g(e.$$.fragment,t),f=!0)},o(t){w(e.$$.fragment,t),f=!1},d(t){d(e,t)}}}function wt(s){let e=j`
+		  \begin{align*}
+		  \lim_{x \to \infty} \frac{e^x}{x^2} &= \frac{\infty}{\infty} \\\\
+		  &= \lim_{x \to \infty} \frac{\frac{d}{dx}e^x}{\frac{d}{dx}x^2} \\\\
+		  &= \lim_{x \to \infty} \frac{e^x}{2x} \\\\
+		  &= \frac{\infty}{\infty} \\\\
+		  &= \lim_{x \to \infty} \frac{\frac{d}{dx}e^x}{\frac{d}{dx}2x} \\\\
+		  &= \lim_{x \to \infty} \frac{e^x}{2} \\\\
+		  &= \infty
+		  \end{align*}
+		  `+"",f;return{c(){f=v(e)},l(t){f=h(t,e)},m(t,l){r(t,f,l)},p:O,d(t){t&&m(f)}}}function dt(s){let e,f="Example 1",t,l,o,M,c,B,b,E,a,u,L="Example 2",T,R,C,S,q,P;return o=new I({props:{$$slots:{default:[pt]},$$scope:{ctx:s}}}),c=new I({props:{displayMode:!0,$$slots:{default:[_t]},$$scope:{ctx:s}}}),C=new et({props:{$$slots:{default:[gt]},$$scope:{ctx:s}}}),q=new I({props:{displayMode:!0,$$slots:{default:[wt]},$$scope:{ctx:s}}}),{c(){e=F("strong"),e.textContent=f,t=F("br"),l=v(`
+		Evaluate `),p(o.$$.fragment),M=v(`.
+		`),p(c.$$.fragment),B=N(),b=F("br"),E=F("br"),a=N(),u=F("strong"),u.textContent=L,T=F("br"),R=v(`
+		Evaluate 
+		`),p(C.$$.fragment),S=N(),p(q.$$.fragment)},l(n){e=G(n,"STRONG",{"data-svelte-h":!0}),U(e)!=="svelte-12l7lzt"&&(e.textContent=f),t=G(n,"BR",{}),l=h(n,`
+		Evaluate `),_(o.$$.fragment,n),M=h(n,`.
+		`),_(c.$$.fragment,n),B=H(n),b=G(n,"BR",{}),E=G(n,"BR",{}),a=H(n),u=G(n,"STRONG",{"data-svelte-h":!0}),U(u)!=="svelte-1f3irgi"&&(u.textContent=L),T=G(n,"BR",{}),R=h(n,`
+		Evaluate 
+		`),_(C.$$.fragment,n),S=H(n),_(q.$$.fragment,n)},m(n,$){r(n,e,$),r(n,t,$),r(n,l,$),x(o,n,$),r(n,M,$),x(c,n,$),r(n,B,$),r(n,b,$),r(n,E,$),r(n,a,$),r(n,u,$),r(n,T,$),r(n,R,$),x(C,n,$),r(n,S,$),x(q,n,$),P=!0},p(n,$){const i={};$&1&&(i.$$scope={dirty:$,ctx:n}),o.$set(i);const k={};$&1&&(k.$$scope={dirty:$,ctx:n}),c.$set(k);const z={};$&1&&(z.$$scope={dirty:$,ctx:n}),C.$set(z);const Z={};$&1&&(Z.$$scope={dirty:$,ctx:n}),q.$set(Z)},i(n){P||(g(o.$$.fragment,n),g(c.$$.fragment,n),g(C.$$.fragment,n),g(q.$$.fragment,n),P=!0)},o(n){w(o.$$.fragment,n),w(c.$$.fragment,n),w(C.$$.fragment,n),w(q.$$.fragment,n),P=!1},d(n){n&&(m(e),m(t),m(l),m(M),m(B),m(b),m(E),m(a),m(u),m(T),m(R),m(S)),d(o,n),d(c,n),d(C,n),d(q,n)}}}function vt(s){let e,f,t,l,o,M,c,B,b,E;return e=new tt({props:{heading:"L'Hôpital's Rule"}}),t=new A({props:{heading:"Introduction",$$slots:{default:[mt]},$$scope:{ctx:s}}}),o=new A({props:{heading:"Proof for Zeroes",$$slots:{default:[it]},$$scope:{ctx:s}}}),c=new A({props:{heading:"Proof for Infinities",$$slots:{default:[ct]},$$scope:{ctx:s}}}),b=new A({props:{heading:"Examples",$$slots:{default:[dt]},$$scope:{ctx:s}}}),{c(){p(e.$$.fragment),f=N(),p(t.$$.fragment),l=N(),p(o.$$.fragment),M=N(),p(c.$$.fragment),B=N(),p(b.$$.fragment)},l(a){_(e.$$.fragment,a),f=H(a),_(t.$$.fragment,a),l=H(a),_(o.$$.fragment,a),M=H(a),_(c.$$.fragment,a),B=H(a),_(b.$$.fragment,a)},m(a,u){x(e,a,u),r(a,f,u),x(t,a,u),r(a,l,u),x(o,a,u),r(a,M,u),x(c,a,u),r(a,B,u),x(b,a,u),E=!0},p(a,u){const L={};u&1&&(L.$$scope={dirty:u,ctx:a}),t.$set(L);const T={};u&1&&(T.$$scope={dirty:u,ctx:a}),o.$set(T);const R={};u&1&&(R.$$scope={dirty:u,ctx:a}),c.$set(R);const C={};u&1&&(C.$$scope={dirty:u,ctx:a}),b.$set(C)},i(a){E||(g(e.$$.fragment,a),g(t.$$.fragment,a),g(o.$$.fragment,a),g(c.$$.fragment,a),g(b.$$.fragment,a),E=!0)},o(a){w(e.$$.fragment,a),w(t.$$.fragment,a),w(o.$$.fragment,a),w(c.$$.fragment,a),w(b.$$.fragment,a),E=!1},d(a){a&&(m(f),m(l),m(M),m(B)),d(e,a),d(t,a),d(o,a),d(c,a),d(b,a)}}}function ht(s){let e,f;return e=new y({props:{$$slots:{default:[vt]},$$scope:{ctx:s}}}),{c(){p(e.$$.fragment)},l(t){_(e.$$.fragment,t)},m(t,l){x(e,t,l),f=!0},p(t,[l]){const o={};l&1&&(o.$$scope={dirty:l,ctx:t}),e.$set(o)},i(t){f||(g(e.$$.fragment,t),f=!0)},o(t){w(e.$$.fragment,t),f=!1},d(t){d(e,t)}}}function j(s){return s.raw[0]}class Lt extends X{constructor(e){super(),Y(this,e,null,ht,W,{})}}export{Lt as component};

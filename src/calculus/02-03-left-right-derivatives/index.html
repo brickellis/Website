@@ -1,0 +1,74 @@
+<!doctype html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8" />
+		<link rel="icon" href="../../favicon.png" />
+		<meta name="viewport" content="width=device-width, initial-scale=1" />
+		
+		<link href="../../_app/immutable/assets/app.BDtVw_ds.css" rel="stylesheet">
+		<link href="../../_app/immutable/assets/Section._en2CAKW.css" rel="stylesheet">
+		<link rel="modulepreload" href="../../_app/immutable/entry/start.DFcj8LNn.js">
+		<link rel="modulepreload" href="../../_app/immutable/chunks/BPHTS8RV.js">
+		<link rel="modulepreload" href="../../_app/immutable/chunks/CVhLxNSM.js">
+		<link rel="modulepreload" href="../../_app/immutable/chunks/DLyp5A0Q.js">
+		<link rel="modulepreload" href="../../_app/immutable/chunks/CwFVwKkT.js">
+		<link rel="modulepreload" href="../../_app/immutable/entry/app.34Qzq_vi.js">
+		<link rel="modulepreload" href="../../_app/immutable/chunks/C1FmrZbK.js">
+		<link rel="modulepreload" href="../../_app/immutable/chunks/DvSB8R1X.js">
+		<link rel="modulepreload" href="../../_app/immutable/nodes/0.B7xpY3_-.js">
+		<link rel="modulepreload" href="../../_app/immutable/nodes/2.BGaKxamB.js">
+		<link rel="modulepreload" href="../../_app/immutable/nodes/21.BfFltheD.js">
+		<link rel="modulepreload" href="../../_app/immutable/chunks/ByTZAYyp.js">
+		<link rel="modulepreload" href="../../_app/immutable/chunks/xLaKUPuM.js">
+		<link rel="modulepreload" href="../../_app/immutable/chunks/CkoZ7XGi.js">
+		<link rel="modulepreload" href="../../_app/immutable/chunks/D5fqzSVu.js">
+		<link rel="modulepreload" href="../../_app/immutable/chunks/D3W7TYDU.js">
+		<link rel="modulepreload" href="../../_app/immutable/chunks/Bw3t_506.js">
+		<link rel="modulepreload" href="../../_app/immutable/chunks/S6_-2PRy.js">
+	</head>
+	<body data-sveltekit-preload-data="hover">
+		<div style="display: contents">    <div class="fixed top-0 left-0 w-full h-full z-[-2] bg-background dark:bg-dark_background"></div> <body class="h-full bg-background dark:bg-dark_background"><button class="fixed top-4 left-4 z-10 p-2 text-text dark:text-dark_text hover:text-primary" data-svelte-h="svelte-au3lwb">←</button> <button class="fixed top-4 right-4 z-10 p-2 text-text dark:text-dark_text hover:text-primary flex items-center justify-center" aria-label="Toggle Dark Mode"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide-icon lucide lucide-sun w-5 h-5"><circle cx="12" cy="12" r="4"></circle><path d="M12 2v2"></path><path d="M12 20v2"></path><path d="m4.93 4.93 1.41 1.41"></path><path d="m17.66 17.66 1.41 1.41"></path><path d="M2 12h2"></path><path d="M20 12h2"></path><path d="m6.34 17.66-1.41 1.41"></path><path d="m19.07 4.93-1.41 1.41"></path></svg></button>  <div class="p-8 font-sans leading-relaxed w-full"><div class="max-w-3xl mx-auto p-8 leading-relaxed ">  <h1 class="text-3xl font-bold text-text mb-6 dark:text-dark_text"><title>Left/Right Derivatives</title> <meta property="og:title" content="Left/Right Derivatives"> Left/Right Derivatives</h1> <div class="mb-8"><h2 class="text-2xl font-semibold text-text dark:text-dark_text mb-4">Introduction</h2> <p class="text-text dark:text-dark_text">We defined the derivative as:
+			<div style="display: none;">f'(x)=\lim_{h \to 0}\frac{f(x+h) - f(x-h)}{2h}</div> <span class="math"><!-- HTML_TAG_START --><!-- HTML_TAG_END --></span>
+			However, this is not the common definition. The common definition is:
+			<div style="display: none;">f'(x)=\frac{f(x)_2 - f(x)_1}{x_2 - x_1}=\lim_{h \to 0}\frac{f(x+h) - f(x)}{(x+h)-x}=\lim_{h \to 0}\frac{f(x+h) - f(x)}{h}</div> <span class="math"><!-- HTML_TAG_START --><!-- HTML_TAG_END --></span>
+			One of the two points which approaches <div style="display: none;">x</div> <span class="math"><!-- HTML_TAG_START --><!-- HTML_TAG_END --></span> is replaced by <div style="display: none;">x</div> <span class="math"><!-- HTML_TAG_START --><!-- HTML_TAG_END --></span> itself.
+			<br><br>The two graphs below show the difference between the two definitions.
+			  <div class="flex justify-center"><div class="w-full mb-8 bg-background dark:bg-dark_background aspect-square max-h-[66vh] max-w-[66vh]"><div class="flex w-full h-full aspect-[1/1]"></div></div></div>   <div class="flex justify-center"><div class="w-full mb-8 bg-background dark:bg-dark_background aspect-square max-h-[66vh] max-w-[66vh]"><div class="flex w-full h-full aspect-[1/1]"></div></div></div>
+			These two definitions are different in a critical way.
+			<br><br>For the first, the limit&#39;s left and right side will always be equal.
+			<div style="display: none;">\lim_{h \to 0^+}\frac{f(x+h) - f(x-h)}{2h}=\lim_{h \to 0^+}\frac{f(x+(-h)) - f(x-(-h))}{2(-h)}=\lim_{h \to 0^-}\frac{f(x+h) - f(x-h)}{2h}</div> <span class="math"><!-- HTML_TAG_START --><!-- HTML_TAG_END --></span>
+			For the second, the limit&#39;s left and right side are not necessarily equal. 
+			<br><br>We have used the less-common definition thus far because it more intuitively represents the tangent line. However, now that we are doing weightier proofs for more complicated functions, we will use the definition which is easier to work with and more comprehensive.
+			<br><br>In order for a derivative to exist, the second limit must exist. Therefore, its left and right side must equal each other.
+			<br><br>A great example of the necessity of the new definition is <div style="display: none;">f(x)=|x|</div> <span class="math"><!-- HTML_TAG_START --><!-- HTML_TAG_END --></span>. 
+			<br> <span class="inline-block ml-8">Using the first definition, <div style="display: none;">f'(0)=0</div> <span class="math"><!-- HTML_TAG_START --><!-- HTML_TAG_END --></span>.
+			<br>Using the second definition, <div style="display: none;">f'(0)=\text{undefined}</div> <span class="math"><!-- HTML_TAG_START --><!-- HTML_TAG_END --></span>. The left side of the limit is <div style="display: none;">-1</div> <span class="math"><!-- HTML_TAG_START --><!-- HTML_TAG_END --></span> and the right side is <div style="display: none;">1</div> <span class="math"><!-- HTML_TAG_START --><!-- HTML_TAG_END --></span>.
+			<br>This is demonstrated in the following graphs.</span>   <div class="flex justify-center"><div class="w-full mb-8 bg-background dark:bg-dark_background aspect-square max-h-[66vh] max-w-[66vh]"><div class="flex w-full h-full aspect-[1/1]"></div></div></div>   <div class="flex justify-center"><div class="w-full mb-8 bg-background dark:bg-dark_background aspect-square max-h-[66vh] max-w-[66vh]"><div class="flex w-full h-full aspect-[1/1]"></div></div></div>
+		(I graphed <div style="display: none;">f(x)=|x|+0.2</div> <span class="math"><!-- HTML_TAG_START --><!-- HTML_TAG_END --></span> so the tangent line would be visible.)
+			</p></div></div></div></body> 
+			
+			<script>
+				{
+					__sveltekit_1hm8yy8 = {
+						base: new URL("../..", location).pathname.slice(0, -1),
+						assets: "/BrickAcademy"
+					};
+
+					const element = document.currentScript.parentElement;
+
+					Promise.all([
+						import("../../_app/immutable/entry/start.DFcj8LNn.js"),
+						import("../../_app/immutable/entry/app.34Qzq_vi.js")
+					]).then(([kit, app]) => {
+						kit.start(app, element, {
+							node_ids: [0, 2, 21],
+							data: [null,null,null],
+							form: null,
+							error: null
+						});
+					});
+				}
+			</script>
+		</div>
+	</body>
+</html>

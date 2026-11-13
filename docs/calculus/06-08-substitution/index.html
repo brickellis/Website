@@ -1,0 +1,92 @@
+<!doctype html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8" />
+		<link rel="icon" href="../../favicon.png" />
+		<meta name="viewport" content="width=device-width, initial-scale=1" />
+		
+		<link href="../../_app/immutable/assets/app.BDtVw_ds.css" rel="stylesheet">
+		<link href="../../_app/immutable/assets/Section._en2CAKW.css" rel="stylesheet">
+		<link rel="modulepreload" href="../../_app/immutable/entry/start.DFcj8LNn.js">
+		<link rel="modulepreload" href="../../_app/immutable/chunks/BPHTS8RV.js">
+		<link rel="modulepreload" href="../../_app/immutable/chunks/CVhLxNSM.js">
+		<link rel="modulepreload" href="../../_app/immutable/chunks/DLyp5A0Q.js">
+		<link rel="modulepreload" href="../../_app/immutable/chunks/CwFVwKkT.js">
+		<link rel="modulepreload" href="../../_app/immutable/entry/app.34Qzq_vi.js">
+		<link rel="modulepreload" href="../../_app/immutable/chunks/C1FmrZbK.js">
+		<link rel="modulepreload" href="../../_app/immutable/chunks/DvSB8R1X.js">
+		<link rel="modulepreload" href="../../_app/immutable/nodes/0.B7xpY3_-.js">
+		<link rel="modulepreload" href="../../_app/immutable/nodes/2.BGaKxamB.js">
+		<link rel="modulepreload" href="../../_app/immutable/nodes/52.pZlgcfMN.js">
+		<link rel="modulepreload" href="../../_app/immutable/chunks/ByTZAYyp.js">
+		<link rel="modulepreload" href="../../_app/immutable/chunks/xLaKUPuM.js">
+	</head>
+	<body data-sveltekit-preload-data="hover">
+		<div style="display: contents">    <div class="fixed top-0 left-0 w-full h-full z-[-2] bg-background dark:bg-dark_background"></div> <body class="h-full bg-background dark:bg-dark_background"><button class="fixed top-4 left-4 z-10 p-2 text-text dark:text-dark_text hover:text-primary" data-svelte-h="svelte-au3lwb">←</button> <button class="fixed top-4 right-4 z-10 p-2 text-text dark:text-dark_text hover:text-primary flex items-center justify-center" aria-label="Toggle Dark Mode"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide-icon lucide lucide-sun w-5 h-5"><circle cx="12" cy="12" r="4"></circle><path d="M12 2v2"></path><path d="M12 20v2"></path><path d="m4.93 4.93 1.41 1.41"></path><path d="m17.66 17.66 1.41 1.41"></path><path d="M2 12h2"></path><path d="M20 12h2"></path><path d="m6.34 17.66-1.41 1.41"></path><path d="m19.07 4.93-1.41 1.41"></path></svg></button>  <div class="p-8 font-sans leading-relaxed w-full"><div class="max-w-3xl mx-auto p-8 leading-relaxed ">  <h1 class="text-3xl font-bold text-text mb-6 dark:text-dark_text"><title>Substitution</title> <meta property="og:title" content="Substitution"> Substitution</h1> <div class="mb-8"><h2 class="text-2xl font-semibold text-text dark:text-dark_text mb-4">Introduction</h2> <p class="text-text dark:text-dark_text">Integration by substitution simplifies integrals that are otherwise too difficult to solve.
+		<br><br>Think of it as a reverse chain rule.
+		<div style="display: none;">
+		\begin{align*}
+		u &amp;= g(x) \\\\
+		F(g(b)) - F(g(a)) &amp;= \int_a^b f(g(x))g'(x)dx \\\\
+		F(g(b)) - F(g(a)) &amp;= \int_{g(a)}^{g(b)} f(u)du \\\\
+		\int_a^b f(g(x))g'(x)dx &amp;= \int_{g(a)}^{g(b)} f(u)du
+		\end{align*}
+		</div> <span class="math"><!-- HTML_TAG_START --><!-- HTML_TAG_END --></span></p></div> <div class="mb-8"><h2 class="text-2xl font-semibold text-text dark:text-dark_text mb-4">Examples</h2> <p class="text-text dark:text-dark_text">1.
+		<div style="display: none;">
+		\int x^3 e^{x^4} \, dx \\ \text{} \\
+		u = x^4 \quad\quad \frac{du}{dx}=4x^3 \quad\quad \frac{du}{4} = x^3dx \\ \text{} \\
+		\begin{align*}
+		\int x^3 e^{x^4} \, dx &amp;= \int \frac{1}{4}e^{u} \, du  \\\\
+		\int \frac{1}{4}e^{u} \, du &amp;= \frac{1}{4}e^{u} + C \\\\
+		\int \frac{1}{4}e^{u} \, du &amp;= \frac{1}{4}e^{x^4} + C \\\\
+		\int x^3 e^{x^4} \, dx &amp;= \frac{1}{4}e^{x^4} + C
+		\end{align*}
+		</div> <span class="math"><!-- HTML_TAG_START --><!-- HTML_TAG_END --></span>
+		2.
+		<div style="display: none;">
+		\int 5x\sin(3x^2) \, dx \\ \text{} \\
+		u = 3x^2 \quad\quad \frac{du}{dx}=6x \quad\quad \frac{du}{6} = xdx \\ \text{} \\
+		\begin{align*}
+		\int 5x\sin(3x^2) \, dx &amp;= \int \frac{5}{6}\sin(u) \, du \\\\
+		\int \frac{5}{6}\sin(u) \, du &amp;= -\frac{5}{6}\cos(u) + C \\\\
+		\int \frac{5}{6}\sin(u) \, du &amp;= -\frac{5}{6}\cos(3x^2) + C \\\\
+		\int 5x\sin(3x^2) \, dx &amp;= -\frac{5}{6}\cos(3x^2) + C
+		\end{align*}
+		</div> <span class="math"><!-- HTML_TAG_START --><!-- HTML_TAG_END --></span>
+		3.
+		<div style="display: none;">
+		\int \frac{1}{x\ln(x)} \, dx \\ \text{} \\
+		u = \ln(x) \quad\quad \frac{du}{dx}=\frac{1}{x} \quad\quad du = \frac{1}{x}dx \\ \text{} \\
+		\begin{align*}
+		\int \frac{1}{x\ln(x)} \, dx &amp;= \int \frac{1}{u} \, du \\\\
+		\int \frac{1}{u} \, du &amp;= \ln|u| + C \\\\
+		\int \frac{1}{u} \, du &amp;= \ln|\ln(x)| + C \\\\
+		\int \frac{1}{x\ln(x)} \, dx &amp;= \ln|\ln(x)| + C
+		\end{align*}
+		</div> <span class="math"><!-- HTML_TAG_START --><!-- HTML_TAG_END --></span></p></div></div></div></body> 
+			
+			<script>
+				{
+					__sveltekit_1hm8yy8 = {
+						base: new URL("../..", location).pathname.slice(0, -1),
+						assets: "/BrickAcademy"
+					};
+
+					const element = document.currentScript.parentElement;
+
+					Promise.all([
+						import("../../_app/immutable/entry/start.DFcj8LNn.js"),
+						import("../../_app/immutable/entry/app.34Qzq_vi.js")
+					]).then(([kit, app]) => {
+						kit.start(app, element, {
+							node_ids: [0, 2, 52],
+							data: [null,null,null],
+							form: null,
+							error: null
+						});
+					});
+				}
+			</script>
+		</div>
+	</body>
+</html>

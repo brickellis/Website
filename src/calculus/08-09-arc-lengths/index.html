@@ -1,0 +1,116 @@
+<!doctype html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8" />
+		<link rel="icon" href="../../favicon.png" />
+		<meta name="viewport" content="width=device-width, initial-scale=1" />
+		
+		<link href="../../_app/immutable/assets/app.BDtVw_ds.css" rel="stylesheet">
+		<link href="../../_app/immutable/assets/Section._en2CAKW.css" rel="stylesheet">
+		<link rel="modulepreload" href="../../_app/immutable/entry/start.DFcj8LNn.js">
+		<link rel="modulepreload" href="../../_app/immutable/chunks/BPHTS8RV.js">
+		<link rel="modulepreload" href="../../_app/immutable/chunks/CVhLxNSM.js">
+		<link rel="modulepreload" href="../../_app/immutable/chunks/DLyp5A0Q.js">
+		<link rel="modulepreload" href="../../_app/immutable/chunks/CwFVwKkT.js">
+		<link rel="modulepreload" href="../../_app/immutable/entry/app.34Qzq_vi.js">
+		<link rel="modulepreload" href="../../_app/immutable/chunks/C1FmrZbK.js">
+		<link rel="modulepreload" href="../../_app/immutable/chunks/DvSB8R1X.js">
+		<link rel="modulepreload" href="../../_app/immutable/nodes/0.B7xpY3_-.js">
+		<link rel="modulepreload" href="../../_app/immutable/nodes/2.BGaKxamB.js">
+		<link rel="modulepreload" href="../../_app/immutable/nodes/72.DDs6MNJ7.js">
+		<link rel="modulepreload" href="../../_app/immutable/chunks/ByTZAYyp.js">
+		<link rel="modulepreload" href="../../_app/immutable/chunks/xLaKUPuM.js">
+		<link rel="modulepreload" href="../../_app/immutable/chunks/CkoZ7XGi.js">
+		<link rel="modulepreload" href="../../_app/immutable/chunks/D5fqzSVu.js">
+		<link rel="modulepreload" href="../../_app/immutable/chunks/Bw3t_506.js">
+		<link rel="modulepreload" href="../../_app/immutable/chunks/S6_-2PRy.js">
+	</head>
+	<body data-sveltekit-preload-data="hover">
+		<div style="display: contents">  <div class="fixed top-0 left-0 w-full h-full z-[-2] bg-background dark:bg-dark_background"></div> <body class="h-full bg-background dark:bg-dark_background"><button class="fixed top-4 left-4 z-10 p-2 text-text dark:text-dark_text hover:text-primary" data-svelte-h="svelte-au3lwb">←</button> <button class="fixed top-4 right-4 z-10 p-2 text-text dark:text-dark_text hover:text-primary flex items-center justify-center" aria-label="Toggle Dark Mode"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide-icon lucide lucide-sun w-5 h-5"><circle cx="12" cy="12" r="4"></circle><path d="M12 2v2"></path><path d="M12 20v2"></path><path d="m4.93 4.93 1.41 1.41"></path><path d="m17.66 17.66 1.41 1.41"></path><path d="M2 12h2"></path><path d="M20 12h2"></path><path d="m6.34 17.66-1.41 1.41"></path><path d="m19.07 4.93-1.41 1.41"></path></svg></button>  <div class="p-8 font-sans leading-relaxed w-full"><div class="max-w-3xl mx-auto p-8 leading-relaxed ">  <h1 class="text-3xl font-bold text-text mb-6 dark:text-dark_text"><title>Arc Lengths</title> <meta property="og:title" content="Arc Lengths"> Arc Lengths</h1> <div class="mb-8"><h2 class="text-2xl font-semibold text-text dark:text-dark_text mb-4">Introduction</h2> <p class="text-text dark:text-dark_text">We calculate the distance between two points on a function <div style="display: none;">(a, f(a))</div> <span class="math"><!-- HTML_TAG_START --><!-- HTML_TAG_END --></span>, <div style="display: none;">(b, f(b))</div> <span class="math"><!-- HTML_TAG_START --><!-- HTML_TAG_END --></span>, as the bird flies:
+		<div style="display: none;">\sqrt{(b - a)^2 + (f(b) - f(a))^2}</div> <span class="math"><!-- HTML_TAG_START --><!-- HTML_TAG_END --></span>
+		We can also calculate the distance between two points on a function while travelling along the function.
+		<br><br>This is the arc length.
+		<br><br>In other words, the euclidean distance is the green line. The arc length is the red line.
+		  <div class="flex justify-center"><div class="w-full mb-8 bg-background dark:bg-dark_background aspect-square max-h-[66vh] max-w-[66vh]"><div class="flex w-full h-full aspect-[1/1]"></div></div></div></p></div> <div class="mb-8"><h2 class="text-2xl font-semibold text-text dark:text-dark_text mb-4">Calculation</h2> <p class="text-text dark:text-dark_text">The formula above is the same as the one below: Euclidean Distance:
+		<div style="display: none;">
+				D = \sqrt{(\Delta x)^2 + (\Delta y)^2}
+			</div> <span class="math"><!-- HTML_TAG_START --><!-- HTML_TAG_END --></span> <div style="display: none;">\Delta x</div> <span class="math"><!-- HTML_TAG_START --><!-- HTML_TAG_END --></span> is the change in <div style="display: none;">x</div> <span class="math"><!-- HTML_TAG_START --><!-- HTML_TAG_END --></span> <br><div style="display: none;">\Delta y</div> <span class="math"><!-- HTML_TAG_START --><!-- HTML_TAG_END --></span> is the change in <div style="display: none;">y</div> <span class="math"><!-- HTML_TAG_START --><!-- HTML_TAG_END --></span>.
+		<br><br>We calculate the arc length between two points by summing the euclidean distances of all the points along the function between them:
+		<div style="display: none;">
+				L =\sum_{i=1}^{n} \sqrt{(\Delta x_i)^2 + (\Delta y_i)^2}
+			</div> <span class="math"><!-- HTML_TAG_START --><!-- HTML_TAG_END --></span>
+		This Riemann Sum can be converted to an integral:
+		<div style="display: none;">
+				\begin{align*}
+				L &amp;= \int_{a}^{b} \sqrt{dx^2 + dy^2} \\
+				&amp;= \int_{a}^{b} \sqrt{dx^2 + dy^2} \cdot \frac{dx}{dx} \\
+				&amp;= \int_{a}^{b} \sqrt{\frac{dx^2}{dx^2} + \frac{dy^2}{dx^2}} \, dx \\
+				&amp;= \int_{a}^{b} \sqrt{1 + \left(\frac{dy}{dx}\right)^2} \, dx
+				\end{align*}
+			</div> <span class="math"><!-- HTML_TAG_START --><!-- HTML_TAG_END --></span></p></div> <div class="mb-8"><h2 class="text-2xl font-semibold text-text dark:text-dark_text mb-4">Examples</h2> <p class="text-text dark:text-dark_text"><strong data-svelte-h="svelte-356pft">Example 1: Explicit Function</strong><br>
+		Find the arc length of <div style="display: none;">y = \frac{2}{3}x^{3/2}</div> <span class="math"><!-- HTML_TAG_START --><!-- HTML_TAG_END --></span> from <div style="display: none;">x = 0</div> <span class="math"><!-- HTML_TAG_START --><!-- HTML_TAG_END --></span> to <div style="display: none;">x = 3</div> <span class="math"><!-- HTML_TAG_START --><!-- HTML_TAG_END --></span>.
+		<div style="display: none;">
+				\begin{align*}
+				\frac{dy}{dx} &amp;= \sqrt{x} \\
+				L &amp;= \int_{0}^{3} \sqrt{1 + (\sqrt{x})^2} \, dx \\
+				&amp;= \int_{0}^{3} \sqrt{1 + x} \, \, dx \\
+				&amp;= \left[ \frac{2}{3}(1 + x)^{3/2} \right]_0^3 \\
+				&amp;= \frac{2}{3}(8 - 1) = \frac{14}{3} \approx 4.67 \, \text{units}
+				\end{align*}
+			</div> <span class="math"><!-- HTML_TAG_START --><!-- HTML_TAG_END --></span>
+		The function travels a distance of <div style="display: none;">\frac{14}{3}</div> <span class="math"><!-- HTML_TAG_START --><!-- HTML_TAG_END --></span> units.
+
+		<br><br><strong data-svelte-h="svelte-1iwyuim">Example 2: Linear Function Verification</strong><br>
+		Find the arc length of <div style="display: none;">y = 3x + 2</div> <span class="math"><!-- HTML_TAG_START --><!-- HTML_TAG_END --></span> from <div style="display: none;">x = 1</div> <span class="math"><!-- HTML_TAG_START --><!-- HTML_TAG_END --></span> to <div style="display: none;">x = 4</div> <span class="math"><!-- HTML_TAG_START --><!-- HTML_TAG_END --></span>.
+		<div style="display: none;">
+			\begin{align*}
+			\frac{dy}{dx} &amp;= 3 \\
+			L &amp;= \int_{1}^{4} \sqrt{1 + 3^2} \, dx \\
+			&amp;= \int_{1}^{4} \sqrt{10} \, dx \\
+			&amp;= \sqrt{10}(4 - 1) = 3\sqrt{10} \approx 9.49 \, \text{units}
+			\end{align*}
+		</div> <span class="math"><!-- HTML_TAG_START --><!-- HTML_TAG_END --></span>
+		Since this function is a straight line, we can check our work using the euclidean distance between
+		<div style="display: none;">(1, 5)</div> <span class="math"><!-- HTML_TAG_START --><!-- HTML_TAG_END --></span> and <div style="display: none;">(4, 14)</div> <span class="math"><!-- HTML_TAG_START --><!-- HTML_TAG_END --></span>:
+		<div style="display: none;">
+			\sqrt{(4-1)^2 + (14-5)^2} = \sqrt{9 + 81} = \sqrt{90} = 3\sqrt{10}
+			</div> <span class="math"><!-- HTML_TAG_START --><!-- HTML_TAG_END --></span> <br><br><strong data-svelte-h="svelte-pbvjmo">Example 3: Simplifying Integral</strong><br>
+		Find the arc length of <div style="display: none;">y = \frac{1}{3}(x^2 + 2)^{3 / 2}</div> <span class="math"><!-- HTML_TAG_START --><!-- HTML_TAG_END --></span> from <div style="display: none;">x = 0</div> <span class="math"><!-- HTML_TAG_START --><!-- HTML_TAG_END --></span> to
+		<div style="display: none;">x = 1</div> <span class="math"><!-- HTML_TAG_START --><!-- HTML_TAG_END --></span>.
+		<div style="display: none;">
+			\begin{align*}
+			\frac{dy}{dx} &amp;= x(x^2 + 2)^{1/2} \\
+			L &amp;= \int_{0}^{1} \sqrt{1 + \left(x\sqrt{x^2 + 2}\right)^2} \, dx \\
+			&amp;= \int_{0}^{1} \sqrt{1 + x^2(x^2 + 2)} \, dx \\
+			&amp;= \int_{0}^{1} \sqrt{x^4 + 2x^2 + 1} \, dx \\
+			&amp;= \int_{0}^{1} (x^2 + 1) \, dx \\
+			&amp;= \left[\frac{x^3}{3} + x\right]_0^1 = \frac{4}{3} \, \text{units}
+			\end{align*}
+		</div> <span class="math"><!-- HTML_TAG_START --><!-- HTML_TAG_END --></span>
+		The arc length is <div style="display: none;">\frac{4}{3}</div> <span class="math"><!-- HTML_TAG_START --><!-- HTML_TAG_END --></span> units.</p></div></div></div></body> 
+			
+			<script>
+				{
+					__sveltekit_1hm8yy8 = {
+						base: new URL("../..", location).pathname.slice(0, -1),
+						assets: "/BrickAcademy"
+					};
+
+					const element = document.currentScript.parentElement;
+
+					Promise.all([
+						import("../../_app/immutable/entry/start.DFcj8LNn.js"),
+						import("../../_app/immutable/entry/app.34Qzq_vi.js")
+					]).then(([kit, app]) => {
+						kit.start(app, element, {
+							node_ids: [0, 2, 72],
+							data: [null,null,null],
+							form: null,
+							error: null
+						});
+					});
+				}
+			</script>
+		</div>
+	</body>
+</html>

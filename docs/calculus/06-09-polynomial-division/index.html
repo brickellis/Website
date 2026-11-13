@@ -1,0 +1,135 @@
+<!doctype html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8" />
+		<link rel="icon" href="../../favicon.png" />
+		<meta name="viewport" content="width=device-width, initial-scale=1" />
+		
+		<link href="../../_app/immutable/assets/app.BDtVw_ds.css" rel="stylesheet">
+		<link href="../../_app/immutable/assets/Section._en2CAKW.css" rel="stylesheet">
+		<link rel="modulepreload" href="../../_app/immutable/entry/start.DFcj8LNn.js">
+		<link rel="modulepreload" href="../../_app/immutable/chunks/BPHTS8RV.js">
+		<link rel="modulepreload" href="../../_app/immutable/chunks/CVhLxNSM.js">
+		<link rel="modulepreload" href="../../_app/immutable/chunks/DLyp5A0Q.js">
+		<link rel="modulepreload" href="../../_app/immutable/chunks/CwFVwKkT.js">
+		<link rel="modulepreload" href="../../_app/immutable/entry/app.34Qzq_vi.js">
+		<link rel="modulepreload" href="../../_app/immutable/chunks/C1FmrZbK.js">
+		<link rel="modulepreload" href="../../_app/immutable/chunks/DvSB8R1X.js">
+		<link rel="modulepreload" href="../../_app/immutable/nodes/0.B7xpY3_-.js">
+		<link rel="modulepreload" href="../../_app/immutable/nodes/2.BGaKxamB.js">
+		<link rel="modulepreload" href="../../_app/immutable/nodes/53.3CpHY4yX.js">
+		<link rel="modulepreload" href="../../_app/immutable/chunks/ByTZAYyp.js">
+		<link rel="modulepreload" href="../../_app/immutable/chunks/xLaKUPuM.js">
+	</head>
+	<body data-sveltekit-preload-data="hover">
+		<div style="display: contents">    <div class="fixed top-0 left-0 w-full h-full z-[-2] bg-background dark:bg-dark_background"></div> <body class="h-full bg-background dark:bg-dark_background"><button class="fixed top-4 left-4 z-10 p-2 text-text dark:text-dark_text hover:text-primary" data-svelte-h="svelte-au3lwb">←</button> <button class="fixed top-4 right-4 z-10 p-2 text-text dark:text-dark_text hover:text-primary flex items-center justify-center" aria-label="Toggle Dark Mode"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide-icon lucide lucide-sun w-5 h-5"><circle cx="12" cy="12" r="4"></circle><path d="M12 2v2"></path><path d="M12 20v2"></path><path d="m4.93 4.93 1.41 1.41"></path><path d="m17.66 17.66 1.41 1.41"></path><path d="M2 12h2"></path><path d="M20 12h2"></path><path d="m6.34 17.66-1.41 1.41"></path><path d="m19.07 4.93-1.41 1.41"></path></svg></button>  <div class="p-8 font-sans leading-relaxed w-full"><div class="max-w-3xl mx-auto p-8 leading-relaxed ">  <h1 class="text-3xl font-bold text-text mb-6 dark:text-dark_text"><title>Polynomial Division</title> <meta property="og:title" content="Polynomial Division"> Polynomial Division</h1> <div class="mb-8"><h2 class="text-2xl font-semibold text-text dark:text-dark_text mb-4">Introduction</h2> <p class="text-text dark:text-dark_text">We want to integrate the following:
+		<div style="display: none;">\int \frac{x^3 + 2x^2 - x + 4}{x+1} \, dx</div> <span class="math"><!-- HTML_TAG_START --><!-- HTML_TAG_END --></span>
+		It is a messy integral, but we can simplify it using polynomial long division.
+		polynomials instead of numbers.
+		<br><br>We will divide the numerator by the denominator, resulting in a quotient and remainder.
+		<div style="display: none;">
+			\begin{array}{r} x\phantom{^2}+4\phantom{x+3)} \\
+			x-2{\overline{\smash{\big)}\,x^2+2x+3\phantom{)}}}\\
+			\underline{-~\phantom{(}(x^2-2x)\phantom{-3}}\\ 
+			0+4x+3\phantom{)}\\
+			\underline{-~\phantom{()}(4x-8)}\\ 
+			0+11\phantom{)} 
+			\end{array}
+		</div> <span class="math"><!-- HTML_TAG_START --><!-- HTML_TAG_END --></span> <div style="display: none;">
+			\frac{x^2 + 2x + 3}{x-2} = x + 4 + \frac{11}{x-2}
+		</div> <span class="math"><!-- HTML_TAG_START --><!-- HTML_TAG_END --></span></p></div> <div class="mb-8"><h2 class="text-2xl font-semibold text-text dark:text-dark_text mb-4">Example #1</h2> <p class="text-text dark:text-dark_text"><div style="display: none;">
+			\begin{array}{r} x+1\overline{\smash{\big)}\,x^3 + 2x^2 - x + 4} \end{array}
+		</div> <span class="math"><!-- HTML_TAG_START --><!-- HTML_TAG_END --></span>
+		Divide the highest term of the numerator by the highest term of the denominator.
+		<div style="display: none;">\begin{array}{r} x^2 \phantom{+ 2x^2 - x + 4} \\ x+1\overline{\smash{\big)}\,x^3 + 2x^2 - x +
+			4} \\ \phantom{x}-\phantom{1\smash{\big)}\,}\underline{x^3 + \phantom{1}x^2} \phantom{-x + 4}
+			\\ x^2 - x + 4 \end{array}</div> <span class="math"><!-- HTML_TAG_START --><!-- HTML_TAG_END --></span>
+		Repeat.
+		<div style="display: none;">\begin{array}{r} x^2 + \phantom{2}x\phantom{^2 - x + 4} \\ x+1\overline{\smash{\big)}\,x^3 +
+			2x^2 - x + 4} \\ \phantom{x}-\phantom{1\smash{\big)}\,}\underline{x^3 + \phantom{1}x^2}
+			\phantom{-x + 4} \\ x^2 - x + 4 \\ \phantom{x}-\phantom{1\smash{\big)}\,}\underline{x^2+x}
+			\phantom{+ 4} \\ -2x+4 \end{array}</div> <span class="math"><!-- HTML_TAG_START --><!-- HTML_TAG_END --></span>
+		Repeat.
+		<div style="display: none;">\begin{array}{r} x^2 + \phantom{2}x\phantom{^2} - 2 \phantom{+ 4} \\
+			x+1\overline{\smash{\big)}\,x^3 + 2x^2 - x + 4} \\
+			\phantom{x}-\phantom{1\smash{\big)}\,}\underline{x^3 + \phantom{1}x^2} \phantom{-x + 4} \\ x^2
+			- x + 4 \\ \phantom{x}-\phantom{1\smash{\big)}\,}\underline{x^2+x} \phantom{+ 4} \\ -2x+4 \\
+			\phantom{x}-\phantom{1\smash{\big)}\,}\underline{-2x-2} \\ 6 \end{array}</div> <span class="math"><!-- HTML_TAG_START --><!-- HTML_TAG_END --></span>
+		The <div style="display: none;">6</div> <span class="math"><!-- HTML_TAG_START --><!-- HTML_TAG_END --></span> is not divisible by <div style="display: none;">x+1</div> <span class="math"><!-- HTML_TAG_START --><!-- HTML_TAG_END --></span>, so it is the remainder.
+		<div style="display: none;">
+			\begin{align*}
+			\int \frac{x^3 + 2x^2 - x + 4}{x+1} \, dx &amp;= \int {x^2 + x - 2 + \frac{6}{x+1} } \, dx \\\\
+			&amp;= \frac{x^3}{3} + \frac{x^2}{2} - 2x + 6\ln|x+1| + C
+			\end{align*}
+		</div> <span class="math"><!-- HTML_TAG_START --><!-- HTML_TAG_END --></span></p></div> <div class="mb-8"><h2 class="text-2xl font-semibold text-text dark:text-dark_text mb-4">Example #2</h2> <p class="text-text dark:text-dark_text"><div style="display: none;">\int \frac{3x^4 - 2x^2 + 5x + 1}{x - 3} \, dx</div> <span class="math"><!-- HTML_TAG_START --><!-- HTML_TAG_END --></span> <br><div style="display: none;">
+			\begin{array}{r} x-3\overline{\smash{\big)}\,3x^4 - 2x^2 + 5x + 1} \end{array}
+		</div> <span class="math"><!-- HTML_TAG_START --><!-- HTML_TAG_END --></span>
+		Divide the highest term of the numerator by the highest term of the denominator.
+		<div style="display: none;">
+			\begin{array}{r} 3x^3 \phantom{-9x^3+ 2x^2 + 5x + 1} \\ x-3\overline{\smash{\big)}\,3x^4
+			\phantom{-9x^3}-2x^2 + 5x + 1} \\ \phantom{x}-\phantom{1\smash{\big)}\,}\underline{3x^4 -
+			9x^3} \phantom{+2x^2 + 5x + 1} \\ 9x^3 - 2x^2 + 5x + 1 \end{array}
+		</div> <span class="math"><!-- HTML_TAG_START --><!-- HTML_TAG_END --></span>
+		Repeat.
+		<div style="display: none;">
+			\begin{array}{r} 3x^3+9x^2 \phantom{-22x^2 + 5x + 1} \\ x-3\overline{\smash{\big)}\,3x^4
+			\phantom{-9x^3}-\phantom{2}2x^2 + 5x + 1} \\
+			\phantom{x}-\phantom{1\smash{\big)}\,}\underline{3x^4 - 9x^3} \phantom{+22x^2 + 5x + 1} \\
+			9x^3 - \phantom{2}2x^2 + 5x + 1 \\ \phantom{x}-\phantom{1\smash{\big)}\,}\underline{9x^3 -
+			27x^2} \phantom{+5x + 1} \\ 25x^2 + 5x + 1 \end{array}
+		</div> <span class="math"><!-- HTML_TAG_START --><!-- HTML_TAG_END --></span>
+		Repeat.
+		<div style="display: none;">
+			\begin{array}{r} 3x^3+9x^2 +25x \phantom{^2 + 55x + 1} \\ x-3\overline{\smash{\big)}\,3x^4
+			\phantom{-9x^3}-\phantom{2}2x^2 + \phantom{5}5x + 1} \\
+			\phantom{x}-\phantom{1\smash{\big)}\,}\underline{3x^4 - 9x^3} \phantom{+22x^2 + 55x + 1} \\
+			9x^3 - \phantom{2}2x^2 + \phantom{5}5x + 1 \\
+			\phantom{x}-\phantom{1\smash{\big)}\,}\underline{9x^3 - 27x^2} \phantom{+55x + 1} \\ 25x^2 +
+			\phantom{5}5x + 1 \\ \phantom{x}-\phantom{1\smash{\big)}\,}\underline{25x^2 - 75x}\phantom{+
+			1} \\ 80x + 1 \end{array}
+		</div> <span class="math"><!-- HTML_TAG_START --><!-- HTML_TAG_END --></span>
+		Repeat.
+		<div style="display: none;">
+			\begin{array}{r} 3x^3+9x^2 +25x \phantom{^2} + \phantom{x}80 \phantom{+ 271} \\
+			x-3\overline{\smash{\big)}\,3x^4 \phantom{-9x^3}-\phantom{2}2x^2 + \phantom{5}5x +
+			\phantom{27}1} \\ \phantom{x}-\phantom{1\smash{\big)}\,}\underline{3x^4 - 9x^3}
+			\phantom{+22x^2 + 55x + 271} \\ 9x^3 - \phantom{2}2x^2 + \phantom{5}5x + \phantom{27}1 \\
+			\phantom{x}-\phantom{1\smash{\big)}\,}\underline{9x^3 - 27x^2} \phantom{+55x + 271} \\ 25x^2 +
+			\phantom{5}5x + \phantom{27}1 \\ \phantom{x}-\phantom{1\smash{\big)}\,}\underline{25x^2 -
+			75x}\phantom{+ 271} \\ 80x + \phantom{27}1 \\
+			\phantom{x}-\phantom{1\smash{\big)}\,}\underline{80x-240} \\ 241 \end{array}
+		</div> <span class="math"><!-- HTML_TAG_START --><!-- HTML_TAG_END --></span>
+		The <div style="display: none;">241</div> <span class="math"><!-- HTML_TAG_START --><!-- HTML_TAG_END --></span> is not divisible by <div style="display: none;">x-3</div> <span class="math"><!-- HTML_TAG_START --><!-- HTML_TAG_END --></span>, so it is the remainder.
+		<div style="display: none;">
+			\begin{align*} 
+			\int \frac{3x^4 - 2x^2 + 5x + 1}{x - 3} \, dx &amp;= \int {3x^3 + 9x^2 + 25x + 80
+			+ \frac{241}{x-3} } \, dx \\ 
+			&amp;= \frac{3x^4}{4} + 3x^3 + \frac{25x^2}{2} + 80x + 241\ln|x-3| + C 
+			\end{align*}
+		</div> <span class="math"><!-- HTML_TAG_START --><!-- HTML_TAG_END --></span></p></div></div></div></body> 
+			
+			<script>
+				{
+					__sveltekit_1hm8yy8 = {
+						base: new URL("../..", location).pathname.slice(0, -1),
+						assets: "/BrickAcademy"
+					};
+
+					const element = document.currentScript.parentElement;
+
+					Promise.all([
+						import("../../_app/immutable/entry/start.DFcj8LNn.js"),
+						import("../../_app/immutable/entry/app.34Qzq_vi.js")
+					]).then(([kit, app]) => {
+						kit.start(app, element, {
+							node_ids: [0, 2, 53],
+							data: [null,null,null],
+							form: null,
+							error: null
+						});
+					});
+				}
+			</script>
+		</div>
+	</body>
+</html>

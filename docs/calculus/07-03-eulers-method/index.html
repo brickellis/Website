@@ -1,0 +1,92 @@
+<!doctype html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8" />
+		<link rel="icon" href="../../favicon.png" />
+		<meta name="viewport" content="width=device-width, initial-scale=1" />
+		
+		<link href="../../_app/immutable/assets/app.BDtVw_ds.css" rel="stylesheet">
+		<link href="../../_app/immutable/assets/Section._en2CAKW.css" rel="stylesheet">
+		<link rel="modulepreload" href="../../_app/immutable/entry/start.DFcj8LNn.js">
+		<link rel="modulepreload" href="../../_app/immutable/chunks/BPHTS8RV.js">
+		<link rel="modulepreload" href="../../_app/immutable/chunks/CVhLxNSM.js">
+		<link rel="modulepreload" href="../../_app/immutable/chunks/DLyp5A0Q.js">
+		<link rel="modulepreload" href="../../_app/immutable/chunks/CwFVwKkT.js">
+		<link rel="modulepreload" href="../../_app/immutable/entry/app.34Qzq_vi.js">
+		<link rel="modulepreload" href="../../_app/immutable/chunks/C1FmrZbK.js">
+		<link rel="modulepreload" href="../../_app/immutable/chunks/DvSB8R1X.js">
+		<link rel="modulepreload" href="../../_app/immutable/nodes/0.B7xpY3_-.js">
+		<link rel="modulepreload" href="../../_app/immutable/nodes/2.BGaKxamB.js">
+		<link rel="modulepreload" href="../../_app/immutable/nodes/60.CpGpMWNL.js">
+		<link rel="modulepreload" href="../../_app/immutable/chunks/ByTZAYyp.js">
+		<link rel="modulepreload" href="../../_app/immutable/chunks/xLaKUPuM.js">
+		<link rel="modulepreload" href="../../_app/immutable/chunks/CkoZ7XGi.js">
+		<link rel="modulepreload" href="../../_app/immutable/chunks/D5fqzSVu.js">
+		<link rel="modulepreload" href="../../_app/immutable/chunks/D3W7TYDU.js">
+		<link rel="modulepreload" href="../../_app/immutable/chunks/Bw3t_506.js">
+		<link rel="modulepreload" href="../../_app/immutable/chunks/S6_-2PRy.js">
+	</head>
+	<body data-sveltekit-preload-data="hover">
+		<div style="display: contents">    <div class="fixed top-0 left-0 w-full h-full z-[-2] bg-background dark:bg-dark_background"></div> <body class="h-full bg-background dark:bg-dark_background"><button class="fixed top-4 left-4 z-10 p-2 text-text dark:text-dark_text hover:text-primary" data-svelte-h="svelte-au3lwb">←</button> <button class="fixed top-4 right-4 z-10 p-2 text-text dark:text-dark_text hover:text-primary flex items-center justify-center" aria-label="Toggle Dark Mode"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide-icon lucide lucide-sun w-5 h-5"><circle cx="12" cy="12" r="4"></circle><path d="M12 2v2"></path><path d="M12 20v2"></path><path d="m4.93 4.93 1.41 1.41"></path><path d="m17.66 17.66 1.41 1.41"></path><path d="M2 12h2"></path><path d="M20 12h2"></path><path d="m6.34 17.66-1.41 1.41"></path><path d="m19.07 4.93-1.41 1.41"></path></svg></button>  <div class="p-8 font-sans leading-relaxed w-full"><div class="max-w-3xl mx-auto p-8 leading-relaxed ">  <h1 class="text-3xl font-bold text-text mb-6 dark:text-dark_text"><title>Euler's Method</title> <meta property="og:title" content="Euler's Method"> Euler's Method</h1> <div class="mb-8"><h2 class="text-2xl font-semibold text-text dark:text-dark_text mb-4">Introduction</h2> <p class="text-text dark:text-dark_text">Euler&#39;s method approximates solution functions for differential equations.
+		<br><br>It is done by taking small steps along the function, using its slope at each step to draw the next one.
+		<br><br>This is the formula:
+		<div style="display: none;">y(x + \Delta x) = y(x) + \Delta x \cdot \frac{dy}{dx}(x, y(x))</div> <span class="math"><!-- HTML_TAG_START --><!-- HTML_TAG_END --></span>
+		In other words: 
+		<br> <span class="inline-block ml-8">Take <div style="display: none;">(x,y)</div> <span class="math"><!-- HTML_TAG_START --><!-- HTML_TAG_END --></span> <br>Add the step value to <div style="display: none;">x</div> <span class="math"><!-- HTML_TAG_START --><!-- HTML_TAG_END --></span> <br>Add the product of the step and the slope to <div style="display: none;">y</div> <span class="math"><!-- HTML_TAG_START --><!-- HTML_TAG_END --></span>.</span> <br><br>Here is an example of Euler&#39;s method:
+		<br> <span class="inline-block ml-8">Each line is a step along the function. 
+			<br>Each step&#39;s slope is the slope of the function at its starting point.</span> <br><br>Click the graph to see the slope field.
+		  <div class="flex justify-center"><div class="w-full mb-8 bg-background dark:bg-dark_background aspect-square max-h-[66vh] max-w-[66vh]"><div class="flex w-full h-full aspect-[1/1]"></div></div></div> <br><br>Here is an example using <div style="display: none;">\frac{dy}{dx}=x+y</div> <span class="math"><!-- HTML_TAG_START --><!-- HTML_TAG_END --></span> with a solution function starting at <div style="display: none;">y(0)=1</div> <span class="math"><!-- HTML_TAG_START --><!-- HTML_TAG_END --></span> and a step size of <div style="display: none;">h=0.1</div> <span class="math"><!-- HTML_TAG_START --><!-- HTML_TAG_END --></span>:
+		<div style="display: none;">
+			\begin{align*}
+			y(0) &amp;= 1 \\ \text{} \\
+			y(x + \Delta x) &amp;= y(x) + \Delta x \cdot \frac{dy}{dx}(x, y(x)) \\ \text{} \\
+			y(0 + 0.1) &amp;= y(0) + 0.1 \cdot \frac{dy}{dx}(0, y(0)) \\ \text{} \\
+			y(0.1) &amp;= 1 + 0.1 \cdot \frac{dy}{dx}(0, 1) \\ \text{} \\
+			y(0.1) &amp;= 1 + 0.1 \cdot (0 + 1) \\ \text{} \\
+			y(0.1) &amp;= 1.1 \\ \text{} \\
+			\end{align*}
+		</div> <span class="math"><!-- HTML_TAG_START --><!-- HTML_TAG_END --></span>
+		This continues along the equation
+		<div style="display: none;">
+			\begin{align*}
+			y(0.1) &amp;= 1.00 + 0.1 \cdot \frac{dy}{dx}(0.0, 1.00) = 1.10 \\ \text{} \\
+			y(0.2) &amp;= 1.10 + 0.1 \cdot \frac{dy}{dx}(0.1, 1.10) = 1.22 \\ \text{} \\
+			y(0.3) &amp;= 1.22 + 0.1 \cdot \frac{dy}{dx}(0.2, 1.22) = 1.36 \\ \text{} \\
+			y(0.4) &amp;= 1.36 + 0.1 \cdot \frac{dy}{dx}(0.3, 1.36) = 1.53 \\ \text{} \\
+			y(0.5) &amp;= 1.53 + 0.1 \cdot \frac{dy}{dx}(0.4, 1.53) = 1.72 \\ \text{} \\
+			y(0.6) &amp;= 1.72 + 0.1 \cdot \frac{dy}{dx}(0.5, 1.72) = 1.94 \\ \text{} \\
+			y(0.7) &amp;= 1.94 + 0.1 \cdot \frac{dy}{dx}(0.6, 1.94) = 2.20 \\ \text{} \\
+			y(0.8) &amp;= 2.20 + 0.1 \cdot \frac{dy}{dx}(0.7, 2.20) = 2.48 \\ \text{} \\
+			y(0.9) &amp;= 2.48 + 0.1 \cdot \frac{dy}{dx}(0.8, 2.48) = 2.82 \\ \text{} \\
+			y(1.0) &amp;= 2.82 + 0.1 \cdot \frac{dy}{dx}(0.9, 2.82) = 3.19 \\ \text{} \\
+			\end{align*}
+		</div> <span class="math"><!-- HTML_TAG_START --><!-- HTML_TAG_END --></span>
+		Below is a graph of our euler method approximations of the solution function.
+		<br><br>Click the graph to see the solution function.
+		  <div class="flex justify-center"><div class="w-full mb-8 bg-background dark:bg-dark_background aspect-square max-h-[66vh] max-w-[66vh]"><div class="flex w-full h-full aspect-[1/1]"></div></div></div></p></div></div></div></body> 
+			
+			<script>
+				{
+					__sveltekit_1hm8yy8 = {
+						base: new URL("../..", location).pathname.slice(0, -1),
+						assets: "/BrickAcademy"
+					};
+
+					const element = document.currentScript.parentElement;
+
+					Promise.all([
+						import("../../_app/immutable/entry/start.DFcj8LNn.js"),
+						import("../../_app/immutable/entry/app.34Qzq_vi.js")
+					]).then(([kit, app]) => {
+						kit.start(app, element, {
+							node_ids: [0, 2, 60],
+							data: [null,null,null],
+							form: null,
+							error: null
+						});
+					});
+				}
+			</script>
+		</div>
+	</body>
+</html>

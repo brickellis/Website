@@ -1,0 +1,107 @@
+<!doctype html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8" />
+		<link rel="icon" href="../../favicon.png" />
+		<meta name="viewport" content="width=device-width, initial-scale=1" />
+		
+		<link href="../../_app/immutable/assets/app.BDtVw_ds.css" rel="stylesheet">
+		<link href="../../_app/immutable/assets/Section._en2CAKW.css" rel="stylesheet">
+		<link rel="modulepreload" href="../../_app/immutable/entry/start.DFcj8LNn.js">
+		<link rel="modulepreload" href="../../_app/immutable/chunks/BPHTS8RV.js">
+		<link rel="modulepreload" href="../../_app/immutable/chunks/CVhLxNSM.js">
+		<link rel="modulepreload" href="../../_app/immutable/chunks/DLyp5A0Q.js">
+		<link rel="modulepreload" href="../../_app/immutable/chunks/CwFVwKkT.js">
+		<link rel="modulepreload" href="../../_app/immutable/entry/app.34Qzq_vi.js">
+		<link rel="modulepreload" href="../../_app/immutable/chunks/C1FmrZbK.js">
+		<link rel="modulepreload" href="../../_app/immutable/chunks/DvSB8R1X.js">
+		<link rel="modulepreload" href="../../_app/immutable/nodes/0.B7xpY3_-.js">
+		<link rel="modulepreload" href="../../_app/immutable/nodes/2.BGaKxamB.js">
+		<link rel="modulepreload" href="../../_app/immutable/nodes/43.DhAFEGVW.js">
+		<link rel="modulepreload" href="../../_app/immutable/chunks/ByTZAYyp.js">
+		<link rel="modulepreload" href="../../_app/immutable/chunks/xLaKUPuM.js">
+		<link rel="modulepreload" href="../../_app/immutable/chunks/D3W7TYDU.js">
+	</head>
+	<body data-sveltekit-preload-data="hover">
+		<div style="display: contents">    <div class="fixed top-0 left-0 w-full h-full z-[-2] bg-background dark:bg-dark_background"></div> <body class="h-full bg-background dark:bg-dark_background"><button class="fixed top-4 left-4 z-10 p-2 text-text dark:text-dark_text hover:text-primary" data-svelte-h="svelte-au3lwb">←</button> <button class="fixed top-4 right-4 z-10 p-2 text-text dark:text-dark_text hover:text-primary flex items-center justify-center" aria-label="Toggle Dark Mode"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide-icon lucide lucide-sun w-5 h-5"><circle cx="12" cy="12" r="4"></circle><path d="M12 2v2"></path><path d="M12 20v2"></path><path d="m4.93 4.93 1.41 1.41"></path><path d="m17.66 17.66 1.41 1.41"></path><path d="M2 12h2"></path><path d="M20 12h2"></path><path d="m6.34 17.66-1.41 1.41"></path><path d="m19.07 4.93-1.41 1.41"></path></svg></button>  <div class="p-8 font-sans leading-relaxed w-full"><div class="max-w-3xl mx-auto p-8 leading-relaxed ">  <h1 class="text-3xl font-bold text-text mb-6 dark:text-dark_text"><title>Optimization</title> <meta property="og:title" content="Optimization"> Optimization</h1> <div class="mb-8"><h2 class="text-2xl font-semibold text-text dark:text-dark_text mb-4">Introduction</h2> <p class="text-text dark:text-dark_text">We can use local minima and maxima to optimize functions.
+		<br><br>In solving optimization problems, we will use the same steps we use in other application problems:
+		<br>  <span class="inline-block ml-8">1. Understand what the question is asking.
+			<br>2. Convert the request into mathematical notation.
+			<br>3. Solve the differential equation(s).
+			<br>4. Interpret the solution.</span></p></div> <div class="mb-8"><h2 class="text-2xl font-semibold text-text dark:text-dark_text mb-4">Fencing</h2> <p class="text-text dark:text-dark_text">A farmer has 100 meters of fencing and wants to enclose a rectangular plot of land next to a river. The farmer doesn&#39;t need fencing along the river.
+		<br><br>
+		1. We want to maximize the area enclosed by the fence and river.
+		<br><br>2. With <div style="display: none;">A</div> <span class="math"><!-- HTML_TAG_START --><!-- HTML_TAG_END --></span> as the area, <div style="display: none;">l</div> <span class="math"><!-- HTML_TAG_START --><!-- HTML_TAG_END --></span> as the length of the fence opposite the river, and <div style="display: none;">w</div> <span class="math"><!-- HTML_TAG_START --><!-- HTML_TAG_END --></span> as the width of the fence adjacent to the river, we have <div style="display: none;">A = lw</div> <span class="math"><!-- HTML_TAG_START --><!-- HTML_TAG_END --></span>. We also have <div style="display: none;">2w + l = 100</div> <span class="math"><!-- HTML_TAG_START --><!-- HTML_TAG_END --></span>. Thus, <div style="display: none;">A = w(100 - 2w)</div> <span class="math"><!-- HTML_TAG_START --><!-- HTML_TAG_END --></span>, on the interval <div style="display: none;">0 \lt w \lt 50</div> <span class="math"><!-- HTML_TAG_START --><!-- HTML_TAG_END --></span>.
+		<br><br>3. We want to find the local maxima of the function, which is where the derivative is <div style="display: none;">0</div> <span class="math"><!-- HTML_TAG_START --><!-- HTML_TAG_END --></span>. <div style="display: none;">\frac{dA}{dw} = \frac{d}{dw}100w - 2w^2 = 100 - 4w</div> <span class="math"><!-- HTML_TAG_START --><!-- HTML_TAG_END --></span> <div style="display: none;">w = 25</div> <span class="math"><!-- HTML_TAG_START --><!-- HTML_TAG_END --></span>
+		4. The area inside the fencing is at its greatest when the width is 25 meters. 
+		<br>The farmer should make a fence with a width of 25 meters and a length of 50 meters.
+		<br>The Area will be <div style="display: none;">1250 \, m^2</div> <span class="math"><!-- HTML_TAG_START --><!-- HTML_TAG_END --></span>.</p></div> <div class="mb-8"><h2 class="text-2xl font-semibold text-text dark:text-dark_text mb-4">Shortest Distance</h2> <p class="text-text dark:text-dark_text">A woman is walking on the path <div style="display: none;">y = x^2</div> <span class="math"><!-- HTML_TAG_START --><!-- HTML_TAG_END --></span>. She is starting at <div style="display: none;">(-10,100)</div> <span class="math"><!-- HTML_TAG_START --><!-- HTML_TAG_END --></span> and ending at <div style="display: none;">(10,100)</div> <span class="math"><!-- HTML_TAG_START --><!-- HTML_TAG_END --></span>. There is a hot dog cart at <div style="display: none;">(5,4)</div> <span class="math"><!-- HTML_TAG_START --><!-- HTML_TAG_END --></span>. She wants to step off the path at the point closest to the cart, but she does not know which point that is.
+		<br><br>
+		1. We want to find the point on the path which is closest to the hot dog cart.
+		<br><br>2. Find the point on <div style="display: none;">y=x^2</div> <span class="math"><!-- HTML_TAG_START --><!-- HTML_TAG_END --></span> where the distance to <div style="display: none;">(5,4)</div> <span class="math"><!-- HTML_TAG_START --><!-- HTML_TAG_END --></span> is minimized. <br><div style="display: none;">D</div> <span class="math"><!-- HTML_TAG_START --><!-- HTML_TAG_END --></span> is the distance function between a point on the path and the hot dog cart.
+		<br><div style="display: none;">D = \sqrt{(x-5)^2 + (y-4)^2}</div> <span class="math"><!-- HTML_TAG_START --><!-- HTML_TAG_END --></span>. 
+		<br>We want the local minimum of D, where the derivative is <div style="display: none;">0</div> <span class="math"><!-- HTML_TAG_START --><!-- HTML_TAG_END --></span>.
+		<br><br>3. 
+		<div style="display: none;">
+			\begin{align*}
+			D &amp;= \sqrt{(x-5)^2 + (y-4)^2} \\\\
+			&amp;= \sqrt{(x-5)^2 + (\c1{x^2}-4)^2} \\\\
+			\frac{\c1{d}D}{\c1{dx}} &amp;= \c1{\frac{d}{dx}} \sqrt{(x-5)^2 + (x^2-4)^2} \\\\
+			&amp;= \frac{d}{dx} [(x-5)^2 + (x^2-4)^2]^{\c1{1/2}} \\\\
+			&amp;= \c1{\frac{1}{2}}[(x-5)^2 + (x^2-4)^2]^{\c1{-1/2}} * \c1{\frac{d}{dx} [(x-5)^2 + (x^2-4)^2]} \\\\
+			&amp;= \frac{1}{2}\frac{\c1{1}}{\sqrt{(x-5)^2 + (x^2-4)^2}} * [\c1{2}(x-5) + \c1{2}(x^2-4)\c1{2x}] \\\\
+			&amp;= \frac{\c1{(x-5) + (x^2-4)2x}}{\sqrt{(x-5)^2 + (x^2-4)^2}} \\\\
+			\frac{dD}{dx} &amp;= 0 \text{ when } [2(x-5) + 2(x^2-4)2x]=0 \\\\
+			\end{align*} \\
+			\begin{align*}
+			0 &amp;= 2(x-5) + 2(x^2-4)2x \\\\
+			&amp;= 2x - 10 + 4x^3 - 16x \\\\
+			&amp;= 4x^3 \c1{- 14x} - 10 \\\\
+			&amp;= (x+1)(2x^2-2x-5)
+			\end{align*}
+		</div> <span class="math"><!-- HTML_TAG_START --><!-- HTML_TAG_END --></span> <div style="display: none;">\frac{dD}{dx}=0</div> <span class="math"><!-- HTML_TAG_START --><!-- HTML_TAG_END --></span> at <div style="display: none;">x=-1, \frac{1 \pm \sqrt{11}}{2}</div> <span class="math"><!-- HTML_TAG_START --><!-- HTML_TAG_END --></span>. 
+		<br><br>Only <div style="display: none;">\frac{1 + \sqrt{11}}{2}</div> <span class="math"><!-- HTML_TAG_START --><!-- HTML_TAG_END --></span> is in our domain, so <div style="display: none;">x=\frac{1 + \sqrt{11}}{2}</div> <span class="math"><!-- HTML_TAG_START --><!-- HTML_TAG_END --></span>.
+		<br><br>4. The point on the path closest to the hot dog cart is <div style="display: none;">(\frac{1 + \sqrt{11}}{2}, \left[\frac{1 + \sqrt{11}}{2}\right]^2)</div> <span class="math"><!-- HTML_TAG_START --><!-- HTML_TAG_END --></span>.</p></div> <div class="mb-8"><h2 class="text-2xl font-semibold text-text dark:text-dark_text mb-4">Cost</h2> <p class="text-text dark:text-dark_text">A company&#39;s revenue function is <div style="display: none;">R(x) = 100x - 0.01x^2</div> <span class="math"><!-- HTML_TAG_START --><!-- HTML_TAG_END --></span> and cost function is <div style="display: none;">C(x) = 50x + 2000</div> <span class="math"><!-- HTML_TAG_START --><!-- HTML_TAG_END --></span>. How many units should the company produce to maximize profit?
+
+		<br><br>
+		1. We want to maximize the profit function, <div style="display: none;">P(x) = R(x) - C(x)</div> <span class="math"><!-- HTML_TAG_START --><!-- HTML_TAG_END --></span>.
+		<br><br>2. <div style="display: none;">P(x) = 100x - 0.01x^2 - 50x - 2000</div> <span class="math"><!-- HTML_TAG_START --><!-- HTML_TAG_END --></span> 
+		We want to find the local maxima of the function, which is where the derivative is <div style="display: none;">0</div> <span class="math"><!-- HTML_TAG_START --><!-- HTML_TAG_END --></span>.
+		<br><br>
+		3.
+		<div style="display: none;">
+			\begin{align*}
+			P(x) &amp;= -0.01x^2 + 100x - 50x - 2000 \\\\
+			&amp;= -0.01x^2 + 50 - 2000 \\\\
+			\frac{d}{dx}P(x) &amp;= \frac{d}{dx} -0.01x^2 + 50 - 2000 \\\\
+			&amp;= -0.02x + 50 \\\\
+			x &amp;= 2500
+			\end{align*}
+		</div> <span class="math"><!-- HTML_TAG_START --><!-- HTML_TAG_END --></span>
+		4. The company should produce 2500 units to maximize profit. They will profit $62,500.</p></div></div></div></body> 
+			
+			<script>
+				{
+					__sveltekit_1hm8yy8 = {
+						base: new URL("../..", location).pathname.slice(0, -1),
+						assets: "/BrickAcademy"
+					};
+
+					const element = document.currentScript.parentElement;
+
+					Promise.all([
+						import("../../_app/immutable/entry/start.DFcj8LNn.js"),
+						import("../../_app/immutable/entry/app.34Qzq_vi.js")
+					]).then(([kit, app]) => {
+						kit.start(app, element, {
+							node_ids: [0, 2, 43],
+							data: [null,null,null],
+							form: null,
+							error: null
+						});
+					});
+				}
+			</script>
+		</div>
+	</body>
+</html>

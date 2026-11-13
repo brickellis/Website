@@ -1,0 +1,107 @@
+import{s as Tt,n as ft}from"../chunks/CVhLxNSM.js";import{S as yt,i as Bt,c,b as g,m as x,t as v,a as h,d as w,s as I,e as D,f,g as l,h as p,j as A,k as a,l as F,n as rt}from"../chunks/DvSB8R1X.js";import{L as Mt,S as dt,M as y}from"../chunks/ByTZAYyp.js";import{L as St}from"../chunks/xLaKUPuM.js";import{D as it}from"../chunks/CkoZ7XGi.js";import{s as ot}from"../chunks/NvOCtOX1.js";function Vt(m){let $;return{c(){$=p("f(x)")},l(e){$=a(e,"f(x)")},m(e,n){f(e,$,n)},d(e){e&&l($)}}}function At(m){let $=`
+				\\begin{align*}
+				A &= \\pi r^2\\\\
+				&= \\pi f(x)^2 \\\\
+				\\end{align*}
+			`,e;return{c(){e=p($)},l(n){e=a(n,$)},m(n,_){f(n,e,_)},p:ft,d(n){n&&l(e)}}}function Ft(m){let $;return{c(){$=p("y=x^2")},l(e){$=a(e,"y=x^2")},m(e,n){f(e,$,n)},d(e){e&&l($)}}}function qt(m){let $,e,n,_,b,M,R,B,T,S,r,k;return b=new y({props:{$$slots:{default:[Vt]},$$scope:{ctx:m}}}),R=new y({props:{displayMode:!0,$$slots:{default:[At]},$$scope:{ctx:m}}}),T=new y({props:{$$slots:{default:[Ft]},$$scope:{ctx:m}}}),r=new it({props:{sketch:ot,sketchParameters:{plotFunction:_e,dimensions:[0,2],cs:"disc"}}}),{c(){$=p(`We will now calculate the volumes of solids formed by rotating a function around the x or y-axis.
+
+		`),e=A("br"),n=A("br"),_=p("Rotating around an axis creates disc cross-sections, each with a radius of "),c(b.$$.fragment),M=p(`.
+		`),c(R.$$.fragment),B=p(`
+		For example, here is a volume formed by rotating `),c(T.$$.fragment),S=p(` around the x-axis:
+		`),c(r.$$.fragment)},l(o){$=a(o,`We will now calculate the volumes of solids formed by rotating a function around the x or y-axis.
+
+		`),e=F(o,"BR",{}),n=F(o,"BR",{}),_=a(o,"Rotating around an axis creates disc cross-sections, each with a radius of "),g(b.$$.fragment,o),M=a(o,`.
+		`),g(R.$$.fragment,o),B=a(o,`
+		For example, here is a volume formed by rotating `),g(T.$$.fragment,o),S=a(o,` around the x-axis:
+		`),g(r.$$.fragment,o)},m(o,C){f(o,$,C),f(o,e,C),f(o,n,C),f(o,_,C),x(b,o,C),f(o,M,C),x(R,o,C),f(o,B,C),x(T,o,C),f(o,S,C),x(r,o,C),k=!0},p(o,C){const V={};C&4&&(V.$$scope={dirty:C,ctx:o}),b.$set(V);const P={};C&4&&(P.$$scope={dirty:C,ctx:o}),R.$set(P);const N={};C&4&&(N.$$scope={dirty:C,ctx:o}),T.$set(N)},i(o){k||(v(b.$$.fragment,o),v(R.$$.fragment,o),v(T.$$.fragment,o),v(r.$$.fragment,o),k=!0)},o(o){h(b.$$.fragment,o),h(R.$$.fragment,o),h(T.$$.fragment,o),h(r.$$.fragment,o),k=!1},d(o){o&&(l($),l(e),l(n),l(_),l(M),l(B),l(S)),w(b,o),w(R,o),w(T,o),w(r,o)}}}function Ot(m){let $;return{c(){$=p("y = 2x")},l(e){$=a(e,"y = 2x")},m(e,n){f(e,$,n)},d(e){e&&l($)}}}function Et(m){let $;return{c(){$=p("x=[0,1]")},l(e){$=a(e,"x=[0,1]")},m(e,n){f(e,$,n)},d(e){e&&l($)}}}function Gt(m){let $=`
+                \\begin{align*}
+                \\text{Volume} &= \\int_{0}^{1} A \\cdot d \\\\
+				&= \\int_{0}^{1} \\pi(2x)^2 \\, dx \\\\
+                &= 4\\pi \\int_{0}^{1} x^2 \\, dx \\\\
+                &= 4\\pi \\left[ \\frac{x^3}{3} \\right]_0^1 \\\\
+                &= 4\\pi \\left( \\frac{1}{3} - 0 \\right) = \\frac{4\\pi}{3} \\approx 4.19 \\, \\text{units}^3
+                \\end{align*}
+            `,e;return{c(){e=p($)},l(n){e=a(n,$)},m(n,_){f(n,e,_)},p:ft,d(n){n&&l(e)}}}function Nt(m){let $="x = \\sqrt{y}",e;return{c(){e=p($)},l(n){e=a(n,$)},m(n,_){f(n,e,_)},p:ft,d(n){n&&l(e)}}}function Pt(m){let $;return{c(){$=p("y=[0,4]")},l(e){$=a(e,"y=[0,4]")},m(e,n){f(e,$,n)},d(e){e&&l($)}}}function jt(m){let $=`
+                \\begin{align*}
+				\\text{Volume} &= \\int_{0}^{1} A \\cdot d \\\\
+                &= \\int_{0}^{4} \\pi(\\sqrt{y})^2 \\, dy \\\\
+                &= \\pi \\int_{0}^{4} y \\, dy \\\\
+                &= \\pi \\left[ \\frac{y^2}{2} \\right]_0^4 \\\\
+                &= \\pi \\left( \\frac{16}{2} - 0 \\right) = 8\\pi \\approx 25.13 \\, \\text{units}^3
+                \\end{align*}
+            `,e;return{c(){e=p($)},l(n){e=a(n,$)},m(n,_){f(n,e,_)},p:ft,d(n){n&&l(e)}}}function Lt(m){let $;return{c(){$=p("y = 5")},l(e){$=a(e,"y = 5")},m(e,n){f(e,$,n)},d(e){e&&l($)}}}function It(m){let $;return{c(){$=p("x = 0")},l(e){$=a(e,"x = 0")},m(e,n){f(e,$,n)},d(e){e&&l($)}}}function Dt(m){let $;return{c(){$=p("x = 4")},l(e){$=a(e,"x = 4")},m(e,n){f(e,$,n)},d(e){e&&l($)}}}function Ht(m){let $=`
+                \\begin{align*}
+				\\text{Volume} &= \\int_{0}^{1} A \\cdot d \\\\
+                &= \\int_{0}^{4} \\pi \\cdot 5^2 \\, dx \\\\
+                &= 25\\pi \\int_{0}^{4} dx \\\\
+                &= 25\\pi (4 - 0) = 100\\pi \\approx 314.16 \\, \\text{units}^3
+                \\end{align*}
+            `,e;return{c(){e=p($)},l(n){e=a(n,$)},m(n,_){f(n,e,_)},p:ft,d(n){n&&l(e)}}}function Wt(m){let $=`
+				\\begin{align*}
+				V &= \\pi r^2 h \\\\
+				&= \\pi (5)^2 (4) \\\\
+				&= 100\\pi
+				\\end{align*}
+			`,e;return{c(){e=p($)},l(n){e=a(n,$)},m(n,_){f(n,e,_)},p:ft,d(n){n&&l(e)}}}function zt(m){let $,e="Example 1: Revolving Around the x-Axis",n,_,b,M,R,B,T,S,r,k,o,C,V="Example 2: Revolving Around the y-Axis",P,N,q,E,O,G,u,d,j,H,et,L,$t,lt="Example 3: Cylinder Verification",ut,mt,W,z,J,K,Q,U,nt,X,Y,st,Z,tt;return b=new y({props:{$$slots:{default:[Ot]},$$scope:{ctx:m}}}),R=new y({props:{$$slots:{default:[Et]},$$scope:{ctx:m}}}),T=new it({props:{sketch:ot,sketchParameters:{plotFunction:ce,dimensions:[0,2],cs:"disc"}}}),r=new y({props:{displayMode:!0,$$slots:{default:[Gt]},$$scope:{ctx:m}}}),q=new y({props:{$$slots:{default:[Nt]},$$scope:{ctx:m}}}),O=new y({props:{$$slots:{default:[Pt]},$$scope:{ctx:m}}}),u=new it({props:{sketch:ot,sketchParameters:{plotFunction:m[0],dimensions:[0,4],cs:"discy"}}}),j=new y({props:{displayMode:!0,$$slots:{default:[jt]},$$scope:{ctx:m}}}),W=new y({props:{$$slots:{default:[Lt]},$$scope:{ctx:m}}}),J=new y({props:{$$slots:{default:[It]},$$scope:{ctx:m}}}),Q=new y({props:{$$slots:{default:[Dt]},$$scope:{ctx:m}}}),nt=new it({props:{sketch:ot,sketchParameters:{plotFunction:ge,dimensions:[0,4],cs:"disc"}}}),Y=new y({props:{displayMode:!0,$$slots:{default:[Ht]},$$scope:{ctx:m}}}),Z=new y({props:{displayMode:!0,$$slots:{default:[Wt]},$$scope:{ctx:m}}}),{c(){$=A("strong"),$.textContent=e,n=A("br"),_=p(`
+        Find the volume of the solid formed by rotating `),c(b.$$.fragment),M=p(" around the x-axis on "),c(R.$$.fragment),B=p(`.
+		`),c(T.$$.fragment),S=I(),c(r.$$.fragment),k=I(),o=A("br"),C=A("strong"),C.textContent=V,P=A("br"),N=p(`
+        Find the volume of the solid formed by rotating `),c(q.$$.fragment),E=p(" around the y-axis on "),c(O.$$.fragment),G=p(`.
+		`),c(u.$$.fragment),d=I(),c(j.$$.fragment),H=I(),et=A("br"),L=A("br"),$t=A("strong"),$t.textContent=lt,ut=A("br"),mt=p(`
+        Rotate `),c(W.$$.fragment),z=p(" around the x-axis from "),c(J.$$.fragment),K=p(" to "),c(Q.$$.fragment),U=p(`. Verify the volume matches the cylinder formula.
+		`),c(nt.$$.fragment),X=I(),c(Y.$$.fragment),st=p(`
+        This matches the formula for the volume of a cylinder:
+		`),c(Z.$$.fragment)},l(s){$=F(s,"STRONG",{"data-svelte-h":!0}),rt($)!=="svelte-uqjj3x"&&($.textContent=e),n=F(s,"BR",{}),_=a(s,`
+        Find the volume of the solid formed by rotating `),g(b.$$.fragment,s),M=a(s," around the x-axis on "),g(R.$$.fragment,s),B=a(s,`.
+		`),g(T.$$.fragment,s),S=D(s),g(r.$$.fragment,s),k=D(s),o=F(s,"BR",{}),C=F(s,"STRONG",{"data-svelte-h":!0}),rt(C)!=="svelte-lwykjb"&&(C.textContent=V),P=F(s,"BR",{}),N=a(s,`
+        Find the volume of the solid formed by rotating `),g(q.$$.fragment,s),E=a(s," around the y-axis on "),g(O.$$.fragment,s),G=a(s,`.
+		`),g(u.$$.fragment,s),d=D(s),g(j.$$.fragment,s),H=D(s),et=F(s,"BR",{}),L=F(s,"BR",{}),$t=F(s,"STRONG",{"data-svelte-h":!0}),rt($t)!=="svelte-emubiu"&&($t.textContent=lt),ut=F(s,"BR",{}),mt=a(s,`
+        Rotate `),g(W.$$.fragment,s),z=a(s," around the x-axis from "),g(J.$$.fragment,s),K=a(s," to "),g(Q.$$.fragment,s),U=a(s,`. Verify the volume matches the cylinder formula.
+		`),g(nt.$$.fragment,s),X=D(s),g(Y.$$.fragment,s),st=a(s,`
+        This matches the formula for the volume of a cylinder:
+		`),g(Z.$$.fragment,s)},m(s,t){f(s,$,t),f(s,n,t),f(s,_,t),x(b,s,t),f(s,M,t),x(R,s,t),f(s,B,t),x(T,s,t),f(s,S,t),x(r,s,t),f(s,k,t),f(s,o,t),f(s,C,t),f(s,P,t),f(s,N,t),x(q,s,t),f(s,E,t),x(O,s,t),f(s,G,t),x(u,s,t),f(s,d,t),x(j,s,t),f(s,H,t),f(s,et,t),f(s,L,t),f(s,$t,t),f(s,ut,t),f(s,mt,t),x(W,s,t),f(s,z,t),x(J,s,t),f(s,K,t),x(Q,s,t),f(s,U,t),x(nt,s,t),f(s,X,t),x(Y,s,t),f(s,st,t),x(Z,s,t),tt=!0},p(s,t){const i={};t&4&&(i.$$scope={dirty:t,ctx:s}),b.$set(i);const pt={};t&4&&(pt.$$scope={dirty:t,ctx:s}),R.$set(pt);const at={};t&4&&(at.$$scope={dirty:t,ctx:s}),r.$set(at);const _t={};t&4&&(_t.$$scope={dirty:t,ctx:s}),q.$set(_t);const ct={};t&4&&(ct.$$scope={dirty:t,ctx:s}),O.$set(ct);const gt={};t&4&&(gt.$$scope={dirty:t,ctx:s}),j.$set(gt);const xt={};t&4&&(xt.$$scope={dirty:t,ctx:s}),W.$set(xt);const vt={};t&4&&(vt.$$scope={dirty:t,ctx:s}),J.$set(vt);const ht={};t&4&&(ht.$$scope={dirty:t,ctx:s}),Q.$set(ht);const wt={};t&4&&(wt.$$scope={dirty:t,ctx:s}),Y.$set(wt);const bt={};t&4&&(bt.$$scope={dirty:t,ctx:s}),Z.$set(bt)},i(s){tt||(v(b.$$.fragment,s),v(R.$$.fragment,s),v(T.$$.fragment,s),v(r.$$.fragment,s),v(q.$$.fragment,s),v(O.$$.fragment,s),v(u.$$.fragment,s),v(j.$$.fragment,s),v(W.$$.fragment,s),v(J.$$.fragment,s),v(Q.$$.fragment,s),v(nt.$$.fragment,s),v(Y.$$.fragment,s),v(Z.$$.fragment,s),tt=!0)},o(s){h(b.$$.fragment,s),h(R.$$.fragment,s),h(T.$$.fragment,s),h(r.$$.fragment,s),h(q.$$.fragment,s),h(O.$$.fragment,s),h(u.$$.fragment,s),h(j.$$.fragment,s),h(W.$$.fragment,s),h(J.$$.fragment,s),h(Q.$$.fragment,s),h(nt.$$.fragment,s),h(Y.$$.fragment,s),h(Z.$$.fragment,s),tt=!1},d(s){s&&(l($),l(n),l(_),l(M),l(B),l(S),l(k),l(o),l(C),l(P),l(N),l(E),l(G),l(d),l(H),l(et),l(L),l($t),l(ut),l(mt),l(z),l(K),l(U),l(X),l(st)),w(b,s),w(R,s),w(T,s),w(r,s),w(q,s),w(O,s),w(u,s),w(j,s),w(W,s),w(J,s),w(Q,s),w(nt,s),w(Y,s),w(Z,s)}}}function Jt(m){let $;return{c(){$=p("y = k")},l(e){$=a(e,"y = k")},m(e,n){f(e,$,n)},d(e){e&&l($)}}}function Kt(m){let $=`
+			V = \\pi \\int_{a}^{b} (f(x) - k)^2 \\, dx
+		`,e;return{c(){e=p($)},l(n){e=a(n,$)},m(n,_){f(n,e,_)},p:ft,d(n){n&&l(e)}}}function Qt(m){let $;return{c(){$=p("x = h")},l(e){$=a(e,"x = h")},m(e,n){f(e,$,n)},d(e){e&&l($)}}}function Ut(m){let $=`
+			V = \\pi \\int_{c}^{d} (g(y) - h)^2 \\, dy
+		`,e;return{c(){e=p($)},l(n){e=a(n,$)},m(n,_){f(n,e,_)},p:ft,d(n){n&&l(e)}}}function Xt(m){let $,e,n,_,b,M,R,B,T="Horizontal Line:",S,r,k,o,C,V,P="Vertical Line:",N,q,E,O,G;return r=new y({props:{$$slots:{default:[Jt]},$$scope:{ctx:m}}}),o=new y({props:{displayMode:!0,$$slots:{default:[Kt]},$$scope:{ctx:m}}}),q=new y({props:{$$slots:{default:[Qt]},$$scope:{ctx:m}}}),O=new y({props:{displayMode:!0,$$slots:{default:[Ut]},$$scope:{ctx:m}}}),{c(){$=p(`So far, we have revolved our discs around the x and y-axes. However, we can also calculate the volumes of discs around any line parallel to the axes.
+		`),e=A("br"),n=A("br"),_=p(`The simplest way to do so is to shift the function up or down so that the axis of rotation is the x or y-axis. Then, we can use the same formulas as before.
+		`),b=A("br"),M=A("br"),R=I(),B=A("strong"),B.textContent=T,S=p(" If we are revolving around "),c(r.$$.fragment),k=p(`:
+		`),c(o.$$.fragment),C=I(),V=A("strong"),V.textContent=P,N=p(" If we are revolving around "),c(q.$$.fragment),E=p(`:
+		`),c(O.$$.fragment)},l(u){$=a(u,`So far, we have revolved our discs around the x and y-axes. However, we can also calculate the volumes of discs around any line parallel to the axes.
+		`),e=F(u,"BR",{}),n=F(u,"BR",{}),_=a(u,`The simplest way to do so is to shift the function up or down so that the axis of rotation is the x or y-axis. Then, we can use the same formulas as before.
+		`),b=F(u,"BR",{}),M=F(u,"BR",{}),R=D(u),B=F(u,"STRONG",{"data-svelte-h":!0}),rt(B)!=="svelte-jhvil8"&&(B.textContent=T),S=a(u," If we are revolving around "),g(r.$$.fragment,u),k=a(u,`:
+		`),g(o.$$.fragment,u),C=D(u),V=F(u,"STRONG",{"data-svelte-h":!0}),rt(V)!=="svelte-1m4lyju"&&(V.textContent=P),N=a(u," If we are revolving around "),g(q.$$.fragment,u),E=a(u,`:
+		`),g(O.$$.fragment,u)},m(u,d){f(u,$,d),f(u,e,d),f(u,n,d),f(u,_,d),f(u,b,d),f(u,M,d),f(u,R,d),f(u,B,d),f(u,S,d),x(r,u,d),f(u,k,d),x(o,u,d),f(u,C,d),f(u,V,d),f(u,N,d),x(q,u,d),f(u,E,d),x(O,u,d),G=!0},p(u,d){const j={};d&4&&(j.$$scope={dirty:d,ctx:u}),r.$set(j);const H={};d&4&&(H.$$scope={dirty:d,ctx:u}),o.$set(H);const et={};d&4&&(et.$$scope={dirty:d,ctx:u}),q.$set(et);const L={};d&4&&(L.$$scope={dirty:d,ctx:u}),O.$set(L)},i(u){G||(v(r.$$.fragment,u),v(o.$$.fragment,u),v(q.$$.fragment,u),v(O.$$.fragment,u),G=!0)},o(u){h(r.$$.fragment,u),h(o.$$.fragment,u),h(q.$$.fragment,u),h(O.$$.fragment,u),G=!1},d(u){u&&(l($),l(e),l(n),l(_),l(b),l(M),l(R),l(B),l(S),l(k),l(C),l(V),l(N),l(E)),w(r,u),w(o,u),w(q,u),w(O,u)}}}function Yt(m){let $;return{c(){$=p("y = x^2")},l(e){$=a(e,"y = x^2")},m(e,n){f(e,$,n)},d(e){e&&l($)}}}function Zt(m){let $;return{c(){$=p("y = -1")},l(e){$=a(e,"y = -1")},m(e,n){f(e,$,n)},d(e){e&&l($)}}}function te(m){let $;return{c(){$=p("[0,1]")},l(e){$=a(e,"[0,1]")},m(e,n){f(e,$,n)},d(e){e&&l($)}}}function ee(m){let $=`
+				\\begin{align*}
+				V &= \\pi \\int_{0}^{1} (x^2 - (-1))^2 \\, dx \\\\
+				&= \\pi \\int_{0}^{1} (x^4 + 2x^2 + 1) \\, dx \\\\
+				&= \\pi \\left[ \\frac{x^5}{5} + \\frac{2x^3}{3} + x \\right]_0^1 \\\\
+				&= \\frac{28\\pi}{15} \\approx 5.89 \\, \\text{units}^3
+				\\end{align*}
+			`,e;return{c(){e=p($)},l(n){e=a(n,$)},m(n,_){f(n,e,_)},p:ft,d(n){n&&l(e)}}}function $e(m){let $="x = \\sqrt{y}",e;return{c(){e=p($)},l(n){e=a(n,$)},m(n,_){f(n,e,_)},p:ft,d(n){n&&l(e)}}}function ne(m){let $;return{c(){$=p("x = 2")},l(e){$=a(e,"x = 2")},m(e,n){f(e,$,n)},d(e){e&&l($)}}}function se(m){let $;return{c(){$=p("[0,4]")},l(e){$=a(e,"[0,4]")},m(e,n){f(e,$,n)},d(e){e&&l($)}}}function fe(m){let $=`
+				\\begin{align*}
+				V &= \\pi \\int_{0}^{4} (2 - \\sqrt{y})^2 \\, dy \\\\
+				&= \\pi \\int_{0}^{4} (4 - 4\\sqrt{y} + y) \\, dy \\\\
+				&= \\pi \\left[ 4y - \\frac{8}{3}y^{3/2} + \\frac{y^2}{2} \\right]_0^4 \\\\
+				&= \\frac{8\\pi}{3} \\approx 8.38 \\, \\text{units}^3
+				\\end{align*}
+			`,e;return{c(){e=p($)},l(n){e=a(n,$)},m(n,_){f(n,e,_)},p:ft,d(n){n&&l(e)}}}function le(m){let $;return{c(){$=p("y = 2x")},l(e){$=a(e,"y = 2x")},m(e,n){f(e,$,n)},d(e){e&&l($)}}}function me(m){let $;return{c(){$=p("y = 1")},l(e){$=a(e,"y = 1")},m(e,n){f(e,$,n)},d(e){e&&l($)}}}function re(m){let $;return{c(){$=p("x = 0")},l(e){$=a(e,"x = 0")},m(e,n){f(e,$,n)},d(e){e&&l($)}}}function ue(m){let $;return{c(){$=p("x = 1")},l(e){$=a(e,"x = 1")},m(e,n){f(e,$,n)},d(e){e&&l($)}}}function ie(m){let $=`
+				\\begin{align*}
+				V &= \\pi \\int_{0}^{1} (2x - 1)^2 \\, dx \\\\
+				&= \\pi \\int_{0}^{1} (4x^2 - 4x + 1) \\, dx \\\\
+				&= \\pi \\left[ \\frac{4x^3}{3} - 2x^2 + x \\right]_0^1 \\\\
+				&= \\pi \\left( \\frac{4}{3} - 2 + 1 \\right) \\\\
+				&= \\frac{\\pi}{3} \\approx 1.05 \\, \\text{units}^3
+				\\end{align*}
+			`,e;return{c(){e=p($)},l(n){e=a(n,$)},m(n,_){f(n,e,_)},p:ft,d(n){n&&l(e)}}}function oe(m){let $,e="Example 4: Revolving Around y = -1",n,_,b,M,R,B,T,S,r,k,o,C,V,P="Example 5: Revolving Around x = 2",N,q,E,O,G,u,d,j,H,et,L,$t,lt,ut="Example 6: Crossing the Axis",mt,W,z,J,K,Q,U,nt,X,Y,st,Z,tt,s;return b=new y({props:{$$slots:{default:[Yt]},$$scope:{ctx:m}}}),R=new y({props:{$$slots:{default:[Zt]},$$scope:{ctx:m}}}),T=new y({props:{$$slots:{default:[te]},$$scope:{ctx:m}}}),r=new it({props:{sketch:ot,sketchParameters:{plotFunction:xe,dimensions:[0,1],cs:"disc",shift:-1}}}),o=new y({props:{displayMode:!0,$$slots:{default:[ee]},$$scope:{ctx:m}}}),E=new y({props:{$$slots:{default:[$e]},$$scope:{ctx:m}}}),G=new y({props:{$$slots:{default:[ne]},$$scope:{ctx:m}}}),d=new y({props:{$$slots:{default:[se]},$$scope:{ctx:m}}}),H=new it({props:{sketch:ot,sketchParameters:{plotFunction:m[1],dimensions:[0,4],cs:"discy",shift:2}}}),L=new y({props:{displayMode:!0,$$slots:{default:[fe]},$$scope:{ctx:m}}}),z=new y({props:{$$slots:{default:[le]},$$scope:{ctx:m}}}),K=new y({props:{$$slots:{default:[me]},$$scope:{ctx:m}}}),U=new y({props:{$$slots:{default:[re]},$$scope:{ctx:m}}}),X=new y({props:{$$slots:{default:[ue]},$$scope:{ctx:m}}}),st=new it({props:{sketch:ot,sketchParameters:{plotFunction:ve,dimensions:[0,1],cs:"disc",shift:1}}}),tt=new y({props:{displayMode:!0,$$slots:{default:[ie]},$$scope:{ctx:m}}}),{c(){$=A("strong"),$.textContent=e,n=A("br"),_=p(`
+		Rotate `),c(b.$$.fragment),M=p(" around "),c(R.$$.fragment),B=p(" on "),c(T.$$.fragment),S=p(`:
+		`),c(r.$$.fragment),k=I(),c(o.$$.fragment),C=I(),V=A("strong"),V.textContent=P,N=A("br"),q=p(`
+		Rotate `),c(E.$$.fragment),O=p(" around "),c(G.$$.fragment),u=p(" on "),c(d.$$.fragment),j=p(`:
+		`),c(H.$$.fragment),et=I(),c(L.$$.fragment),$t=I(),lt=A("strong"),lt.textContent=ut,mt=A("br"),W=p(`
+		Rotate `),c(z.$$.fragment),J=p(" around "),c(K.$$.fragment),Q=p(" from "),c(U.$$.fragment),nt=p(" to "),c(X.$$.fragment),Y=p(`:
+		`),c(st.$$.fragment),Z=I(),c(tt.$$.fragment)},l(t){$=F(t,"STRONG",{"data-svelte-h":!0}),rt($)!=="svelte-mjsimh"&&($.textContent=e),n=F(t,"BR",{}),_=a(t,`
+		Rotate `),g(b.$$.fragment,t),M=a(t," around "),g(R.$$.fragment,t),B=a(t," on "),g(T.$$.fragment,t),S=a(t,`:
+		`),g(r.$$.fragment,t),k=D(t),g(o.$$.fragment,t),C=D(t),V=F(t,"STRONG",{"data-svelte-h":!0}),rt(V)!=="svelte-1t7c5o7"&&(V.textContent=P),N=F(t,"BR",{}),q=a(t,`
+		Rotate `),g(E.$$.fragment,t),O=a(t," around "),g(G.$$.fragment,t),u=a(t," on "),g(d.$$.fragment,t),j=a(t,`:
+		`),g(H.$$.fragment,t),et=D(t),g(L.$$.fragment,t),$t=D(t),lt=F(t,"STRONG",{"data-svelte-h":!0}),rt(lt)!=="svelte-sa39by"&&(lt.textContent=ut),mt=F(t,"BR",{}),W=a(t,`
+		Rotate `),g(z.$$.fragment,t),J=a(t," around "),g(K.$$.fragment,t),Q=a(t," from "),g(U.$$.fragment,t),nt=a(t," to "),g(X.$$.fragment,t),Y=a(t,`:
+		`),g(st.$$.fragment,t),Z=D(t),g(tt.$$.fragment,t)},m(t,i){f(t,$,i),f(t,n,i),f(t,_,i),x(b,t,i),f(t,M,i),x(R,t,i),f(t,B,i),x(T,t,i),f(t,S,i),x(r,t,i),f(t,k,i),x(o,t,i),f(t,C,i),f(t,V,i),f(t,N,i),f(t,q,i),x(E,t,i),f(t,O,i),x(G,t,i),f(t,u,i),x(d,t,i),f(t,j,i),x(H,t,i),f(t,et,i),x(L,t,i),f(t,$t,i),f(t,lt,i),f(t,mt,i),f(t,W,i),x(z,t,i),f(t,J,i),x(K,t,i),f(t,Q,i),x(U,t,i),f(t,nt,i),x(X,t,i),f(t,Y,i),x(st,t,i),f(t,Z,i),x(tt,t,i),s=!0},p(t,i){const pt={};i&4&&(pt.$$scope={dirty:i,ctx:t}),b.$set(pt);const at={};i&4&&(at.$$scope={dirty:i,ctx:t}),R.$set(at);const _t={};i&4&&(_t.$$scope={dirty:i,ctx:t}),T.$set(_t);const ct={};i&4&&(ct.$$scope={dirty:i,ctx:t}),o.$set(ct);const gt={};i&4&&(gt.$$scope={dirty:i,ctx:t}),E.$set(gt);const xt={};i&4&&(xt.$$scope={dirty:i,ctx:t}),G.$set(xt);const vt={};i&4&&(vt.$$scope={dirty:i,ctx:t}),d.$set(vt);const ht={};i&4&&(ht.$$scope={dirty:i,ctx:t}),L.$set(ht);const wt={};i&4&&(wt.$$scope={dirty:i,ctx:t}),z.$set(wt);const bt={};i&4&&(bt.$$scope={dirty:i,ctx:t}),K.$set(bt);const Rt={};i&4&&(Rt.$$scope={dirty:i,ctx:t}),U.$set(Rt);const Ct={};i&4&&(Ct.$$scope={dirty:i,ctx:t}),X.$set(Ct);const kt={};i&4&&(kt.$$scope={dirty:i,ctx:t}),tt.$set(kt)},i(t){s||(v(b.$$.fragment,t),v(R.$$.fragment,t),v(T.$$.fragment,t),v(r.$$.fragment,t),v(o.$$.fragment,t),v(E.$$.fragment,t),v(G.$$.fragment,t),v(d.$$.fragment,t),v(H.$$.fragment,t),v(L.$$.fragment,t),v(z.$$.fragment,t),v(K.$$.fragment,t),v(U.$$.fragment,t),v(X.$$.fragment,t),v(st.$$.fragment,t),v(tt.$$.fragment,t),s=!0)},o(t){h(b.$$.fragment,t),h(R.$$.fragment,t),h(T.$$.fragment,t),h(r.$$.fragment,t),h(o.$$.fragment,t),h(E.$$.fragment,t),h(G.$$.fragment,t),h(d.$$.fragment,t),h(H.$$.fragment,t),h(L.$$.fragment,t),h(z.$$.fragment,t),h(K.$$.fragment,t),h(U.$$.fragment,t),h(X.$$.fragment,t),h(st.$$.fragment,t),h(tt.$$.fragment,t),s=!1},d(t){t&&(l($),l(n),l(_),l(M),l(B),l(S),l(k),l(C),l(V),l(N),l(q),l(O),l(u),l(j),l(et),l($t),l(lt),l(mt),l(W),l(J),l(Q),l(nt),l(Y),l(Z)),w(b,t),w(R,t),w(T,t),w(r,t),w(o,t),w(E,t),w(G,t),w(d,t),w(H,t),w(L,t),w(z,t),w(K,t),w(U,t),w(X,t),w(st,t),w(tt,t)}}}function pe(m){let $,e,n,_,b,M,R,B,T,S;return $=new St({props:{heading:"The Disc Method"}}),n=new dt({props:{heading:"Concept",$$slots:{default:[qt]},$$scope:{ctx:m}}}),b=new dt({props:{heading:"Examples",$$slots:{default:[zt]},$$scope:{ctx:m}}}),R=new dt({props:{heading:"Revolving Around Other Axes",$$slots:{default:[Xt]},$$scope:{ctx:m}}}),T=new dt({props:{heading:"Examples",$$slots:{default:[oe]},$$scope:{ctx:m}}}),{c(){c($.$$.fragment),e=I(),c(n.$$.fragment),_=I(),c(b.$$.fragment),M=I(),c(R.$$.fragment),B=I(),c(T.$$.fragment)},l(r){g($.$$.fragment,r),e=D(r),g(n.$$.fragment,r),_=D(r),g(b.$$.fragment,r),M=D(r),g(R.$$.fragment,r),B=D(r),g(T.$$.fragment,r)},m(r,k){x($,r,k),f(r,e,k),x(n,r,k),f(r,_,k),x(b,r,k),f(r,M,k),x(R,r,k),f(r,B,k),x(T,r,k),S=!0},p(r,k){const o={};k&4&&(o.$$scope={dirty:k,ctx:r}),n.$set(o);const C={};k&4&&(C.$$scope={dirty:k,ctx:r}),b.$set(C);const V={};k&4&&(V.$$scope={dirty:k,ctx:r}),R.$set(V);const P={};k&4&&(P.$$scope={dirty:k,ctx:r}),T.$set(P)},i(r){S||(v($.$$.fragment,r),v(n.$$.fragment,r),v(b.$$.fragment,r),v(R.$$.fragment,r),v(T.$$.fragment,r),S=!0)},o(r){h($.$$.fragment,r),h(n.$$.fragment,r),h(b.$$.fragment,r),h(R.$$.fragment,r),h(T.$$.fragment,r),S=!1},d(r){r&&(l(e),l(_),l(M),l(B)),w($,r),w(n,r),w(b,r),w(R,r),w(T,r)}}}function ae(m){let $,e;return $=new Mt({props:{$$slots:{default:[pe]},$$scope:{ctx:m}}}),{c(){c($.$$.fragment)},l(n){g($.$$.fragment,n)},m(n,_){x($,n,_),e=!0},p(n,[_]){const b={};_&4&&(b.$$scope={dirty:_,ctx:n}),$.$set(b)},i(n){e||(v($.$$.fragment,n),e=!0)},o(n){h($.$$.fragment,n),e=!1},d(n){w($,n)}}}const _e=m=>m**2,ce=m=>m*2,ge=m=>5,xe=m=>m**2,ve=m=>2*m;function he(m){return[n=>Math.sqrt(n),n=>Math.sqrt(n)]}class Te extends yt{constructor($){super(),Bt(this,$,he,ae,Tt,{})}}export{Te as component};

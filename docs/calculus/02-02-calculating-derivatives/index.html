@@ -1,0 +1,127 @@
+<!doctype html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8" />
+		<link rel="icon" href="../../favicon.png" />
+		<meta name="viewport" content="width=device-width, initial-scale=1" />
+		
+		<link href="../../_app/immutable/assets/app.BDtVw_ds.css" rel="stylesheet">
+		<link href="../../_app/immutable/assets/Section._en2CAKW.css" rel="stylesheet">
+		<link rel="modulepreload" href="../../_app/immutable/entry/start.DFcj8LNn.js">
+		<link rel="modulepreload" href="../../_app/immutable/chunks/BPHTS8RV.js">
+		<link rel="modulepreload" href="../../_app/immutable/chunks/CVhLxNSM.js">
+		<link rel="modulepreload" href="../../_app/immutable/chunks/DLyp5A0Q.js">
+		<link rel="modulepreload" href="../../_app/immutable/chunks/CwFVwKkT.js">
+		<link rel="modulepreload" href="../../_app/immutable/entry/app.34Qzq_vi.js">
+		<link rel="modulepreload" href="../../_app/immutable/chunks/C1FmrZbK.js">
+		<link rel="modulepreload" href="../../_app/immutable/chunks/DvSB8R1X.js">
+		<link rel="modulepreload" href="../../_app/immutable/nodes/0.B7xpY3_-.js">
+		<link rel="modulepreload" href="../../_app/immutable/nodes/2.BGaKxamB.js">
+		<link rel="modulepreload" href="../../_app/immutable/nodes/20.Cb4rjiQa.js">
+		<link rel="modulepreload" href="../../_app/immutable/chunks/ByTZAYyp.js">
+		<link rel="modulepreload" href="../../_app/immutable/chunks/xLaKUPuM.js">
+		<link rel="modulepreload" href="../../_app/immutable/chunks/CkoZ7XGi.js">
+		<link rel="modulepreload" href="../../_app/immutable/chunks/D5fqzSVu.js">
+		<link rel="modulepreload" href="../../_app/immutable/chunks/D3W7TYDU.js">
+		<link rel="modulepreload" href="../../_app/immutable/chunks/Bw3t_506.js">
+		<link rel="modulepreload" href="../../_app/immutable/chunks/S6_-2PRy.js">
+	</head>
+	<body data-sveltekit-preload-data="hover">
+		<div style="display: contents">    <div class="fixed top-0 left-0 w-full h-full z-[-2] bg-background dark:bg-dark_background"></div> <body class="h-full bg-background dark:bg-dark_background"><button class="fixed top-4 left-4 z-10 p-2 text-text dark:text-dark_text hover:text-primary" data-svelte-h="svelte-au3lwb">←</button> <button class="fixed top-4 right-4 z-10 p-2 text-text dark:text-dark_text hover:text-primary flex items-center justify-center" aria-label="Toggle Dark Mode"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide-icon lucide lucide-sun w-5 h-5"><circle cx="12" cy="12" r="4"></circle><path d="M12 2v2"></path><path d="M12 20v2"></path><path d="m4.93 4.93 1.41 1.41"></path><path d="m17.66 17.66 1.41 1.41"></path><path d="M2 12h2"></path><path d="M20 12h2"></path><path d="m6.34 17.66-1.41 1.41"></path><path d="m19.07 4.93-1.41 1.41"></path></svg></button>  <div class="p-8 font-sans leading-relaxed w-full"><div class="max-w-3xl mx-auto p-8 leading-relaxed ">  <h1 class="text-3xl font-bold text-text mb-6 dark:text-dark_text"><title>Calculating Derivatives</title> <meta property="og:title" content="Calculating Derivatives"> Calculating Derivatives</h1> <div class="mb-8"><h2 class="text-2xl font-semibold text-text dark:text-dark_text mb-4">Introduction</h2> <p class="text-text dark:text-dark_text">A derivative of a function is calculated by finding its rate of change at each point.
+			<br><br>Below, we are finding the derivative of the function at the white dot.
+			<br> <span class="inline-block ml-8"><br>The two yellow dots represent the points on the line we are using to calculate the
+			slope. Recall the slope function is <div style="display: none;">m=\frac{f(x)_2 - f(x)_1}{x_2 - x_1}</div> <span class="math"><!-- HTML_TAG_START --><!-- HTML_TAG_END --></span>. The left dot is <div style="display: none;">(x_1, f(x)_1)</div> <span class="math"><!-- HTML_TAG_START --><!-- HTML_TAG_END --></span> and the right dot is <div style="display: none;">(x_2, f(x)_2)</div> <span class="math"><!-- HTML_TAG_START --><!-- HTML_TAG_END --></span>.
+			<br>The teal side is <div style="display: none;">x_2 - x_1</div> <span class="math"><!-- HTML_TAG_START --><!-- HTML_TAG_END --></span>.
+			<br>The magenta side is <div style="display: none;">f(x)_2 - f(x)_1</div> <span class="math"><!-- HTML_TAG_START --><!-- HTML_TAG_END --></span>.
+			<br>The yellow side has a slope of <div style="display: none;">m</div> <span class="math"><!-- HTML_TAG_START --><!-- HTML_TAG_END --></span>.
+			<br>The white line is identical to the yellow side, but moved up to be on top of the dot.</span>   <div class="flex justify-center"><div class="w-full mb-8 bg-background dark:bg-dark_background aspect-square max-h-[66vh] max-w-[66vh]"><div class="flex w-full h-full aspect-[1/1]"></div></div></div>
+		
+			As the two dots approach the white dot, the slope of the line between them approaches the true slope of the function at that point.
+			<br><br>Does that sound familiar? It should. It is a limit.
+			<br><br>The derivative of a line is calculated by finding the limit of the slope function as the two dots approach the point we are finding the slope for.</p></div> <div class="mb-8"><h2 class="text-2xl font-semibold text-text dark:text-dark_text mb-4">Creating the Derivative Function</h2> <p class="text-text dark:text-dark_text">We will convert the statement above into a limit we can solve by defining the two dots using a step-value, <div style="display: none;">h</div> <span class="math"><!-- HTML_TAG_START --><!-- HTML_TAG_END --></span>.
+			<br><br>A step value is the distance of each dot from the point. The left dot is <div style="display: none;">(x-h, f(x-h))</div> <span class="math"><!-- HTML_TAG_START --><!-- HTML_TAG_END --></span> and the right dot is <div style="display: none;">(x+h, f(x+h))</div> <span class="math"><!-- HTML_TAG_START --><!-- HTML_TAG_END --></span>.
+			<br><br>In the graph above, the distance of the cursor (horizontally) from the point controlled the step-value.
+			<br><br>Let&#39;s rewrite the slope function using this new notation.
+			<br><div style="display: none;">m=\frac{f(x+h) - f(x-h)}{(x+h) - (x-h)}</div> <span class="math"><!-- HTML_TAG_START --><!-- HTML_TAG_END --></span> <br><div style="display: none;">m=\frac{f(x+h) - f(x-h)}{2h}</div> <span class="math"><!-- HTML_TAG_START --><!-- HTML_TAG_END --></span> <br><br>In order to find the true slope, we just need to find the limit of this function as <div style="display: none;">h</div> <span class="math"><!-- HTML_TAG_START --><!-- HTML_TAG_END --></span> approaches <div style="display: none;">0</div> <span class="math"><!-- HTML_TAG_START --><!-- HTML_TAG_END --></span>. 
+			<br> <span class="inline-block ml-8">(Note that <div style="display: none;">h</div> <span class="math"><!-- HTML_TAG_START --><!-- HTML_TAG_END --></span> can be negative. A negative <div style="display: none;">h</div> <span class="math"><!-- HTML_TAG_START --><!-- HTML_TAG_END --></span> causes the two dots to switch places.)</span> <br><div style="display: none;">m=\lim_{h \to 0}\frac{f(x+h) - f(x-h)}{2h}</div> <span class="math"><!-- HTML_TAG_START --><!-- HTML_TAG_END --></span></p></div> <div class="mb-8"><h2 class="text-2xl font-semibold text-text dark:text-dark_text mb-4">Calculating Derivatives</h2> <p class="text-text dark:text-dark_text">We can now find derivatives for different functions <div style="display: none;">f</div> <span class="math"><!-- HTML_TAG_START --><!-- HTML_TAG_END --></span> and values <div style="display: none;">x</div> <span class="math"><!-- HTML_TAG_START --><!-- HTML_TAG_END --></span>. 
+			<br><br>For example, for <div style="display: none;">f(x)=x^2, x=1</div> <span class="math"><!-- HTML_TAG_START --><!-- HTML_TAG_END --></span>, the derivative function is
+			<div style="display: none;">
+				\begin{align*}
+				m&amp;=\lim_{h \to 0}\frac{f(x+h) - f(x-h)}{2h} \\
+				&amp;=\lim_{h \to 0}\frac{\c1{(x+h)^2} - \c1{(x-h)^2}}{2h} \\
+				&amp;=\lim_{h \to 0}\frac{\c1{x^2 + 2xh + h^2} - \c1{(x^2 - 2xh + h^2)}}{2h} \\
+				&amp;=\lim_{h \to 0}\frac{x^2 + 2xh + h^2 \c1{- x^2 + 2xh - h^2}}{2h} \\
+				&amp;=\lim_{h \to 0}\frac{4xh}{2h} \\
+				&amp;=\lim_{h \to 0}2x\frac{h}{h} \\
+				&amp;=\lim_{h \to 0}2x \\
+				\text{Since } x=1, m&amp;=\lim_{h \to 0}2 \\
+				m&amp;=2
+				\end{align*}
+			</div> <span class="math"><!-- HTML_TAG_START --><!-- HTML_TAG_END --></span>
+			Note that the function we derived, <div style="display: none;">m=\lim_{h \to 0}2x</div> <span class="math"><!-- HTML_TAG_START --><!-- HTML_TAG_END --></span>, is
+			the derivative of <div style="display: none;">f(x)=x^2</div> <span class="math"><!-- HTML_TAG_START --><!-- HTML_TAG_END --></span> for any point on the line. We can see that below. 
+			<br><br><div style="display: none;">f'(x)</div> <span class="math"><!-- HTML_TAG_START --><!-- HTML_TAG_END --></span> is the derivative of <div style="display: none;">f(x)</div> <span class="math"><!-- HTML_TAG_START --><!-- HTML_TAG_END --></span>.
+			<br><br><div style="display: none;">f(x)=x^2</div> <span class="math"><!-- HTML_TAG_START --><!-- HTML_TAG_END --></span> <br><div style="display: none;">f'(x)=2x</div> <span class="math"><!-- HTML_TAG_START --><!-- HTML_TAG_END --></span>   <div class="flex justify-center"><div class="w-full mb-8 bg-background dark:bg-dark_background aspect-square max-h-[66vh] max-w-[66vh]"><div class="flex w-full h-full aspect-[1/1]"></div></div></div>
+		
+		Here are some more proofs of other functions we have seen in previous lessons.
+		<br><br><div style="display: none;">f(x)=\sin(x)</div> <span class="math"><!-- HTML_TAG_START --><!-- HTML_TAG_END --></span> <br><div style="display: none;">f'(x)=\cos(x)</div> <span class="math"><!-- HTML_TAG_START --><!-- HTML_TAG_END --></span>   <div class="flex justify-center"><div class="w-full mb-8 bg-background dark:bg-dark_background aspect-square max-h-[66vh] max-w-[66vh]"><div class="flex w-full h-full aspect-[1/1]"></div></div></div> <div style="display: none;">
+		\begin{align*}
+		m&amp;=\lim_{h \to 0}\frac{f(x+h) - f(x-h)}{2h} \\\\
+		&amp;=\lim_{h \to 0}\frac{\c1{\sin(x+h)} - \c1{\sin(x-h)}}{2h} \\\\
+		\text{We will now use a}&amp; \text{ trig identity to combine the two terms:} \\\\
+		\sin(a+b) &amp;= \sin(a)\cos(b) + \cos(a)\sin(b) \\\\
+		m&amp;=\lim_{h \to 0}\frac{(\c1{\sin(x)\cos(h) + \cos(x)\sin(h))} - \c1{(\sin(x)\cos(-h) + \cos(x)\sin(-h))}}{2h} \\\\
+		\text{Note } \cos(-x)&amp;=\cos(x) \text{ and } \sin(-x) = -\sin(x)\\\\
+		m&amp;=\lim_{h \to 0}\frac{(\sin(x)\cos(h) + \cos(x)\sin(h)) - (\sin(x)\c1{\cos(h) -} \cos(x)\c1{\sin(h)})}{2h} \\\\
+		&amp;=\lim_{h \to 0}\frac{\sin(x)\cos(h) + \cos(x)\sin(h) \c1{-} \sin(x)\cos(h) \c1{+} \cos(x)\sin(h)}{2h} \\\\
+		&amp;=\lim_{h \to 0}\frac{2\cos(x)\sin(h)}{2h} \\\\
+		&amp;=\lim_{h \to 0}\frac{\cos(x)\sin(h)}{h} \\\\
+		&amp;=\c1{\cos(x)} \lim_{h \to 0}\frac{\sin(h)}{h} \\\\
+		\text{The} &amp;\text{ graph below, }\frac{\sin(h)}{h} \text{, shows } \lim_{h \to 0}\frac{\sin(h)}{h}=1 \\\\
+		\text{Thus, }m&amp;=\cos(x)
+		\end{align*}
+		</div> <span class="math"><!-- HTML_TAG_START --><!-- HTML_TAG_END --></span>
+		
+		
+		Here is the graph of <div style="display: none;">f(h)=\frac{\sin(h)}{h}</div> <span class="math"><!-- HTML_TAG_START --><!-- HTML_TAG_END --></span>. In a future lesson, we will prove <div style="display: none;">\lim_{h \to 0}\frac{\sin(h)}{h}=1</div> <span class="math"><!-- HTML_TAG_START --><!-- HTML_TAG_END --></span>.
+
+	  <div class="flex justify-center"><div class="w-full mb-8 bg-background dark:bg-dark_background aspect-square max-h-[66vh] max-w-[66vh]"><div class="flex w-full h-full aspect-[1/1]"></div></div></div> <div style="display: none;">f(x)=e^x</div> <span class="math"><!-- HTML_TAG_START --><!-- HTML_TAG_END --></span> <br><div style="display: none;">f'(x)=e^x</div> <span class="math"><!-- HTML_TAG_START --><!-- HTML_TAG_END --></span>   <div class="flex justify-center"><div class="w-full mb-8 bg-background dark:bg-dark_background aspect-square max-h-[66vh] max-w-[66vh]"><div class="flex w-full h-full aspect-[1/1]"></div></div></div> <div style="display: none;">
+		\begin{align*}
+		m&amp;=\lim_{h \to 0}\frac{f(x+h) - f(x-h)}{2h} \\\\
+		&amp;=\lim_{h \to 0}\frac{e^{x+h} - e^{x-h}}{2h} \\\\
+		&amp;=\lim_{h \to 0}\frac{e^{x}e^{h} - e^{x}e^{-h}}{2h} \\\\
+		&amp;=\lim_{h \to 0}\frac{e^{x}(e^{h} - e^{-h})}{2h} \\\\
+		&amp;=e^{x}\lim_{h \to 0}\frac{(e^{h} - e^{-h})}{2h} \\\\
+		\text{Below, I will } &amp;\text{include a graph of }\frac{(e^{h} - e^{-h})}{2h} \text{ to show } \lim_{h \to 0}\frac{(e^{h} - e^{-h})}{2h}=1 \\\\
+		\text{Thus, }m&amp;=e^x
+		\end{align*}
+		</div> <span class="math"><!-- HTML_TAG_START --><!-- HTML_TAG_END --></span>
+		Here is the graph, <div style="display: none;">f(h)=\frac{(e^{h} - e^{-h})}{2h}</div> <span class="math"><!-- HTML_TAG_START --><!-- HTML_TAG_END --></span>. We rely on these graphs of <div style="display: none;">f(h)</div> <span class="math"><!-- HTML_TAG_START --><!-- HTML_TAG_END --></span> because our current ability to prove limits is weak. However, in the future we will be able to prove these limits.
+	
+	  <div class="flex justify-center"><div class="w-full mb-8 bg-background dark:bg-dark_background aspect-square max-h-[66vh] max-w-[66vh]"><div class="flex w-full h-full aspect-[1/1]"></div></div></div></p></div></div></div></body> 
+			
+			<script>
+				{
+					__sveltekit_1hm8yy8 = {
+						base: new URL("../..", location).pathname.slice(0, -1),
+						assets: "/BrickAcademy"
+					};
+
+					const element = document.currentScript.parentElement;
+
+					Promise.all([
+						import("../../_app/immutable/entry/start.DFcj8LNn.js"),
+						import("../../_app/immutable/entry/app.34Qzq_vi.js")
+					]).then(([kit, app]) => {
+						kit.start(app, element, {
+							node_ids: [0, 2, 20],
+							data: [null,null,null],
+							form: null,
+							error: null
+						});
+					});
+				}
+			</script>
+		</div>
+	</body>
+</html>

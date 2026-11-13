@@ -1,0 +1,107 @@
+<!doctype html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8" />
+		<link rel="icon" href="../../favicon.png" />
+		<meta name="viewport" content="width=device-width, initial-scale=1" />
+		
+		<link href="../../_app/immutable/assets/app.BDtVw_ds.css" rel="stylesheet">
+		<link href="../../_app/immutable/assets/Section._en2CAKW.css" rel="stylesheet">
+		<link rel="modulepreload" href="../../_app/immutable/entry/start.DFcj8LNn.js">
+		<link rel="modulepreload" href="../../_app/immutable/chunks/BPHTS8RV.js">
+		<link rel="modulepreload" href="../../_app/immutable/chunks/CVhLxNSM.js">
+		<link rel="modulepreload" href="../../_app/immutable/chunks/DLyp5A0Q.js">
+		<link rel="modulepreload" href="../../_app/immutable/chunks/CwFVwKkT.js">
+		<link rel="modulepreload" href="../../_app/immutable/entry/app.34Qzq_vi.js">
+		<link rel="modulepreload" href="../../_app/immutable/chunks/C1FmrZbK.js">
+		<link rel="modulepreload" href="../../_app/immutable/chunks/DvSB8R1X.js">
+		<link rel="modulepreload" href="../../_app/immutable/nodes/0.B7xpY3_-.js">
+		<link rel="modulepreload" href="../../_app/immutable/nodes/2.BGaKxamB.js">
+		<link rel="modulepreload" href="../../_app/immutable/nodes/74.Cie54VE5.js">
+		<link rel="modulepreload" href="../../_app/immutable/chunks/ByTZAYyp.js">
+		<link rel="modulepreload" href="../../_app/immutable/chunks/xLaKUPuM.js">
+		<link rel="modulepreload" href="../../_app/immutable/chunks/CkoZ7XGi.js">
+		<link rel="modulepreload" href="../../_app/immutable/chunks/D5fqzSVu.js">
+		<link rel="modulepreload" href="../../_app/immutable/chunks/CqEGPqgJ.js">
+		<link rel="modulepreload" href="../../_app/immutable/chunks/S6_-2PRy.js">
+	</head>
+	<body data-sveltekit-preload-data="hover">
+		<div style="display: contents">  <div class="fixed top-0 left-0 w-full h-full z-[-2] bg-background dark:bg-dark_background"></div> <body class="h-full bg-background dark:bg-dark_background"><button class="fixed top-4 left-4 z-10 p-2 text-text dark:text-dark_text hover:text-primary" data-svelte-h="svelte-au3lwb">←</button> <button class="fixed top-4 right-4 z-10 p-2 text-text dark:text-dark_text hover:text-primary flex items-center justify-center" aria-label="Toggle Dark Mode"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide-icon lucide lucide-sun w-5 h-5"><circle cx="12" cy="12" r="4"></circle><path d="M12 2v2"></path><path d="M12 20v2"></path><path d="m4.93 4.93 1.41 1.41"></path><path d="m17.66 17.66 1.41 1.41"></path><path d="M2 12h2"></path><path d="M20 12h2"></path><path d="m6.34 17.66-1.41 1.41"></path><path d="m19.07 4.93-1.41 1.41"></path></svg></button>  <div class="p-8 font-sans leading-relaxed w-full"><div class="max-w-3xl mx-auto p-8 leading-relaxed ">  <h1 class="text-3xl font-bold text-text mb-6 dark:text-dark_text"><title>Parametric Arc Lengths</title> <meta property="og:title" content="Parametric Arc Lengths"> Parametric Arc Lengths</h1> <div class="mb-8"><h2 class="text-2xl font-semibold text-text dark:text-dark_text mb-4">Introduction</h2> <p class="text-text dark:text-dark_text">Finding the arc lengths of parametric curves is similar to the process for explicit functions.
+		<br><br>
+		For parametric functions defined by <div style="display: none;">x(t)</div> <span class="math"><!-- HTML_TAG_START --><!-- HTML_TAG_END --></span> and <div style="display: none;">y(t)</div> <span class="math"><!-- HTML_TAG_START --><!-- HTML_TAG_END --></span>, the arc length <div style="display: none;">L</div> <span class="math"><!-- HTML_TAG_START --><!-- HTML_TAG_END --></span> from <div style="display: none;">t=a</div> <span class="math"><!-- HTML_TAG_START --><!-- HTML_TAG_END --></span> to <div style="display: none;">t=b</div> <span class="math"><!-- HTML_TAG_START --><!-- HTML_TAG_END --></span> is given by:
+		<div style="display: none;">
+            \begin{align*}
+			L &amp;= \sum^n_{i=0}{\sqrt{\Delta x^2 + \Delta y^2}} \\
+            &amp;= \int_{a}^{b} \sqrt{dx^2 + dy^2} \\
+            &amp;= \int_{a}^{b} \sqrt{dx^2 + dy^2} \cdot \frac{dt}{dt} \\
+            &amp;= \int_{a}^{b} \sqrt{\frac{dx^2}{dt^2} + \frac{dy^2}{dt^2}} \, dt \\
+            &amp;= \int_{a}^{b} \sqrt{\left(\frac{dx}{dt}\right)^2 + \left(\frac{dy}{dt}\right)^2}\,dt \\
+            \end{align*}
+		</div> <span class="math"><!-- HTML_TAG_START --><!-- HTML_TAG_END --></span>
+        Same as our first arc length formula, this derives from euclidean distance. 
+        <br><br>By summing infinitely many infinitely small lines approximating the function, we can find the length of the function.</p></div> <div class="mb-8"><h2 class="text-2xl font-semibold text-text dark:text-dark_text mb-4">Example 1: Straight Line Verification</h2> <p class="text-text dark:text-dark_text">Find the length of the parametric curve from <div style="display: none;">t=0</div> <span class="math"><!-- HTML_TAG_START --><!-- HTML_TAG_END --></span> to <div style="display: none;">t=1</div> <span class="math"><!-- HTML_TAG_START --><!-- HTML_TAG_END --></span>:
+		<div style="display: none;">
+			\begin{align*}
+			x(t) &amp;= 3t \\
+			y(t) &amp;= 4t
+			\end{align*}
+		</div> <span class="math"><!-- HTML_TAG_START --><!-- HTML_TAG_END --></span> <strong data-svelte-h="svelte-1pm6uif">Solution:</strong> <div style="display: none;">
+			\frac{dx}{dt} = 3,\quad \frac{dy}{dt} = 4
+		</div> <span class="math"><!-- HTML_TAG_START --><!-- HTML_TAG_END --></span> <div style="display: none;">
+            \begin{align*}
+			L &amp;= \int_{0}^{1} \sqrt{3^2 + 4^2}\,dt \\
+            &amp;= \int_{0}^{1} 5\,dt \\
+            &amp;= 5(1) - 5(0) \\
+            &amp;= 5
+            \end{align*}
+		</div> <span class="math"><!-- HTML_TAG_START --><!-- HTML_TAG_END --></span>
+		Note that this parametric equation is a straight line, so the result is verifiable using the distance between the two points.
+        <div style="display: none;">
+            \sqrt{(3(1) - 3(0))^2 + (4(1) - 4(0))^2} = \sqrt{3^2 + 4^2} = 5
+            </div> <span class="math"><!-- HTML_TAG_START --><!-- HTML_TAG_END --></span>   <div class="flex justify-center"><div class="w-full mb-8 bg-background dark:bg-dark_background aspect-square max-h-[66vh] max-w-[66vh]"><div class="flex w-full h-full aspect-[1/1]"></div></div></div></p></div> <div class="mb-8"><h2 class="text-2xl font-semibold text-text dark:text-dark_text mb-4">Example 2: Circular Arc</h2> <p class="text-text dark:text-dark_text">Calculate the length of a quarter circle defined by:
+		<div style="display: none;">
+			\begin{align*}
+			x(t) &amp;= 2\cos(t) \\
+			y(t) &amp;= 2\sin(t) \\
+			&amp;0 \leq t \leq \frac{\pi}{2}
+			\end{align*}
+		</div> <span class="math"><!-- HTML_TAG_START --><!-- HTML_TAG_END --></span> <strong data-svelte-h="svelte-1pm6uif">Solution:</strong> <div style="display: none;">
+			\frac{dx}{dt} = -2\sin(t),\quad \frac{dy}{dt} = 2\cos(t)
+		</div> <span class="math"><!-- HTML_TAG_START --><!-- HTML_TAG_END --></span> <div style="display: none;">
+            \begin{align*}
+			L &amp;= \int_{0}^{\pi/2} \sqrt{(-2\sin(t))^2 + (2\cos(t))^2}\,dt \\
+            &amp;= \int_{0}^{\pi/2} \sqrt{4\sin^2(t) + 4\cos^2(t)}\,dt \\
+            &amp;= \int_{0}^{\pi/2} 2\sqrt{(\sin^2(t) + \cos^2(t))}\,dt \\
+            &amp;= \int_{0}^{\pi/2} 2\,dt \\
+            &amp;= 2\left(\frac{\pi}{2}\right) \\
+            &amp;= \pi
+            \end{align*}
+            </div> <span class="math"><!-- HTML_TAG_START --><!-- HTML_TAG_END --></span>
+		Since these functions represent <div style="display: none;">1/4</div> <span class="math"><!-- HTML_TAG_START --><!-- HTML_TAG_END --></span> of a circle of radius 2, we can verify the arc length using the formula for circumference: 
+        <div style="display: none;">\frac{1}{4} \times 2\pi r = \frac{1}{4} \times 4\pi = \pi</div> <span class="math"><!-- HTML_TAG_START --><!-- HTML_TAG_END --></span>   <div class="flex justify-center"><div class="w-full mb-8 bg-background dark:bg-dark_background aspect-square max-h-[66vh] max-w-[66vh]"><div class="flex w-full h-full aspect-[1/1]"></div></div></div></p></div></div></div></body> 
+			
+			<script>
+				{
+					__sveltekit_1hm8yy8 = {
+						base: new URL("../..", location).pathname.slice(0, -1),
+						assets: "/BrickAcademy"
+					};
+
+					const element = document.currentScript.parentElement;
+
+					Promise.all([
+						import("../../_app/immutable/entry/start.DFcj8LNn.js"),
+						import("../../_app/immutable/entry/app.34Qzq_vi.js")
+					]).then(([kit, app]) => {
+						kit.start(app, element, {
+							node_ids: [0, 2, 74],
+							data: [null,null,null],
+							form: null,
+							error: null
+						});
+					});
+				}
+			</script>
+		</div>
+	</body>
+</html>

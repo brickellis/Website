@@ -1,0 +1,164 @@
+<!doctype html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8" />
+		<link rel="icon" href="../../favicon.png" />
+		<meta name="viewport" content="width=device-width, initial-scale=1" />
+		
+		<link href="../../_app/immutable/assets/app.BDtVw_ds.css" rel="stylesheet">
+		<link href="../../_app/immutable/assets/Section._en2CAKW.css" rel="stylesheet">
+		<link rel="modulepreload" href="../../_app/immutable/entry/start.DFcj8LNn.js">
+		<link rel="modulepreload" href="../../_app/immutable/chunks/BPHTS8RV.js">
+		<link rel="modulepreload" href="../../_app/immutable/chunks/CVhLxNSM.js">
+		<link rel="modulepreload" href="../../_app/immutable/chunks/DLyp5A0Q.js">
+		<link rel="modulepreload" href="../../_app/immutable/chunks/CwFVwKkT.js">
+		<link rel="modulepreload" href="../../_app/immutable/entry/app.34Qzq_vi.js">
+		<link rel="modulepreload" href="../../_app/immutable/chunks/C1FmrZbK.js">
+		<link rel="modulepreload" href="../../_app/immutable/chunks/DvSB8R1X.js">
+		<link rel="modulepreload" href="../../_app/immutable/nodes/0.B7xpY3_-.js">
+		<link rel="modulepreload" href="../../_app/immutable/nodes/2.BGaKxamB.js">
+		<link rel="modulepreload" href="../../_app/immutable/nodes/91.CJzt0hAD.js">
+		<link rel="modulepreload" href="../../_app/immutable/chunks/ByTZAYyp.js">
+		<link rel="modulepreload" href="../../_app/immutable/chunks/xLaKUPuM.js">
+	</head>
+	<body data-sveltekit-preload-data="hover">
+		<div style="display: contents">  <div class="fixed top-0 left-0 w-full h-full z-[-2] bg-background dark:bg-dark_background"></div> <body class="h-full bg-background dark:bg-dark_background"><button class="fixed top-4 left-4 z-10 p-2 text-text dark:text-dark_text hover:text-primary" data-svelte-h="svelte-au3lwb">←</button> <button class="fixed top-4 right-4 z-10 p-2 text-text dark:text-dark_text hover:text-primary flex items-center justify-center" aria-label="Toggle Dark Mode"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide-icon lucide lucide-sun w-5 h-5"><circle cx="12" cy="12" r="4"></circle><path d="M12 2v2"></path><path d="M12 20v2"></path><path d="m4.93 4.93 1.41 1.41"></path><path d="m17.66 17.66 1.41 1.41"></path><path d="M2 12h2"></path><path d="M20 12h2"></path><path d="m6.34 17.66-1.41 1.41"></path><path d="m19.07 4.93-1.41 1.41"></path></svg></button>  <div class="p-8 font-sans leading-relaxed w-full"><div class="max-w-3xl mx-auto p-8 leading-relaxed ">  <h1 class="text-3xl font-bold text-text mb-6 dark:text-dark_text"><title>Derivatives and Integrals</title> <meta property="og:title" content="Derivatives and Integrals"> Derivatives and Integrals</h1> <div class="mb-8"><h2 class="text-2xl font-semibold text-text dark:text-dark_text mb-4">Introduction</h2> <p class="text-text dark:text-dark_text">Taylor Series:
+		<div style="display: none;">
+            f(x) = \sum_{n=0}^{\infty} \frac{f^{(n)}(a)}{n!} (x - a)^n
+            </div> <span class="math"><!-- HTML_TAG_START --><!-- HTML_TAG_END --></span> <br><br>
+		Maclaurin Series (Taylor Series centered at <div style="display: none;">a=0</div> <span class="math"><!-- HTML_TAG_START --><!-- HTML_TAG_END --></span>):
+		<div style="display: none;">
+            f(x) = \sum_{n=0}^{\infty} \frac{f^{(n)}(0)}{n!} x^n
+            </div> <span class="math"><!-- HTML_TAG_START --><!-- HTML_TAG_END --></span></p></div> <div class="mb-8"><h2 class="text-2xl font-semibold text-text dark:text-dark_text mb-4">Common Maclaurin Series</h2> <p class="text-text dark:text-dark_text"><div style="display: none;">
+            \begin{align*}
+            e^x &amp;= \sum_{n=0}^{\infty} \frac{x^n}{n!} \\\\
+            \cos x &amp;= \sum_{n=0}^{\infty} \frac{(-1)^n x^{2n}}{(2n)!} \\\\
+            \sin x &amp;= \sum_{n=0}^{\infty} \frac{(-1)^n x^{2n+1}}{(2n+1)!} \\\\
+            \frac{1}{1-x} &amp;= \sum_{n=0}^{\infty} x^n \quad \text{for } |x| &lt; 1
+            \end{align*}
+            </div> <span class="math"><!-- HTML_TAG_START --><!-- HTML_TAG_END --></span></p></div> <div class="mb-8"><h2 class="text-2xl font-semibold text-text dark:text-dark_text mb-4">Deriving New Series</h2> <p class="text-text dark:text-dark_text">We can use differentiation and integration of known power series to find the taylor series
+		representations of other functions. These operations are done term-by-term within the radius of
+		convergence (for converging series).
+		<div style="display: none;">
+        \begin{align*}
+        f(x) &amp;= \sum_{n=0}^{\infty} a_n x^n \\\\
+        f'(x) &amp;= \frac{d}{dx} \left[ \sum_{n=0}^{\infty} a_n x^n \right] = \sum_{n=1}^{\infty} n a_n x^{n-1} \\\\
+        \int f(x) \, dx &amp;= \int \left[ \sum_{n=0}^{\infty} a_n x^n \right] dx = \sum_{n=0}^{\infty} \frac{a_n}{n+1} x^{n+1} + C
+        \end{align*}
+        </div> <span class="math"><!-- HTML_TAG_START --><!-- HTML_TAG_END --></span></p></div> <div class="mb-8"><h2 class="text-2xl font-semibold text-text dark:text-dark_text mb-4">Examples</h2> <p class="text-text dark:text-dark_text"><strong data-svelte-h="svelte-165hhcw">Example 1: Derivation</strong><br>
+            Find the Maclaurin series for <div style="display: none;">f(x) = \cos(x)</div> <span class="math"><!-- HTML_TAG_START --><!-- HTML_TAG_END --></span> by differentiating the Maclaurin series for <div style="display: none;">\sin(x)</div> <span class="math"><!-- HTML_TAG_START --><!-- HTML_TAG_END --></span>.
+            <div style="display: none;">
+                    \begin{align*}
+                    \sin(x) &amp;= \sum_{n=0}^{\infty} \frac{(-1)^n x^{2n+1}}{(2n+1)!} \\
+                    \frac{d}{dx} \left[ \sin(x) \right] &amp;= \frac{d}{dx} \left[ \sum_{n=0}^{\infty} \frac{(-1)^n x^{2n+1}}{(2n+1)!} \right] \\
+                    \cos(x) &amp;= \sum_{n=0}^{\infty} \frac{d}{dx} \left[ \frac{(-1)^n x^{2n+1}}{(2n+1)!} \right] \\
+                    &amp;= \sum_{n=0}^{\infty} \frac{(-1)^n (2n+1) x^{2n}}{(2n+1)!} \\
+                    &amp;= \sum_{n=0}^{\infty} \frac{(-1)^n x^{2n}}{(2n)!}
+                    \end{align*}
+                </div> <span class="math"><!-- HTML_TAG_START --><!-- HTML_TAG_END --></span>
+            The Maclaurin series for <div style="display: none;">\cos(x)</div> <span class="math"><!-- HTML_TAG_START --><!-- HTML_TAG_END --></span> is <div style="display: none;">\sum_{n=0}^{\infty} \frac{(-1)^n x^{2n}}{(2n)!}</div> <span class="math"><!-- HTML_TAG_START --><!-- HTML_TAG_END --></span>.
+
+            <br><br> <strong data-svelte-h="svelte-1kg2v1n">Example 2: Derivation</strong><br>
+            Find the Maclaurin series for <div style="display: none;">f(x) = \frac{1}{(1-x)^2}</div> <span class="math"><!-- HTML_TAG_START --><!-- HTML_TAG_END --></span> by differentiating the Maclaurin series for <div style="display: none;">\frac{1}{1-x}</div> <span class="math"><!-- HTML_TAG_START --><!-- HTML_TAG_END --></span>.
+            <div style="display: none;">
+                    \begin{align*}
+                    \frac{1}{1-x} &amp;= \sum_{n=0}^{\infty} x^n \\
+                    \frac{d}{dx} \left[ \frac{1}{1-x} \right] &amp;= \frac{d}{dx} \left[ \sum_{n=0}^{\infty} x^n \right] \\
+                    \frac{1}{(1-x)^2} &amp;= \sum_{n=0}^{\infty} \frac{d}{dx} \left[ x^n \right] \\
+                    &amp;= \sum_{n=0}^{\infty} n x^{n-1} \\
+                    &amp;= \sum_{n=1}^{\infty} n x^{n-1} \quad \text{Exclude } n=0 \text{ as } a_0 = 0x^{-1}=0 \\
+                    &amp;= \sum_{n=0}^{\infty} (n+1) x^{n} \quad \text{Re-index } n \to n+1
+                    \end{align*}
+                </div> <span class="math"><!-- HTML_TAG_START --><!-- HTML_TAG_END --></span>
+            The Maclaurin series for <div style="display: none;">\frac{1}{(1-x)^2}</div> <span class="math"><!-- HTML_TAG_START --><!-- HTML_TAG_END --></span> is <div style="display: none;">\sum_{n=0}^{\infty} (n+1) x^{n}</div> <span class="math"><!-- HTML_TAG_START --><!-- HTML_TAG_END --></span>.
+
+            <br><br> <strong data-svelte-h="svelte-12oftmq">Example 3: Derivation</strong><br>
+            Find the Maclaurin series for <div style="display: none;">f(x) = \cosh(x)</div> <span class="math"><!-- HTML_TAG_START --><!-- HTML_TAG_END --></span> by differentiating the Maclaurin series of <div style="display: none;">\sinh(x)</div> <span class="math"><!-- HTML_TAG_START --><!-- HTML_TAG_END --></span>.
+            <div style="display: none;">
+                    \begin{align*}
+                    \sinh(x) &amp;= \sum_{n=0}^{\infty} \frac{x^{2n+1}}{(2n+1)!} \\
+                    \frac{d}{dx} \left[ \sinh(x) \right] &amp;= \frac{d}{dx} \left[ \sum_{n=0}^{\infty} \frac{x^{2n+1}}{(2n+1)!} \right] \\
+                    \cosh(x) &amp;= \sum_{n=0}^{\infty} \frac{d}{dx} \left[ \frac{x^{2n+1}}{(2n+1)!} \right] \\
+                    &amp;= \sum_{n=0}^{\infty} \frac{(2n+1) x^{2n}}{(2n+1)!} \\
+                    &amp;= \sum_{n=0}^{\infty} \frac{x^{2n}}{(2n)!}
+                    \end{align*}
+                </div> <span class="math"><!-- HTML_TAG_START --><!-- HTML_TAG_END --></span>
+            The Maclaurin series for <div style="display: none;">\cosh(x)</div> <span class="math"><!-- HTML_TAG_START --><!-- HTML_TAG_END --></span> is <div style="display: none;">\sum_{n=0}^{\infty} \frac{x^{2n}}{(2n)!}</div> <span class="math"><!-- HTML_TAG_START --><!-- HTML_TAG_END --></span>.
+            <br><br><strong data-svelte-h="svelte-1xce96a">Example 4: Integration</strong><br>
+            Find the Maclaurin series for <div style="display: none;">f(x) = -\ln(1-x)</div> <span class="math"><!-- HTML_TAG_START --><!-- HTML_TAG_END --></span> by integrating the Maclaurin series for <div style="display: none;">\frac{1}{1-x}</div> <span class="math"><!-- HTML_TAG_START --><!-- HTML_TAG_END --></span>.
+            <div style="display: none;">
+                    \begin{align*}
+                    \frac{1}{1-x} &amp;= \sum_{n=0}^{\infty} x^n \\
+                    \int \frac{1}{1-x} \, dx &amp;= \int \left[ \sum_{n=0}^{\infty} x^n \right] dx \\
+                    -\ln(1-x) &amp;= \sum_{n=0}^{\infty} \int x^n \, dx \\
+                    &amp;= \sum_{n=0}^{\infty} \frac{x^{n+1}}{n+1} + C \\\\
+                    \text{To find C, set } x&amp;=0 \\
+                    -\ln(1-0) &amp;= 0 = \sum_{n=0}^{\infty} \frac{0^{n+1}}{n+1} + C = C \\
+                    C &amp;= 0 \\\\
+                    -\ln(1-x) &amp;= \sum_{n=0}^{\infty} \frac{x^{n+1}}{n+1} \\
+                    &amp;= \sum_{n=1}^{\infty} \frac{x^{n}}{n} \quad \text{Re-index } n \to n-1
+                    \end{align*}
+                    </div> <span class="math"><!-- HTML_TAG_START --><!-- HTML_TAG_END --></span>
+            The Maclaurin series for <div style="display: none;">-\ln(1-x)</div> <span class="math"><!-- HTML_TAG_START --><!-- HTML_TAG_END --></span> is <div style="display: none;">\sum_{n=1}^{\infty} \frac{x^{n}}{n}</div> <span class="math"><!-- HTML_TAG_START --><!-- HTML_TAG_END --></span>.
+
+            <br><br> <strong data-svelte-h="svelte-ahwesb">Example 5: Integration</strong><br>
+            Find the Maclaurin series for <div style="display: none;">f(x) = \arctan(x)</div> <span class="math"><!-- HTML_TAG_START --><!-- HTML_TAG_END --></span> by integrating the Maclaurin series for <div style="display: none;">\frac{1}{1+x^2}</div> <span class="math"><!-- HTML_TAG_START --><!-- HTML_TAG_END --></span>.
+            <div style="display: none;">
+                    \begin{align*}
+                    \frac{1}{1+x^2} &amp;= \sum_{n=0}^{\infty} (-1)^n x^{2n} \\
+                    \int \frac{1}{1+x^2} \, dx &amp;= \int \left[ \sum_{n=0}^{\infty} (-1)^n x^{2n} \right] dx \\
+                    \arctan(x) &amp;= \sum_{n=0}^{\infty} \int (-1)^n x^{2n} \, dx \\
+                    &amp;= \sum_{n=0}^{\infty} \frac{(-1)^n x^{2n+1}}{2n+1} + C \\\\
+                    \text{To find C, set } x&amp;=0 \\
+                    \arctan(0) &amp;= 0 = \sum_{n=0}^{\infty} \frac{(-1)^n 0^{2n+1}}{2n+1} + C = C \\
+                    C &amp;= 0 \\\\
+                    \arctan(x) &amp;= \sum_{n=0}^{\infty} \frac{(-1)^n x^{2n+1}}{2n+1}
+                    \end{align*}
+                </div> <span class="math"><!-- HTML_TAG_START --><!-- HTML_TAG_END --></span>
+            The Maclaurin series for <div style="display: none;">\arctan(x)</div> <span class="math"><!-- HTML_TAG_START --><!-- HTML_TAG_END --></span> is <div style="display: none;">\sum_{n=0}^{\infty} \frac{(-1)^n x^{2n+1}}{2n+1}</div> <span class="math"><!-- HTML_TAG_START --><!-- HTML_TAG_END --></span>.
+
+            <br><br><strong data-svelte-h="svelte-ku26hc">Example 6: Integration</strong><br>
+                    Find the Maclaurin series for <div style="display: none;">e^x</div> <span class="math"><!-- HTML_TAG_START --><!-- HTML_TAG_END --></span> by integrating the Maclaurin series for <div style="display: none;">e^x</div> <span class="math"><!-- HTML_TAG_START --><!-- HTML_TAG_END --></span>.
+                    <div style="display: none;">
+                            \begin{align*}
+                            e^x &amp;= \sum_{n=0}^{\infty} \frac{x^n}{n!} \\
+                            \int e^x \, dx &amp;= \int \left[ \sum_{n=0}^{\infty} \frac{x^n}{n!} \right] dx \\
+                            &amp;= \sum_{n=0}^{\infty} \int \frac{x^n}{n!} \, dx \\
+                            e^x &amp;= \sum_{n=0}^{\infty} \frac{x^{n+1}}{(n+1)!} + C \\\\
+                            \text{To find C, set } x&amp;=0 \\
+                            e^0 &amp;= 1 = \sum_{n=0}^{\infty} \frac{0^{n+1}}{(n+1)!} + C = C \\
+                            C &amp;= 1 \\\\
+                            e^x &amp;= 1 + \sum_{n=0}^{\infty} \frac{x^{n+1}}{(n+1)!} \\
+                            &amp;= 1 + \sum_{n=1}^{\infty} \frac{x^{n}}{n!} \quad \text{Re-index } n \to n-1 \\
+                            &amp;= \frac{x^{0}}{0!} + \sum_{n=1}^{\infty} \frac{x^{n}}{n!} \\
+                            &amp;= \sum_{n=0}^{\infty} \frac{x^{n}}{n!} \\
+                            
+                            \end{align*}
+                        </div> <span class="math"><!-- HTML_TAG_START --><!-- HTML_TAG_END --></span>
+                    The Maclaurin series for <div style="display: none;">e^x</div> <span class="math"><!-- HTML_TAG_START --><!-- HTML_TAG_END --></span> is <div style="display: none;">\sum_{n=0}^{\infty} \frac{x^{n}}{n!}</div> <span class="math"><!-- HTML_TAG_START --><!-- HTML_TAG_END --></span>.</p></div></div></div></body> 
+			
+			<script>
+				{
+					__sveltekit_1hm8yy8 = {
+						base: new URL("../..", location).pathname.slice(0, -1),
+						assets: "/BrickAcademy"
+					};
+
+					const element = document.currentScript.parentElement;
+
+					Promise.all([
+						import("../../_app/immutable/entry/start.DFcj8LNn.js"),
+						import("../../_app/immutable/entry/app.34Qzq_vi.js")
+					]).then(([kit, app]) => {
+						kit.start(app, element, {
+							node_ids: [0, 2, 91],
+							data: [null,null,null],
+							form: null,
+							error: null
+						});
+					});
+				}
+			</script>
+		</div>
+	</body>
+</html>

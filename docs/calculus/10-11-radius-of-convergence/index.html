@@ -1,0 +1,182 @@
+<!doctype html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8" />
+		<link rel="icon" href="../../favicon.png" />
+		<meta name="viewport" content="width=device-width, initial-scale=1" />
+		
+		<link href="../../_app/immutable/assets/app.BDtVw_ds.css" rel="stylesheet">
+		<link href="../../_app/immutable/assets/Section._en2CAKW.css" rel="stylesheet">
+		<link rel="modulepreload" href="../../_app/immutable/entry/start.DFcj8LNn.js">
+		<link rel="modulepreload" href="../../_app/immutable/chunks/BPHTS8RV.js">
+		<link rel="modulepreload" href="../../_app/immutable/chunks/CVhLxNSM.js">
+		<link rel="modulepreload" href="../../_app/immutable/chunks/DLyp5A0Q.js">
+		<link rel="modulepreload" href="../../_app/immutable/chunks/CwFVwKkT.js">
+		<link rel="modulepreload" href="../../_app/immutable/entry/app.34Qzq_vi.js">
+		<link rel="modulepreload" href="../../_app/immutable/chunks/C1FmrZbK.js">
+		<link rel="modulepreload" href="../../_app/immutable/chunks/DvSB8R1X.js">
+		<link rel="modulepreload" href="../../_app/immutable/nodes/0.B7xpY3_-.js">
+		<link rel="modulepreload" href="../../_app/immutable/nodes/2.BGaKxamB.js">
+		<link rel="modulepreload" href="../../_app/immutable/nodes/90.DeXo0lQT.js">
+		<link rel="modulepreload" href="../../_app/immutable/chunks/ByTZAYyp.js">
+		<link rel="modulepreload" href="../../_app/immutable/chunks/xLaKUPuM.js">
+		<link rel="modulepreload" href="../../_app/immutable/chunks/D3W7TYDU.js">
+	</head>
+	<body data-sveltekit-preload-data="hover">
+		<div style="display: contents">  <div class="fixed top-0 left-0 w-full h-full z-[-2] bg-background dark:bg-dark_background"></div> <body class="h-full bg-background dark:bg-dark_background"><button class="fixed top-4 left-4 z-10 p-2 text-text dark:text-dark_text hover:text-primary" data-svelte-h="svelte-au3lwb">←</button> <button class="fixed top-4 right-4 z-10 p-2 text-text dark:text-dark_text hover:text-primary flex items-center justify-center" aria-label="Toggle Dark Mode"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide-icon lucide lucide-sun w-5 h-5"><circle cx="12" cy="12" r="4"></circle><path d="M12 2v2"></path><path d="M12 20v2"></path><path d="m4.93 4.93 1.41 1.41"></path><path d="m17.66 17.66 1.41 1.41"></path><path d="M2 12h2"></path><path d="M20 12h2"></path><path d="m6.34 17.66-1.41 1.41"></path><path d="m19.07 4.93-1.41 1.41"></path></svg></button>  <div class="p-8 font-sans leading-relaxed w-full"><div class="max-w-3xl mx-auto p-8 leading-relaxed ">  <h1 class="text-3xl font-bold text-text mb-6 dark:text-dark_text"><title>Radius of Convergence</title> <meta property="og:title" content="Radius of Convergence"> Radius of Convergence</h1> <div class="mb-8"><h2 class="text-2xl font-semibold text-text dark:text-dark_text mb-4">Introduction</h2> <p class="text-text dark:text-dark_text">A power series is an infinite series of the form:
+    <div style="display: none;">\sum_{n=0}^{\infty} c_n (x - a)^n</div> <span class="math"><!-- HTML_TAG_START --><!-- HTML_TAG_END --></span>
+    where <div style="display: none;">c_n</div> <span class="math"><!-- HTML_TAG_START --><!-- HTML_TAG_END --></span> are coefficients, <div style="display: none;">a</div> <span class="math"><!-- HTML_TAG_START --><!-- HTML_TAG_END --></span> is the center of the series, and <div style="display: none;">x</div> <span class="math"><!-- HTML_TAG_START --><!-- HTML_TAG_END --></span> is the variable.
+    <br><br>The series converges for certain values of <div style="display: none;">x</div> <span class="math"><!-- HTML_TAG_START --><!-- HTML_TAG_END --></span> and diverges for others.
+    <br><br>The range around <div style="display: none;">a</div> <span class="math"><!-- HTML_TAG_START --><!-- HTML_TAG_END --></span> where the series converges is the Radius of Convergence, <div style="display: none;">R</div> <span class="math"><!-- HTML_TAG_START --><!-- HTML_TAG_END --></span>:
+    <div style="display: none;">
+    \begin{align*}
+      \text{If } |x - a| &amp;&lt; R, \text{ the series converges.} \\
+      \text{If } |x - a| &amp;> R, \text{ the series diverges.}
+      \end{align*}
+    </div> <span class="math"><!-- HTML_TAG_START --><!-- HTML_TAG_END --></span> <br>Lastly, we must check if the series converges or diverges when
+    <div style="display: none;">
+      |x-a| = R
+    </div> <span class="math"><!-- HTML_TAG_START --><!-- HTML_TAG_END --></span>
+    Then, we can define the Interval of Convergence, which is either:
+    <div style="display: none;">
+      \begin{align*}
+      &amp;[a - R, a + R], \\
+      &amp;(a - R, a + R), \\
+      &amp;[a - R, a + R), \text{ or} \\
+      &amp;(a - R, a + R]
+      \end{align*}
+    </div> <span class="math"><!-- HTML_TAG_START --><!-- HTML_TAG_END --></span></p></div> <div class="mb-8"><h2 class="text-2xl font-semibold text-text dark:text-dark_text mb-4">Special Cases</h2> <p class="text-text dark:text-dark_text">The following are possible:
+    <br> <span class="inline-block ml-8"><div style="display: none;">R = \infty</div> <span class="math"><!-- HTML_TAG_START --><!-- HTML_TAG_END --></span>: The series converges for all <div style="display: none;">x</div> <span class="math"><!-- HTML_TAG_START --><!-- HTML_TAG_END --></span>.
+    <br><div style="display: none;">R = 0</div> <span class="math"><!-- HTML_TAG_START --><!-- HTML_TAG_END --></span>: The series only converges at <div style="display: none;">x = a</div> <span class="math"><!-- HTML_TAG_START --><!-- HTML_TAG_END --></span>.</span></p></div> <div class="mb-8"><h2 class="text-2xl font-semibold text-text dark:text-dark_text mb-4">Examples</h2> <p class="text-text dark:text-dark_text">The radius of convergence is almost always found using the Ratio Test or Root Test. The first three examples use the Ratio Test, and the last three use the Root Test.
+      <br><br><strong data-svelte-h="svelte-1vi2g1w">Example 1: Ratio Test</strong><br>
+        Find the radius and interval of convergence of <div style="display: none;">\sum_{n=1}^{\infty} \frac{x^n}{n}</div> <span class="math"><!-- HTML_TAG_START --><!-- HTML_TAG_END --></span>.
+        <div style="display: none;">
+                \begin{align*}
+                \lim_{n \to \infty} \left| \frac{a_{n+1}}{a_n} \right| &amp;= \lim_{n \to \infty} \left| \frac{x^{n+1}}{n+1} \cdot \frac{n}{x^n} \right| \\
+                &amp;= |x| \lim_{n \to \infty} \frac{n}{n+1} \\
+                &amp;= |x| \cdot 1 = |x|
+                \end{align*}
+            </div> <span class="math"><!-- HTML_TAG_START --><!-- HTML_TAG_END --></span>
+        For convergence, we need <div style="display: none;">|x| &lt; 1</div> <span class="math"><!-- HTML_TAG_START --><!-- HTML_TAG_END --></span>, so the radius of convergence is <div style="display: none;">R = 1</div> <span class="math"><!-- HTML_TAG_START --><!-- HTML_TAG_END --></span>.
+        Now we check the endpoints:
+        <div style="display: none;">
+                \begin{align*}
+                x = 1: \quad &amp;\sum_{n=1}^{\infty} \frac{1^n}{n} = \sum_{n=1}^{\infty} \frac{1}{n} \quad \text{Diverges (Harmonic Series)} \\
+                x = -1: \quad &amp;\sum_{n=1}^{\infty} \frac{(-1)^n}{n} \quad \text{Converges (Alternating Harmonic Series)}
+                \end{align*}
+            </div> <span class="math"><!-- HTML_TAG_START --><!-- HTML_TAG_END --></span>
+        The interval of convergence is <div style="display: none;">[-1, 1)</div> <span class="math"><!-- HTML_TAG_START --><!-- HTML_TAG_END --></span>.
+
+        <br><br><strong data-svelte-h="svelte-8chaun">Example 2: Ratio Test</strong><br>
+        Find the radius and interval of convergence of <div style="display: none;">\sum_{n=0}^{\infty} \frac{2^n x^n}{n!}</div> <span class="math"><!-- HTML_TAG_START --><!-- HTML_TAG_END --></span>.
+        <div style="display: none;">
+            \begin{align*}
+            \lim_{n \to \infty} \left| \frac{a_{n+1}}{a_n} \right| &amp;= \lim_{n \to \infty} \left| \frac{2^{n+1} x^{n+1}}{(n+1)!} \cdot \frac{n!}{2^n x^n} \right| \\
+            &amp;= \lim_{n \to \infty} \left| \frac{2x}{n+1} \right| \\
+            &amp;= |2x| \cdot 0 = 0
+            \end{align*}
+        </div> <span class="math"><!-- HTML_TAG_START --><!-- HTML_TAG_END --></span>
+        Since the limit is <div style="display: none;">0 &lt; 1</div> <span class="math"><!-- HTML_TAG_START --><!-- HTML_TAG_END --></span> for all <div style="display: none;">x</div> <span class="math"><!-- HTML_TAG_START --><!-- HTML_TAG_END --></span>, the series converges for all <div style="display: none;">x</div> <span class="math"><!-- HTML_TAG_START --><!-- HTML_TAG_END --></span>.
+        The radius of convergence is <div style="display: none;">R = \infty</div> <span class="math"><!-- HTML_TAG_START --><!-- HTML_TAG_END --></span>, and the interval of convergence is <div style="display: none;">(-\infty, \infty)</div> <span class="math"><!-- HTML_TAG_START --><!-- HTML_TAG_END --></span>.
+
+        <br><br><strong data-svelte-h="svelte-r0kl92">Example 3: Ratio Test</strong><br>
+        Find the radius and interval of convergence of <div style="display: none;">\sum_{n=1}^{\infty} n! x^n</div> <span class="math"><!-- HTML_TAG_START --><!-- HTML_TAG_END --></span>.
+        <div style="display: none;">
+            \begin{align*}
+            \lim_{n \to \infty} \left| \frac{a_{n+1}}{a_n} \right| &amp;= \lim_{n \to \infty} \left| \frac{(n+1)! x^{n+1}}{n! x^n} \right| \\
+            &amp;= \lim_{n \to \infty} \left| (n+1)x \right| \\
+            &amp;= |x| \lim_{n \to \infty} (n+1) \\
+            &amp;= \begin{cases} 0 &amp; \text{if } x = 0 \\ \infty &amp; \text{if } x \neq 0 \end{cases}
+            \end{align*}
+        </div> <span class="math"><!-- HTML_TAG_START --><!-- HTML_TAG_END --></span>
+        The limit is <div style="display: none;">\infty > 1</div> <span class="math"><!-- HTML_TAG_START --><!-- HTML_TAG_END --></span> for <div style="display: none;">x \neq 0</div> <span class="math"><!-- HTML_TAG_START --><!-- HTML_TAG_END --></span>, so the series diverges for all <div style="display: none;">x \neq 0</div> <span class="math"><!-- HTML_TAG_START --><!-- HTML_TAG_END --></span>.
+        The series only converges when <div style="display: none;">x = 0</div> <span class="math"><!-- HTML_TAG_START --><!-- HTML_TAG_END --></span>.
+        The radius of convergence is <div style="display: none;">R = 0</div> <span class="math"><!-- HTML_TAG_START --><!-- HTML_TAG_END --></span>, and the interval of convergence is <div style="display: none;">\{0\}</div> <span class="math"><!-- HTML_TAG_START --><!-- HTML_TAG_END --></span>.
+
+        <br><br><strong data-svelte-h="svelte-1av5lex">Example 1: Root Test</strong><br>
+        Find the radius and interval of convergence of <div style="display: none;">\sum_{n=1}^{\infty} \left(\frac{2x+1}{3}\right)^n</div> <span class="math"><!-- HTML_TAG_START --><!-- HTML_TAG_END --></span>.
+        <div style="display: none;">
+                \begin{align*}
+                \lim_{n \to \infty} \sqrt[n]{|a_n|} &amp;= \lim_{n \to \infty} \sqrt[n]{\left|\left(\frac{2x+1}{3}\right)^n\right|} \\
+                &amp;= \lim_{n \to \infty} \left|\frac{2x+1}{3}\right| \\
+                &amp;= \left|\frac{2x+1}{3}\right|
+                \end{align*}
+            </div> <span class="math"><!-- HTML_TAG_START --><!-- HTML_TAG_END --></span>
+        For convergence, we need <div style="display: none;">\left|\frac{2x+1}{3}\right| &lt; 1</div> <span class="math"><!-- HTML_TAG_START --><!-- HTML_TAG_END --></span>, which simplifies to <div style="display: none;">|2x+1| &lt; 3</div> <span class="math"><!-- HTML_TAG_START --><!-- HTML_TAG_END --></span> or <div style="display: none;">-2 &lt; x &lt; 1</div> <span class="math"><!-- HTML_TAG_START --><!-- HTML_TAG_END --></span>.
+        The radius of convergence is <div style="display: none;">R = \frac{3}{2}</div> <span class="math"><!-- HTML_TAG_START --><!-- HTML_TAG_END --></span>.
+        Now we check the endpoints:
+        <div style="display: none;">
+                \begin{align*}
+                x = 1: \quad &amp;\sum_{n=1}^{\infty} \left(\frac{2(1)+1}{3}\right)^n = \sum_{n=1}^{\infty} 1^n \quad \text{Diverges} \\
+                x = -2: \quad &amp;\sum_{n=1}^{\infty} \left(\frac{2(-2)+1}{3}\right)^n = \sum_{n=1}^{\infty} (-1)^n \quad \text{Diverges}
+                \end{align*}
+            </div> <span class="math"><!-- HTML_TAG_START --><!-- HTML_TAG_END --></span>
+        The interval of convergence is <div style="display: none;">(-2, 1)</div> <span class="math"><!-- HTML_TAG_START --><!-- HTML_TAG_END --></span>.
+
+        <br><br><strong data-svelte-h="svelte-14vhyz6">Example 2: Root Test</strong><br>
+        Find the radius and interval of convergence of <div style="display: none;">\sum_{n=1}^{\infty} \frac{(x+3)^{2n}}{n}</div> <span class="math"><!-- HTML_TAG_START --><!-- HTML_TAG_END --></span>.
+        <div style="display: none;">
+            \begin{align*}
+            \lim_{n \to \infty} \sqrt[n]{|a_n|} &amp;= \lim_{n \to \infty} \sqrt[n]{\left|\frac{(x+3)^{2n}}{n}\right|} \\
+            &amp;= \lim_{n \to \infty} \frac{|x+3|^2}{\sqrt[n]{n}} \\
+            &amp;= |x+3|^2 \lim_{n \to \infty} \frac{1}{\sqrt[n]{n}} \\
+            &amp;= |x+3|^2 \cdot 1 = |x+3|^2
+            \end{align*}
+        </div> <span class="math"><!-- HTML_TAG_START --><!-- HTML_TAG_END --></span>
+        For convergence, we need <div style="display: none;">|x+3|^2 &lt; 1</div> <span class="math"><!-- HTML_TAG_START --><!-- HTML_TAG_END --></span>, which simplifies to <div style="display: none;">|x+3| &lt; 1</div> <span class="math"><!-- HTML_TAG_START --><!-- HTML_TAG_END --></span> or <div style="display: none;">-4 &lt; x &lt; -2</div> <span class="math"><!-- HTML_TAG_START --><!-- HTML_TAG_END --></span>.
+        The radius of convergence is <div style="display: none;">R = 1</div> <span class="math"><!-- HTML_TAG_START --><!-- HTML_TAG_END --></span>.
+        Now we check the endpoints:
+        <div style="display: none;">
+                \begin{align*}
+                x = -2: \quad &amp;\sum_{n=1}^{\infty} \frac{(-2+3)^{2n}}{n} = \sum_{n=1}^{\infty} \frac{1}{n} \quad \text{Diverges (Harmonic Series)} \\
+                x = -4: \quad &amp;\sum_{n=1}^{\infty} \frac{(-4+3)^{2n}}{n} = \sum_{n=1}^{\infty} \frac{1}{n} \quad \text{Diverges (Harmonic Series)}
+                \end{align*}
+            </div> <span class="math"><!-- HTML_TAG_START --><!-- HTML_TAG_END --></span>
+        The interval of convergence is <div style="display: none;">(-4, -2)</div> <span class="math"><!-- HTML_TAG_START --><!-- HTML_TAG_END --></span>.
+
+        <br><br><strong data-svelte-h="svelte-16osfqz">Example 3: Root Test</strong><br>
+        Find the radius and interval of convergence of <div style="display: none;">\sum_{n=1}^{\infty} \frac{(x-5)^n}{5^n n^5}</div> <span class="math"><!-- HTML_TAG_START --><!-- HTML_TAG_END --></span>.
+        <div style="display: none;">
+            \begin{align*}
+            \lim_{n \to \infty} \sqrt[n]{|a_n|} &amp;= \lim_{n \to \infty} \sqrt[n]{\left|\frac{(x-5)^n}{5^n n^5}\right|} \\
+            &amp;= \lim_{n \to \infty} \frac{|x-5|}{5 \sqrt[n]{n^5}} \\
+            &amp;= \frac{|x-5|}{5} \lim_{n \to \infty} \frac{1}{(\sqrt[n]{n})^5} \\
+            &amp;= \frac{|x-5|}{5} \cdot \frac{1}{1^5} = \frac{|x-5|}{5}
+            \end{align*}
+        </div> <span class="math"><!-- HTML_TAG_START --><!-- HTML_TAG_END --></span>
+        For convergence, we need <div style="display: none;">\frac{|x-5|}{5} &lt; 1</div> <span class="math"><!-- HTML_TAG_START --><!-- HTML_TAG_END --></span>, which simplifies to <div style="display: none;">|x-5| &lt; 5</div> <span class="math"><!-- HTML_TAG_START --><!-- HTML_TAG_END --></span> or <div style="display: none;">0 &lt; x &lt; 10</div> <span class="math"><!-- HTML_TAG_START --><!-- HTML_TAG_END --></span>.
+        The radius of convergence is <div style="display: none;">R = 5</div> <span class="math"><!-- HTML_TAG_START --><!-- HTML_TAG_END --></span>.
+        Now we check the endpoints:
+        <div style="display: none;">
+                \begin{align*}
+                x = 10: \quad &amp;\sum_{n=1}^{\infty} \frac{(10-5)^n}{5^n n^5} = \sum_{n=1}^{\infty} \frac{1}{n^5} \quad \text{Converges (p-series, p=5>1)} \\
+                x = 0: \quad &amp;\sum_{n=1}^{\infty} \frac{(0-5)^n}{5^n n^5} = \sum_{n=1}^{\infty} \frac{(-1)^n}{n^5} \quad \text{Converges (Alternating Series)}
+                \end{align*}
+            </div> <span class="math"><!-- HTML_TAG_START --><!-- HTML_TAG_END --></span>
+        The interval of convergence is <div style="display: none;">[0, 10]</div> <span class="math"><!-- HTML_TAG_START --><!-- HTML_TAG_END --></span>.</p></div></div></div></body> 
+			
+			<script>
+				{
+					__sveltekit_1hm8yy8 = {
+						base: new URL("../..", location).pathname.slice(0, -1),
+						assets: "/BrickAcademy"
+					};
+
+					const element = document.currentScript.parentElement;
+
+					Promise.all([
+						import("../../_app/immutable/entry/start.DFcj8LNn.js"),
+						import("../../_app/immutable/entry/app.34Qzq_vi.js")
+					]).then(([kit, app]) => {
+						kit.start(app, element, {
+							node_ids: [0, 2, 90],
+							data: [null,null,null],
+							form: null,
+							error: null
+						});
+					});
+				}
+			</script>
+		</div>
+	</body>
+</html>

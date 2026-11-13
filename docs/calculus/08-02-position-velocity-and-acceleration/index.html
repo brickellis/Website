@@ -1,0 +1,92 @@
+<!doctype html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8" />
+		<link rel="icon" href="../../favicon.png" />
+		<meta name="viewport" content="width=device-width, initial-scale=1" />
+		
+		<link href="../../_app/immutable/assets/app.BDtVw_ds.css" rel="stylesheet">
+		<link href="../../_app/immutable/assets/Section._en2CAKW.css" rel="stylesheet">
+		<link rel="modulepreload" href="../../_app/immutable/entry/start.DFcj8LNn.js">
+		<link rel="modulepreload" href="../../_app/immutable/chunks/BPHTS8RV.js">
+		<link rel="modulepreload" href="../../_app/immutable/chunks/CVhLxNSM.js">
+		<link rel="modulepreload" href="../../_app/immutable/chunks/DLyp5A0Q.js">
+		<link rel="modulepreload" href="../../_app/immutable/chunks/CwFVwKkT.js">
+		<link rel="modulepreload" href="../../_app/immutable/entry/app.34Qzq_vi.js">
+		<link rel="modulepreload" href="../../_app/immutable/chunks/C1FmrZbK.js">
+		<link rel="modulepreload" href="../../_app/immutable/chunks/DvSB8R1X.js">
+		<link rel="modulepreload" href="../../_app/immutable/nodes/0.B7xpY3_-.js">
+		<link rel="modulepreload" href="../../_app/immutable/nodes/2.BGaKxamB.js">
+		<link rel="modulepreload" href="../../_app/immutable/nodes/65.DWhKJdy2.js">
+		<link rel="modulepreload" href="../../_app/immutable/chunks/ByTZAYyp.js">
+		<link rel="modulepreload" href="../../_app/immutable/chunks/xLaKUPuM.js">
+	</head>
+	<body data-sveltekit-preload-data="hover">
+		<div style="display: contents">    <div class="fixed top-0 left-0 w-full h-full z-[-2] bg-background dark:bg-dark_background"></div> <body class="h-full bg-background dark:bg-dark_background"><button class="fixed top-4 left-4 z-10 p-2 text-text dark:text-dark_text hover:text-primary" data-svelte-h="svelte-au3lwb">←</button> <button class="fixed top-4 right-4 z-10 p-2 text-text dark:text-dark_text hover:text-primary flex items-center justify-center" aria-label="Toggle Dark Mode"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide-icon lucide lucide-sun w-5 h-5"><circle cx="12" cy="12" r="4"></circle><path d="M12 2v2"></path><path d="M12 20v2"></path><path d="m4.93 4.93 1.41 1.41"></path><path d="m17.66 17.66 1.41 1.41"></path><path d="M2 12h2"></path><path d="M20 12h2"></path><path d="m6.34 17.66-1.41 1.41"></path><path d="m19.07 4.93-1.41 1.41"></path></svg></button>  <div class="p-8 font-sans leading-relaxed w-full"><div class="max-w-3xl mx-auto p-8 leading-relaxed ">  <h1 class="text-3xl font-bold text-text mb-6 dark:text-dark_text"><title>Position, Velocity, and Acceleration</title> <meta property="og:title" content="Position, Velocity, and Acceleration"> Position, Velocity, and Acceleration</h1> <div class="mb-8"><h2 class="text-2xl font-semibold text-text dark:text-dark_text mb-4">Introduction</h2> <p class="text-text dark:text-dark_text">Position: <div style="display: none;">s(t)</div> <span class="math"><!-- HTML_TAG_START --><!-- HTML_TAG_END --></span> <br>Velocity: <div style="display: none;">v(t)</div> <span class="math"><!-- HTML_TAG_START --><!-- HTML_TAG_END --></span> <br>Acceleration: <div style="display: none;">a(t)</div> <span class="math"><!-- HTML_TAG_START --><!-- HTML_TAG_END --></span> <div style="display: none;">
+			v(t) = \frac{ds}{dt} \\ \text{} \\ a(t) = \frac{dv}{dt} = \frac{d^2 s}{dt^2}
+		</div> <span class="math"><!-- HTML_TAG_START --><!-- HTML_TAG_END --></span>
+		Acceleration is the derivative of velocity.
+		<br>Velocity is the derivative of position.
+		<br><br>Therefore,
+		<br>Position is the antiderivative of velocity.
+		<br>Velocity is the antiderivative of acceleration.
+		<div style="display: none;">
+			v(t) = \int a(t) \, dt + C_1 \\ \text{} \\ s(t) = \int v(t) \, dt + C_2
+		</div> <span class="math"><!-- HTML_TAG_START --><!-- HTML_TAG_END --></span> <div style="display: none;">C_1</div> <span class="math"><!-- HTML_TAG_START --><!-- HTML_TAG_END --></span> is the initial velocity.
+		<br><div style="display: none;">C_2</div> <span class="math"><!-- HTML_TAG_START --><!-- HTML_TAG_END --></span> is the initial position.</p></div> <div class="mb-8"><h2 class="text-2xl font-semibold text-text dark:text-dark_text mb-4">Examples</h2> <p class="text-text dark:text-dark_text"><strong data-svelte-h="svelte-u4xhh">Example 1:</strong> An object in free fall is accelerating at <div style="display: none;">-9.8 \, \text[m/s²]</div> <span class="math"><!-- HTML_TAG_START --><!-- HTML_TAG_END --></span>. 
+		<br>Find its position function if <div style="display: none;">v(0) = 0</div> <span class="math"><!-- HTML_TAG_START --><!-- HTML_TAG_END --></span> and <div style="display: none;">s(0) = 20 \, \text{m}</div> <span class="math"><!-- HTML_TAG_START --><!-- HTML_TAG_END --></span>.
+		<div style="display: none;">
+			\begin{align*} 
+			a(t) &amp;= -9.8 \\\\
+			v(t) &amp;= \int (-9.8) \, dt + C_1 \\\\
+			&amp;= -9.8t + C_1 \\\\ 
+			v(0) &amp;= 0 \\\\
+			C_1 &amp;= 0 \\\\ 
+			s(t) &amp;= \int (-9.8t) \, dt + C_2 \\\\
+			&amp;= -4.9t^2 + C_2 \\\\ 
+			s(0) &amp;= 20, \, C_2 = 20 \\\\ 
+			s(t) &amp;= -4.9t^2 + 20 
+			\end{align*}
+		</div> <span class="math"><!-- HTML_TAG_START --><!-- HTML_TAG_END --></span> <br><br><strong data-svelte-h="svelte-1k1h9vi">Example 2:</strong> A particle accelerates at the rate: <div style="display: none;">a(t) = 2t + 1</div> <span class="math"><!-- HTML_TAG_START --><!-- HTML_TAG_END --></span>. 
+		<br><div style="display: none;">v(0) = 2</div> <span class="math"><!-- HTML_TAG_START --><!-- HTML_TAG_END --></span> and <div style="display: none;">s(0) = 5</div> <span class="math"><!-- HTML_TAG_START --><!-- HTML_TAG_END --></span>.
+		<br>Find <div style="display: none;">s(t)</div> <span class="math"><!-- HTML_TAG_START --><!-- HTML_TAG_END --></span>.
+		<div style="display: none;">
+			\begin{align*} 
+			a(t) &amp;= 2t + 1 \\\\ 
+			v(t) &amp;= \int (2t + 1) \, dt + C_1 \\\\
+			&amp;= t^2 + t + C_1 \\\\ 
+			v(0) &amp;= 2 \\\\
+			C_1 &amp;= 2 \\\\ 
+			s(t) &amp;= \int (t^2 + t + 2) \, dt + C_2 \\\\
+			&amp;= \frac{t^3}{3} + \frac{t^2}{2} + 2t + C_2 \\\\ 
+			s(0) &amp;= 5 \\\\
+			C_2 &amp;= 5 \\\\ 
+			s(t) &amp;= \frac{t^3}{3} + \frac{t^2}{2} + 2t + 5 
+			\end{align*}
+		</div> <span class="math"><!-- HTML_TAG_START --><!-- HTML_TAG_END --></span></p></div></div></div></body> 
+			
+			<script>
+				{
+					__sveltekit_1hm8yy8 = {
+						base: new URL("../..", location).pathname.slice(0, -1),
+						assets: "/BrickAcademy"
+					};
+
+					const element = document.currentScript.parentElement;
+
+					Promise.all([
+						import("../../_app/immutable/entry/start.DFcj8LNn.js"),
+						import("../../_app/immutable/entry/app.34Qzq_vi.js")
+					]).then(([kit, app]) => {
+						kit.start(app, element, {
+							node_ids: [0, 2, 65],
+							data: [null,null,null],
+							form: null,
+							error: null
+						});
+					});
+				}
+			</script>
+		</div>
+	</body>
+</html>

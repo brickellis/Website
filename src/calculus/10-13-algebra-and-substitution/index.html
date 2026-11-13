@@ -1,0 +1,112 @@
+<!doctype html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8" />
+		<link rel="icon" href="../../favicon.png" />
+		<meta name="viewport" content="width=device-width, initial-scale=1" />
+		
+		<link href="../../_app/immutable/assets/app.BDtVw_ds.css" rel="stylesheet">
+		<link href="../../_app/immutable/assets/Section._en2CAKW.css" rel="stylesheet">
+		<link rel="modulepreload" href="../../_app/immutable/entry/start.DFcj8LNn.js">
+		<link rel="modulepreload" href="../../_app/immutable/chunks/BPHTS8RV.js">
+		<link rel="modulepreload" href="../../_app/immutable/chunks/CVhLxNSM.js">
+		<link rel="modulepreload" href="../../_app/immutable/chunks/DLyp5A0Q.js">
+		<link rel="modulepreload" href="../../_app/immutable/chunks/CwFVwKkT.js">
+		<link rel="modulepreload" href="../../_app/immutable/entry/app.34Qzq_vi.js">
+		<link rel="modulepreload" href="../../_app/immutable/chunks/C1FmrZbK.js">
+		<link rel="modulepreload" href="../../_app/immutable/chunks/DvSB8R1X.js">
+		<link rel="modulepreload" href="../../_app/immutable/nodes/0.B7xpY3_-.js">
+		<link rel="modulepreload" href="../../_app/immutable/nodes/2.BGaKxamB.js">
+		<link rel="modulepreload" href="../../_app/immutable/nodes/92.C7I1ymIt.js">
+		<link rel="modulepreload" href="../../_app/immutable/chunks/ByTZAYyp.js">
+		<link rel="modulepreload" href="../../_app/immutable/chunks/xLaKUPuM.js">
+	</head>
+	<body data-sveltekit-preload-data="hover">
+		<div style="display: contents">  <div class="fixed top-0 left-0 w-full h-full z-[-2] bg-background dark:bg-dark_background"></div> <body class="h-full bg-background dark:bg-dark_background"><button class="fixed top-4 left-4 z-10 p-2 text-text dark:text-dark_text hover:text-primary" data-svelte-h="svelte-au3lwb">←</button> <button class="fixed top-4 right-4 z-10 p-2 text-text dark:text-dark_text hover:text-primary flex items-center justify-center" aria-label="Toggle Dark Mode"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide-icon lucide lucide-sun w-5 h-5"><circle cx="12" cy="12" r="4"></circle><path d="M12 2v2"></path><path d="M12 20v2"></path><path d="m4.93 4.93 1.41 1.41"></path><path d="m17.66 17.66 1.41 1.41"></path><path d="M2 12h2"></path><path d="M20 12h2"></path><path d="m6.34 17.66-1.41 1.41"></path><path d="m19.07 4.93-1.41 1.41"></path></svg></button>  <div class="p-8 font-sans leading-relaxed w-full"><div class="max-w-3xl mx-auto p-8 leading-relaxed ">  <h1 class="text-3xl font-bold text-text mb-6 dark:text-dark_text"><title>Algebra and Substitution</title> <meta property="og:title" content="Algebra and Substitution"> Algebra and Substitution</h1> <div class="mb-8"><h2 class="text-2xl font-semibold text-text dark:text-dark_text mb-4">Introduction</h2> <p class="text-text dark:text-dark_text">We have used differentiation and integration to derive new Taylor series.
+      <br><br>We will now use algebraic manipulations and substitutions.</p></div> <div class="mb-8"><h2 class="text-2xl font-semibold text-text dark:text-dark_text mb-4">Algebraic Properties</h2> <p class="text-text dark:text-dark_text"><strong data-svelte-h="svelte-quulwr">Addition and Subtraction</strong> <div style="display: none;">
+        f(x) = \sum_{n=0}^{\infty} a_n x^n \quad g(x) = \sum_{n=0}^{\infty} b_n x^n \\
+        \begin{align*}\\
+        f(x) \pm g(x) &amp;= \sum_{n=0}^{\infty} a_n x^n + \sum_{n=0}^{\infty} b_n x^n \\\\
+        &amp;= \left[ a_0 + a_1 x + a_2 x^2 + \cdots \right] \pm \left[ b_0 + b_1 x + b_2 x^2 + \cdots \right] \\\\
+        &amp;= (a_0 \pm b_0) + (a_1 \pm b_1) x + (a_2 \pm b_2) x^2 + \cdots \\\\
+        &amp;= \sum_{n=0}^{\infty} (a_n \pm b_n) x^n
+        \end{align*}
+      </div> <span class="math"><!-- HTML_TAG_START --><!-- HTML_TAG_END --></span> <strong data-svelte-h="svelte-1ni8e4q">Multiplication</strong> <div style="display: none;">
+        f(x) = \sum_{n=0}^{\infty} a_n x^n \quad g(x) = \sum_{n=0}^{\infty} b_n x^n \\
+        \begin{align*}\\
+        f(x) g(x) &amp;= \left( \sum_{n=0}^{\infty} a_n x^n \right) \left( \sum_{m=0}^{\infty} b_m x^m \right) \\\\
+        &amp;= \left[ a_0 + a_1 x + a_2 x^2 + \cdots \right] \left[ b_0 + b_1 x + b_2 x^2 + \cdots \right] \\\\
+        &amp;= a_0 b_0 + (a_0 b_1 + a_1 b_0) x + (a_0 b_2 + a_1 b_1 + a_2 b_0) x^2 + \cdots \\\\
+        &amp;= \sum_{n=0}^{\infty} \left( \sum_{k=0}^{n} a_k b_{n-k} \right) x^n
+        \end{align*}
+      </div> <span class="math"><!-- HTML_TAG_START --><!-- HTML_TAG_END --></span> <strong data-svelte-h="svelte-125xqb9">Substitution</strong> <div style="display: none;">
+        \begin{align*}
+        f(x) = \sum_{n=0}^{\infty} a_n x^n \\\\
+        f(g(x)) = \sum_{n=0}^{\infty} a_n g(x)^n
+        \end{align*}
+      </div> <span class="math"><!-- HTML_TAG_START --><!-- HTML_TAG_END --></span></p></div> <div class="mb-8"><h2 class="text-2xl font-semibold text-text dark:text-dark_text mb-4">Examples</h2> <p class="text-text dark:text-dark_text"><strong data-svelte-h="svelte-u4xhh">Example 1:</strong><br>
+            Find the Maclaurin series for <div style="display: none;">f(x) = \cos(2x)</div> <span class="math"><!-- HTML_TAG_START --><!-- HTML_TAG_END --></span> by substitution into the Maclaurin series for <div style="display: none;">\cos(x)</div> <span class="math"><!-- HTML_TAG_START --><!-- HTML_TAG_END --></span>.
+            <div style="display: none;">
+                    \begin{align*}
+                    \cos(x) &amp;= \sum_{n=0}^{\infty} \frac{(-1)^n x^{2n}}{(2n)!} \\
+                    \cos(2x) &amp;= \sum_{n=0}^{\infty} \frac{(-1)^n (2x)^{2n}}{(2n)!} \\
+                    &amp;= \sum_{n=0}^{\infty} \frac{(-1)^n 2^{2n} x^{2n}}{(2n)!} \\
+                    &amp;= \sum_{n=0}^{\infty} \frac{(-1)^n 4^{n} x^{2n}}{(2n)!} \\
+                    &amp;= \sum_{n=0}^{\infty} \frac{(-4)^n x^{2n}}{(2n)!}
+                    \end{align*}
+                </div> <span class="math"><!-- HTML_TAG_START --><!-- HTML_TAG_END --></span>
+            The Maclaurin series for <div style="display: none;">\cos(2x)</div> <span class="math"><!-- HTML_TAG_START --><!-- HTML_TAG_END --></span> is <div style="display: none;">\sum_{n=0}^{\infty} \frac{(-4)^n  x^{2n}}{(2n)!}</div> <span class="math"><!-- HTML_TAG_START --><!-- HTML_TAG_END --></span>.
+  
+            <br><br> <strong data-svelte-h="svelte-1k1h9vi">Example 2:</strong><br>
+            Find the Maclaurin series for <div style="display: none;">f(x) = (e^x)^2</div> <span class="math"><!-- HTML_TAG_START --><!-- HTML_TAG_END --></span> by substitution into the Maclaurin series for <div style="display: none;">e^x</div> <span class="math"><!-- HTML_TAG_START --><!-- HTML_TAG_END --></span>.
+            <div style="display: none;">
+                    \begin{align*}
+                    e^x &amp;= \sum_{n=0}^{\infty} \frac{x^n}{n!} \\
+                    (e^x)^2 &amp;= \sum_{n=0}^{\infty} \frac{(x^2)^n}{n!} \\
+                    &amp;= \sum_{n=0}^{\infty} \frac{x^{2n}}{n!}
+                    \end{align*}
+                </div> <span class="math"><!-- HTML_TAG_START --><!-- HTML_TAG_END --></span>
+            The Maclaurin series for <div style="display: none;">(e^x)^2</div> <span class="math"><!-- HTML_TAG_START --><!-- HTML_TAG_END --></span> is <div style="display: none;">\sum_{n=0}^{\infty} \frac{x^{2n}}{n!}</div> <span class="math"><!-- HTML_TAG_START --><!-- HTML_TAG_END --></span>.
+  
+            <br><br> <strong data-svelte-h="svelte-25calz">Example 3:</strong><br>
+      Find the Maclaurin series for <div style="display: none;">f(x) = \sin^2(x) + \cos^2(x)</div> <span class="math"><!-- HTML_TAG_START --><!-- HTML_TAG_END --></span>.<br> <div style="display: none;">
+          \begin{align*}
+          \cos(2x) &amp;= \sum_{n=0}^{\infty} \frac{(-4)^n x^{2n}}{(2n)!} \\\\
+          \sin^2(x) &amp;= \frac{1 - \cos(2x)}{2} \\
+          &amp;= \frac{1}{2} - \frac{1}{2} \cos(2x) \\
+          &amp;= \frac{1}{2} - \frac{1}{2} \sum_{n=0}^{\infty} \frac{(-4)^n x^{2n}}{(2n)!} \\\\
+          \cos^2(x) &amp;= \frac{1 + \cos(2x)}{2} \\
+          &amp;= \frac{1}{2} + \frac{1}{2} \cos(2x) \\
+          &amp;= \frac{1}{2} + \frac{1}{2} \sum_{n=0}^{\infty} \frac{(-4)^n x^{2n}}{(2n)!} \\\\
+          \sin^2(x) + \cos^2(x) &amp;= \frac{1}{2} - \frac{1}{2} \sum_{n=0}^{\infty} \frac{(-4)^n x^{2n}}{(2n)!} + \frac{1}{2} + \frac{1}{2} \sum_{n=0}^{\infty} \frac{(-4)^n x^{2n}}{(2n)!} \\
+          &amp;= \frac{1}{2} + \frac{1}{2} \\
+          &amp;= 1
+          \end{align*}
+        </div> <span class="math"><!-- HTML_TAG_START --><!-- HTML_TAG_END --></span>
+      The Maclaurin series for <div style="display: none;">\sin^2(x) + \cos^2(x)</div> <span class="math"><!-- HTML_TAG_START --><!-- HTML_TAG_END --></span> is <div style="display: none;">1</div> <span class="math"><!-- HTML_TAG_START --><!-- HTML_TAG_END --></span>.</p></div></div></div></body> 
+			
+			<script>
+				{
+					__sveltekit_1hm8yy8 = {
+						base: new URL("../..", location).pathname.slice(0, -1),
+						assets: "/BrickAcademy"
+					};
+
+					const element = document.currentScript.parentElement;
+
+					Promise.all([
+						import("../../_app/immutable/entry/start.DFcj8LNn.js"),
+						import("../../_app/immutable/entry/app.34Qzq_vi.js")
+					]).then(([kit, app]) => {
+						kit.start(app, element, {
+							node_ids: [0, 2, 92],
+							data: [null,null,null],
+							form: null,
+							error: null
+						});
+					});
+				}
+			</script>
+		</div>
+	</body>
+</html>

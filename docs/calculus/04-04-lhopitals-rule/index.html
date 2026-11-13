@@ -1,0 +1,98 @@
+<!doctype html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8" />
+		<link rel="icon" href="../../favicon.png" />
+		<meta name="viewport" content="width=device-width, initial-scale=1" />
+		
+		<link href="../../_app/immutable/assets/app.BDtVw_ds.css" rel="stylesheet">
+		<link href="../../_app/immutable/assets/Section._en2CAKW.css" rel="stylesheet">
+		<link rel="modulepreload" href="../../_app/immutable/entry/start.DFcj8LNn.js">
+		<link rel="modulepreload" href="../../_app/immutable/chunks/BPHTS8RV.js">
+		<link rel="modulepreload" href="../../_app/immutable/chunks/CVhLxNSM.js">
+		<link rel="modulepreload" href="../../_app/immutable/chunks/DLyp5A0Q.js">
+		<link rel="modulepreload" href="../../_app/immutable/chunks/CwFVwKkT.js">
+		<link rel="modulepreload" href="../../_app/immutable/entry/app.34Qzq_vi.js">
+		<link rel="modulepreload" href="../../_app/immutable/chunks/C1FmrZbK.js">
+		<link rel="modulepreload" href="../../_app/immutable/chunks/DvSB8R1X.js">
+		<link rel="modulepreload" href="../../_app/immutable/nodes/0.B7xpY3_-.js">
+		<link rel="modulepreload" href="../../_app/immutable/nodes/2.BGaKxamB.js">
+		<link rel="modulepreload" href="../../_app/immutable/nodes/37.DF6fiPtj.js">
+		<link rel="modulepreload" href="../../_app/immutable/chunks/ByTZAYyp.js">
+		<link rel="modulepreload" href="../../_app/immutable/chunks/xLaKUPuM.js">
+		<link rel="modulepreload" href="../../_app/immutable/chunks/wEz_aUcl.js">
+		<link rel="modulepreload" href="../../_app/immutable/chunks/D3W7TYDU.js">
+	</head>
+	<body data-sveltekit-preload-data="hover">
+		<div style="display: contents">  <div class="fixed top-0 left-0 w-full h-full z-[-2] bg-background dark:bg-dark_background"></div> <body class="h-full bg-background dark:bg-dark_background"><button class="fixed top-4 left-4 z-10 p-2 text-text dark:text-dark_text hover:text-primary" data-svelte-h="svelte-au3lwb">←</button> <button class="fixed top-4 right-4 z-10 p-2 text-text dark:text-dark_text hover:text-primary flex items-center justify-center" aria-label="Toggle Dark Mode"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide-icon lucide lucide-sun w-5 h-5"><circle cx="12" cy="12" r="4"></circle><path d="M12 2v2"></path><path d="M12 20v2"></path><path d="m4.93 4.93 1.41 1.41"></path><path d="m17.66 17.66 1.41 1.41"></path><path d="M2 12h2"></path><path d="M20 12h2"></path><path d="m6.34 17.66-1.41 1.41"></path><path d="m19.07 4.93-1.41 1.41"></path></svg></button>  <div class="p-8 font-sans leading-relaxed w-full"><div class="max-w-3xl mx-auto p-8 leading-relaxed ">  <h1 class="text-3xl font-bold text-text mb-6 dark:text-dark_text"><title>L'Hôpital's Rule</title> <meta property="og:title" content="L'Hôpital's Rule"> L'Hôpital's Rule</h1> <div class="mb-8"><h2 class="text-2xl font-semibold text-text dark:text-dark_text mb-4">Introduction</h2> <p class="text-text dark:text-dark_text">Now that we have experience with derivatives, we will learn how to use the L&#39;Hôpital&#39;s Rule to solve a specific type of limit which we otherwise could not solve.
+			<br><br>For two functions, <div style="display: none;">f(x) \text{ and } g(x)</div> <span class="math"><!-- HTML_TAG_START --><!-- HTML_TAG_END --></span> and an input <div style="display: none;">a</div> <span class="math"><!-- HTML_TAG_START --><!-- HTML_TAG_END --></span>, where 
+			<br><br><div style="display: none;">\left[\lim_{x \to a}f(x)=0 \quad \lim_{x \to a}g(x)=0\right]</div> <span class="math"><!-- HTML_TAG_START --><!-- HTML_TAG_END --></span>  <div class="flex justify-center"><p class="text-center">or</p></div> <div style="display: none;">\left[\lim_{x \to a}f(x)=\pm\infty \quad \lim_{x \to a}g(x)=\pm\infty\right]</div> <span class="math"><!-- HTML_TAG_START --><!-- HTML_TAG_END --></span>  <div class="flex justify-center"><p class="text-center">Then</p></div> <div style="display: none;">\lim_{x \to a}\frac{f(x)}{g(x)} = \lim_{x \to a}\frac{f'(x)}{g'(x)}</div> <span class="math"><!-- HTML_TAG_START --><!-- HTML_TAG_END --></span></p></div> <div class="mb-8"><h2 class="text-2xl font-semibold text-text dark:text-dark_text mb-4">Proof for Zeroes</h2> <p class="text-text dark:text-dark_text"><div style="display: none;">
+			\begin{align*}
+			f(a)&amp;=0 \quad g(a)=0 \\\\
+			\lim_{x \to a}\frac{f(x)}{g(x)} &amp;= \lim_{x \to a}\frac{f(x) - f(a)}{g(x) - g(a)} \\\\
+			&amp;= \lim_{x \to a}\frac{f(x) - f(a)}{g(x) - g(a)} * \frac{x-a}{x-a} \\\\
+			&amp;= \lim_{x \to a}\frac{\frac{f(x) - f(a)}{x-a}}{\frac{g(x) - g(a)}{x-a}} \\\\
+			&amp;= \frac{f'(a)}{g'(a)}
+			\end{align*}
+		</div> <span class="math"><!-- HTML_TAG_START --><!-- HTML_TAG_END --></span></p></div> <div class="mb-8"><h2 class="text-2xl font-semibold text-text dark:text-dark_text mb-4">Proof for Infinities</h2> <p class="text-text dark:text-dark_text"><div style="display: none;">
+		\begin{align*}
+		\lim_{x \to a} f(x) &amp;= \pm\infty \quad \lim_{x \to a} g(x) = \pm\infty \\\\
+		\lim_{x \to a} \frac{f(x)}{g(x)} &amp;= \lim_{x \to a} \frac{\frac{1}{g(x)}}{\frac{1}{f(x)}} \\\\
+		&amp;= \frac{0}{0} \\\\
+		&amp;= \lim_{x \to a} \frac{\frac{d}{dx}\frac{1}{g(x)}}{\frac{d}{dx}\frac{1}{f(x)}} \\\\
+		&amp;= \lim_{x \to a} \frac{-\frac{g'(x)}{g(x)^2}}{-\frac{f'(x)}{f(x)^2}} \\\\
+		&amp;= \lim_{x \to a} \frac{g'(x)}{f'(x)} \cdot \left(\frac{f(x)}{g(x)}\right)^2 \\\\
+		\lim_{x \to a} \frac{f(x)}{g(x)} &amp;= \lim_{x \to a} \frac{g'(x)}{f'(x)} \cdot \left(\lim_{x \to a} \frac{f(x)}{g(x)}\right)^2 \\\\
+		\left(\lim_{x \to a} \frac{f(x)}{g(x)}\right)^{-1} &amp;= \lim_{x \to a} \frac{g'(x)}{f'(x)} \\\\
+		\lim_{x \to a} \frac{f(x)}{g(x)} &amp;= \left(\lim_{x \to a} \frac{g'(x)}{f'(x)}\right)^{-1} \\\\
+		&amp;= \lim_{x \to a} \frac{f'(x)}{g'(x)}
+		\end{align*}
+		</div> <span class="math"><!-- HTML_TAG_START --><!-- HTML_TAG_END --></span></p></div> <div class="mb-8"><h2 class="text-2xl font-semibold text-text dark:text-dark_text mb-4">Examples</h2> <p class="text-text dark:text-dark_text"><strong data-svelte-h="svelte-12l7lzt">Example 1</strong><br>
+		Evaluate <div style="display: none;">\lim_{x \to 0} \frac{\sin x}{x}</div> <span class="math"><!-- HTML_TAG_START --><!-- HTML_TAG_END --></span>.
+		<div style="display: none;">
+		  \begin{align*}
+		  \lim_{x \to 0} \frac{\sin x}{x} &amp;= \frac{0}{0} \\\\
+		  &amp;= \lim_{x \to 0} \frac{\frac{d}{dx}\sin x}{\frac{d}{dx}x} \\\\
+		  &amp;= \lim_{x \to 0} \frac{\cos x}{1} \\\\
+		  &amp;= \cos(0) \\\\
+		  &amp;= 1
+		  \end{align*}
+		  </div> <span class="math"><!-- HTML_TAG_START --><!-- HTML_TAG_END --></span> <br><br> <strong data-svelte-h="svelte-1f3irgi">Example 2</strong><br>
+		Evaluate 
+		 <span class="inline-block ml-8"><div style="display: none;">\lim_{x \to \infty} \frac{e^x}{x^2}</div> <span class="math"><!-- HTML_TAG_START --><!-- HTML_TAG_END --></span></span> <div style="display: none;">
+		  \begin{align*}
+		  \lim_{x \to \infty} \frac{e^x}{x^2} &amp;= \frac{\infty}{\infty} \\\\
+		  &amp;= \lim_{x \to \infty} \frac{\frac{d}{dx}e^x}{\frac{d}{dx}x^2} \\\\
+		  &amp;= \lim_{x \to \infty} \frac{e^x}{2x} \\\\
+		  &amp;= \frac{\infty}{\infty} \\\\
+		  &amp;= \lim_{x \to \infty} \frac{\frac{d}{dx}e^x}{\frac{d}{dx}2x} \\\\
+		  &amp;= \lim_{x \to \infty} \frac{e^x}{2} \\\\
+		  &amp;= \infty
+		  \end{align*}
+		  </div> <span class="math"><!-- HTML_TAG_START --><!-- HTML_TAG_END --></span></p></div></div></div></body> 
+			
+			<script>
+				{
+					__sveltekit_1hm8yy8 = {
+						base: new URL("../..", location).pathname.slice(0, -1),
+						assets: "/BrickAcademy"
+					};
+
+					const element = document.currentScript.parentElement;
+
+					Promise.all([
+						import("../../_app/immutable/entry/start.DFcj8LNn.js"),
+						import("../../_app/immutable/entry/app.34Qzq_vi.js")
+					]).then(([kit, app]) => {
+						kit.start(app, element, {
+							node_ids: [0, 2, 37],
+							data: [null,null,null],
+							form: null,
+							error: null
+						});
+					});
+				}
+			</script>
+		</div>
+	</body>
+</html>

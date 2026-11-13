@@ -1,0 +1,99 @@
+<!doctype html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8" />
+		<link rel="icon" href="../../favicon.png" />
+		<meta name="viewport" content="width=device-width, initial-scale=1" />
+		
+		<link href="../../_app/immutable/assets/app.BDtVw_ds.css" rel="stylesheet">
+		<link href="../../_app/immutable/assets/Section._en2CAKW.css" rel="stylesheet">
+		<link rel="modulepreload" href="../../_app/immutable/entry/start.DFcj8LNn.js">
+		<link rel="modulepreload" href="../../_app/immutable/chunks/BPHTS8RV.js">
+		<link rel="modulepreload" href="../../_app/immutable/chunks/CVhLxNSM.js">
+		<link rel="modulepreload" href="../../_app/immutable/chunks/DLyp5A0Q.js">
+		<link rel="modulepreload" href="../../_app/immutable/chunks/CwFVwKkT.js">
+		<link rel="modulepreload" href="../../_app/immutable/entry/app.34Qzq_vi.js">
+		<link rel="modulepreload" href="../../_app/immutable/chunks/C1FmrZbK.js">
+		<link rel="modulepreload" href="../../_app/immutable/chunks/DvSB8R1X.js">
+		<link rel="modulepreload" href="../../_app/immutable/nodes/0.B7xpY3_-.js">
+		<link rel="modulepreload" href="../../_app/immutable/nodes/2.BGaKxamB.js">
+		<link rel="modulepreload" href="../../_app/immutable/nodes/28.-Ad1BXqR.js">
+		<link rel="modulepreload" href="../../_app/immutable/chunks/ByTZAYyp.js">
+		<link rel="modulepreload" href="../../_app/immutable/chunks/xLaKUPuM.js">
+	</head>
+	<body data-sveltekit-preload-data="hover">
+		<div style="display: contents">    <div class="fixed top-0 left-0 w-full h-full z-[-2] bg-background dark:bg-dark_background"></div> <body class="h-full bg-background dark:bg-dark_background"><button class="fixed top-4 left-4 z-10 p-2 text-text dark:text-dark_text hover:text-primary" data-svelte-h="svelte-au3lwb">←</button> <button class="fixed top-4 right-4 z-10 p-2 text-text dark:text-dark_text hover:text-primary flex items-center justify-center" aria-label="Toggle Dark Mode"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide-icon lucide lucide-sun w-5 h-5"><circle cx="12" cy="12" r="4"></circle><path d="M12 2v2"></path><path d="M12 20v2"></path><path d="m4.93 4.93 1.41 1.41"></path><path d="m17.66 17.66 1.41 1.41"></path><path d="M2 12h2"></path><path d="M20 12h2"></path><path d="m6.34 17.66-1.41 1.41"></path><path d="m19.07 4.93-1.41 1.41"></path></svg></button>  <div class="p-8 font-sans leading-relaxed w-full"><div class="max-w-3xl mx-auto p-8 leading-relaxed ">  <h1 class="text-3xl font-bold text-text mb-6 dark:text-dark_text"><title>Tan, Cot, Sec, and Csc</title> <meta property="og:title" content="Tan, Cot, Sec, and Csc"> Tan, Cot, Sec, and Csc</h1> <div class="mb-8"><h2 class="text-2xl font-semibold text-text dark:text-dark_text mb-4">Introduction</h2> <p class="text-text dark:text-dark_text">We will prove the following:
+			<div style="display: none;">
+				\begin{align*}
+				\frac{d}{dx}\tan(x)&amp;=\sec^2(x) \\\\
+				\frac{d}{dx}\cot(x)&amp;=-\csc^2(x) \\\\
+				\frac{d}{dx}\sec(x)&amp;=\tan(x)\sec(x) \\\\
+				\frac{d}{dx}\csc(x)&amp;=-\cot(x)\csc(x)
+				\end{align*}
+			</div> <span class="math"><!-- HTML_TAG_START --><!-- HTML_TAG_END --></span></p></div> <div class="mb-8"><h2 class="text-2xl font-semibold text-text dark:text-dark_text mb-4">Preliminary Reminder</h2> <p class="text-text dark:text-dark_text"><div style="display: none;">\sin^2(x)+\cos^2(x)=1</div> <span class="math"><!-- HTML_TAG_START --><!-- HTML_TAG_END --></span></p></div> <div class="mb-8"><h2 class="text-2xl font-semibold text-text dark:text-dark_text mb-4">Proof of the Derivative of Tan(x)</h2> <p class="text-text dark:text-dark_text"><div style="display: none;">
+			\begin{align*}
+			\frac{d}{dx}\tan(x)&amp;=\frac{d}{dx}\frac{\sin(x)}{\cos(x)} \\\\
+			&amp;=\frac{\cos(x) \cdot \frac{d}{dx}[\sin(x)] - \sin(x) \cdot \frac{d}{dx}[\cos(x)]}{\cos^2(x)} \\\\
+			&amp;=\frac{\cos(x) \cdot \cos(x) - \sin(x) \cdot [-\sin(x)]}{\cos^2(x)} \\\\
+			&amp;=\frac{\cos^2(x) + \sin^2(x)}{\cos^2(x)} \\\\
+			&amp;=\frac{1}{\cos^2(x)} \\\\
+			&amp;=\sec^2(x)
+			\end{align*}
+		</div> <span class="math"><!-- HTML_TAG_START --><!-- HTML_TAG_END --></span></p></div> <div class="mb-8"><h2 class="text-2xl font-semibold text-text dark:text-dark_text mb-4">Proof of the Derivative of Cot(x)</h2> <p class="text-text dark:text-dark_text"><div style="display: none;">
+            \begin{align*}
+            \frac{d}{dx}\cot(x)&amp;=\frac{d}{dx}\frac{\cos(x)}{\sin(x)} \\\\
+            &amp;=\frac{\sin(x) \cdot \frac{d}{dx}[\cos(x)] - \cos(x) \cdot \frac{d}{dx}[\sin(x)]}{\sin^2(x)} \\\\
+            &amp;=\frac{\sin(x) \cdot [-\sin(x)] - \cos(x) \cdot \cos(x)}{\sin^2(x)} \\\\
+            &amp;=\frac{-\sin^2(x) - \cos^2(x)}{\sin^2(x)} \\\\
+            &amp;=\frac{-(\sin^2(x) + \cos^2(x))}{\sin^2(x)} \\\\
+            &amp;=\frac{-1}{\sin^2(x)} \\\\
+            &amp;=-\csc^2(x)
+            \end{align*}
+        </div> <span class="math"><!-- HTML_TAG_START --><!-- HTML_TAG_END --></span></p></div> <div class="mb-8"><h2 class="text-2xl font-semibold text-text dark:text-dark_text mb-4">Proof of the Derivative of Sec(x)</h2> <p class="text-text dark:text-dark_text">The next two proofs are going to use the chain rule for one step. We will prove the chain rule in the next lesson, so it seems fine to use it here instead of waiting.
+        <div style="display: none;">
+            \begin{align*}
+            \frac{d}{dx}\sec(x)&amp;=\frac{d}{dx}\frac{1}{\cos(x)} \\\\
+            &amp;=\frac{d}{dx}\cos(x)^{-1} \\\\
+            &amp;= {-1}\cos(x)^{-2} \cdot \frac{d}{dx}\cos(x) \text{ (Chain Rule)} \\\\
+            &amp;= {-1}\cos(x)^{-2} \cdot [-\sin(x)] \\\\
+            &amp;=\frac{\sin(x)}{\cos^2(x)} \\\\
+            &amp;=\frac{\sin(x)}{\cos(x)} \cdot \frac{1}{\cos(x)} \\\\
+            &amp;=\tan(x)\sec(x)
+            \end{align*}
+        </div> <span class="math"><!-- HTML_TAG_START --><!-- HTML_TAG_END --></span></p></div> <div class="mb-8"><h2 class="text-2xl font-semibold text-text dark:text-dark_text mb-4">Proof of the Derivative of Csc(x)</h2> <p class="text-text dark:text-dark_text"><div style="display: none;">
+            \begin{align*}
+            \frac{d}{dx}\csc(x)&amp;=\frac{d}{dx}\frac{1}{\sin(x)} \\\\
+            &amp;=\frac{d}{dx}\sin(x)^{-1} \\\\
+            &amp;= {-1}\sin(x)^{-2} \cdot \frac{d}{dx}\sin(x) \text{ (Chain Rule)} \\\\
+            &amp;= {-1}\sin(x)^{-2} \cdot \cos(x) \\\\
+            &amp;=\frac{-\cos(x)}{\sin^2(x)} \\\\
+            &amp;=\frac{-\cos(x)}{\sin(x)} \cdot \frac{1}{\sin(x)} \\\\
+            &amp;=-\cot(x)\csc(x)
+            \end{align*}
+        </div> <span class="math"><!-- HTML_TAG_START --><!-- HTML_TAG_END --></span> <br><br>These derivative definitions are used often and are included in the <a href="https://www.brickacademy.org/calculus/99-03-common-derivatives" class="hover:text-primary underline" data-svelte-h="svelte-h2ytn4">Appendix - Common Derivatives</a>.</p></div></div></div></body> 
+			
+			<script>
+				{
+					__sveltekit_1hm8yy8 = {
+						base: new URL("../..", location).pathname.slice(0, -1),
+						assets: "/BrickAcademy"
+					};
+
+					const element = document.currentScript.parentElement;
+
+					Promise.all([
+						import("../../_app/immutable/entry/start.DFcj8LNn.js"),
+						import("../../_app/immutable/entry/app.34Qzq_vi.js")
+					]).then(([kit, app]) => {
+						kit.start(app, element, {
+							node_ids: [0, 2, 28],
+							data: [null,null,null],
+							form: null,
+							error: null
+						});
+					});
+				}
+			</script>
+		</div>
+	</body>
+</html>

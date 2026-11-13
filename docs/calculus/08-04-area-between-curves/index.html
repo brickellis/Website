@@ -1,0 +1,112 @@
+<!doctype html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8" />
+		<link rel="icon" href="../../favicon.png" />
+		<meta name="viewport" content="width=device-width, initial-scale=1" />
+		
+		<link href="../../_app/immutable/assets/app.BDtVw_ds.css" rel="stylesheet">
+		<link href="../../_app/immutable/assets/Section._en2CAKW.css" rel="stylesheet">
+		<link rel="modulepreload" href="../../_app/immutable/entry/start.DFcj8LNn.js">
+		<link rel="modulepreload" href="../../_app/immutable/chunks/BPHTS8RV.js">
+		<link rel="modulepreload" href="../../_app/immutable/chunks/CVhLxNSM.js">
+		<link rel="modulepreload" href="../../_app/immutable/chunks/DLyp5A0Q.js">
+		<link rel="modulepreload" href="../../_app/immutable/chunks/CwFVwKkT.js">
+		<link rel="modulepreload" href="../../_app/immutable/entry/app.34Qzq_vi.js">
+		<link rel="modulepreload" href="../../_app/immutable/chunks/C1FmrZbK.js">
+		<link rel="modulepreload" href="../../_app/immutable/chunks/DvSB8R1X.js">
+		<link rel="modulepreload" href="../../_app/immutable/nodes/0.B7xpY3_-.js">
+		<link rel="modulepreload" href="../../_app/immutable/nodes/2.BGaKxamB.js">
+		<link rel="modulepreload" href="../../_app/immutable/nodes/67.C1IdHCmm.js">
+		<link rel="modulepreload" href="../../_app/immutable/chunks/ByTZAYyp.js">
+		<link rel="modulepreload" href="../../_app/immutable/chunks/xLaKUPuM.js">
+		<link rel="modulepreload" href="../../_app/immutable/chunks/D3W7TYDU.js">
+	</head>
+	<body data-sveltekit-preload-data="hover">
+		<div style="display: contents">    <div class="fixed top-0 left-0 w-full h-full z-[-2] bg-background dark:bg-dark_background"></div> <body class="h-full bg-background dark:bg-dark_background"><button class="fixed top-4 left-4 z-10 p-2 text-text dark:text-dark_text hover:text-primary" data-svelte-h="svelte-au3lwb">←</button> <button class="fixed top-4 right-4 z-10 p-2 text-text dark:text-dark_text hover:text-primary flex items-center justify-center" aria-label="Toggle Dark Mode"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide-icon lucide lucide-sun w-5 h-5"><circle cx="12" cy="12" r="4"></circle><path d="M12 2v2"></path><path d="M12 20v2"></path><path d="m4.93 4.93 1.41 1.41"></path><path d="m17.66 17.66 1.41 1.41"></path><path d="M2 12h2"></path><path d="M20 12h2"></path><path d="m6.34 17.66-1.41 1.41"></path><path d="m19.07 4.93-1.41 1.41"></path></svg></button>  <div class="p-8 font-sans leading-relaxed w-full"><div class="max-w-3xl mx-auto p-8 leading-relaxed ">  <h1 class="text-3xl font-bold text-text mb-6 dark:text-dark_text"><title>Area Between Curves</title> <meta property="og:title" content="Area Between Curves"> Area Between Curves</h1> <div class="mb-8"><h2 class="text-2xl font-semibold text-text dark:text-dark_text mb-4">Introduction</h2> <p class="text-text dark:text-dark_text">To find the accumulated area under a curve, we integrate the function.
+		<div style="display: none;">
+				\text{Area} = \int_{a}^{b} f(x) \, dx
+			</div> <span class="math"><!-- HTML_TAG_START --><!-- HTML_TAG_END --></span>
+		If we want to find the total area under a curve, not allowing for positive and negative area to cancel out, we integrate the absolute value of the function.
+		<div style="display: none;">
+				\text{Absolute Area} = \int_{a}^{b} |f(x)| \, dx
+			</div> <span class="math"><!-- HTML_TAG_START --><!-- HTML_TAG_END --></span>
+		To find the area between two different functions, we integrate the absolute value of their difference.
+		<div style="display: none;">
+				\text{Area} = \int_{a}^{b} |f(x) - g(x)| \, dx
+			</div> <span class="math"><!-- HTML_TAG_START --><!-- HTML_TAG_END --></span>
+		Since this is the integral of the absolute value of a function, we must separate the integral whenever the function crosses the x-axis. In this case, whenever <div style="display: none;">f(x) = g(x)</div> <span class="math"><!-- HTML_TAG_START --><!-- HTML_TAG_END --></span>.</p></div> <div class="mb-8"><h2 class="text-2xl font-semibold text-text dark:text-dark_text mb-4">Examples</h2> <p class="text-text dark:text-dark_text"> <strong data-svelte-h="svelte-axf3h1">Example 1: Quadratic vs. Linear</strong><br>
+		Find the area of the space enclosed by <div style="display: none;">f(x) = x^2 - 2x</div> <span class="math"><!-- HTML_TAG_START --><!-- HTML_TAG_END --></span> and <div style="display: none;">g(x) = x</div> <span class="math"><!-- HTML_TAG_START --><!-- HTML_TAG_END --></span>.
+		<br> <span class="inline-block ml-8">The enclosed space starts and ends where <div style="display: none;">f</div> <span class="math"><!-- HTML_TAG_START --><!-- HTML_TAG_END --></span> and <div style="display: none;">g</div> <span class="math"><!-- HTML_TAG_START --><!-- HTML_TAG_END --></span> intersect,<div style="display: none;">x^2 - 2x = x</div> <span class="math"><!-- HTML_TAG_START --><!-- HTML_TAG_END --></span> <br>This can be rewritten as <div style="display: none;">x^2 - 3x = 0</div> <span class="math"><!-- HTML_TAG_START --><!-- HTML_TAG_END --></span>.
+			<br><div style="display: none;">x = 0, 3</div> <span class="math"><!-- HTML_TAG_START --><!-- HTML_TAG_END --></span>.</span> <div style="display: none;">
+                \begin{align*}
+                \text{Area} &amp;= \int_{0}^{3} |g(x) - f(x)| \, dx \\
+                &amp;= |\int_{0}^{3} (3x - x^2) \, dx| \\
+                &amp;= \left[ \frac{3}{2}x^2 - \frac{1}{3}x^3 \right]_0^3 \\
+                &amp;= \left( \frac{27}{2} - 9 \right) - 0 = \frac{9}{2} = 4.5 \, \text{units}^2
+                \end{align*}
+            </div> <span class="math"><!-- HTML_TAG_START --><!-- HTML_TAG_END --></span>  <br><br><strong data-svelte-h="svelte-pgcf6f">Example 2: Sine vs. Cosine</strong><br>
+		Find the area between <div style="display: none;">y = \sin(x)</div> <span class="math"><!-- HTML_TAG_START --><!-- HTML_TAG_END --></span> and <div style="display: none;">y = \cos(x)</div> <span class="math"><!-- HTML_TAG_START --><!-- HTML_TAG_END --></span> from <div style="display: none;">x = 0</div> <span class="math"><!-- HTML_TAG_START --><!-- HTML_TAG_END --></span> to <div style="display: none;">x = \pi</div> <span class="math"><!-- HTML_TAG_START --><!-- HTML_TAG_END --></span>.
+		 <span class="inline-block ml-8">In this interval, <div style="display: none;">\sin(x) = \cos(x)</div> <span class="math"><!-- HTML_TAG_START --><!-- HTML_TAG_END --></span> at <div style="display: none;">x = \frac{\pi}{4}</div> <span class="math"><!-- HTML_TAG_START --><!-- HTML_TAG_END --></span>.</span> <div style="display: none;">
+                \begin{align*}
+                \text{Area} &amp;= \int_{0}^{\pi} |\cos(x) - \sin(x)| \, dx \\
+				&amp;= |\int_{0}^{\pi/4} [\cos(x) - \sin(x)] \, dx| + |\int_{\pi/4}^{\pi} [\cos(x) - \sin(x)] \, dx| \\
+                &amp;= \left| \sin(x) + \cos(x) \right|_0^{\pi/4} + \left| \sin(x) + \cos(x) \right|_{\pi/4}^{\pi} \\
+                &amp;= |\frac{2}{\sqrt{2}} - 1| + |-1 - \frac{2}{\sqrt{2}}| \\
+				&amp;= 2\sqrt{2} \\
+				&amp;= 2.83 \, \text{units}^2
+                \end{align*}
+            </div> <span class="math"><!-- HTML_TAG_START --><!-- HTML_TAG_END --></span>
+		The total area between <div style="display: none;">\sin(x)</div> <span class="math"><!-- HTML_TAG_START --><!-- HTML_TAG_END --></span> and <div style="display: none;">\cos(x)</div> <span class="math"><!-- HTML_TAG_START --><!-- HTML_TAG_END --></span> on <div style="display: none;">[0, \pi]</div> <span class="math"><!-- HTML_TAG_START --><!-- HTML_TAG_END --></span> is <div style="display: none;">2.83</div> <span class="math"><!-- HTML_TAG_START --><!-- HTML_TAG_END --></span> square units.</p></div> <div class="mb-8"><h2 class="text-2xl font-semibold text-text dark:text-dark_text mb-4">Area Between Curves as a Function of Y</h2> <p class="text-text dark:text-dark_text">We normally integrate with respect to x, finding the area between a function and the x-axis. However, we can also integrate curves in respect to y, finding the area between the curve and the y-axis. 
+		<br><br>The area between two curves <div style="display: none;">x = f(y)</div> <span class="math"><!-- HTML_TAG_START --><!-- HTML_TAG_END --></span> and <div style="display: none;">x = g(y)</div> <span class="math"><!-- HTML_TAG_START --><!-- HTML_TAG_END --></span> on <div style="display: none;">y = [c,d]</div> <span class="math"><!-- HTML_TAG_START --><!-- HTML_TAG_END --></span> is:
+		<div style="display: none;"> \text{Area} = \int_{c}^{d} |f(y) - g(y)| \, dy </div> <span class="math"><!-- HTML_TAG_START --><!-- HTML_TAG_END --></span>
+		Solving this integral is identical to solving integrals in respect to <div style="display: none;">x</div> <span class="math"><!-- HTML_TAG_START --><!-- HTML_TAG_END --></span>.</p></div> <div class="mb-8"><h2 class="text-2xl font-semibold text-text dark:text-dark_text mb-4">Examples</h2> <p class="text-text dark:text-dark_text"> <strong data-svelte-h="svelte-1gqtkcn">Example 3: Quadratic vs. Linear</strong><br>
+		Find the area enclosed by <div style="display: none;">x = y^2</div> <span class="math"><!-- HTML_TAG_START --><!-- HTML_TAG_END --></span> and <div style="display: none;">x = 2y</div> <span class="math"><!-- HTML_TAG_START --><!-- HTML_TAG_END --></span>.
+		<br> <span class="inline-block ml-8"><div style="display: none;">y^2 = 2y</div> <span class="math"><!-- HTML_TAG_START --><!-- HTML_TAG_END --></span> when <div style="display: none;">y = 0</div> <span class="math"><!-- HTML_TAG_START --><!-- HTML_TAG_END --></span> and <div style="display: none;">y = 2</div> <span class="math"><!-- HTML_TAG_START --><!-- HTML_TAG_END --></span>.</span> <div style="display: none;">
+				\begin{align*}
+				\text{Area} &amp;= \int_{0}^{2} |2y - y^2| \, dy \\
+				&amp;= \left[ y^2 - \frac{1}{3}y^3 \right]_0^2 \\
+				&amp;= \left(4 - \frac{8}{3}\right) - 0 = \frac{4}{3} \\
+				&amp;= 1.33 \, \text{units}^2
+				\end{align*}
+			</div> <span class="math"><!-- HTML_TAG_START --><!-- HTML_TAG_END --></span>
+		The area of the space enclosed by <div style="display: none;">f(y)</div> <span class="math"><!-- HTML_TAG_START --><!-- HTML_TAG_END --></span> and <div style="display: none;">g(y)</div> <span class="math"><!-- HTML_TAG_START --><!-- HTML_TAG_END --></span> is <div style="display: none;">1.33</div> <span class="math"><!-- HTML_TAG_START --><!-- HTML_TAG_END --></span> square units.
+
+		 <br><br><strong data-svelte-h="svelte-arqk35">Example 4: Exponential vs. Linear</strong><br>
+		Find the area between <div style="display: none;">x = e^y</div> <span class="math"><!-- HTML_TAG_START --><!-- HTML_TAG_END --></span> and <div style="display: none;">x = y + 1</div> <span class="math"><!-- HTML_TAG_START --><!-- HTML_TAG_END --></span> from <div style="display: none;">y = 0</div> <span class="math"><!-- HTML_TAG_START --><!-- HTML_TAG_END --></span> to <div style="display: none;">y = 1</div> <span class="math"><!-- HTML_TAG_START --><!-- HTML_TAG_END --></span>.
+		 <span class="inline-block ml-8"><div style="display: none;">f(y)</div> <span class="math"><!-- HTML_TAG_START --><!-- HTML_TAG_END --></span> and <div style="display: none;">g(y)</div> <span class="math"><!-- HTML_TAG_START --><!-- HTML_TAG_END --></span> intersect at <div style="display: none;">y = 0</div> <span class="math"><!-- HTML_TAG_START --><!-- HTML_TAG_END --></span>. Therefore, the integral does not need to be split.</span> <div style="display: none;">
+				\begin{align*}
+				\text{Area} &amp;= \int_{0}^{1} |e^y - (y + 1)| \, dy \\
+				&amp;= \left[ e^y - \frac{1}{2}y^2 - y \right]_0^1 \\
+				&amp;= \left(e - \frac{1}{2} - 1\right) - 1 \\
+				&amp;= e - 2.5 \\
+				&amp;= 0.218 \, \text{units}^2
+				\end{align*}
+			</div> <span class="math"><!-- HTML_TAG_START --><!-- HTML_TAG_END --></span>
+		The area between <div style="display: none;">f(y)</div> <span class="math"><!-- HTML_TAG_START --><!-- HTML_TAG_END --></span> and <div style="display: none;">g(y)</div> <span class="math"><!-- HTML_TAG_START --><!-- HTML_TAG_END --></span> on <div style="display: none;">[0,1]</div> <span class="math"><!-- HTML_TAG_START --><!-- HTML_TAG_END --></span> is <div style="display: none;">0.218</div> <span class="math"><!-- HTML_TAG_START --><!-- HTML_TAG_END --></span> square units.</p></div></div></div></body> 
+			
+			<script>
+				{
+					__sveltekit_1hm8yy8 = {
+						base: new URL("../..", location).pathname.slice(0, -1),
+						assets: "/BrickAcademy"
+					};
+
+					const element = document.currentScript.parentElement;
+
+					Promise.all([
+						import("../../_app/immutable/entry/start.DFcj8LNn.js"),
+						import("../../_app/immutable/entry/app.34Qzq_vi.js")
+					]).then(([kit, app]) => {
+						kit.start(app, element, {
+							node_ids: [0, 2, 67],
+							data: [null,null,null],
+							form: null,
+							error: null
+						});
+					});
+				}
+			</script>
+		</div>
+	</body>
+</html>

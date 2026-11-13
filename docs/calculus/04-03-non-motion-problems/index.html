@@ -1,0 +1,131 @@
+<!doctype html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8" />
+		<link rel="icon" href="../../favicon.png" />
+		<meta name="viewport" content="width=device-width, initial-scale=1" />
+		
+		<link href="../../_app/immutable/assets/app.BDtVw_ds.css" rel="stylesheet">
+		<link href="../../_app/immutable/assets/Section._en2CAKW.css" rel="stylesheet">
+		<link rel="modulepreload" href="../../_app/immutable/entry/start.DFcj8LNn.js">
+		<link rel="modulepreload" href="../../_app/immutable/chunks/BPHTS8RV.js">
+		<link rel="modulepreload" href="../../_app/immutable/chunks/CVhLxNSM.js">
+		<link rel="modulepreload" href="../../_app/immutable/chunks/DLyp5A0Q.js">
+		<link rel="modulepreload" href="../../_app/immutable/chunks/CwFVwKkT.js">
+		<link rel="modulepreload" href="../../_app/immutable/entry/app.34Qzq_vi.js">
+		<link rel="modulepreload" href="../../_app/immutable/chunks/C1FmrZbK.js">
+		<link rel="modulepreload" href="../../_app/immutable/chunks/DvSB8R1X.js">
+		<link rel="modulepreload" href="../../_app/immutable/nodes/0.B7xpY3_-.js">
+		<link rel="modulepreload" href="../../_app/immutable/nodes/2.BGaKxamB.js">
+		<link rel="modulepreload" href="../../_app/immutable/nodes/36.B2HU7j5-.js">
+		<link rel="modulepreload" href="../../_app/immutable/chunks/ByTZAYyp.js">
+		<link rel="modulepreload" href="../../_app/immutable/chunks/xLaKUPuM.js">
+		<link rel="modulepreload" href="../../_app/immutable/chunks/CkoZ7XGi.js">
+		<link rel="modulepreload" href="../../_app/immutable/chunks/D5fqzSVu.js">
+		<link rel="modulepreload" href="../../_app/immutable/chunks/D3W7TYDU.js">
+	</head>
+	<body data-sveltekit-preload-data="hover">
+		<div style="display: contents">    <div class="fixed top-0 left-0 w-full h-full z-[-2] bg-background dark:bg-dark_background"></div> <body class="h-full bg-background dark:bg-dark_background"><button class="fixed top-4 left-4 z-10 p-2 text-text dark:text-dark_text hover:text-primary" data-svelte-h="svelte-au3lwb">←</button> <button class="fixed top-4 right-4 z-10 p-2 text-text dark:text-dark_text hover:text-primary flex items-center justify-center" aria-label="Toggle Dark Mode"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide-icon lucide lucide-sun w-5 h-5"><circle cx="12" cy="12" r="4"></circle><path d="M12 2v2"></path><path d="M12 20v2"></path><path d="m4.93 4.93 1.41 1.41"></path><path d="m17.66 17.66 1.41 1.41"></path><path d="M2 12h2"></path><path d="M20 12h2"></path><path d="m6.34 17.66-1.41 1.41"></path><path d="m19.07 4.93-1.41 1.41"></path></svg></button>  <div class="p-8 font-sans leading-relaxed w-full"><div class="max-w-3xl mx-auto p-8 leading-relaxed ">  <h1 class="text-3xl font-bold text-text mb-6 dark:text-dark_text"><title>Non-Motion Problems</title> <meta property="og:title" content="Non-Motion Problems"> Non-Motion Problems</h1> <div class="mb-8"><h2 class="text-2xl font-semibold text-text dark:text-dark_text mb-4">Introduction</h2> <p class="text-text dark:text-dark_text">The bread and butter example of derivatives and second-order derivatives is motion (position/velocity/acceleration). However, these concepts can be applied to any example of rates of change.</p></div> <div class="mb-8"><h2 class="text-2xl font-semibold text-text dark:text-dark_text mb-4">The Melting Ice Cube</h2> <p class="text-text dark:text-dark_text">An ice cube is melting. Its size after <div style="display: none;">t</div> <span class="math"><!-- HTML_TAG_START --><!-- HTML_TAG_END --></span> seconds is equal to the following function: 
+		<div style="display: none;">V(t) = 1000(1-0.05t)^3</div> <span class="math"><!-- HTML_TAG_START --><!-- HTML_TAG_END --></span> <div style="display: none;">V(t)</div> <span class="math"><!-- HTML_TAG_START --><!-- HTML_TAG_END --></span> is in cubic centimeters and <div style="display: none;">t</div> <span class="math"><!-- HTML_TAG_START --><!-- HTML_TAG_END --></span> is in minutes.
+		<br><br>Do the following:
+		<br> <span class="inline-block ml-8">1. Find the volume of the ice cube at 10 minutes.
+			<br>2. Find how fast the ice cube is shrinking at 10 minutes.
+			<br>3. Find how fast the top face of the ice cube is shrinking at 10 minutes.</span></p></div> <div class="mb-8"><h2 class="text-2xl font-semibold text-text dark:text-dark_text mb-4">Find the size of the ice cube at 10 minutes.</h2> <p class="text-text dark:text-dark_text">We are looking for the volume of the ice cube at 10 minutes. It is given by
+		<div style="display: none;">V(t) = 1000(1-0.05t)^3</div> <span class="math"><!-- HTML_TAG_START --><!-- HTML_TAG_END --></span>
+		We want <div style="display: none;">V(10)</div> <span class="math"><!-- HTML_TAG_START --><!-- HTML_TAG_END --></span>.
+		<div style="display: none;">
+			\begin{align*}
+			V(10) &amp;= 1000(1-0.05(10))^3 \\
+			&amp;= 1000(1-0.5)^3 \\
+			&amp;= 1000(0.5)^3 \\
+			&amp;= 1000(0.125) \\
+			&amp;= 125\text{cm}^3
+			\end{align*}
+		</div> <span class="math"><!-- HTML_TAG_START --><!-- HTML_TAG_END --></span>
+		The ice cube has a volume of 125 cubic centimeters after 10 minutes.</p></div> <div class="mb-8"><h2 class="text-2xl font-semibold text-text dark:text-dark_text mb-4">How fast is the ice cube shrinking at 10 minutes?</h2> <p class="text-text dark:text-dark_text">1. Understand what the question is asking.
+		<br> <span class="inline-block ml-8">We are looking for the rate that the ice cube is shrinking at 10 minutes. That is the rate the volume is decreasing per second.</span> <br>2. Convert the request into mathematical notation.
+			<div style="display: none;">V(t) = 1000(1-0.05t)^3</div> <span class="math"><!-- HTML_TAG_START --><!-- HTML_TAG_END --></span> <div style="display: none;">V'(t) = \frac{d}{dt}V(t) = \frac{d}{dt}1000(1-0.05t)^3</div> <span class="math"><!-- HTML_TAG_START --><!-- HTML_TAG_END --></span>
+		3. Solve the differential equation(s).
+			<div style="display: none;">
+				\begin{align*}
+				V'(t) &amp;= 3(1000)(1-0.05t)^2(-0.05) \\
+				&amp;= -150(1-0.05t)^2 \\
+				V(10)&amp;= -150(1-0.05(10))^2 \\
+				&amp;= -150(1-0.5)^2 \\
+				&amp;= -150(0.5)^2 \\
+				&amp;= -150(0.25) \\
+				&amp;= -37.5\text{cm}^3/\text{min}
+				\end{align*}
+			</div> <span class="math"><!-- HTML_TAG_START --><!-- HTML_TAG_END --></span>
+		4. Interpret the solution.
+		<br> <span class="inline-block ml-8">10 minutes after starting, the ice cube is shrinking at a rate of 37.5 cubic centimeters per minute.</span></p></div> <div class="mb-8"><h2 class="text-2xl font-semibold text-text dark:text-dark_text mb-4">How fast is the top face of the ice cube shrinking at 10 minutes?</h2> <p class="text-text dark:text-dark_text">  <div class="flex justify-center"><div class="w-full mb-8 bg-background dark:bg-dark_background aspect-square max-h-[66vh] max-w-[66vh]"><div class="flex w-full h-full aspect-[1/1]"></div></div></div> <div style="display: none;">
+			\htmlClass{text-dark_primary dark:text-primary}{S(t)=\text{Length of One Side}} \quad\quad \htmlClass{text-primary dark:text-dark_primary}{A(t)=\text{Area of One Face}} \quad\quad V(t)=\text{Volume of the Cube}
+		</div> <span class="math"><!-- HTML_TAG_START --><!-- HTML_TAG_END --></span>
+		1. Understand what the question is asking.
+		<br> <span class="inline-block ml-8">We are looking for the rate that the top face of the ice cube is shrinking at 10 minutes. In the image above, that is the rate at which the filled in square is shrinking.
+			<br><br>We need to find the area of one face of the cube using the volume of the cube. The volume is the length of one side cubed. The area is the length of one side squared.
+			<br><br>Then, we need to find the rate that the area is shrinking with respect to time.</span> <br>2. Convert the request into mathematical notation.
+		<br> <span class="inline-block ml-8"><div style="display: none;">S(t)</div> <span class="math"><!-- HTML_TAG_START --><!-- HTML_TAG_END --></span> is the length of one side.<div style="display: none;">A(t)</div> <span class="math"><!-- HTML_TAG_START --><!-- HTML_TAG_END --></span> is the area of one side.</span> <div style="display: none;">V(t) = 1000(1-0.05t)^3</div> <span class="math"><!-- HTML_TAG_START --><!-- HTML_TAG_END --></span> <div style="display: none;">V(t)=S(t)^3</div> <span class="math"><!-- HTML_TAG_START --><!-- HTML_TAG_END --></span> <div style="display: none;">A(t)=S(t)^2</div> <span class="math"><!-- HTML_TAG_START --><!-- HTML_TAG_END --></span> <div style="display: none;">S(t)=\sqrt[3]{V(t)}</div> <span class="math"><!-- HTML_TAG_START --><!-- HTML_TAG_END --></span> <br>3. Solve the differential equation(s).
+			<div style="display: none;">
+				\begin{align*}
+				S(t)&amp;=\sqrt[3]{1000(1-0.05t)^3} \\
+				&amp;=10(1-0.05t) \\
+				&amp;=10-0.5t \\
+				A(t)&amp;=S(t)^2 \\
+				&amp;=(10-0.5t)^2 \\
+				A'(t)&amp;=\frac{d}{dt}A(t) \\
+				&amp;=\frac{d}{dt}(10-0.5t)^2 \\
+				&amp;=2(10-0.5t)(-0.5) \\
+				&amp;=-1(10-0.5t) \\
+				&amp;=-10+0.5t \\
+				A'(10)&amp;=-10+0.5(10) \\
+				&amp;=-10+5 \\
+				&amp;=-5\text{cm}^2/\text{min}
+				\end{align*}
+		</div> <span class="math"><!-- HTML_TAG_START --><!-- HTML_TAG_END --></span>
+		4. Interpret the solution.
+		<br> <span class="inline-block ml-8">10 minutes after starting, the top face of the ice cube is shrinking at a rate of 5 square centimeters per minute.</span></p></div> <div class="mb-8"><h2 class="text-2xl font-semibold text-text dark:text-dark_text mb-4">Bonus Method of Finding the Derivatives</h2> <p class="text-text dark:text-dark_text"><div style="display: none;">
+			\begin{align*}
+			S(t)&amp;=10-0.5t \quad&amp; V(t)=&amp;S(t)^3 \quad&amp; A(t)=&amp;S(t)^2 \\ \text{} \\
+			S'(t)&amp;=-0.5t \quad&amp; V'(t)=&amp;3S(t)^2S'(t) \quad&amp; A'(t)=&amp;2S(t)S'(t) \\ \text{} \\
+			\end{align*}
+			\\
+			\begin{align*}
+			S(10)&amp;=10-0.5(10) \\
+			&amp;=10-5 \\
+			&amp;=5 \\
+			S'(10)&amp;=-0.5 \\
+			
+			
+			V'(10)&amp;=3(5)^2(-0.5) \\
+			&amp;=-37.5\text{cm}^3/\text{min} \\
+			A'(10)&amp;=2(5)(-0.5) \\
+			&amp;=-5\text{cm}^2/\text{min}
+			\end{align*}
+		</div> <span class="math"><!-- HTML_TAG_START --><!-- HTML_TAG_END --></span></p></div></div></div></body> 
+			
+			<script>
+				{
+					__sveltekit_1hm8yy8 = {
+						base: new URL("../..", location).pathname.slice(0, -1),
+						assets: "/BrickAcademy"
+					};
+
+					const element = document.currentScript.parentElement;
+
+					Promise.all([
+						import("../../_app/immutable/entry/start.DFcj8LNn.js"),
+						import("../../_app/immutable/entry/app.34Qzq_vi.js")
+					]).then(([kit, app]) => {
+						kit.start(app, element, {
+							node_ids: [0, 2, 36],
+							data: [null,null,null],
+							form: null,
+							error: null
+						});
+					});
+				}
+			</script>
+		</div>
+	</body>
+</html>

@@ -1,0 +1,81 @@
+<!doctype html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8" />
+		<link rel="icon" href="../../favicon.png" />
+		<meta name="viewport" content="width=device-width, initial-scale=1" />
+		
+		<link href="../../_app/immutable/assets/app.BDtVw_ds.css" rel="stylesheet">
+		<link href="../../_app/immutable/assets/Section._en2CAKW.css" rel="stylesheet">
+		<link rel="modulepreload" href="../../_app/immutable/entry/start.DFcj8LNn.js">
+		<link rel="modulepreload" href="../../_app/immutable/chunks/BPHTS8RV.js">
+		<link rel="modulepreload" href="../../_app/immutable/chunks/CVhLxNSM.js">
+		<link rel="modulepreload" href="../../_app/immutable/chunks/DLyp5A0Q.js">
+		<link rel="modulepreload" href="../../_app/immutable/chunks/CwFVwKkT.js">
+		<link rel="modulepreload" href="../../_app/immutable/entry/app.34Qzq_vi.js">
+		<link rel="modulepreload" href="../../_app/immutable/chunks/C1FmrZbK.js">
+		<link rel="modulepreload" href="../../_app/immutable/chunks/DvSB8R1X.js">
+		<link rel="modulepreload" href="../../_app/immutable/nodes/0.B7xpY3_-.js">
+		<link rel="modulepreload" href="../../_app/immutable/nodes/2.BGaKxamB.js">
+		<link rel="modulepreload" href="../../_app/immutable/nodes/24.Bnz6jKzV.js">
+		<link rel="modulepreload" href="../../_app/immutable/chunks/ByTZAYyp.js">
+		<link rel="modulepreload" href="../../_app/immutable/chunks/xLaKUPuM.js">
+		<link rel="modulepreload" href="../../_app/immutable/chunks/CkoZ7XGi.js">
+		<link rel="modulepreload" href="../../_app/immutable/chunks/D5fqzSVu.js">
+		<link rel="modulepreload" href="../../_app/immutable/chunks/Bw3t_506.js">
+		<link rel="modulepreload" href="../../_app/immutable/chunks/S6_-2PRy.js">
+	</head>
+	<body data-sveltekit-preload-data="hover">
+		<div style="display: contents">    <div class="fixed top-0 left-0 w-full h-full z-[-2] bg-background dark:bg-dark_background"></div> <body class="h-full bg-background dark:bg-dark_background"><button class="fixed top-4 left-4 z-10 p-2 text-text dark:text-dark_text hover:text-primary" data-svelte-h="svelte-au3lwb">←</button> <button class="fixed top-4 right-4 z-10 p-2 text-text dark:text-dark_text hover:text-primary flex items-center justify-center" aria-label="Toggle Dark Mode"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide-icon lucide lucide-sun w-5 h-5"><circle cx="12" cy="12" r="4"></circle><path d="M12 2v2"></path><path d="M12 20v2"></path><path d="m4.93 4.93 1.41 1.41"></path><path d="m17.66 17.66 1.41 1.41"></path><path d="M2 12h2"></path><path d="M20 12h2"></path><path d="m6.34 17.66-1.41 1.41"></path><path d="m19.07 4.93-1.41 1.41"></path></svg></button>  <div class="p-8 font-sans leading-relaxed w-full"><div class="max-w-3xl mx-auto p-8 leading-relaxed ">  <h1 class="text-3xl font-bold text-text mb-6 dark:text-dark_text"><title>The Power Rule</title> <meta property="og:title" content="The Power Rule"> The Power Rule</h1> <div class="mb-8"><h2 class="text-2xl font-semibold text-text dark:text-dark_text mb-4">Introduction</h2> <p class="text-text dark:text-dark_text">The power rule allows us to find derivatives of functions of the form <div style="display: none;">f(x)=ax^n</div> <span class="math"><!-- HTML_TAG_START --><!-- HTML_TAG_END --></span>, where <div style="display: none;">a</div> <span class="math"><!-- HTML_TAG_START --><!-- HTML_TAG_END --></span> and <div style="display: none;">n</div> <span class="math"><!-- HTML_TAG_START --><!-- HTML_TAG_END --></span> are constants.
+			For example, <div style="display: none;">f(x)=3x^2</div> <span class="math"><!-- HTML_TAG_START --><!-- HTML_TAG_END --></span> or <div style="display: none;">f(x)=5x^3</div> <span class="math"><!-- HTML_TAG_START --><!-- HTML_TAG_END --></span>.
+
+			<br>Before we prove it, note the following: 
+			<div style="display: none;">(x+h)^n = x^n + \binom{n}{1} x^{n-1} h + \binom{n}{2} x^{n-2} h^2 + \binom{n}{3} x^{n-3} h^3 + \cdots + h^n</div> <span class="math"><!-- HTML_TAG_START --><!-- HTML_TAG_END --></span>
+			This is the binomial theorem. We will use it to prove the power rule. In that notation there is a shorthand for the binomial coefficient, <div style="display: none;">\binom{a}{b}</div> <span class="math"><!-- HTML_TAG_START --><!-- HTML_TAG_END --></span>.
+			<div style="display: none;">\binom{a}{b} = \frac{a!}{b!(a-b)!}</div> <span class="math"><!-- HTML_TAG_START --><!-- HTML_TAG_END --></span>
+			We do not need to know the binomial coefficent, but please note the following:
+			<div style="display: none;">\binom{n}{1} = \frac{n!}{1!(n-1)!}=n</div> <span class="math"><!-- HTML_TAG_START --><!-- HTML_TAG_END --></span></p></div> <div class="mb-8"><h2 class="text-2xl font-semibold text-text dark:text-dark_text mb-4">Proof</h2> <p class="text-text dark:text-dark_text"><div style="display: none;">f(x)=x^n</div> <span class="math"><!-- HTML_TAG_START --><!-- HTML_TAG_END --></span>
+			Define the derivative.
+			<br><div style="display: none;">f'(x)=\lim_{h \to 0}\frac{f(x+h) - f(x)}{h}</div> <span class="math"><!-- HTML_TAG_START --><!-- HTML_TAG_END --></span>
+			Substitute <div style="display: none;">f(x)</div> <span class="math"><!-- HTML_TAG_START --><!-- HTML_TAG_END --></span> with <div style="display: none;">x^n</div> <span class="math"><!-- HTML_TAG_START --><!-- HTML_TAG_END --></span>.
+			<br><div style="display: none;">f'(x)=\lim_{h \to 0}\frac{(x+h)^n - x^n}{h}</div> <span class="math"><!-- HTML_TAG_START --><!-- HTML_TAG_END --></span>
+			Expand the binomial.
+			<br><div style="display: none;">f'(x)=\lim_{h \to 0}\frac{(x^n + \binom{n}{1} x^{n-1} h + \binom{n}{2} x^{n-2} h^2 + \binom{n}{3} x^{n-3} h^3 + \cdots + h^n) - x^n}{h}</div> <span class="math"><!-- HTML_TAG_START --><!-- HTML_TAG_END --></span>
+			Remove <div style="display: none;">x^n</div> <span class="math"><!-- HTML_TAG_START --><!-- HTML_TAG_END --></span> and <div style="display: none;">-x^n</div> <span class="math"><!-- HTML_TAG_START --><!-- HTML_TAG_END --></span> <br><div style="display: none;">f'(x)=\lim_{h \to 0}\frac{\binom{n}{1} x^{n-1} h + \binom{n}{2} x^{n-2} h^2 + \binom{n}{3} x^{n-3} h^3 + \cdots + h^n}{h}</div> <span class="math"><!-- HTML_TAG_START --><!-- HTML_TAG_END --></span>
+			Extract <div style="display: none;">h</div> <span class="math"><!-- HTML_TAG_START --><!-- HTML_TAG_END --></span> from the numerator.
+			<br><div style="display: none;">f'(x)=\lim_{h \to 0}\frac{h(\binom{n}{1} x^{n-1} + \binom{n}{2} x^{n-2} h + \binom{n}{3} x^{n-3} h^2 + \cdots + h^{n-1})}{h}</div> <span class="math"><!-- HTML_TAG_START --><!-- HTML_TAG_END --></span>
+			Cancel <div style="display: none;">h</div> <span class="math"><!-- HTML_TAG_START --><!-- HTML_TAG_END --></span> from the numerator and denominator.
+			<br><div style="display: none;">f'(x)=\lim_{h \to 0}\binom{n}{1} x^{n-1} + \binom{n}{2} x^{n-2} h + \binom{n}{3} x^{n-3} h^2 + \cdots + h^{n-1}</div> <span class="math"><!-- HTML_TAG_START --><!-- HTML_TAG_END --></span>
+			As <div style="display: none;">h</div> <span class="math"><!-- HTML_TAG_START --><!-- HTML_TAG_END --></span> approaches <div style="display: none;">0</div> <span class="math"><!-- HTML_TAG_START --><!-- HTML_TAG_END --></span>, all terms with <div style="display: none;">h</div> <span class="math"><!-- HTML_TAG_START --><!-- HTML_TAG_END --></span> will equal <div style="display: none;">0</div> <span class="math"><!-- HTML_TAG_START --><!-- HTML_TAG_END --></span>.
+			<br><div style="display: none;">f'(x)=\lim_{h \to 0}\binom{n}{1} x^{n-1} + 0 + 0 + \cdots + 0</div> <span class="math"><!-- HTML_TAG_START --><!-- HTML_TAG_END --></span>
+			Solve the limit.
+			<br><div style="display: none;">f'(x)=\binom{n}{1} x^{n-1}</div> <span class="math"><!-- HTML_TAG_START --><!-- HTML_TAG_END --></span>
+			Simplify, using <div style="display: none;">\binom{n}{1}=n</div> <span class="math"><!-- HTML_TAG_START --><!-- HTML_TAG_END --></span>.
+			<div style="display: none;">f'(x)=n x^{n-1}</div> <span class="math"><!-- HTML_TAG_START --><!-- HTML_TAG_END --></span></p></div> <div class="mb-8"><h2 class="text-2xl font-semibold text-text dark:text-dark_text mb-4">Graphs</h2> <p class="text-text dark:text-dark_text">Here is the definition of the power rule:
+			<div style="display: none;">f(x)=x^n</div> <span class="math"><!-- HTML_TAG_START --><!-- HTML_TAG_END --></span> <div style="display: none;">f'(x)=nx^{n-1}</div> <span class="math"><!-- HTML_TAG_START --><!-- HTML_TAG_END --></span> <br><br><div style="display: none;">f(x) = x^2</div> <span class="math"><!-- HTML_TAG_START --><!-- HTML_TAG_END --></span> <br><div style="display: none;">f'(x)=2x</div> <span class="math"><!-- HTML_TAG_START --><!-- HTML_TAG_END --></span>   <div class="flex justify-center"><div class="w-full mb-8 bg-background dark:bg-dark_background aspect-square max-h-[66vh] max-w-[66vh]"><div class="flex w-full h-full aspect-[1/1]"></div></div></div> <div style="display: none;">f(x) = x^3</div> <span class="math"><!-- HTML_TAG_START --><!-- HTML_TAG_END --></span> <br><div style="display: none;">f'(x)=3x^{2}</div> <span class="math"><!-- HTML_TAG_START --><!-- HTML_TAG_END --></span>   <div class="flex justify-center"><div class="w-full mb-8 bg-background dark:bg-dark_background aspect-square max-h-[66vh] max-w-[66vh]"><div class="flex w-full h-full aspect-[1/1]"></div></div></div> <div style="display: none;">f(x) = x^3 - 2x^2</div> <span class="math"><!-- HTML_TAG_START --><!-- HTML_TAG_END --></span> <br><div style="display: none;">f'(x)=3x^2 - 4x</div> <span class="math"><!-- HTML_TAG_START --><!-- HTML_TAG_END --></span>   <div class="flex justify-center"><div class="w-full mb-8 bg-background dark:bg-dark_background aspect-square max-h-[66vh] max-w-[66vh]"><div class="flex w-full h-full aspect-[1/1]"></div></div></div></p></div></div></div></body> 
+			
+			<script>
+				{
+					__sveltekit_1hm8yy8 = {
+						base: new URL("../..", location).pathname.slice(0, -1),
+						assets: "/BrickAcademy"
+					};
+
+					const element = document.currentScript.parentElement;
+
+					Promise.all([
+						import("../../_app/immutable/entry/start.DFcj8LNn.js"),
+						import("../../_app/immutable/entry/app.34Qzq_vi.js")
+					]).then(([kit, app]) => {
+						kit.start(app, element, {
+							node_ids: [0, 2, 24],
+							data: [null,null,null],
+							form: null,
+							error: null
+						});
+					});
+				}
+			</script>
+		</div>
+	</body>
+</html>

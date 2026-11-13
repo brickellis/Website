@@ -1,0 +1,78 @@
+<!doctype html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8" />
+		<link rel="icon" href="../../favicon.png" />
+		<meta name="viewport" content="width=device-width, initial-scale=1" />
+		
+		<link href="../../_app/immutable/assets/app.BDtVw_ds.css" rel="stylesheet">
+		<link href="../../_app/immutable/assets/Section._en2CAKW.css" rel="stylesheet">
+		<link rel="modulepreload" href="../../_app/immutable/entry/start.DFcj8LNn.js">
+		<link rel="modulepreload" href="../../_app/immutable/chunks/BPHTS8RV.js">
+		<link rel="modulepreload" href="../../_app/immutable/chunks/CVhLxNSM.js">
+		<link rel="modulepreload" href="../../_app/immutable/chunks/DLyp5A0Q.js">
+		<link rel="modulepreload" href="../../_app/immutable/chunks/CwFVwKkT.js">
+		<link rel="modulepreload" href="../../_app/immutable/entry/app.34Qzq_vi.js">
+		<link rel="modulepreload" href="../../_app/immutable/chunks/C1FmrZbK.js">
+		<link rel="modulepreload" href="../../_app/immutable/chunks/DvSB8R1X.js">
+		<link rel="modulepreload" href="../../_app/immutable/nodes/0.B7xpY3_-.js">
+		<link rel="modulepreload" href="../../_app/immutable/nodes/2.BGaKxamB.js">
+		<link rel="modulepreload" href="../../_app/immutable/nodes/85.esvRcFL0.js">
+		<link rel="modulepreload" href="../../_app/immutable/chunks/ByTZAYyp.js">
+		<link rel="modulepreload" href="../../_app/immutable/chunks/xLaKUPuM.js">
+		<link rel="modulepreload" href="../../_app/immutable/chunks/D3W7TYDU.js">
+	</head>
+	<body data-sveltekit-preload-data="hover">
+		<div style="display: contents">  <div class="fixed top-0 left-0 w-full h-full z-[-2] bg-background dark:bg-dark_background"></div> <body class="h-full bg-background dark:bg-dark_background"><button class="fixed top-4 left-4 z-10 p-2 text-text dark:text-dark_text hover:text-primary" data-svelte-h="svelte-au3lwb">←</button> <button class="fixed top-4 right-4 z-10 p-2 text-text dark:text-dark_text hover:text-primary flex items-center justify-center" aria-label="Toggle Dark Mode"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide-icon lucide lucide-sun w-5 h-5"><circle cx="12" cy="12" r="4"></circle><path d="M12 2v2"></path><path d="M12 20v2"></path><path d="m4.93 4.93 1.41 1.41"></path><path d="m17.66 17.66 1.41 1.41"></path><path d="M2 12h2"></path><path d="M20 12h2"></path><path d="m6.34 17.66-1.41 1.41"></path><path d="m19.07 4.93-1.41 1.41"></path></svg></button>  <div class="p-8 font-sans leading-relaxed w-full"><div class="max-w-3xl mx-auto p-8 leading-relaxed ">  <h1 class="text-3xl font-bold text-text mb-6 dark:text-dark_text"><title>Alternating Series Test</title> <meta property="og:title" content="Alternating Series Test"> Alternating Series Test</h1> <div class="mb-8"><h2 class="text-2xl font-semibold text-text dark:text-dark_text mb-4">Introduction</h2> <p class="text-text dark:text-dark_text">An alternating series is defined as:
+        <div style="display: none;">\sum_{n=0}^{\infty} (-1)^n a_n \quad \text{or} \quad \sum_{n=1}^{\infty} (-1)^{n+1} a_n</div> <span class="math"><!-- HTML_TAG_START --><!-- HTML_TAG_END --></span>
+        where <div style="display: none;">a_n</div> <span class="math"><!-- HTML_TAG_START --><!-- HTML_TAG_END --></span> are positive terms. Thus, each term in the series alternates sign.
+        <br><br>For an alternating series to converge, it must satisfy the following conditions:
+        <br> <span class="inline-block ml-8">The sequence, <div style="display: none;">a_n</div> <span class="math"><!-- HTML_TAG_START --><!-- HTML_TAG_END --></span>, must be decreasing for all <div style="display: none;">n</div> <span class="math"><!-- HTML_TAG_START --><!-- HTML_TAG_END --></span> sufficiently large.
+            <br>The sequence must approach zero:
+            <div style="display: none;">\lim_{n \to \infty} a_n = 0</div> <span class="math"><!-- HTML_TAG_START --><!-- HTML_TAG_END --></span></span></p></div> <div class="mb-8"><h2 class="text-2xl font-semibold text-text dark:text-dark_text mb-4">Estimating Sums and Error Bounds</h2> <p class="text-text dark:text-dark_text">For converging, alternating series, the absolute value of the remainder after <div style="display: none;">n</div> <span class="math"><!-- HTML_TAG_START --><!-- HTML_TAG_END --></span> terms is less than or equal to the first neglected term.
+       <br><div style="display: none;">R_n</div> <span class="math"><!-- HTML_TAG_START --><!-- HTML_TAG_END --></span>: The remainder after <div style="display: none;">n</div> <span class="math"><!-- HTML_TAG_START --><!-- HTML_TAG_END --></span> terms.
+        <div style="display: none;">
+        \begin{align*}
+        R_n &amp;= |S - S_n| \\
+        &amp;= |\sum_{k=1}^{\infty} (-1)^{k} a_k - \sum_{k=1}^{n} (-1)^{k} a_k| \\
+        &amp;= |\sum_{k=n+1}^{\infty} (-1)^{k} a_k| \leq a_{n+1}
+        \end{align*}
+        </div> <span class="math"><!-- HTML_TAG_START --><!-- HTML_TAG_END --></span>
+        where <div style="display: none;">S</div> <span class="math"><!-- HTML_TAG_START --><!-- HTML_TAG_END --></span> is the actual sum and <div style="display: none;">S_n</div> <span class="math"><!-- HTML_TAG_START --><!-- HTML_TAG_END --></span> is the sum of the first <div style="display: none;">n</div> <span class="math"><!-- HTML_TAG_START --><!-- HTML_TAG_END --></span> terms.</p></div> <div class="mb-8"><h2 class="text-2xl font-semibold text-text dark:text-dark_text mb-4">Conditional vs Absolute Convergence</h2> <p class="text-text dark:text-dark_text"><strong data-svelte-h="svelte-414n3h">Conditional Convergence:</strong><br>
+        A series is conditionally convergent if it converges, but the series created by summing the absolute value of its terms diverges:
+        <div style="display: none;">\sum_{n=1}^{\infty} a_n \text{ converges} \quad \sum_{n=1}^{\infty} |a_n| \text{ diverges}</div> <span class="math"><!-- HTML_TAG_START --><!-- HTML_TAG_END --></span> <strong data-svelte-h="svelte-1lhqic">Absolute Convergence:</strong><br>
+        A series is absolutely convergent if the series created by summing the absolute value of its terms converges:
+        <div style="display: none;">\sum_{n=1}^{\infty} |a_n| \text{ converges}</div> <span class="math"><!-- HTML_TAG_START --><!-- HTML_TAG_END --></span></p></div> <div class="mb-8"><h2 class="text-2xl font-semibold text-text dark:text-dark_text mb-4">Examples</h2> <p class="text-text dark:text-dark_text"><strong data-svelte-h="svelte-1ldq188">Example 1: Alternating Harmonic Series</strong><br> <div style="display: none;">\sum_{n=1}^{\infty} \frac{(-1)^{n+1}}{n}</div> <span class="math"><!-- HTML_TAG_START --><!-- HTML_TAG_END --></span>
+        This series converges by the Alternating Series Test since:
+        <br> <span class="inline-block ml-8"><div style="display: none;">a_n = \frac{1}{n}</div> <span class="math"><!-- HTML_TAG_START --><!-- HTML_TAG_END --></span> is positive and decreasing.
+            <br><div style="display: none;">\lim_{n \to \infty} a_n = 0</div> <span class="math"><!-- HTML_TAG_START --><!-- HTML_TAG_END --></span>.</span> <br>However, it is conditionally convergent, since:
+        <div style="display: none;">\sum_{n=1}^{\infty} \frac{1}{n} \text{ diverges}</div> <span class="math"><!-- HTML_TAG_START --><!-- HTML_TAG_END --></span> <br> <strong data-svelte-h="svelte-upo17x">Example 2: Divergent Series</strong><br> <div style="display: none;">\sum_{n=1}^{\infty} \frac{(-1)^{n+1}}{n^2}</div> <span class="math"><!-- HTML_TAG_START --><!-- HTML_TAG_END --></span>
+        This series absolutely converges since:
+        <div style="display: none;">\sum_{n=1}^{\infty} \frac{1}{n^2} \text{ converges}</div> <span class="math"><!-- HTML_TAG_START --><!-- HTML_TAG_END --></span>
+        by the p-series test (with p = 2).</p></div></div></div></body> 
+			
+			<script>
+				{
+					__sveltekit_1hm8yy8 = {
+						base: new URL("../..", location).pathname.slice(0, -1),
+						assets: "/BrickAcademy"
+					};
+
+					const element = document.currentScript.parentElement;
+
+					Promise.all([
+						import("../../_app/immutable/entry/start.DFcj8LNn.js"),
+						import("../../_app/immutable/entry/app.34Qzq_vi.js")
+					]).then(([kit, app]) => {
+						kit.start(app, element, {
+							node_ids: [0, 2, 85],
+							data: [null,null,null],
+							form: null,
+							error: null
+						});
+					});
+				}
+			</script>
+		</div>
+	</body>
+</html>

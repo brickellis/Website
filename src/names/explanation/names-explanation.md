@@ -1,5 +1,5 @@
 ---
-title: Names
+title: Names Website Explanation
 date: November 12, 2026
 ---
 

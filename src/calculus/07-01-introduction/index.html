@@ -1,0 +1,81 @@
+<!doctype html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8" />
+		<link rel="icon" href="../../favicon.png" />
+		<meta name="viewport" content="width=device-width, initial-scale=1" />
+		
+		<link href="../../_app/immutable/assets/app.BDtVw_ds.css" rel="stylesheet">
+		<link href="../../_app/immutable/assets/Section._en2CAKW.css" rel="stylesheet">
+		<link rel="modulepreload" href="../../_app/immutable/entry/start.DFcj8LNn.js">
+		<link rel="modulepreload" href="../../_app/immutable/chunks/BPHTS8RV.js">
+		<link rel="modulepreload" href="../../_app/immutable/chunks/CVhLxNSM.js">
+		<link rel="modulepreload" href="../../_app/immutable/chunks/DLyp5A0Q.js">
+		<link rel="modulepreload" href="../../_app/immutable/chunks/CwFVwKkT.js">
+		<link rel="modulepreload" href="../../_app/immutable/entry/app.34Qzq_vi.js">
+		<link rel="modulepreload" href="../../_app/immutable/chunks/C1FmrZbK.js">
+		<link rel="modulepreload" href="../../_app/immutable/chunks/DvSB8R1X.js">
+		<link rel="modulepreload" href="../../_app/immutable/nodes/0.B7xpY3_-.js">
+		<link rel="modulepreload" href="../../_app/immutable/nodes/2.BGaKxamB.js">
+		<link rel="modulepreload" href="../../_app/immutable/nodes/58.zngxHtUL.js">
+		<link rel="modulepreload" href="../../_app/immutable/chunks/ByTZAYyp.js">
+		<link rel="modulepreload" href="../../_app/immutable/chunks/xLaKUPuM.js">
+	</head>
+	<body data-sveltekit-preload-data="hover">
+		<div style="display: contents">    <div class="fixed top-0 left-0 w-full h-full z-[-2] bg-background dark:bg-dark_background"></div> <body class="h-full bg-background dark:bg-dark_background"><button class="fixed top-4 left-4 z-10 p-2 text-text dark:text-dark_text hover:text-primary" data-svelte-h="svelte-au3lwb">←</button> <button class="fixed top-4 right-4 z-10 p-2 text-text dark:text-dark_text hover:text-primary flex items-center justify-center" aria-label="Toggle Dark Mode"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide-icon lucide lucide-sun w-5 h-5"><circle cx="12" cy="12" r="4"></circle><path d="M12 2v2"></path><path d="M12 20v2"></path><path d="m4.93 4.93 1.41 1.41"></path><path d="m17.66 17.66 1.41 1.41"></path><path d="M2 12h2"></path><path d="M20 12h2"></path><path d="m6.34 17.66-1.41 1.41"></path><path d="m19.07 4.93-1.41 1.41"></path></svg></button>  <div class="p-8 font-sans leading-relaxed w-full"><div class="max-w-3xl mx-auto p-8 leading-relaxed ">  <h1 class="text-3xl font-bold text-text mb-6 dark:text-dark_text"><title>Introduction</title> <meta property="og:title" content="Introduction"> Introduction</h1> <div class="mb-8"><h2 class="text-2xl font-semibold text-text dark:text-dark_text mb-4"></h2> <p class="text-text dark:text-dark_text">Differential equations are equations with derivatives. They represent rates of change.
+		<br><br>They model physical and economic systems, such as population growth, heat transfer, and compound interest.
+		<br><br><div style="display: none;">P</div> <span class="math"><!-- HTML_TAG_START --><!-- HTML_TAG_END --></span> represents the population size in people, with <div style="display: none;">t</div> <span class="math"><!-- HTML_TAG_START --><!-- HTML_TAG_END --></span> as years:
+		<div style="display: none;">
+			\frac{dP}{dt} = 0.02P
+		</div> <span class="math"><!-- HTML_TAG_START --><!-- HTML_TAG_END --></span>
+		The population is increasing by 2% each year.
+		<br><br>Solving a differential equation is generally to find a function which satisfies it. For this example, we are finding <div style="display: none;">P(t)</div> <span class="math"><!-- HTML_TAG_START --><!-- HTML_TAG_END --></span>:
+		<div style="display: none;">
+			P(t) = ke^{0.02t}
+		</div> <span class="math"><!-- HTML_TAG_START --><!-- HTML_TAG_END --></span>
+		Where <div style="display: none;">k</div> <span class="math"><!-- HTML_TAG_START --><!-- HTML_TAG_END --></span> is the initial population. We can check this solution through differentiation:
+		<div style="display: none;">
+			\begin{align*}
+			P(t) &amp;= ke^{0.02t} \\ \text{} \\
+			\frac{d}{dt}P(t) &amp;= \frac{d}{dt}ke^{0.02t} \\ \text{} \\
+			\frac{dP}{dt}&amp;= 0.02ke^{0.02t} \\ \text{} \\
+			\frac{dP}{dt}&amp;= 0.02P
+			\end{align*}
+		</div> <span class="math"><!-- HTML_TAG_START --><!-- HTML_TAG_END --></span>
+		As with antiderivates, the last missing piece is finding the constant. For example, if the population is 310 at <div style="display: none;">t=100</div> <span class="math"><!-- HTML_TAG_START --><!-- HTML_TAG_END --></span> years, then:
+		<div style="display: none;">
+			\begin{align*}
+			P(t) &amp;= ke^{0.02t} \\ \text{} \\
+			310 &amp;= ke^{0.02(100)} \\ \text{} \\
+			\frac{310}{e^{2}} &amp;= k \\ \text{} \\
+			k &amp;= 42 \\ \text{} \\
+			P(t) &amp;= 42e^{0.02t}
+			\end{align*}
+		</div> <span class="math"><!-- HTML_TAG_START --><!-- HTML_TAG_END --></span>
+		The constant <div style="display: none;">k</div> <span class="math"><!-- HTML_TAG_START --><!-- HTML_TAG_END --></span> is 42, as <div style="display: none;">P(100) = 310 = 42e^{0.02(100)}</div> <span class="math"><!-- HTML_TAG_START --><!-- HTML_TAG_END --></span>.</p></div></div></div></body> 
+			
+			<script>
+				{
+					__sveltekit_1hm8yy8 = {
+						base: new URL("../..", location).pathname.slice(0, -1),
+						assets: "/BrickAcademy"
+					};
+
+					const element = document.currentScript.parentElement;
+
+					Promise.all([
+						import("../../_app/immutable/entry/start.DFcj8LNn.js"),
+						import("../../_app/immutable/entry/app.34Qzq_vi.js")
+					]).then(([kit, app]) => {
+						kit.start(app, element, {
+							node_ids: [0, 2, 58],
+							data: [null,null,null],
+							form: null,
+							error: null
+						});
+					});
+				}
+			</script>
+		</div>
+	</body>
+</html>

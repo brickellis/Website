@@ -1,0 +1,103 @@
+<!doctype html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8" />
+		<link rel="icon" href="../../favicon.png" />
+		<meta name="viewport" content="width=device-width, initial-scale=1" />
+		
+		<link href="../../_app/immutable/assets/app.BDtVw_ds.css" rel="stylesheet">
+		<link href="../../_app/immutable/assets/Section._en2CAKW.css" rel="stylesheet">
+		<link rel="modulepreload" href="../../_app/immutable/entry/start.DFcj8LNn.js">
+		<link rel="modulepreload" href="../../_app/immutable/chunks/BPHTS8RV.js">
+		<link rel="modulepreload" href="../../_app/immutable/chunks/CVhLxNSM.js">
+		<link rel="modulepreload" href="../../_app/immutable/chunks/DLyp5A0Q.js">
+		<link rel="modulepreload" href="../../_app/immutable/chunks/CwFVwKkT.js">
+		<link rel="modulepreload" href="../../_app/immutable/entry/app.34Qzq_vi.js">
+		<link rel="modulepreload" href="../../_app/immutable/chunks/C1FmrZbK.js">
+		<link rel="modulepreload" href="../../_app/immutable/chunks/DvSB8R1X.js">
+		<link rel="modulepreload" href="../../_app/immutable/nodes/0.B7xpY3_-.js">
+		<link rel="modulepreload" href="../../_app/immutable/nodes/2.BGaKxamB.js">
+		<link rel="modulepreload" href="../../_app/immutable/nodes/29.CFnlQgGy.js">
+		<link rel="modulepreload" href="../../_app/immutable/chunks/ByTZAYyp.js">
+		<link rel="modulepreload" href="../../_app/immutable/chunks/xLaKUPuM.js">
+	</head>
+	<body data-sveltekit-preload-data="hover">
+		<div style="display: contents">    <div class="fixed top-0 left-0 w-full h-full z-[-2] bg-background dark:bg-dark_background"></div> <body class="h-full bg-background dark:bg-dark_background"><button class="fixed top-4 left-4 z-10 p-2 text-text dark:text-dark_text hover:text-primary" data-svelte-h="svelte-au3lwb">←</button> <button class="fixed top-4 right-4 z-10 p-2 text-text dark:text-dark_text hover:text-primary flex items-center justify-center" aria-label="Toggle Dark Mode"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide-icon lucide lucide-sun w-5 h-5"><circle cx="12" cy="12" r="4"></circle><path d="M12 2v2"></path><path d="M12 20v2"></path><path d="m4.93 4.93 1.41 1.41"></path><path d="m17.66 17.66 1.41 1.41"></path><path d="M2 12h2"></path><path d="M20 12h2"></path><path d="m6.34 17.66-1.41 1.41"></path><path d="m19.07 4.93-1.41 1.41"></path></svg></button>  <div class="p-8 font-sans leading-relaxed w-full"><div class="max-w-3xl mx-auto p-8 leading-relaxed ">  <h1 class="text-3xl font-bold text-text mb-6 dark:text-dark_text"><title>The Chain Rule</title> <meta property="og:title" content="The Chain Rule"> The Chain Rule</h1> <div class="mb-8"><h2 class="text-2xl font-semibold text-text dark:text-dark_text mb-4">Introduction</h2> <p class="text-text dark:text-dark_text">We will prove that the derivative of a composite function is the derivative of the outer function evaluated at the inner function times the derivative of the inner function.
+		<div style="display: none;">\frac{d}{dx}f(g(x))=f'(g(x))g'(x)</div> <span class="math"><!-- HTML_TAG_START --><!-- HTML_TAG_END --></span>
+		Here is an example:
+		<div style="display: none;">f(x)=\sin(x) \quad g(x)=x^2 \quad f(g(x))=\sin(x^2)</div> <span class="math"><!-- HTML_TAG_START --><!-- HTML_TAG_END --></span> <div style="display: none;">f'(g(x))=\cos(x^2) \quad g'(x)=2x</div> <span class="math"><!-- HTML_TAG_START --><!-- HTML_TAG_END --></span> <div style="display: none;">\frac{d}{dx}\sin(x^2)=\cos(x^2)2x</div> <span class="math"><!-- HTML_TAG_START --><!-- HTML_TAG_END --></span> <br><br>The derivative of a function is the change in the function in relation to the change in the input.
+		<br><br>For example, <div style="display: none;">\frac{d}{dx}f(x)</div> <span class="math"><!-- HTML_TAG_START --><!-- HTML_TAG_END --></span> is the change in <div style="display: none;">f(x)</div> <span class="math"><!-- HTML_TAG_START --><!-- HTML_TAG_END --></span> as <div style="display: none;">x</div> <span class="math"><!-- HTML_TAG_START --><!-- HTML_TAG_END --></span> changes.
+		<br><br>Proving <div style="display: none;">\frac{d}{dx}f(g(x)) = f'(g(x))g'(x)</div> <span class="math"><!-- HTML_TAG_START --><!-- HTML_TAG_END --></span> is proving the change in <div style="display: none;">f(g(x))</div> <span class="math"><!-- HTML_TAG_START --><!-- HTML_TAG_END --></span> as <div style="display: none;">x</div> <span class="math"><!-- HTML_TAG_START --><!-- HTML_TAG_END --></span> changes is the same as the change in <div style="display: none;">f(g(x))</div> <span class="math"><!-- HTML_TAG_START --><!-- HTML_TAG_END --></span> as <div style="display: none;">g(x)</div> <span class="math"><!-- HTML_TAG_START --><!-- HTML_TAG_END --></span> changes mulitplied with the change in <div style="display: none;">g(x)</div> <span class="math"><!-- HTML_TAG_START --><!-- HTML_TAG_END --></span> as <div style="display: none;">x</div> <span class="math"><!-- HTML_TAG_START --><!-- HTML_TAG_END --></span> changes.
+		In notation, this is:
+		<div style="display: none;">\frac{d}{dx}f(g(x))=\frac{d}{dg(x)}f(g(x)) \cdot \frac{d}{dx}g(x)</div> <span class="math"><!-- HTML_TAG_START --><!-- HTML_TAG_END --></span></p></div> <div class="mb-8"><h2 class="text-2xl font-semibold text-text dark:text-dark_text mb-4">Proof of the Chain Rule</h2> <p class="text-text dark:text-dark_text"><div style="display: none;">
+			\begin{align*}
+			\frac{d}{dx}f(x)&amp;=\lim_{x \to a}\frac{f(x)-f(a)}{x-a} &amp;\quad\quad \frac{d}{dx}g(x)&amp;=\lim_{x \to a}\frac{g(x)-g(a)}{x-a} \\\\
+			\frac{d}{dx}f(g(x))&amp;=\lim_{x \to a}\frac{f(g(x))-f(g(a))}{x-a} &amp;\quad\quad \frac{d}{dg(x)}f(g(x))&amp;=\lim_{x \to a}\frac{f(g(x))-f(g(a))}{g(x)-g(a)} \\\\\\
+			\end{align*} \\
+			\begin{align*}
+			\frac{d}{dg(x)}f(g(x)) \cdot \frac{d}{dx}g(x)&amp;=\lim_{x \to a}\frac{f(g(x))-f(g(a))}{g(x)-g(a)} \cdot \lim_{x \to a}\frac{g(x)-g(a)}{x-a} \\\\
+			&amp;=\lim_{x \to a}\frac{f(g(x))-f(g(a))}{g(x)-g(a)} \cdot \frac{g(x)-g(a)}{x-a} \\\\
+			&amp;=\lim_{x \to a}\frac{f(g(x))-f(g(a))}{x-a} \\\\
+			&amp;=\frac{d}{dx}f(g(x))
+			\end{align*}
+		</div> <span class="math"><!-- HTML_TAG_START --><!-- HTML_TAG_END --></span>
+		Therefore, the derivative of a composite function is the derivative of the outer function evaluated at the inner function multiplied with the derivative of the inner function.
+		<br><br>In other words, finding the rate that <div style="display: none;">f</div> <span class="math"><!-- HTML_TAG_START --><!-- HTML_TAG_END --></span> changes as <div style="display: none;">g</div> <span class="math"><!-- HTML_TAG_START --><!-- HTML_TAG_END --></span> changes and multiplying it with the rate <div style="display: none;">g</div> <span class="math"><!-- HTML_TAG_START --><!-- HTML_TAG_END --></span> changes as <div style="display: none;">x</div> <span class="math"><!-- HTML_TAG_START --><!-- HTML_TAG_END --></span> changes is the same as finding the rate <div style="display: none;">f</div> <span class="math"><!-- HTML_TAG_START --><!-- HTML_TAG_END --></span> changes as <div style="display: none;">x</div> <span class="math"><!-- HTML_TAG_START --><!-- HTML_TAG_END --></span> changes.</p></div> <div class="mb-8"><h2 class="text-2xl font-semibold text-text dark:text-dark_text mb-4">Examples</h2> <p class="text-text dark:text-dark_text"><strong data-svelte-h="svelte-u4xhh">Example 1:</strong> Find the derivative of <div style="display: none;">y = (2x + 1)^5</div> <span class="math"><!-- HTML_TAG_START --><!-- HTML_TAG_END --></span>.
+		<br><br><div style="display: none;">
+			\begin{align*}
+			y &amp;= (2x + 1)^5 \\\\
+			\frac{dy}{dx} &amp;= 5(2x + 1)^4 \, \frac{d}{dx}(2x + 1) \\\\
+			&amp;= 5(2x + 1)^4 \cdot 2 \\\\
+			&amp;= 10(2x + 1)^4
+			\end{align*}
+		</div> <span class="math"><!-- HTML_TAG_START --><!-- HTML_TAG_END --></span> <br><br><strong data-svelte-h="svelte-1k1h9vi">Example 2:</strong> Find the derivative of <div style="display: none;">f(x) = \sin(x^2)</div> <span class="math"><!-- HTML_TAG_START --><!-- HTML_TAG_END --></span>.
+		<br><br><div style="display: none;">
+			\begin{align*}
+			f(x) &amp;= \sin(x^2) \\\\
+			f'(x) &amp;= \cos(x^2) \cdot \frac{d}{dx}(x^2) \\\\
+			&amp;= \cos(x^2) \cdot 2x \\\\
+			&amp;= 2x\cos(x^2)
+			\end{align*}
+		</div> <span class="math"><!-- HTML_TAG_START --><!-- HTML_TAG_END --></span> <br><br><strong data-svelte-h="svelte-25calz">Example 3:</strong> Find the derivative of <div style="display: none;">g(t) = \sqrt{t^3 + 1}</div> <span class="math"><!-- HTML_TAG_START --><!-- HTML_TAG_END --></span>.
+		<br><br><div style="display: none;">
+			\begin{align*}
+			g(t) &amp;= \sqrt{t^3 + 1} = (t^3 + 1)^{\frac{1}{2}} \\\\
+			g'(t) &amp;= \frac{1}{2}(t^3 + 1)^{-\frac{1}{2}} \cdot \frac{d}{dt}(t^3 + 1) \\\\
+			&amp;= \frac{1}{2}(t^3 + 1)^{-\frac{1}{2}} \cdot 3t^2 \\\\
+			&amp;= \frac{3t^2}{2\sqrt{t^3 + 1}}
+			\end{align*}
+		</div> <span class="math"><!-- HTML_TAG_START --><!-- HTML_TAG_END --></span> <br><br><strong data-svelte-h="svelte-ny8jy8">Example 4:</strong> Find the derivative of <div style="display: none;">h(x) = e^{\tan(x)}</div> <span class="math"><!-- HTML_TAG_START --><!-- HTML_TAG_END --></span>.
+		<br><br><div style="display: none;">
+			\begin{align*}
+			h(x) &amp;= e^{\tan(x)} \\\\
+			h'(x) &amp;= e^{\tan(x)} \cdot \frac{d}{dx}(\tan(x)) \\\\
+			&amp;= e^{\tan(x)} \cdot \sec^2(x) \\\\
+			&amp;= \sec^2(x)e^{\tan(x)}
+			\end{align*}
+		</div> <span class="math"><!-- HTML_TAG_START --><!-- HTML_TAG_END --></span></p></div></div></div></body> 
+			
+			<script>
+				{
+					__sveltekit_1hm8yy8 = {
+						base: new URL("../..", location).pathname.slice(0, -1),
+						assets: "/BrickAcademy"
+					};
+
+					const element = document.currentScript.parentElement;
+
+					Promise.all([
+						import("../../_app/immutable/entry/start.DFcj8LNn.js"),
+						import("../../_app/immutable/entry/app.34Qzq_vi.js")
+					]).then(([kit, app]) => {
+						kit.start(app, element, {
+							node_ids: [0, 2, 29],
+							data: [null,null,null],
+							form: null,
+							error: null
+						});
+					});
+				}
+			</script>
+		</div>
+	</body>
+</html>

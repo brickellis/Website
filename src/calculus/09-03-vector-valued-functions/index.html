@@ -1,0 +1,120 @@
+<!doctype html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8" />
+		<link rel="icon" href="../../favicon.png" />
+		<meta name="viewport" content="width=device-width, initial-scale=1" />
+		
+		<link href="../../_app/immutable/assets/app.BDtVw_ds.css" rel="stylesheet">
+		<link href="../../_app/immutable/assets/Section._en2CAKW.css" rel="stylesheet">
+		<link rel="modulepreload" href="../../_app/immutable/entry/start.DFcj8LNn.js">
+		<link rel="modulepreload" href="../../_app/immutable/chunks/BPHTS8RV.js">
+		<link rel="modulepreload" href="../../_app/immutable/chunks/CVhLxNSM.js">
+		<link rel="modulepreload" href="../../_app/immutable/chunks/DLyp5A0Q.js">
+		<link rel="modulepreload" href="../../_app/immutable/chunks/CwFVwKkT.js">
+		<link rel="modulepreload" href="../../_app/immutable/entry/app.34Qzq_vi.js">
+		<link rel="modulepreload" href="../../_app/immutable/chunks/C1FmrZbK.js">
+		<link rel="modulepreload" href="../../_app/immutable/chunks/DvSB8R1X.js">
+		<link rel="modulepreload" href="../../_app/immutable/nodes/0.B7xpY3_-.js">
+		<link rel="modulepreload" href="../../_app/immutable/nodes/2.BGaKxamB.js">
+		<link rel="modulepreload" href="../../_app/immutable/nodes/75.eu1DW8B4.js">
+		<link rel="modulepreload" href="../../_app/immutable/chunks/ByTZAYyp.js">
+		<link rel="modulepreload" href="../../_app/immutable/chunks/xLaKUPuM.js">
+		<link rel="modulepreload" href="../../_app/immutable/chunks/CkoZ7XGi.js">
+		<link rel="modulepreload" href="../../_app/immutable/chunks/D5fqzSVu.js">
+		<link rel="modulepreload" href="../../_app/immutable/chunks/D3W7TYDU.js">
+		<link rel="modulepreload" href="../../_app/immutable/chunks/NvOCtOX1.js">
+		<link rel="modulepreload" href="../../_app/immutable/chunks/S6_-2PRy.js">
+	</head>
+	<body data-sveltekit-preload-data="hover">
+		<div style="display: contents">  <div class="fixed top-0 left-0 w-full h-full z-[-2] bg-background dark:bg-dark_background"></div> <body class="h-full bg-background dark:bg-dark_background"><button class="fixed top-4 left-4 z-10 p-2 text-text dark:text-dark_text hover:text-primary" data-svelte-h="svelte-au3lwb">←</button> <button class="fixed top-4 right-4 z-10 p-2 text-text dark:text-dark_text hover:text-primary flex items-center justify-center" aria-label="Toggle Dark Mode"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide-icon lucide lucide-sun w-5 h-5"><circle cx="12" cy="12" r="4"></circle><path d="M12 2v2"></path><path d="M12 20v2"></path><path d="m4.93 4.93 1.41 1.41"></path><path d="m17.66 17.66 1.41 1.41"></path><path d="M2 12h2"></path><path d="M20 12h2"></path><path d="m6.34 17.66-1.41 1.41"></path><path d="m19.07 4.93-1.41 1.41"></path></svg></button>  <div class="p-8 font-sans leading-relaxed w-full"><div class="max-w-3xl mx-auto p-8 leading-relaxed ">  <h1 class="text-3xl font-bold text-text mb-6 dark:text-dark_text"><title>Vector-Valued Functions</title> <meta property="og:title" content="Vector-Valued Functions"> Vector-Valued Functions</h1> <div class="mb-8"><h2 class="text-2xl font-semibold text-text dark:text-dark_text mb-4">Introduction</h2> <p class="text-text dark:text-dark_text">Parametric functions are of the form:
+		<div style="display: none;">(x,y) = \langle f(t), g(t) \rangle</div> <span class="math"><!-- HTML_TAG_START --><!-- HTML_TAG_END --></span>
+		A parametric function outputs lists of values. In this case: <div style="display: none;">(x,y)</div> <span class="math"><!-- HTML_TAG_START --><!-- HTML_TAG_END --></span>.
+		<br><br>These lists of values are called vectors. The vectors we have seen so far were all 2-dimensional, but vectors can be of any dimension. For example, a vector in 3-dimensional space is of the form:
+		<div style="display: none;">
+			(x,y,z)
+		</div> <span class="math"><!-- HTML_TAG_START --><!-- HTML_TAG_END --></span>
+		A vector-valued function takes a variable as input and outputs a vector. An example of a 3-dimensional vector-valued function is:
+        <div style="display: none;">\mathbf{r}(t) = \langle f(t),\, g(t),\, h(t) \rangle </div> <span class="math"><!-- HTML_TAG_START --><!-- HTML_TAG_END --></span>
+        The input of this function is time, <div style="display: none;">t</div> <span class="math"><!-- HTML_TAG_START --><!-- HTML_TAG_END --></span>, and the output is the 3-dimensional vector, <div style="display: none;">(x(t),y(t),z(t))</div> <span class="math"><!-- HTML_TAG_START --><!-- HTML_TAG_END --></span></p></div> <div class="mb-8"><h2 class="text-2xl font-semibold text-text dark:text-dark_text mb-4">Differentiating Vector-Valued Functions</h2> <p class="text-text dark:text-dark_text">The derivative of a vector-valued function is found by differentiating each component by the input:
+        <div style="display: none;">
+            \mathbf{r}'(t) = \left\langle \frac{df}{dt},\, \frac{dg}{dt},\, \frac{dh}{dt} \right\rangle
+        </div> <span class="math"><!-- HTML_TAG_START --><!-- HTML_TAG_END --></span>  <span class="inline-block ml-8"><div style="display: none;">df/dt</div> <span class="math"><!-- HTML_TAG_START --><!-- HTML_TAG_END --></span> is the rate that the <div style="display: none;">x</div> <span class="math"><!-- HTML_TAG_START --><!-- HTML_TAG_END --></span>-position changes with respect to <div style="display: none;">t</div> <span class="math"><!-- HTML_TAG_START --><!-- HTML_TAG_END --></span>.
+			<br><div style="display: none;">dg/dt</div> <span class="math"><!-- HTML_TAG_START --><!-- HTML_TAG_END --></span> is the rate that the <div style="display: none;">y</div> <span class="math"><!-- HTML_TAG_START --><!-- HTML_TAG_END --></span>-position changes with respect to <div style="display: none;">t</div> <span class="math"><!-- HTML_TAG_START --><!-- HTML_TAG_END --></span>.
+			<br><div style="display: none;">dh/dt</div> <span class="math"><!-- HTML_TAG_START --><!-- HTML_TAG_END --></span> is the rate that the <div style="display: none;">z</div> <span class="math"><!-- HTML_TAG_START --><!-- HTML_TAG_END --></span>-position changes with respect to <div style="display: none;">t</div> <span class="math"><!-- HTML_TAG_START --><!-- HTML_TAG_END --></span>.</span></p></div> <div class="mb-8"><h2 class="text-2xl font-semibold text-text dark:text-dark_text mb-4">Geometric Interpretation</h2> <p class="text-text dark:text-dark_text">The derivative of a vector-valued function, <div style="display: none;">\mathbf{r}'(t)</div> <span class="math"><!-- HTML_TAG_START --><!-- HTML_TAG_END --></span>, is tangent to the curve at <div style="display: none;">\mathbf{r}(t)</div> <span class="math"><!-- HTML_TAG_START --><!-- HTML_TAG_END --></span>.
+		<br><br>For example: 
+		<br> <span class="inline-block ml-8"><div style="display: none;">r(t)</div> <span class="math"><!-- HTML_TAG_START --><!-- HTML_TAG_END --></span>: The position of a particle in 3D space.
+			<br><div style="display: none;">r'(t)</div> <span class="math"><!-- HTML_TAG_START --><!-- HTML_TAG_END --></span>: The velocity of that particle.</span> <br><br>Another Example: 
+		<div style="display: none;">
+			\begin{align*}
+			\mathbf{r}(t) &amp;= \langle \cos(t),\, \sin(t),\, t \rangle \\
+			\mathbf{r}'(t) &amp;= \langle -\sin(t),\, \cos(t),\, 1 \rangle
+			\end{align*}
+		</div> <span class="math"><!-- HTML_TAG_START --><!-- HTML_TAG_END --></span>
+        The z-component of the derivative shows constant upward speed, while the x and y components trace circular motion.
+		  <div class="flex justify-center"><div class="w-full mb-8 bg-background dark:bg-dark_background aspect-square max-h-[66vh] max-w-[66vh]"><div class="flex w-full h-full aspect-[1/1]"></div></div></div>
+		Click to Rotate.</p></div> <div class="mb-8"><h2 class="text-2xl font-semibold text-text dark:text-dark_text mb-4">Examples</h2> <p class="text-text dark:text-dark_text"><strong data-svelte-h="svelte-c2mraa">Example 1: Basic Differentiation</strong><br>
+		Find the derivative of the vector-valued function <div style="display: none;">\mathbf{r}(t) = \langle t^2,\, 3t - 1,\, \sin(t) \rangle</div> <span class="math"><!-- HTML_TAG_START --><!-- HTML_TAG_END --></span>.
+		<div style="display: none;">
+			\begin{align*}
+			\mathbf{r}'(t) &amp;= \left\langle \frac{d}{dt}(t^2),\, \frac{d}{dt}(3t - 1),\, \frac{d}{dt}(\sin(t)) \right\rangle \\
+			&amp;= \langle 2t,\, 3,\, \cos(t) \rangle
+			\end{align*}
+			</div> <span class="math"><!-- HTML_TAG_START --><!-- HTML_TAG_END --></span>
+		This derivative vector gives us the instantaneous velocity at any time t. For example, at t = 0, the velocity is <div style="display: none;">\langle 0,\, 3,\, 1 \rangle</div> <span class="math"><!-- HTML_TAG_START --><!-- HTML_TAG_END --></span>.
+
+		  <div class="flex justify-center"><div class="w-full mb-8 bg-background dark:bg-dark_background aspect-square max-h-[66vh] max-w-[66vh]"><div class="flex w-full h-full aspect-[1/1]"></div></div></div> <br><br><strong data-svelte-h="svelte-89jn3b">Example 2: Circular Motion</strong><br>
+		A particle moves in a circle of radius 2 in the xy-plane according to <div style="display: none;">\mathbf{r}(t) = \langle 2\cos(t),\, 2\sin(t),\, 0 \rangle</div> <span class="math"><!-- HTML_TAG_START --><!-- HTML_TAG_END --></span>. Find its velocity and speed at any time t.
+		<div style="display: none;">
+			\begin{align*}
+			\mathbf{r}'(t) &amp;= \langle -2\sin(t),\, 2\cos(t),\, 0 \rangle \quad \text{(velocity)} \\
+			\text{speed} &amp;= \|\mathbf{r}'(t)\| = \sqrt{(-2\sin(t))^2 + (2\cos(t))^2 + 0^2} \\
+			&amp;= \sqrt{4\sin^2 t + 4\cos^2 t} \\
+			&amp;= \sqrt{4(\sin^2 t + \cos^2 t)} \\
+			&amp;= \sqrt{4} = 2
+			\end{align*}
+			</div> <span class="math"><!-- HTML_TAG_START --><!-- HTML_TAG_END --></span>
+		The constant speed of 2 units shows the particle moves uniformly around the circle.
+		  <div class="flex justify-center"><div class="w-full mb-8 bg-background dark:bg-dark_background aspect-square max-h-[66vh] max-w-[66vh]"><div class="flex w-full h-full aspect-[1/1]"></div></div></div> <br><br><strong data-svelte-h="svelte-1lbcb9g">Example 3: Physical Application</strong><br>
+		A projectile is launched with initial velocity <div style="display: none;">\langle 2,\, 4,\, 3 \rangle</div> <span class="math"><!-- HTML_TAG_START --><!-- HTML_TAG_END --></span> from the origin. Find its position vector accounting for gravity (g = -9.8 m/s²):
+		<div style="display: none;">
+			\begin{align*}
+			\mathbf{r}(t) &amp;= \left\langle 2t,\, 4t - \frac{9.8}{2}t^2,\, 3t \right\rangle \\
+			\mathbf{r}'(t) &amp;= \langle 2,\, 4 - 9.8t,\, 3 \rangle \quad \text{(velocity)} \\
+			\end{align*}
+			</div> <span class="math"><!-- HTML_TAG_START --><!-- HTML_TAG_END --></span>
+		The projectile reaches its maximum height when the y-component of velocity is zero:
+		<div style="display: none;">
+			\begin{align*}
+			4 - 9.8t &amp;= 0 \\
+			t &amp;= \frac{4}{9.8} \approx 0.41 \text{ seconds}
+			\end{align*}
+			</div> <span class="math"><!-- HTML_TAG_START --><!-- HTML_TAG_END --></span>
+		At this time, the position is approximately <div style="display: none;">\langle 0.82,\, 1.23,\, 0.82 \rangle</div> <span class="math"><!-- HTML_TAG_START --><!-- HTML_TAG_END --></span> meters.
+		  <div class="flex justify-center"><div class="w-full mb-8 bg-background dark:bg-dark_background aspect-square max-h-[66vh] max-w-[66vh]"><div class="flex w-full h-full aspect-[1/1]"></div></div></div></p></div></div></div></body> 
+			
+			<script>
+				{
+					__sveltekit_1hm8yy8 = {
+						base: new URL("../..", location).pathname.slice(0, -1),
+						assets: "/BrickAcademy"
+					};
+
+					const element = document.currentScript.parentElement;
+
+					Promise.all([
+						import("../../_app/immutable/entry/start.DFcj8LNn.js"),
+						import("../../_app/immutable/entry/app.34Qzq_vi.js")
+					]).then(([kit, app]) => {
+						kit.start(app, element, {
+							node_ids: [0, 2, 75],
+							data: [null,null,null],
+							form: null,
+							error: null
+						});
+					});
+				}
+			</script>
+		</div>
+	</body>
+</html>

@@ -1,0 +1,121 @@
+<!doctype html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8" />
+		<link rel="icon" href="../../favicon.png" />
+		<meta name="viewport" content="width=device-width, initial-scale=1" />
+		
+		<link href="../../_app/immutable/assets/app.BDtVw_ds.css" rel="stylesheet">
+		<link href="../../_app/immutable/assets/Section._en2CAKW.css" rel="stylesheet">
+		<link rel="modulepreload" href="../../_app/immutable/entry/start.DFcj8LNn.js">
+		<link rel="modulepreload" href="../../_app/immutable/chunks/BPHTS8RV.js">
+		<link rel="modulepreload" href="../../_app/immutable/chunks/CVhLxNSM.js">
+		<link rel="modulepreload" href="../../_app/immutable/chunks/DLyp5A0Q.js">
+		<link rel="modulepreload" href="../../_app/immutable/chunks/CwFVwKkT.js">
+		<link rel="modulepreload" href="../../_app/immutable/entry/app.34Qzq_vi.js">
+		<link rel="modulepreload" href="../../_app/immutable/chunks/C1FmrZbK.js">
+		<link rel="modulepreload" href="../../_app/immutable/chunks/DvSB8R1X.js">
+		<link rel="modulepreload" href="../../_app/immutable/nodes/0.B7xpY3_-.js">
+		<link rel="modulepreload" href="../../_app/immutable/nodes/2.BGaKxamB.js">
+		<link rel="modulepreload" href="../../_app/immutable/nodes/77.BRD7PnZd.js">
+		<link rel="modulepreload" href="../../_app/immutable/chunks/ByTZAYyp.js">
+		<link rel="modulepreload" href="../../_app/immutable/chunks/xLaKUPuM.js">
+		<link rel="modulepreload" href="../../_app/immutable/chunks/CkoZ7XGi.js">
+		<link rel="modulepreload" href="../../_app/immutable/chunks/D5fqzSVu.js">
+		<link rel="modulepreload" href="../../_app/immutable/chunks/D3W7TYDU.js">
+		<link rel="modulepreload" href="../../_app/immutable/chunks/NvOCtOX1.js">
+		<link rel="modulepreload" href="../../_app/immutable/chunks/S6_-2PRy.js">
+		<link rel="modulepreload" href="../../_app/immutable/chunks/CqEGPqgJ.js">
+	</head>
+	<body data-sveltekit-preload-data="hover">
+		<div style="display: contents">  <div class="fixed top-0 left-0 w-full h-full z-[-2] bg-background dark:bg-dark_background"></div> <body class="h-full bg-background dark:bg-dark_background"><button class="fixed top-4 left-4 z-10 p-2 text-text dark:text-dark_text hover:text-primary" data-svelte-h="svelte-au3lwb">←</button> <button class="fixed top-4 right-4 z-10 p-2 text-text dark:text-dark_text hover:text-primary flex items-center justify-center" aria-label="Toggle Dark Mode"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide-icon lucide lucide-sun w-5 h-5"><circle cx="12" cy="12" r="4"></circle><path d="M12 2v2"></path><path d="M12 20v2"></path><path d="m4.93 4.93 1.41 1.41"></path><path d="m17.66 17.66 1.41 1.41"></path><path d="M2 12h2"></path><path d="M20 12h2"></path><path d="m6.34 17.66-1.41 1.41"></path><path d="m19.07 4.93-1.41 1.41"></path></svg></button>  <div class="p-8 font-sans leading-relaxed w-full"><div class="max-w-3xl mx-auto p-8 leading-relaxed ">  <h1 class="text-3xl font-bold text-text mb-6 dark:text-dark_text"><title>Motion</title> <meta property="og:title" content="Motion"> Motion</h1> <div class="mb-8"><h2 class="text-2xl font-semibold text-text dark:text-dark_text mb-4">Introduction</h2> <p class="text-text dark:text-dark_text">When analyzing motion in space, we use the following:
+        <div style="display: none;">
+        \begin{align*}
+        \text{Position: } &amp;&amp;\mathbf{r}(t)=\,\,&amp; \langle x(t),\, y(t),\, z(t) \rangle \\
+        \text{Velocity: } &amp;&amp;\mathbf{v}(t)=\,\,&amp; \mathbf{r}'(t) = \langle x'(t),\, y'(t),\, z'(t) \rangle \\
+        \text{Speed: } &amp;&amp;\|\mathbf{v}(t)\|=\,\,&amp; \sqrt{(x'(t))^2 + (y'(t))^2 + (z'(t))^2} \\
+        \text{Acceleration: } &amp;&amp;\mathbf{a}(t)=\,\,&amp; \mathbf{v}'(t) = \mathbf{r}''(t) = \langle x''(t),\, y''(t),\, z''(t) \rangle \\
+        \text{Direction: } &amp;&amp;\mathbf{T}(t)=\,\,&amp; \frac{\mathbf{v}(t)}{\|\mathbf{v}(t)\|}
+        \end{align*}
+        </div> <span class="math"><!-- HTML_TAG_START --><!-- HTML_TAG_END --></span></p></div> <div class="mb-8"><h2 class="text-2xl font-semibold text-text dark:text-dark_text mb-4">Motion Under Gravity</h2> <p class="text-text dark:text-dark_text">For projectile motion problems under gravity (g = -9.8 m/s²):
+        <div style="display: none;">
+        \begin{align*}
+        r(t) &amp;= \text{Initial Position} + \text{Initial velocity} + \text{Gravity} \\
+        &amp;= \langle x_0, y_0, z_0 \rangle + t\langle v_{0x}, v_{0y}, v_{0z} \rangle + \frac{1}{2}t^2\langle 0, g, 0 \rangle \\
+        &amp;= \langle x_0 + v_{0x}t,\, y_0 + v_{0y}t - \frac{1}{2}gt^2,\, z_0 + v_{0z}t \rangle \\
+        \end{align*}
+        </div> <span class="math"><!-- HTML_TAG_START --><!-- HTML_TAG_END --></span>
+        Where <div style="display: none;">(x_0, y_0, z_0)</div> <span class="math"><!-- HTML_TAG_START --><!-- HTML_TAG_END --></span> is the initial position and <div style="display: none;">(v_{0x}, v_{0y}, v_{0z})</div> <span class="math"><!-- HTML_TAG_START --><!-- HTML_TAG_END --></span> is the initial velocity.</p></div> <div class="mb-8"><h2 class="text-2xl font-semibold text-text dark:text-dark_text mb-4">Circular Motion</h2> <p class="text-text dark:text-dark_text">Circular motion in the xy-plane with 
+        <br> <span class="inline-block ml-8"><div style="display: none;">r</div> <span class="math"><!-- HTML_TAG_START --><!-- HTML_TAG_END --></span> - The radius of the circle
+            <br><div style="display: none;">\omega</div> <span class="math"><!-- HTML_TAG_START --><!-- HTML_TAG_END --></span> - The speed of rotation</span> <div style="display: none;">
+            \begin{align*}
+            \text{Position: } &amp;&amp;\mathbf{r}(t)=\,\,&amp; \langle r\cos(\omega t),\, r\sin(\omega t),\, 0 \rangle \\
+            \text{Velocity: } &amp;&amp;\mathbf{v}(t)=\,\,&amp; \mathbf{r}'(t) = \langle -r\omega\sin(\omega t),\, r\omega\cos(\omega t),\, 0 \rangle \\
+            \text{Speed: } &amp;&amp;\|\mathbf{v}(t)\|=\,\,&amp; r\omega \\
+            \text{Acceleration: } &amp;&amp;\mathbf{a}(t)=\,\,&amp; \mathbf{v}'(t) = \langle -r\omega^2\cos(\omega t),\, -r\omega^2\sin(\omega t),\, 0 \rangle \\
+            \end{align*}
+            </div> <span class="math"><!-- HTML_TAG_START --><!-- HTML_TAG_END --></span>
+            Note that the speed is a constant value, equal to the product of the radius of the circle and the speed of rotating around the circle.</p></div> <div class="mb-8"><h2 class="text-2xl font-semibold text-text dark:text-dark_text mb-4">Examples</h2> <p class="text-text dark:text-dark_text"><strong data-svelte-h="svelte-127pcla">Example 1: Projectile Motion</strong><br>
+        A ball is thrown from initial position <div style="display: none;">(0, 0, 0)</div> <span class="math"><!-- HTML_TAG_START --><!-- HTML_TAG_END --></span> with initial velocity <div style="display: none;">\langle 2, 3, 0 \rangle</div> <span class="math"><!-- HTML_TAG_START --><!-- HTML_TAG_END --></span> m/s. Find its position, velocity, and maximum height.
+        <div style="display: none;">
+            \begin{align*}
+            \mathbf{r}(t) &amp;= \langle 0, 0, 0 \rangle + t\langle 2, 3, 0 \rangle + \frac{1}{2}t^2\langle 0, -9.8, 0 \rangle \\
+            &amp;= \langle 2t, 3t - 4.9t^2, 0 \rangle \\
+            \mathbf{v}(t) &amp;= \langle 2, 3 - 9.8t, 0 \rangle
+            \end{align*}
+        </div> <span class="math"><!-- HTML_TAG_START --><!-- HTML_TAG_END --></span>
+        For maximum height, set y-component of velocity to zero:
+        <div style="display: none;">
+            \begin{align*}
+            3 - 9.8t &amp;= 0 \\
+            t &amp;= 0.306 \text{ seconds} \\
+            y_{max} &amp;= 3(0.306) - 4.9(0.306)^2 = 0.459 \text{ meters}
+            \end{align*}
+        </div> <span class="math"><!-- HTML_TAG_START --><!-- HTML_TAG_END --></span>   <div class="flex justify-center"><div class="w-full mb-8 bg-background dark:bg-dark_background aspect-square max-h-[66vh] max-w-[66vh]"><div class="flex w-full h-full aspect-[1/1]"></div></div></div> <br><strong data-svelte-h="svelte-15cyhao">Example 2: Circular Motion Speed</strong><br>
+        A particle moves in a circle of radius 5 meters with angular velocity <div style="display: none;">\omega = 2</div> <span class="math"><!-- HTML_TAG_START --><!-- HTML_TAG_END --></span> rad/s. Find its position, velocity, and speed at <div style="display: none;">t = \pi/4</div> <span class="math"><!-- HTML_TAG_START --><!-- HTML_TAG_END --></span>.
+        <div style="display: none;">
+            \begin{align*}
+            \mathbf{r}(\pi/4) &amp;= \langle 5\cos(\pi/2), 5\sin(\pi/2), 0 \rangle \\
+            &amp;= \langle 0, 5, 0 \rangle \\
+            \mathbf{v}(\pi/4) &amp;= \langle -10\sin(\pi/2), 10\cos(\pi/2), 0 \rangle \\
+            &amp;= \langle -10, 0, 0 \rangle \\
+            \text{Speed} &amp;= \|\mathbf{v}(\pi/4)\| = r\omega = 5(2) = 10 \text{ m/s}
+            \end{align*}
+        </div> <span class="math"><!-- HTML_TAG_START --><!-- HTML_TAG_END --></span>   <div class="flex justify-center"><div class="w-full mb-8 bg-background dark:bg-dark_background aspect-square max-h-[66vh] max-w-[66vh]"><div class="flex w-full h-full aspect-[1/1]"></div></div></div> <br><strong data-svelte-h="svelte-1v13p1n">Example 3: Direction of Motion</strong><br>
+        A particle moves according to <div style="display: none;">\mathbf{r}(t) = \langle t^2, t^3, t \rangle</div> <span class="math"><!-- HTML_TAG_START --><!-- HTML_TAG_END --></span>. Find its velocity and direction at <div style="display: none;">t = 1</div> <span class="math"><!-- HTML_TAG_START --><!-- HTML_TAG_END --></span>.
+        <div style="display: none;">
+            \begin{align*}
+            \mathbf{v}(t) &amp;= \langle 2t, 3t^2, 1 \rangle \\
+            \mathbf{v}(1) &amp;= \langle 2, 3, 1 \rangle \\
+            \|\mathbf{v}(1)\| &amp;= \sqrt{4 + 9 + 1} = \sqrt{14} \\
+            \mathbf{T}(1) &amp;= \frac{\mathbf{v}(1)}{\|\mathbf{v}(1)\|} = \left\langle \frac{2}{\sqrt{14}}, \frac{3}{\sqrt{14}}, \frac{1}{\sqrt{14}} \right\rangle
+            \end{align*}
+        </div> <span class="math"><!-- HTML_TAG_START --><!-- HTML_TAG_END --></span>
+        The direction vector <div style="display: none;">\mathbf{T}(1)</div> <span class="math"><!-- HTML_TAG_START --><!-- HTML_TAG_END --></span> is a unit vector pointing in the direction of motion at <div style="display: none;">t = 1</div> <span class="math"><!-- HTML_TAG_START --><!-- HTML_TAG_END --></span>.
+          <div class="flex justify-center"><div class="w-full mb-8 bg-background dark:bg-dark_background aspect-square max-h-[66vh] max-w-[66vh]"><div class="flex w-full h-full aspect-[1/1]"></div></div></div></p></div></div></div></body> 
+			
+			<script>
+				{
+					__sveltekit_1hm8yy8 = {
+						base: new URL("../..", location).pathname.slice(0, -1),
+						assets: "/BrickAcademy"
+					};
+
+					const element = document.currentScript.parentElement;
+
+					Promise.all([
+						import("../../_app/immutable/entry/start.DFcj8LNn.js"),
+						import("../../_app/immutable/entry/app.34Qzq_vi.js")
+					]).then(([kit, app]) => {
+						kit.start(app, element, {
+							node_ids: [0, 2, 77],
+							data: [null,null,null],
+							form: null,
+							error: null
+						});
+					});
+				}
+			</script>
+		</div>
+	</body>
+</html>
