@@ -11,7 +11,7 @@ tmp_dir = "tmp"
   # run, so watching it would make every rebuild trigger another. If you
   # edit a hand-written .html file, refresh the browser yourself.)
   include_ext = ["go", "md", "css", "js"]
-  exclude_dir = ["tmp", "build"]
+  exclude_dir = ["tmp", "docs"]
   send_interrupt = true
   delay = 200
 

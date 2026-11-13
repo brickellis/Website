@@ -2,26 +2,26 @@ package main
 
 // Usage:
 //
-//	go run .                  build src/ + asset-src/ into build/, then serve build/ on :8080
+//	go run .                  docs src/ + asset-src/ into docs/, then serve docs/ on :8080
 //	go run . -newtab          external links open in a new tab by default
-//	go run . -serve=false     build only
+//	go run . -serve=false     docs only
 //	go run . -addr :3000      serve on another port
 //	go run . -src site -assets static -out public
 //
-// src/ and asset-src/ are merged into build/ as if they were one folder.
+// src/ and asset-src/ are merged into docs/ as if they were one folder.
 // Put pages and things you edit often in src/, and files you rarely touch
 // (style.css, katex/, fonts, images) in asset-src/.
 //
 // Every .md file (at any depth, in either folder) becomes a .html file with
-// the same name in the same place in build/ (about.md -> about.html,
+// the same name in the same place in docs/ (about.md -> about.html,
 // math/index.md -> math/index.html). The exception is a file named after the
 // folder it sits in, which becomes that folder's index.html
 // (math/math.md -> math/index.html). Every other file is copied unchanged.
 //
-// If two files would end up at the same path in build/, the program reports
-// them and builds nothing. build/ is wiped and recreated on every run, so it
+// If two files would end up at the same path in docs/, the program reports
+// them and builds nothing. docs/ is wiped and recreated on every run, so it
 // never holds anything that isn't in src/ or asset-src/. If any Markdown file
-// fails to convert, build/ is left alone.
+// fails to convert, docs/ is left alone.
 //
 // asset-src/ is optional: if it doesn't exist, only src/ is used.
 //
@@ -77,13 +77,13 @@ const pageTmpl = `<!DOCTYPE html>
 func main() {
 	src := flag.String("src", "src", "folder holding the Markdown and assets you edit")
 	assets := flag.String("assets", "asset-src", "second source folder, merged with src (optional)")
-	out := flag.String("out", "build", "folder the site is built into (wiped on every run)")
+	out := flag.String("out", "docs", "folder the site is built into (wiped on every run)")
 	newTab := flag.Bool("newtab", false, "open external links in a new tab by default")
-	serve := flag.Bool("serve", true, "serve the build folder after building")
+	serve := flag.Bool("serve", true, "serve the docs folder after building")
 	addr := flag.String("addr", ":8080", "address for the static server")
 	flag.Parse()
 
-	if err := build(*src, *assets, *out, *newTab); err != nil {
+	if err := docs(*src, *assets, *out, *newTab); err != nil {
 		fmt.Fprintln(os.Stderr, "error:", err)
 		os.Exit(1)
 	}
@@ -115,7 +115,7 @@ type copyJob struct {
 	mode     fs.FileMode
 }
 
-func build(src, assets, out string, newTab bool) error {
+func docs(src, assets, out string, newTab bool) error {
 	// Work out which source folders exist. src is required; assets is optional.
 	roots := []string{src}
 	if _, err := os.Stat(assets); err == nil {
@@ -128,13 +128,13 @@ func build(src, assets, out string, newTab bool) error {
 	}
 
 	// 1. Plan everything first (converting Markdown in memory), so an error
-	// leaves the existing build untouched.
+	// leaves the existing docs untouched.
 	var (
 		dirs   []string
 		pages  []page
 		copies []copyJob
 	)
-	seen := map[string]string{} // path inside build -> the source file that makes it
+	seen := map[string]string{} // path inside docs -> the source file that makes it
 
 	for _, root := range roots {
 		root := root
@@ -193,7 +193,7 @@ func build(src, assets, out string, newTab bool) error {
 		}
 	}
 
-	// 2. Start from an empty build folder.
+	// 2. Start from an empty docs folder.
 	if err := os.RemoveAll(out); err != nil {
 		return err
 	}
