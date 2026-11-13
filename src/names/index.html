@@ -28,7 +28,7 @@
     body {
         margin: 0 auto;
         max-width: 1000px;
-        padding: 7vh 6vw 10vh;
+        padding: max(7vh, 3.5rem) 6vw 10vh;
         background: var(--bg);
         color: var(--fg);
         font: 14px/1.5 ui-monospace, Menlo, Consolas, monospace
@@ -279,7 +279,30 @@
         text-transform: capitalize;
         margin-bottom: 6px
     }
+
+    nav.home {
+        position: fixed;
+        top: 12px;
+        left: 16px;
+        z-index: 1000;
+        padding: 2px 6px;
+        background: var(--bg);
+        font-size: 13px;
+        font-weight: 700;
+        letter-spacing: .04em
+    }
+
+    nav.home a {
+        color: var(--fg);
+        text-decoration: none
+    }
+
+    nav.home a:hover {
+        color: var(--ac);
+        text-decoration: underline
+    }
 </style>
+<nav class="home"><a href="/">BrickAcademy</a></nav>
 <div id="top"><input id="q" placeholder="Enter a Name" autocomplete="off" autofocus spellcheck="false"><a class="btn"
         id="glink" href="#~game">The Name Game</a></div>
 <div id="out"></div>
